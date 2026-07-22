@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TitanGym_Presentation
+namespace TitanGym_Presentation.Modules.People.Forms
 {
-    public partial class Form1 : Form
+    public partial class UCAddEditPerson : UserControl
     {
-        public Form1()
+        public UCAddEditPerson()
         {
             InitializeComponent();
+        }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            AppNavigator.Back();
         }
     }
 }
