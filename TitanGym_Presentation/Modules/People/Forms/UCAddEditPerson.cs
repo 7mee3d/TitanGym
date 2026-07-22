@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.PeopleBL;
-using TitanGym_Presentation.Core.Helpers;
 using TitanGym_Presentation.Core.Utility;
 
 namespace TitanGym_Presentation.Modules.People.Forms
@@ -53,8 +47,39 @@ namespace TitanGym_Presentation.Modules.People.Forms
 
         }
 
+        private bool _PrepareTheContraintsPeopleSection()
+        {
+
+            if (!this.ValidateChildren())
+            {
+                MessageBox.Show(
+                  "Some fileds are not valide!, put the mouse over the red icon(s) to see the error",
+                  "Validation Error",
+                  MessageBoxButtons.OK,
+                  MessageBoxIcon.Error
+                  );
+                return false;
+            }
+
+            if (!GGButtonFemale.Checked && !GGButtonMale.Checked)
+            {
+                MessageBox.Show(
+                     "Must Select The Gender",
+                     "Validation Error",
+                     MessageBoxButtons.OK,
+                     MessageBoxIcon.Error
+                     );
+                return false;
+            }
+
+            return true;
+        }
+
         private void _AddNewPerson()
         {
+
+            if (!_PrepareTheContraintsPeopleSection()) return;
+
             _PrepareInformationPerson();
 
             if (!string.IsNullOrWhiteSpace(GPictureBoxImagePerson.ImageLocation))
@@ -62,7 +87,8 @@ namespace TitanGym_Presentation.Modules.People.Forms
 
             if (_InformationPerson.SaveModePerson())
             {
-                if (_ModePerson == _EnModePerson._kADD_NEW_PERSON) MessageBox.Show("The Person Added Sccessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (_ModePerson == _EnModePerson._kADD_NEW_PERSON)
+                    MessageBox.Show("The Person Added Sccessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else MessageBox.Show("The Person Updated Sccessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 FinihedAddEditPerson?.Invoke(true);
@@ -85,33 +111,44 @@ namespace TitanGym_Presentation.Modules.People.Forms
             }
 
         }
+
         private void guna2GradientButton3_Click(object sender, EventArgs e)
-        {
-            AppNavigator.Back();
-        }
+           => AppNavigator.Back();
 
         private void UCAddEditPerson_Load(object sender, EventArgs e)
         {
             _DefaultValues();
-
-
         }
 
         private void GGButtonAddNewPerson_Click(object sender, EventArgs e)
-        {
-            _AddNewPerson();
-        }
+            => _AddNewPerson();
 
         private void GGButtonUpload_Click(object sender, EventArgs e)
         {
+
+            openFileDialogSelectImagePerson.Title = "Select image person";
             openFileDialogSelectImagePerson.RestoreDirectory = true;
             openFileDialogSelectImagePerson.Filter = "PNG IMAGE|*.png|JPGE IAMGE|*jpge";
-            openFileDialogSelectImagePerson.InitialDirectory = Environment.CurrentDirectory;
+            // openFileDialogSelectImagePerson.InitialDirectory = Environment.CurrentDirectory;
 
             if (openFileDialogSelectImagePerson.ShowDialog() == DialogResult.OK)
             {
                 GPictureBoxImagePerson.ImageLocation = openFileDialogSelectImagePerson.FileName;
             }
         }
+
+        private void ValidationTextBox(object sender, CancelEventArgs e)
+        {
+            Guna2TextBox G2TB = sender as Guna2TextBox;
+
+            if (string.IsNullOrWhiteSpace(G2TB.Text.Trim()))
+            {
+                e.Cancel = true;
+                ErrorProviderPeopleSection.SetError(G2TB, "This text box empty");
+            }
+            else e.Cancel = false;
+
+        }
+
     }
 }

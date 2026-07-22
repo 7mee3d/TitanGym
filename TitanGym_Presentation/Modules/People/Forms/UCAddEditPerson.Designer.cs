@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAddEditPerson));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.GDateTimePickerPerson = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -63,12 +64,14 @@
             this.lblTitlePerson = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.openFileDialogSelectImagePerson = new System.Windows.Forms.OpenFileDialog();
+            this.ErrorProviderPeopleSection = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GPictureBoxImagePerson)).BeginInit();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProviderPeopleSection)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -102,7 +105,7 @@
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Location = new System.Drawing.Point(259, 133);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(959, 681);
+            this.guna2Panel1.Size = new System.Drawing.Size(993, 681);
             this.guna2Panel1.TabIndex = 0;
             // 
             // GDateTimePickerPerson
@@ -113,7 +116,7 @@
             this.GDateTimePickerPerson.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GDateTimePickerPerson.ForeColor = System.Drawing.Color.White;
             this.GDateTimePickerPerson.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.GDateTimePickerPerson.Location = new System.Drawing.Point(457, 497);
+            this.GDateTimePickerPerson.Location = new System.Drawing.Point(478, 497);
             this.GDateTimePickerPerson.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.GDateTimePickerPerson.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.GDateTimePickerPerson.Name = "GDateTimePickerPerson";
@@ -194,7 +197,7 @@
             this.GTextBoxLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.GTextBoxLastName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.GTextBoxLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GTextBoxLastName.Location = new System.Drawing.Point(725, 174);
+            this.GTextBoxLastName.Location = new System.Drawing.Point(752, 174);
             this.GTextBoxLastName.Name = "GTextBoxLastName";
             this.GTextBoxLastName.PlaceholderText = "";
             this.GTextBoxLastName.SelectedText = "";
@@ -216,19 +219,20 @@
             this.GTextBoxThirdName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.GTextBoxThirdName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.GTextBoxThirdName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GTextBoxThirdName.Location = new System.Drawing.Point(491, 174);
+            this.GTextBoxThirdName.Location = new System.Drawing.Point(509, 174);
             this.GTextBoxThirdName.Name = "GTextBoxThirdName";
             this.GTextBoxThirdName.PlaceholderText = "";
             this.GTextBoxThirdName.SelectedText = "";
             this.GTextBoxThirdName.Size = new System.Drawing.Size(198, 46);
             this.GTextBoxThirdName.TabIndex = 1;
+            this.GTextBoxThirdName.Validating += new System.ComponentModel.CancelEventHandler(this.ValidationTextBox);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label6.Location = new System.Drawing.Point(721, 144);
+            this.label6.Location = new System.Drawing.Point(750, 144);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 21);
             this.label6.TabIndex = 0;
@@ -249,19 +253,20 @@
             this.GTextBoxSecondName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.GTextBoxSecondName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.GTextBoxSecondName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GTextBoxSecondName.Location = new System.Drawing.Point(257, 174);
+            this.GTextBoxSecondName.Location = new System.Drawing.Point(266, 174);
             this.GTextBoxSecondName.Name = "GTextBoxSecondName";
             this.GTextBoxSecondName.PlaceholderText = "";
             this.GTextBoxSecondName.SelectedText = "";
             this.GTextBoxSecondName.Size = new System.Drawing.Size(198, 46);
             this.GTextBoxSecondName.TabIndex = 1;
+            this.GTextBoxSecondName.Validating += new System.ComponentModel.CancelEventHandler(this.ValidationTextBox);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label5.Location = new System.Drawing.Point(487, 144);
+            this.label5.Location = new System.Drawing.Point(505, 144);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 21);
             this.label5.TabIndex = 0;
@@ -282,12 +287,13 @@
             this.GTextBoxPhoneNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.GTextBoxPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.GTextBoxPhoneNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GTextBoxPhoneNumber.Location = new System.Drawing.Point(463, 382);
+            this.GTextBoxPhoneNumber.Location = new System.Drawing.Point(481, 382);
             this.GTextBoxPhoneNumber.Name = "GTextBoxPhoneNumber";
             this.GTextBoxPhoneNumber.PlaceholderText = "";
             this.GTextBoxPhoneNumber.SelectedText = "";
             this.GTextBoxPhoneNumber.Size = new System.Drawing.Size(226, 46);
             this.GTextBoxPhoneNumber.TabIndex = 1;
+            this.GTextBoxPhoneNumber.Validating += new System.ComponentModel.CancelEventHandler(this.ValidationTextBox);
             // 
             // GTextBoxEmailAddress
             // 
@@ -310,6 +316,7 @@
             this.GTextBoxEmailAddress.SelectedText = "";
             this.GTextBoxEmailAddress.Size = new System.Drawing.Size(432, 46);
             this.GTextBoxEmailAddress.TabIndex = 1;
+            this.GTextBoxEmailAddress.Validating += new System.ComponentModel.CancelEventHandler(this.ValidationTextBox);
             // 
             // GTextBoxResidentialAddress
             // 
@@ -330,15 +337,16 @@
             this.GTextBoxResidentialAddress.Name = "GTextBoxResidentialAddress";
             this.GTextBoxResidentialAddress.PlaceholderText = "";
             this.GTextBoxResidentialAddress.SelectedText = "";
-            this.GTextBoxResidentialAddress.Size = new System.Drawing.Size(666, 46);
+            this.GTextBoxResidentialAddress.Size = new System.Drawing.Size(684, 46);
             this.GTextBoxResidentialAddress.TabIndex = 1;
+            this.GTextBoxResidentialAddress.Validating += new System.ComponentModel.CancelEventHandler(this.ValidationTextBox);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label14.Location = new System.Drawing.Point(453, 467);
+            this.label14.Location = new System.Drawing.Point(474, 467);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(101, 21);
             this.label14.TabIndex = 0;
@@ -365,13 +373,14 @@
             this.GTextBoxFirstName.SelectedText = "";
             this.GTextBoxFirstName.Size = new System.Drawing.Size(198, 46);
             this.GTextBoxFirstName.TabIndex = 1;
+            this.GTextBoxFirstName.Validating += new System.ComponentModel.CancelEventHandler(this.ValidationTextBox);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label8.Location = new System.Drawing.Point(456, 352);
+            this.label8.Location = new System.Drawing.Point(474, 352);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(118, 21);
             this.label8.TabIndex = 0;
@@ -382,7 +391,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label4.Location = new System.Drawing.Point(253, 144);
+            this.label4.Location = new System.Drawing.Point(262, 144);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 21);
             this.label4.TabIndex = 0;
@@ -430,7 +439,7 @@
             this.guna2Panel5.BorderThickness = 1;
             this.guna2Panel5.Controls.Add(this.GPictureBoxImagePerson);
             this.guna2Panel5.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.guna2Panel5.Location = new System.Drawing.Point(725, 259);
+            this.guna2Panel5.Location = new System.Drawing.Point(754, 260);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(198, 209);
             this.guna2Panel5.TabIndex = 0;
@@ -461,7 +470,7 @@
             this.guna2Panel4.Controls.Add(this.label12);
             this.guna2Panel4.Controls.Add(this.label11);
             this.guna2Panel4.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.guna2Panel4.Location = new System.Drawing.Point(704, 480);
+            this.guna2Panel4.Location = new System.Drawing.Point(733, 481);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(242, 88);
             this.guna2Panel4.TabIndex = 0;
@@ -535,7 +544,7 @@
             this.guna2Panel3.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel3.Location = new System.Drawing.Point(3, 594);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(956, 84);
+            this.guna2Panel3.Size = new System.Drawing.Size(990, 84);
             this.guna2Panel3.TabIndex = 0;
             // 
             // GGButtonAddNewPerson
@@ -560,7 +569,7 @@
             this.GGButtonAddNewPerson.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonAddNewPerson.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPerson.Image")));
             this.GGButtonAddNewPerson.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.GGButtonAddNewPerson.Location = new System.Drawing.Point(722, 21);
+            this.GGButtonAddNewPerson.Location = new System.Drawing.Point(774, 22);
             this.GGButtonAddNewPerson.Name = "GGButtonAddNewPerson";
             this.GGButtonAddNewPerson.Size = new System.Drawing.Size(198, 47);
             this.GGButtonAddNewPerson.TabIndex = 2;
@@ -587,7 +596,7 @@
             this.GGButtonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonCancel.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GGButtonCancel.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GGButtonCancel.Location = new System.Drawing.Point(585, 21);
+            this.GGButtonCancel.Location = new System.Drawing.Point(637, 22);
             this.GGButtonCancel.Name = "GGButtonCancel";
             this.GGButtonCancel.Size = new System.Drawing.Size(129, 47);
             this.GGButtonCancel.TabIndex = 2;
@@ -603,7 +612,7 @@
             this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel2.Location = new System.Drawing.Point(0, 3);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(959, 101);
+            this.guna2Panel2.Size = new System.Drawing.Size(993, 101);
             this.guna2Panel2.TabIndex = 0;
             // 
             // label2
@@ -643,10 +652,15 @@
             // 
             this.openFileDialogSelectImagePerson.FileName = "openFileDialog1";
             // 
+            // ErrorProviderPeopleSection
+            // 
+            this.ErrorProviderPeopleSection.ContainerControl = this;
+            // 
             // UCAddEditPerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.Controls.Add(this.guna2Panel1);
             this.Name = "UCAddEditPerson";
@@ -661,6 +675,7 @@
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProviderPeopleSection)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -701,5 +716,6 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker GDateTimePickerPerson;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.OpenFileDialog openFileDialogSelectImagePerson;
+        private System.Windows.Forms.ErrorProvider ErrorProviderPeopleSection;
     }
 }
