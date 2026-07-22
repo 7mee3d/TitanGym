@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.PeopleBL;
 using TitanGym_Presentation.Core.Helpers;
+using TitanGym_Presentation.Core.Utility;
 
 namespace TitanGym_Presentation.Modules.People.Forms
 {
@@ -16,6 +17,9 @@ namespace TitanGym_Presentation.Modules.People.Forms
     {
 
         private PeopleBL _InformationPerson;
+
+        public event Action<bool> FinihedAddEditPerson;
+
         private enum _EnModePerson : byte
         {
             _kADD_NEW_PERSON = 1,
@@ -54,11 +58,15 @@ namespace TitanGym_Presentation.Modules.People.Forms
             _PrepareInformationPerson();
 
             if (!string.IsNullOrWhiteSpace(GPictureBoxImagePerson.ImageLocation))
-                _InformationPerson.ImagePath = HelpersPL.SaveTheImage(GPictureBoxImagePerson.ImageLocation);
+                _InformationPerson.ImagePath = Utility.SaveTheImage(GPictureBoxImagePerson.ImageLocation);
 
             if (_InformationPerson.SaveModePerson())
+            {
                 if (_ModePerson == _EnModePerson._kADD_NEW_PERSON) MessageBox.Show("The Person Added Sccessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else MessageBox.Show("The Person Updated Sccessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                FinihedAddEditPerson?.Invoke(true);
+            }
             else MessageBox.Show("The Person Added Faild", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             GGButtonAddNewPerson.Text = "Update Person";

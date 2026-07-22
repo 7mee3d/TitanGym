@@ -114,5 +114,8 @@ namespace TitanGym_BusinessLayer.PeopleBL
                 default: return false;
             }
         }
+
+        public static bool DeletePerson(int personID)
+            => PeopleDALQueries.DeletePerson(personID);
     }
 }

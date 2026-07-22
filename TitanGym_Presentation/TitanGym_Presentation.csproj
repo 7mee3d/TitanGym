@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Helpers\HelpersPL.cs" />
+    <Compile Include="Core\Utility\Utility.cs" />
     <Compile Include="Modules\Main PL TitanGym\MainPlTitanGymStartProgram.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.PeopleBL;
+using TitanGym_Presentation.Core.Helpers;
+using TitanGym_Presentation.Core.Utility;
 
 namespace TitanGym_Presentation.Modules.People.Forms
 {
@@ -22,7 +24,7 @@ namespace TitanGym_Presentation.Modules.People.Forms
 
         private void _LoadAllInformationPeopleInDGV()
         {
-
+            DT_AllPeople = null;
             DT_AllPeople = PeopleBL.GetAllPeople();
             GDataGridViewPeople.DataSource = DT_AllPeople;
 
@@ -69,7 +71,30 @@ namespace TitanGym_Presentation.Modules.People.Forms
 
         private void GGButtonAddNewPerson_Click(object sender, EventArgs e)
         {
-            AppNavigator.Show(new UCAddEditPerson());
+            var AddEditPerson = new UCAddEditPerson();
+
+            AddEditPerson.FinihedAddEditPerson += (Result) =>
+            {
+                if (Result) UCPeopleList_Load(null, null);
+            };
+
+
+            AppNavigator.Show(AddEditPerson);
+        }
+
+        private void deletePersonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure to be delete this person ?", "Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.Cancel)
+                return;
+            int PersonID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewPeople, 0);
+
+            if (PersonID > 0 && PeopleBL.DeletePerson(PersonID))
+            {
+                MessageBox.Show("The person deleted sccessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                UCPeopleList_Load(null, null);
+            }
+            else MessageBox.Show("The person deleted Faild", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
         }
     }
 }

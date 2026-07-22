@@ -39,5 +39,36 @@ namespace TitanGym_DataAccessLayer.People
 
             return DT_AllPeople;
         }
+
+        public static bool DeletePerson(int personID)
+        {
+
+            bool IsDeletePerson = false;
+
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+
+                                DELETE FROM People
+                                WHERE PersonID = @PersonID
+
+                             ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    command.AddWithParameter<int>("@PersonID", personID);
+
+                    connection.Open();
+
+                    IsDeletePerson = command.ExecuteNonQuery() > 0;
+
+                }
+            }
+
+            return IsDeletePerson;
+        }
     }
 }
