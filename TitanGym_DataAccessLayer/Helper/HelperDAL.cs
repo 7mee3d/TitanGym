@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Configuration;
+using System.Data.SqlClient;
+
 
 namespace TitanGym_DataAccessLayer.Helper
 {
-    public class HelperDAL
+    public static class HelperDAL
     {
         /// <summary>
-        /// Gets the Connection String DVLD
+        /// Gets the Connection String Titan Gym 
         /// </summary>
         public static string TitanGymConnectionString
         {
@@ -19,5 +16,9 @@ namespace TitanGym_DataAccessLayer.Helper
                 return ConfigurationManager.ConnectionStrings["TitanGymConnectionString"].ConnectionString;
             }
         }
+
+        public static void AddWithParameter<T>(this SqlCommand YourCommand, string columnName, T valueColumn) =>
+            YourCommand.Parameters.AddWithValue(columnName, valueColumn);
+
     }
 }

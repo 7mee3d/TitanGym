@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Helpers\HelpersPL.cs" />
     <Compile Include="Modules\Main PL TitanGym\MainPlTitanGymStartProgram.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +113,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Images\" />
     <Folder Include="Modules\Attendance\Controls\" />
     <Folder Include="Modules\Attendance\Forms\" />
     <Folder Include="Modules\Dashboard\Controls\" />
