@@ -20,6 +20,7 @@ namespace TitanGym_BusinessLayer.PeopleBL
         public string SecondName { get; set; }
         public string ThirdName { get; set; }
         public string LastName { get; set; }
+        public string FullName { get => FirstName + " " + SecondName + " " + ThirdName + " " + LastName;  }
         public char Gender { get; set; }
         public string PhoneNumber { get; set; }
         public string EmailAddress { get; set; }
