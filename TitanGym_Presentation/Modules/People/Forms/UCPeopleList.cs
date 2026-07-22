@@ -96,5 +96,20 @@ namespace TitanGym_Presentation.Modules.People.Forms
             else MessageBox.Show("The person deleted Faild", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
         }
+
+        private void updateInformationPersonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int PersonID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewPeople, 0);
+
+            var AddEditPerson = new UCAddEditPerson(PersonID);
+
+            AddEditPerson.FinihedAddEditPerson += (Result) =>
+            {
+                if (Result) UCPeopleList_Load(null, null);
+            };
+
+
+            AppNavigator.Show(AddEditPerson);
+        }
     }
 }

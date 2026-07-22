@@ -9,22 +9,30 @@ namespace TitanGym_Presentation.Modules.People.Forms
 {
     public partial class UCAddEditPerson : UserControl
     {
-
-        private PeopleBL _InformationPerson;
-
-        public event Action<bool> FinihedAddEditPerson;
-
         private enum _EnModePerson : byte
         {
             _kADD_NEW_PERSON = 1,
             _kUPDATE_INFORMATION_PERSON = 2
         }
 
+
+        private PeopleBL _InformationPerson;
+        private readonly int _PersonID;
         private _EnModePerson _ModePerson = _EnModePerson._kADD_NEW_PERSON;
+        public event Action<bool> FinihedAddEditPerson;
+
 
         public UCAddEditPerson()
         {
             InitializeComponent();
+            _ModePerson = _EnModePerson._kADD_NEW_PERSON;
+        }
+
+        public UCAddEditPerson(int personID)
+        {
+            InitializeComponent();
+            _PersonID = personID;
+            _ModePerson = _EnModePerson._kUPDATE_INFORMATION_PERSON;
         }
 
 
@@ -97,7 +105,7 @@ namespace TitanGym_Presentation.Modules.People.Forms
 
             GGButtonAddNewPerson.Text = "Update Person";
             _ModePerson = _EnModePerson._kUPDATE_INFORMATION_PERSON;
-            lblTitlePerson.Text = "Update New Person";
+            lblTitlePerson.Text = "Update Person";
         }
 
         private void _DefaultValues()
@@ -110,14 +118,48 @@ namespace TitanGym_Presentation.Modules.People.Forms
                 return;
             }
 
+
+            _InformationPerson = PeopleBL.FindThePersonBy(_PersonID);
+
+            if (_InformationPerson == null) return;
+
+            GGButtonAddNewPerson.Text = "Update Person";
+            lblTitlePerson.Text = "Update Person";
         }
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
            => AppNavigator.Back();
 
+        private void _LoadInformationPersonToControls()
+        {
+            if (_InformationPerson != null)
+            {
+                GTextBoxFirstName.Text = _InformationPerson.FirstName;
+                GTextBoxSecondName.Text = _InformationPerson.SecondName;
+                GTextBoxThirdName.Text = _InformationPerson.ThirdName;
+                GTextBoxThirdName.Text = _InformationPerson.LastName;
+
+                GTextBoxResidentialAddress.Text = _InformationPerson.ResidentialAddress;
+
+                if (_InformationPerson.Gender == 'M')
+                    GGButtonMale.Checked = true;
+                else GGButtonFemale.Checked = true;
+
+                GTextBoxEmailAddress.Text = _InformationPerson.EmailAddress;
+                GTextBoxPhoneNumber.Text = _InformationPerson.PhoneNumber;
+                GDateTimePickerPerson.Value = _InformationPerson.DateOfBirth;
+
+                if (!string.IsNullOrWhiteSpace(_InformationPerson.ImagePath))
+                    GPictureBoxImagePerson.ImageLocation = Utility.DirectoryPath + _InformationPerson.ImagePath;
+            }
+        }
+
         private void UCAddEditPerson_Load(object sender, EventArgs e)
         {
             _DefaultValues();
+
+            if (_ModePerson == _EnModePerson._kUPDATE_INFORMATION_PERSON)
+                _LoadInformationPersonToControls();
         }
 
         private void GGButtonAddNewPerson_Click(object sender, EventArgs e)
@@ -149,6 +191,7 @@ namespace TitanGym_Presentation.Modules.People.Forms
             else e.Cancel = false;
 
         }
+
 
     }
 }

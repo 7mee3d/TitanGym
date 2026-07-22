@@ -78,8 +78,37 @@ namespace TitanGym_BusinessLayer.PeopleBL
             EnModePerson = _EnModePeople._kADD_NEW_PERSON;
         }
 
-        public static DataTable GetAllPeople() => PeopleDALQueries.GetAllPeople();
+        public static PeopleBL FindThePersonBy(int personID)
+        {
 
+            string firstName = "", secondName = "", thirdName = "", lastName = "", phoneNumber = "", emailAddress = "", residentialAddress = "", imagePath = "";
+            char gender = '\0';
+            DateTime dateOfBirth = DateTime.Now;
+
+            bool IsFounded = PeopleDALQueries.FindThePersonBy(
+
+                personID,
+                ref firstName,
+                ref secondName,
+                ref thirdName,
+                ref lastName,
+                ref gender,
+                ref phoneNumber,
+                ref emailAddress,
+                ref residentialAddress,
+                ref dateOfBirth,
+                ref imagePath
+
+                );
+
+
+            if (IsFounded)
+                return new PeopleBL(personID, firstName, secondName, thirdName, lastName, gender, phoneNumber, emailAddress, residentialAddress, dateOfBirth, imagePath);
+            else return null;
+
+        }
+
+        public static DataTable GetAllPeople() => PeopleDALQueries.GetAllPeople();
 
         private bool _AddNewPerson()
         {
@@ -101,6 +130,24 @@ namespace TitanGym_BusinessLayer.PeopleBL
             return this.PersonID != -1;
         }
 
+        private bool _UpdateInformationPerson()
+        {
+            return PeopleDALCommands.UpdateInformationPerson(
+
+               this.PersonID,
+               this.FirstName,
+               this.SecondName,
+               this.ThirdName,
+               this.LastName,
+               this.Gender,
+               this.PhoneNumber,
+               this.EmailAddress,
+               this.ResidentialAddress,
+               this.DateOfBirth,
+               this.ImagePath
+
+               );
+        }
 
         public bool SaveModePerson()
         {
@@ -110,6 +157,9 @@ namespace TitanGym_BusinessLayer.PeopleBL
                 case _EnModePeople._kADD_NEW_PERSON:
                     EnModePerson = _EnModePeople._kUPDATE_INFORMATION_PERSON;
                     return _AddNewPerson();
+
+                case _EnModePeople._kUPDATE_INFORMATION_PERSON:
+                    return _UpdateInformationPerson();
 
                 default: return false;
             }

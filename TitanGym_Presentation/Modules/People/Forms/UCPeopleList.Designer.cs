@@ -43,6 +43,8 @@
             this.GGButtonAddNewPerson = new Guna.UI2.WinForms.Guna2GradientButton();
             this.ContextMenuStripPeopleSection = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.deletePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.updateInformationPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
@@ -203,9 +205,11 @@
             // ContextMenuStripPeopleSection
             // 
             this.ContextMenuStripPeopleSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deletePersonToolStripMenuItem});
+            this.deletePersonToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.updateInformationPersonToolStripMenuItem});
             this.ContextMenuStripPeopleSection.Name = "ContextMenuStripPeopleSection";
-            this.ContextMenuStripPeopleSection.Size = new System.Drawing.Size(176, 42);
+            this.ContextMenuStripPeopleSection.Size = new System.Drawing.Size(254, 108);
             // 
             // deletePersonToolStripMenuItem
             // 
@@ -213,9 +217,24 @@
             this.deletePersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deletePersonToolStripMenuItem.Image")));
             this.deletePersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.deletePersonToolStripMenuItem.Name = "deletePersonToolStripMenuItem";
-            this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(175, 38);
+            this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
             this.deletePersonToolStripMenuItem.Text = "Delete Person";
             this.deletePersonToolStripMenuItem.Click += new System.EventHandler(this.deletePersonToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(250, 6);
+            // 
+            // updateInformationPersonToolStripMenuItem
+            // 
+            this.updateInformationPersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.updateInformationPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationPersonToolStripMenuItem.Image")));
+            this.updateInformationPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateInformationPersonToolStripMenuItem.Name = "updateInformationPersonToolStripMenuItem";
+            this.updateInformationPersonToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
+            this.updateInformationPersonToolStripMenuItem.Text = "Update Information Person";
+            this.updateInformationPersonToolStripMenuItem.Click += new System.EventHandler(this.updateInformationPersonToolStripMenuItem_Click);
             // 
             // UCPeopleList
             // 
@@ -251,5 +270,7 @@
         private Guna.UI2.WinForms.Guna2DataGridView GDataGridViewPeople;
         private System.Windows.Forms.ContextMenuStrip ContextMenuStripPeopleSection;
         private System.Windows.Forms.ToolStripMenuItem deletePersonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem updateInformationPersonToolStripMenuItem;
     }
 }
