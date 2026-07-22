@@ -34,7 +34,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.GPictureBoxImagePerson = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblResidentialAddress = new System.Windows.Forms.Label();
             this.lblEmailAddress = new System.Windows.Forms.Label();
             this.lblPhoneNumber = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@
             this.lblFullName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblPersonID = new System.Windows.Forms.Label();
+            this.GPictureBoxImagePerson = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GPictureBoxImagePerson)).BeginInit();
             this.SuspendLayout();
@@ -115,26 +115,12 @@
             this.guna2Panel5.Size = new System.Drawing.Size(198, 209);
             this.guna2Panel5.TabIndex = 6;
             // 
-            // GPictureBoxImagePerson
-            // 
-            this.GPictureBoxImagePerson.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.GPictureBoxImagePerson.BorderRadius = 25;
-            this.GPictureBoxImagePerson.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.GPictureBoxImagePerson.Image = global::TitanGym_Presentation.Properties.Resources.account_circle_Icon_TitanGym_50;
-            this.GPictureBoxImagePerson.ImageRotate = 0F;
-            this.GPictureBoxImagePerson.Location = new System.Drawing.Point(3, 3);
-            this.GPictureBoxImagePerson.Name = "GPictureBoxImagePerson";
-            this.GPictureBoxImagePerson.Size = new System.Drawing.Size(192, 203);
-            this.GPictureBoxImagePerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.GPictureBoxImagePerson.TabIndex = 1;
-            this.GPictureBoxImagePerson.TabStop = false;
-            // 
             // lblResidentialAddress
             // 
             this.lblResidentialAddress.AutoSize = true;
             this.lblResidentialAddress.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResidentialAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.lblResidentialAddress.Location = new System.Drawing.Point(406, 128);
+            this.lblResidentialAddress.Location = new System.Drawing.Point(408, 128);
             this.lblResidentialAddress.Name = "lblResidentialAddress";
             this.lblResidentialAddress.Size = new System.Drawing.Size(16, 21);
             this.lblResidentialAddress.TabIndex = 1;
@@ -145,7 +131,7 @@
             this.lblEmailAddress.AutoSize = true;
             this.lblEmailAddress.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.lblEmailAddress.Location = new System.Drawing.Point(367, 177);
+            this.lblEmailAddress.Location = new System.Drawing.Point(370, 177);
             this.lblEmailAddress.Name = "lblEmailAddress";
             this.lblEmailAddress.Size = new System.Drawing.Size(16, 21);
             this.lblEmailAddress.TabIndex = 1;
@@ -167,7 +153,7 @@
             this.lblGender.AutoSize = true;
             this.lblGender.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.lblGender.Location = new System.Drawing.Point(708, 79);
+            this.lblGender.Location = new System.Drawing.Point(712, 79);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(16, 21);
             this.lblGender.TabIndex = 1;
@@ -205,6 +191,20 @@
             this.lblPersonID.Size = new System.Drawing.Size(16, 21);
             this.lblPersonID.TabIndex = 1;
             this.lblPersonID.Text = "-";
+            // 
+            // GPictureBoxImagePerson
+            // 
+            this.GPictureBoxImagePerson.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
+            this.GPictureBoxImagePerson.BorderRadius = 25;
+            this.GPictureBoxImagePerson.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
+            this.GPictureBoxImagePerson.Image = global::TitanGym_Presentation.Properties.Resources.account_circle_Icon_TitanGym_50;
+            this.GPictureBoxImagePerson.ImageRotate = 0F;
+            this.GPictureBoxImagePerson.Location = new System.Drawing.Point(3, 3);
+            this.GPictureBoxImagePerson.Name = "GPictureBoxImagePerson";
+            this.GPictureBoxImagePerson.Size = new System.Drawing.Size(192, 203);
+            this.GPictureBoxImagePerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.GPictureBoxImagePerson.TabIndex = 1;
+            this.GPictureBoxImagePerson.TabStop = false;
             // 
             // ctrlShowInformationPerson
             // 

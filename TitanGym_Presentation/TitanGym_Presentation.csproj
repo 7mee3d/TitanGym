@@ -80,6 +80,12 @@
     <Compile Include="Modules\People\Forms\UCPeopleList.Designer.cs">
       <DependentUpon>UCPeopleList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\People\Forms\UCShowInformationPerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\People\Forms\UCShowInformationPerson.Designer.cs">
+      <DependentUpon>UCShowInformationPerson.cs</DependentUpon>
+    </Compile>
     <Compile Include="Navigation\AppNavigator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Modules\Main PL TitanGym\MainPlTitanGymStartProgram.resx">
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\People\Forms\UCPeopleList.resx">
       <DependentUpon>UCPeopleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\People\Forms\UCShowInformationPerson.resx">
+      <DependentUpon>UCShowInformationPerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

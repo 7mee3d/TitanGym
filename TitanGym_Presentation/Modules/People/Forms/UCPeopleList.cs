@@ -3,6 +3,7 @@ using System.Data;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.PeopleBL;
 using TitanGym_Presentation.Core.Helpers;
+using TitanGym_Presentation.Core.Utility;
 
 namespace TitanGym_Presentation.Modules.People.Forms
 {
@@ -79,10 +80,13 @@ namespace TitanGym_Presentation.Modules.People.Forms
         {
             if (MessageBox.Show("Are you sure to be delete this person ?", "Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.Cancel)
                 return;
+
             int PersonID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewPeople, 0);
+            string ImagePathPerson = PeopleBL.FindThePersonBy(PersonID).ImagePath;
 
             if (PersonID > 0 && PeopleBL.DeletePerson(PersonID))
             {
+                Utility.DeleteImageFromFile(ImagePathPerson);
                 MessageBox.Show("The person deleted sccessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 UCPeopleList_Load(null, null);
             }
@@ -115,6 +119,21 @@ namespace TitanGym_Presentation.Modules.People.Forms
             };
 
             AppNavigator.Show(AddEditPerson);
+        }
+
+        private void showInformationPersonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int PersonID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewPeople, 0);
+
+            var ucShowInformationPerson = new UCShowInformationPerson(PersonID);
+
+            ucShowInformationPerson.FinishedShowInfoPerson += result =>
+            {
+                if (result) UCPeopleList_Load(null, null);
+            };
+
+            AppNavigator.Show(ucShowInformationPerson);
+
         }
     }
 }

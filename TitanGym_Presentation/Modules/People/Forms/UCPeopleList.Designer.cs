@@ -29,29 +29,31 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCPeopleList));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCPeopleList));
             this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GDataGridViewPeople = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.GGButtonAddNewPerson = new Guna.UI2.WinForms.Guna2GradientButton();
             this.ContextMenuStripPeopleSection = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.deletePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.updateInformationPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.GGButtonAddNewPerson = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.deletePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateInformationPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.showInformationPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewPeople)).BeginInit();
             this.ContextMenuStripPeopleSection.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -88,16 +90,6 @@
             this.label2.Size = new System.Drawing.Size(110, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Quick Filters:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // guna2GradientPanel2
             // 
@@ -180,6 +172,29 @@
             this.GDataGridViewPeople.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
             this.GDataGridViewPeople.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             // 
+            // ContextMenuStripPeopleSection
+            // 
+            this.ContextMenuStripPeopleSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showInformationPersonToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.deletePersonToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.addNewPersonToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.updateInformationPersonToolStripMenuItem});
+            this.ContextMenuStripPeopleSection.Name = "ContextMenuStripPeopleSection";
+            this.ContextMenuStripPeopleSection.Size = new System.Drawing.Size(254, 196);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(250, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(250, 6);
+            // 
             // GGButtonAddNewPerson
             // 
             this.GGButtonAddNewPerson.BorderRadius = 6;
@@ -204,17 +219,6 @@
             this.GGButtonAddNewPerson.TextOffset = new System.Drawing.Point(10, 0);
             this.GGButtonAddNewPerson.Click += new System.EventHandler(this.GGButtonAddNewPerson_Click);
             // 
-            // ContextMenuStripPeopleSection
-            // 
-            this.ContextMenuStripPeopleSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deletePersonToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.addNewPersonToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.updateInformationPersonToolStripMenuItem});
-            this.ContextMenuStripPeopleSection.Name = "ContextMenuStripPeopleSection";
-            this.ContextMenuStripPeopleSection.Size = new System.Drawing.Size(254, 152);
-            // 
             // deletePersonToolStripMenuItem
             // 
             this.deletePersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -225,10 +229,15 @@
             this.deletePersonToolStripMenuItem.Text = "Delete Person";
             this.deletePersonToolStripMenuItem.Click += new System.EventHandler(this.deletePersonToolStripMenuItem_Click);
             // 
-            // toolStripSeparator1
+            // addNewPersonToolStripMenuItem
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(250, 6);
+            this.addNewPersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.addNewPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewPersonToolStripMenuItem.Image")));
+            this.addNewPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addNewPersonToolStripMenuItem.Name = "addNewPersonToolStripMenuItem";
+            this.addNewPersonToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
+            this.addNewPersonToolStripMenuItem.Text = "Add New Person";
+            this.addNewPersonToolStripMenuItem.Click += new System.EventHandler(this.addNewPersonToolStripMenuItem_Click);
             // 
             // updateInformationPersonToolStripMenuItem
             // 
@@ -240,20 +249,30 @@
             this.updateInformationPersonToolStripMenuItem.Text = "Update Information Person";
             this.updateInformationPersonToolStripMenuItem.Click += new System.EventHandler(this.updateInformationPersonToolStripMenuItem_Click);
             // 
-            // toolStripSeparator2
+            // pictureBox1
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(250, 6);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(27, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // addNewPersonToolStripMenuItem
+            // toolStripSeparator3
             // 
-            this.addNewPersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.addNewPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewPersonToolStripMenuItem.Image")));
-            this.addNewPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.addNewPersonToolStripMenuItem.Name = "addNewPersonToolStripMenuItem";
-            this.addNewPersonToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
-            this.addNewPersonToolStripMenuItem.Text = "Add New Person";
-            this.addNewPersonToolStripMenuItem.Click += new System.EventHandler(this.addNewPersonToolStripMenuItem_Click);
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(250, 6);
+            // 
+            // showInformationPersonToolStripMenuItem
+            // 
+            this.showInformationPersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showInformationPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationPersonToolStripMenuItem.Image")));
+            this.showInformationPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showInformationPersonToolStripMenuItem.Name = "showInformationPersonToolStripMenuItem";
+            this.showInformationPersonToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
+            this.showInformationPersonToolStripMenuItem.Text = "Show Information Person";
+            this.showInformationPersonToolStripMenuItem.Click += new System.EventHandler(this.showInformationPersonToolStripMenuItem_Click);
             // 
             // UCPeopleList
             // 
@@ -269,10 +288,10 @@
             this.Load += new System.EventHandler(this.UCPeopleList_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewPeople)).EndInit();
             this.ContextMenuStripPeopleSection.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,5 +312,7 @@
         private System.Windows.Forms.ToolStripMenuItem updateInformationPersonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewPersonToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem showInformationPersonToolStripMenuItem;
     }
 }
