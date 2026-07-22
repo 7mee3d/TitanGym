@@ -65,6 +65,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.openFileDialogSelectImagePerson = new System.Windows.Forms.OpenFileDialog();
             this.ErrorProviderPeopleSection = new System.Windows.Forms.ErrorProvider(this.components);
+            this.GGButtonDeleteImagePerson = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GPictureBoxImagePerson)).BeginInit();
@@ -326,7 +327,7 @@
             this.GTextBoxEmailAddress.SelectedText = "";
             this.GTextBoxEmailAddress.Size = new System.Drawing.Size(432, 46);
             this.GTextBoxEmailAddress.TabIndex = 1;
-            this.GTextBoxEmailAddress.Validating += new System.ComponentModel.CancelEventHandler(this.ValidationTextBox);
+            this.GTextBoxEmailAddress.Validating += new System.ComponentModel.CancelEventHandler(this.GTextBoxEmailAddress_Validating);
             // 
             // GTextBoxResidentialAddress
             // 
@@ -463,7 +464,7 @@
             this.GPictureBoxImagePerson.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
             this.GPictureBoxImagePerson.BorderRadius = 25;
             this.GPictureBoxImagePerson.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.GPictureBoxImagePerson.Image = ((System.Drawing.Image)(resources.GetObject("GPictureBoxImagePerson.Image")));
+            this.GPictureBoxImagePerson.Image = global::TitanGym_Presentation.Properties.Resources.account_circle_Icon_TitanGym_50;
             this.GPictureBoxImagePerson.ImageRotate = 0F;
             this.GPictureBoxImagePerson.Location = new System.Drawing.Point(3, 3);
             this.GPictureBoxImagePerson.Name = "GPictureBoxImagePerson";
@@ -480,6 +481,7 @@
             this.guna2Panel4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.guna2Panel4.BorderThickness = 1;
             this.guna2Panel4.Controls.Add(this.GGButtonUpload);
+            this.guna2Panel4.Controls.Add(this.GGButtonDeleteImagePerson);
             this.guna2Panel4.Controls.Add(this.label13);
             this.guna2Panel4.Controls.Add(this.label12);
             this.guna2Panel4.Controls.Add(this.label11);
@@ -504,12 +506,12 @@
             this.GGButtonUpload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.GGButtonUpload.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GGButtonUpload.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GGButtonUpload.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonUpload.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F);
             this.GGButtonUpload.ForeColor = System.Drawing.Color.White;
             this.GGButtonUpload.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GGButtonUpload.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GGButtonUpload.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonUpload.Image")));
-            this.GGButtonUpload.Location = new System.Drawing.Point(157, 16);
+            this.GGButtonUpload.Location = new System.Drawing.Point(156, 16);
             this.GGButtonUpload.Name = "GGButtonUpload";
             this.GGButtonUpload.Size = new System.Drawing.Size(69, 58);
             this.GGButtonUpload.TabIndex = 2;
@@ -670,6 +672,32 @@
             // 
             this.ErrorProviderPeopleSection.ContainerControl = this;
             // 
+            // GGButtonDeleteImagePerson
+            // 
+            this.GGButtonDeleteImagePerson.Animated = true;
+            this.GGButtonDeleteImagePerson.AnimatedGIF = true;
+            this.GGButtonDeleteImagePerson.BackColor = System.Drawing.Color.Transparent;
+            this.GGButtonDeleteImagePerson.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonDeleteImagePerson.BorderRadius = 5;
+            this.GGButtonDeleteImagePerson.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GGButtonDeleteImagePerson.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonDeleteImagePerson.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonDeleteImagePerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonDeleteImagePerson.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonDeleteImagePerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GGButtonDeleteImagePerson.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.GGButtonDeleteImagePerson.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.GGButtonDeleteImagePerson.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F);
+            this.GGButtonDeleteImagePerson.ForeColor = System.Drawing.Color.White;
+            this.GGButtonDeleteImagePerson.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.GGButtonDeleteImagePerson.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.GGButtonDeleteImagePerson.Image = global::TitanGym_Presentation.Properties.Resources.Delete_Icon_TitanGym_24;
+            this.GGButtonDeleteImagePerson.Location = new System.Drawing.Point(156, 16);
+            this.GGButtonDeleteImagePerson.Name = "GGButtonDeleteImagePerson";
+            this.GGButtonDeleteImagePerson.Size = new System.Drawing.Size(69, 58);
+            this.GGButtonDeleteImagePerson.TabIndex = 2;
+            this.GGButtonDeleteImagePerson.Click += new System.EventHandler(this.GGButtonDeleteImagePerson_Click);
+            // 
             // UCAddEditPerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -731,5 +759,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.OpenFileDialog openFileDialogSelectImagePerson;
         private System.Windows.Forms.ErrorProvider ErrorProviderPeopleSection;
+        private Guna.UI2.WinForms.Guna2GradientButton GGButtonDeleteImagePerson;
     }
 }

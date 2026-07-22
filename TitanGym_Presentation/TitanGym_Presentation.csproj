@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Core\Helpers\HelpersPL.cs" />
     <Compile Include="Core\Utility\Utility.cs" />
+    <Compile Include="Core\Validation\Validation.cs" />
     <Compile Include="Modules\Main PL TitanGym\MainPlTitanGymStartProgram.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +93,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Core\Configuration\packages.config" />
     <None Include="Properties\Settings.settings">
@@ -132,6 +134,12 @@
     <Folder Include="Modules\Subscriptions\Forms\" />
     <Folder Include="Modules\Trainers\Controls\" />
     <Folder Include="Modules\Trainers\Forms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_circle_Icon_TitanGym_50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

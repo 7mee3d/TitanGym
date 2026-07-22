@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Data;
-using System.Runtime.CompilerServices;
 using TitanGym_DataAccessLayer.People;
 using TitanGym_DataAccessLayer.People.People_DAL_Commands;
 

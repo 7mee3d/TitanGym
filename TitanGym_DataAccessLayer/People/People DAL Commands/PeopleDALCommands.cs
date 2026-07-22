@@ -1,10 +1,5 @@
-﻿
-
-using System;
+﻿using System;
 using System.Data.SqlClient;
-using System.Net.Mail;
-using System.Reflection;
-using System.Runtime.Remoting.Messaging;
 using TitanGym_DataAccessLayer.Helper;
 
 namespace TitanGym_DataAccessLayer.People.People_DAL_Commands

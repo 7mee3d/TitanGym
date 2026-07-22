@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.PeopleBL;
 using TitanGym_Presentation.Core.Helpers;
-using TitanGym_Presentation.Core.Utility;
 
 namespace TitanGym_Presentation.Modules.People.Forms
 {

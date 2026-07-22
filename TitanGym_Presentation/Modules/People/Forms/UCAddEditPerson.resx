@@ -118,6 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="GGButtonUpload.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAFlSURBVEhL7VSxTsQwDL3xRkY+4cYbGfkUPoE/uJHxRkZGJHYoTYdMXBPHUSUWRj6D8VCSJnHc
+        QAsLQronRals5z07sbtanfAvIBTeCYVHofHY6XEHs+dxP8aTsheOLC+bBOJqjLnk5xahIFf4Rn3yXa6d
+        LYo1/S9EEnkPV9wX8azMdYzjvm/h7tcfhDLzGoTCwV8d4A33VSGMvY9ZSSnX1NeC2Xfa7qjNxTiB2Sra
+        w+tmvO/0gIXfVxUemYvU4ieIWQiFPfcFctI9qhShdqHxtjzt7lybZhSokvPWzDMRRFJyaZmPgiQYbbXE
+        Tg87LwCwjQSu993uuojGhvcYxZXNgxiNNJjiAeDc7SHrEPcI0ts4kogifHMCEYu6xVc9Feh9doCyiGRY
+        koiUw9mkAj/66e6+FpkTKN+ADZ54gW3ulrIrUkxu5ez33+NPMNlZF1EIhZKSU4H2gJtMRP+sRULTOTjh
+        T/EJb7IHgTVyq18AAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="GGButtonAddNewPerson.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAPhJREFUSEvt
@@ -126,40 +138,6 @@
         ZPX9MwqKzAjMYkNntuTQzoMn94GYQd49U+sQXa5nVtAf8F0mEZgBqVu0ZSqfW30XIZ0ACxFdFJuvf+/a
         joXgYeJQiX3nsgK87rgM8LIHUpVLbPQndeayIR9XpJPJQ3osDvscuTnJ7AThzF2yqcM1SaacY3auWVk0
         L90l/WZy8RTMAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="GPictureBoxImagePerson.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAA9JJREFUaEPt
-        mjtv2zAQgD127E/I6DFjxm7NmK1rtqzZOmbMmLGjx4wZClQWFUBT9aBIG+ji0T/BY8YUR5kyeSTVo2QZ
-        QeEPOBjQ3VE8Po5HJbPZmTNnTsrPQsyzSjyyWqxZLd4tqcQm4/KJ/eaX2O9D8MrlN6fTJGnewBe3d3JY
-        vfrudm6YZHz1iNufnLQQc9yRVmTbqVq8sKa5yyp5lZTlBQjj/JI18k7pHD+17NrfUy27tJaJ04lavA9Z
-        Imktbsw2su63SbDtUWG12OEAYLSxXSz+GW7esN1RcEaOy2dsMxZWiYUVTHXkYJyZ4NOt46RsvkwSDN4T
-        1KWU5/knxuUCzg4lXD7n+foztvOhkoO1AkbumV+VvFLZRGcUwkyoAMwRdYQ2wkmDZmZMNrMaIuwJGHG3
-        41jaFE2ZnVe+ejZ9sZ5EVssH8+VY70N3EkQlhEpsllVzD+eHr2TB/j66ttShKeIPTfOFlH2haijDxzfi
-        eZ5bMwY+2AaTlGtrv2B9L/igwnofXefgt+S3WK9hpbwd1HbVth118JovWnJ+jfU+zGWFdZjYQMyBzYjJ
-        QqHXJPVFQIxPbCDAIRCiDxR6Y15E8Ymx1egglB8lFaccLkWHKhbrQ3RnjfKTD1ivgcwzJBCzaqYkCYh8
-        qx2WVXWP9SFUmjU6CKUGtlEHrGEDPtgmRNKmcOWX1mKL9Q6tsVTTCMsM6/swO9mNXi1eMl3mGLMGgv37
-        iF7ypjHl/DDJt+HyxEwGpI4guvprXzJhvcOYQDTtKX5Ix5ZUYoPtKViBUAaifeF+s0cuLQzk/5TLJ9jg
-        aSFusD4GdVWOmVFVcu8DidmMU2MlE8qsqhGEQFRJIMfdA44I4yLXgZCKRzhsDlNIq3pPgbmsoJDEei9R
-        a/FEdLMR0ye4xWnHj7BPoJoeFMiSF9cx1awGrrn7EmSHzw1DdmDju6+EMP2p1XiH5Vz0O8M12NNhmlRi
-        gdszsfcsfVA77KuuvwFWi1Lr/TOgZ7UteVy94RdIqbZtuBjtxWqEi9x4/gN3yLaVT6kQc7u12Qye/csX
-        9J39vkbTwdqtRQDTao2ksemwDBmt0Nd8faW1nlPuIH3gD3RYou7QAfoGCAT6gH0G4XwybaXEdmOBYtOz
-        l3bYbhT4LhHanGNgXGxwINjmKPhmZlkUvamZgvN5dIqZwJjFm3Xn6PmWFSK0NzI+8qM1Ff8fZqyL1BpK
-        G7iDQMpN/4h5Vsuv+yzlfDq1/Pl6XHYaQih9OoL3l0dIpfnUQP1jFpp0ad7yI6TvSXgp1xdwOWtvmrjj
-        Yvuh/2HgzJn/mL/s+i7Z2TixRgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="GGButtonUpload.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAWVJREFUSEvt
-        VLFOxDAMvfFGRj7hxhsZ+RQ+gT+4kfFGRkYkdihNh0xcE8dRJRZGPoPxUJImcdxACwtCuidFqWznPTux
-        u1qd8C8gFN4JhUeh8djpcQez53E/xpOyF44sL5sE4mqMueTnFqEgV/hGffJdrp0tijX9L0QSeQ9X3Bfx
-        rMx1jOO+b+Hu1x+EMvMahMLBXx3gDfdVIYy9j1lJKdfU14LZd9ruqM3FOIHZKtrD62a87/SAhd9XFR6Z
-        i9TiJ4hZCIU99wVy0j2qFKF2ofG2PO3uXJtmFKiS89bMMxFEUnJpmY+CJBhttcRODzsvALCNBK733e66
-        iMaG9xjFlc2DGI00mOIB4NztIesQ9wjS2ziSiCJ8cwIRi7rFVz0V6H12gLKIZFiSiJTD2aQCP/rp7r4W
-        mRMo34ANnniBbe6WsitSTG7l7Pff408w2VkXUQiFkpJTgfaAm0xE/6xFQtM5OOFP8QlvsgeBNXKrXwAA
-        AABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="openFileDialogSelectImagePerson.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

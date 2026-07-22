@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.PeopleBL;
 using TitanGym_Presentation.Core.Utility;
+using TitanGym_Presentation.Core.Validation;
+using TitanGym_Presentation.Properties;
 
 namespace TitanGym_Presentation.Modules.People.Forms
 {
@@ -90,8 +92,7 @@ namespace TitanGym_Presentation.Modules.People.Forms
 
             _PrepareInformationPerson();
 
-            if (!string.IsNullOrWhiteSpace(GPictureBoxImagePerson.ImageLocation))
-                _InformationPerson.ImagePath = Utility.SaveTheImage(GPictureBoxImagePerson.ImageLocation);
+            _HandleImagePerson();
 
             if (_InformationPerson.SaveModePerson())
             {
@@ -120,11 +121,41 @@ namespace TitanGym_Presentation.Modules.People.Forms
 
 
             _InformationPerson = PeopleBL.FindThePersonBy(_PersonID);
-
+            if (!string.IsNullOrWhiteSpace(_InformationPerson.ImagePath))
+            {
+                GGButtonDeleteImagePerson.Visible = true;
+                GGButtonUpload.Visible = false;
+            }
             if (_InformationPerson == null) return;
 
             GGButtonAddNewPerson.Text = "Update Person";
             lblTitlePerson.Text = "Update Person";
+        }
+
+        private void _HandleImagePerson()
+        {
+            if (_ModePerson == _EnModePerson._kADD_NEW_PERSON)
+            {
+                if (!string.IsNullOrWhiteSpace(GPictureBoxImagePerson.ImageLocation))
+                    _InformationPerson.ImagePath = Utility.SaveTheImage(GPictureBoxImagePerson.ImageLocation);
+
+                return;
+            }
+
+            if (_InformationPerson.ImagePath == GPictureBoxImagePerson.ImageLocation) return;
+
+
+            if (!string.IsNullOrWhiteSpace(_InformationPerson.ImagePath))
+            {
+                if (Utility.DeleteImageFromFile(_InformationPerson.ImagePath))
+                    if (!string.IsNullOrWhiteSpace(GPictureBoxImagePerson.ImageLocation))
+                        _InformationPerson.ImagePath = Utility.SaveTheImage(GPictureBoxImagePerson.ImageLocation);
+                    else _InformationPerson.ImagePath = null;
+                return;
+            }
+            else
+                _InformationPerson.ImagePath = Utility.SaveTheImage(GPictureBoxImagePerson.ImageLocation);
+
         }
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
@@ -132,6 +163,8 @@ namespace TitanGym_Presentation.Modules.People.Forms
 
         private void _LoadInformationPersonToControls()
         {
+
+
             if (_InformationPerson != null)
             {
                 GTextBoxFirstName.Text = _InformationPerson.FirstName;
@@ -176,6 +209,8 @@ namespace TitanGym_Presentation.Modules.People.Forms
             if (openFileDialogSelectImagePerson.ShowDialog() == DialogResult.OK)
             {
                 GPictureBoxImagePerson.ImageLocation = openFileDialogSelectImagePerson.FileName;
+                GGButtonUpload.Visible = false;
+                GGButtonDeleteImagePerson.Visible = (GPictureBoxImagePerson.ImageLocation != "");
             }
         }
 
@@ -192,6 +227,29 @@ namespace TitanGym_Presentation.Modules.People.Forms
 
         }
 
+        private void GTextBoxEmailAddress_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(GTextBoxEmailAddress.Text.Trim()))
+            {
+                e.Cancel = true;
+                ErrorProviderPeopleSection.SetError(GTextBoxEmailAddress, "The Text Box Empty");
+            }
+            else e.Cancel = false;
 
+
+            if (!Validation.ValidationEmail(GTextBoxEmailAddress.Text.Trim()))
+            {
+                e.Cancel = true;
+                ErrorProviderPeopleSection.SetError(GTextBoxEmailAddress, "The Not Valid");
+            }
+            else e.Cancel = false;
+        }
+
+        private void GGButtonDeleteImagePerson_Click(object sender, EventArgs e)
+        {
+            GPictureBoxImagePerson.ImageLocation = null;
+            GPictureBoxImagePerson.Image = Resources.account_circle_Icon_TitanGym_50;
+            GGButtonUpload.Visible = (GPictureBoxImagePerson.ImageLocation == null);
+        }
     }
 }

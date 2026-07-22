@@ -22,7 +22,7 @@ namespace TitanGym_Presentation.Core.Utility
 
                 return true;
             }
-            catch (Exception ex)
+            catch
             {
                 return false;
             }
@@ -65,6 +65,25 @@ namespace TitanGym_Presentation.Core.Utility
                 Console.WriteLine($"Error {ex.Message}");
 
                 return "";
+            }
+        }
+
+
+        public static bool DeleteImageFromFile(string ImagePath)
+        {
+
+            if (!_CreateDirectory()) return false;
+
+            if (string.IsNullOrWhiteSpace(ImagePath)) return false;
+
+            try
+            {
+                System.IO.File.Delete(DirectoryPath + ImagePath);
+                return true;
+            }
+            catch
+            {
+                return false;
             }
         }
 
