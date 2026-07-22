@@ -1,0 +1,40 @@
+# Visual Studio
+.vs/
+.vscode/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+**/[Bb]in/
+**/[Oo]bj/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+
+# Logs
+*.log
+
+# Test Results
+TestResults/
+
+# Publish
+publish/
+
+# Rider
+.idea/
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# OS files
+Thumbs.db
+Desktop.ini
