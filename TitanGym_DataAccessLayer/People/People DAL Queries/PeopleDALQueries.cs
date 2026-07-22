@@ -22,7 +22,18 @@ namespace TitanGym_DataAccessLayer.People
 
                 string Query = @"
                                             
-                                    SELECT *
+                                    SELECT   
+                                        PersonID ,
+                                        FirstName,
+                                        SecondName,
+                                        ThirdName,
+                                        LastName,
+                                        Gender,
+                                        PhoneNumber,
+                                        EmailAddress,
+                                        ResidentialAddress,
+                                        DateOfBirth
+
                                     FROM People ;
 
                                 ";

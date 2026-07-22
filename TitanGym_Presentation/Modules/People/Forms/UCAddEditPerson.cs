@@ -51,7 +51,7 @@ namespace TitanGym_Presentation.Modules.People.Forms
 
             _InformationPerson.EmailAddress = GTextBoxEmailAddress.Text.Trim();
             _InformationPerson.PhoneNumber = GTextBoxPhoneNumber.Text.Trim();
-            _InformationPerson.DateOfBirth = GDateTimePickerPerson.Value;
+            _InformationPerson.DateOfBirth = new DateTime(GDateTimePickerPerson.Value.Year, GDateTimePickerPerson.Value.Month, GDateTimePickerPerson.Value.Day);
 
         }
 

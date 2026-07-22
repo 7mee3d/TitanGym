@@ -35,16 +35,16 @@ namespace TitanGym_Presentation.Modules.People.Forms
                 GDataGridViewPeople.Columns[0].Width = 80;
 
                 GDataGridViewPeople.Columns[1].HeaderText = "First Name";
-                GDataGridViewPeople.Columns[1].Width = 150;
+                GDataGridViewPeople.Columns[1].Width = 100;
 
                 GDataGridViewPeople.Columns[2].HeaderText = "SECOND NAME";
-                GDataGridViewPeople.Columns[2].Width = 150;
+                GDataGridViewPeople.Columns[2].Width = 100;
 
                 GDataGridViewPeople.Columns[3].HeaderText = "THIRD NAME";
-                GDataGridViewPeople.Columns[3].Width = 150;
+                GDataGridViewPeople.Columns[3].Width = 100;
 
                 GDataGridViewPeople.Columns[4].HeaderText = "LAST NAME";
-                GDataGridViewPeople.Columns[4].Width = 150;
+                GDataGridViewPeople.Columns[4].Width = 100;
 
                 GDataGridViewPeople.Columns[5].HeaderText = "GENDOR";
                 GDataGridViewPeople.Columns[5].Width = 80;
@@ -108,6 +108,18 @@ namespace TitanGym_Presentation.Modules.People.Forms
                 if (Result) UCPeopleList_Load(null, null);
             };
 
+
+            AppNavigator.Show(AddEditPerson);
+        }
+
+        private void addNewPersonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var AddEditPerson = new UCAddEditPerson();
+
+            AddEditPerson.FinihedAddEditPerson += (Result) =>
+            {
+                if (Result) UCPeopleList_Load(null, null);
+            };
 
             AppNavigator.Show(AddEditPerson);
         }

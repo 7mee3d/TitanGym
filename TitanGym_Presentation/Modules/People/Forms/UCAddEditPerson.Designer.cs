@@ -196,10 +196,12 @@
             this.GTextBoxLastName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.GTextBoxLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.GTextBoxLastName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.GTextBoxLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
             this.GTextBoxLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GTextBoxLastName.Location = new System.Drawing.Point(752, 174);
             this.GTextBoxLastName.Name = "GTextBoxLastName";
-            this.GTextBoxLastName.PlaceholderText = "";
+            this.GTextBoxLastName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(72)))), ((int)(((byte)(74)))));
+            this.GTextBoxLastName.PlaceholderText = "e.g Jamal";
             this.GTextBoxLastName.SelectedText = "";
             this.GTextBoxLastName.Size = new System.Drawing.Size(198, 46);
             this.GTextBoxLastName.TabIndex = 1;
@@ -218,10 +220,12 @@
             this.GTextBoxThirdName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.GTextBoxThirdName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.GTextBoxThirdName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.GTextBoxThirdName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
             this.GTextBoxThirdName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GTextBoxThirdName.Location = new System.Drawing.Point(509, 174);
             this.GTextBoxThirdName.Name = "GTextBoxThirdName";
-            this.GTextBoxThirdName.PlaceholderText = "";
+            this.GTextBoxThirdName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(72)))), ((int)(((byte)(74)))));
+            this.GTextBoxThirdName.PlaceholderText = "e.g Yousif";
             this.GTextBoxThirdName.SelectedText = "";
             this.GTextBoxThirdName.Size = new System.Drawing.Size(198, 46);
             this.GTextBoxThirdName.TabIndex = 1;
@@ -252,10 +256,12 @@
             this.GTextBoxSecondName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.GTextBoxSecondName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.GTextBoxSecondName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.GTextBoxSecondName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
             this.GTextBoxSecondName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GTextBoxSecondName.Location = new System.Drawing.Point(266, 174);
             this.GTextBoxSecondName.Name = "GTextBoxSecondName";
-            this.GTextBoxSecondName.PlaceholderText = "";
+            this.GTextBoxSecondName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(72)))), ((int)(((byte)(74)))));
+            this.GTextBoxSecondName.PlaceholderText = "e.g Mohammed";
             this.GTextBoxSecondName.SelectedText = "";
             this.GTextBoxSecondName.Size = new System.Drawing.Size(198, 46);
             this.GTextBoxSecondName.TabIndex = 1;
@@ -286,10 +292,12 @@
             this.GTextBoxPhoneNumber.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.GTextBoxPhoneNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.GTextBoxPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.GTextBoxPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
             this.GTextBoxPhoneNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GTextBoxPhoneNumber.Location = new System.Drawing.Point(481, 382);
             this.GTextBoxPhoneNumber.Name = "GTextBoxPhoneNumber";
-            this.GTextBoxPhoneNumber.PlaceholderText = "";
+            this.GTextBoxPhoneNumber.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(72)))), ((int)(((byte)(74)))));
+            this.GTextBoxPhoneNumber.PlaceholderText = "059000000";
             this.GTextBoxPhoneNumber.SelectedText = "";
             this.GTextBoxPhoneNumber.Size = new System.Drawing.Size(226, 46);
             this.GTextBoxPhoneNumber.TabIndex = 1;
@@ -309,10 +317,12 @@
             this.GTextBoxEmailAddress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.GTextBoxEmailAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.GTextBoxEmailAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.GTextBoxEmailAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
             this.GTextBoxEmailAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GTextBoxEmailAddress.Location = new System.Drawing.Point(23, 382);
             this.GTextBoxEmailAddress.Name = "GTextBoxEmailAddress";
-            this.GTextBoxEmailAddress.PlaceholderText = "";
+            this.GTextBoxEmailAddress.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(72)))), ((int)(((byte)(74)))));
+            this.GTextBoxEmailAddress.PlaceholderText = "ahmed@example.com";
             this.GTextBoxEmailAddress.SelectedText = "";
             this.GTextBoxEmailAddress.Size = new System.Drawing.Size(432, 46);
             this.GTextBoxEmailAddress.TabIndex = 1;
@@ -332,10 +342,12 @@
             this.GTextBoxResidentialAddress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.GTextBoxResidentialAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.GTextBoxResidentialAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.GTextBoxResidentialAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
             this.GTextBoxResidentialAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GTextBoxResidentialAddress.Location = new System.Drawing.Point(23, 278);
             this.GTextBoxResidentialAddress.Name = "GTextBoxResidentialAddress";
-            this.GTextBoxResidentialAddress.PlaceholderText = "";
+            this.GTextBoxResidentialAddress.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(72)))), ((int)(((byte)(74)))));
+            this.GTextBoxResidentialAddress.PlaceholderText = "e.g Palestain - Gaza";
             this.GTextBoxResidentialAddress.SelectedText = "";
             this.GTextBoxResidentialAddress.Size = new System.Drawing.Size(684, 46);
             this.GTextBoxResidentialAddress.TabIndex = 1;
@@ -366,10 +378,12 @@
             this.GTextBoxFirstName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.GTextBoxFirstName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.GTextBoxFirstName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.GTextBoxFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
             this.GTextBoxFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GTextBoxFirstName.Location = new System.Drawing.Point(23, 174);
             this.GTextBoxFirstName.Name = "GTextBoxFirstName";
-            this.GTextBoxFirstName.PlaceholderText = "";
+            this.GTextBoxFirstName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(72)))), ((int)(((byte)(74)))));
+            this.GTextBoxFirstName.PlaceholderText = "e.g Emad";
             this.GTextBoxFirstName.SelectedText = "";
             this.GTextBoxFirstName.Size = new System.Drawing.Size(198, 46);
             this.GTextBoxFirstName.TabIndex = 1;
@@ -542,9 +556,9 @@
             this.guna2Panel3.Controls.Add(this.GGButtonCancel);
             this.guna2Panel3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
             this.guna2Panel3.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.guna2Panel3.Location = new System.Drawing.Point(3, 594);
+            this.guna2Panel3.Location = new System.Drawing.Point(2, 594);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(990, 84);
+            this.guna2Panel3.Size = new System.Drawing.Size(990, 87);
             this.guna2Panel3.TabIndex = 0;
             // 
             // GGButtonAddNewPerson
@@ -610,9 +624,9 @@
             this.guna2Panel2.Controls.Add(this.lblTitlePerson);
             this.guna2Panel2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
             this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 3);
+            this.guna2Panel2.Location = new System.Drawing.Point(3, 3);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(993, 101);
+            this.guna2Panel2.Size = new System.Drawing.Size(987, 101);
             this.guna2Panel2.TabIndex = 0;
             // 
             // label2
