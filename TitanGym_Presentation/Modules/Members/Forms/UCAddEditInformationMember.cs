@@ -19,26 +19,31 @@ namespace TitanGym_Presentation.Modules.Members.Forms
         private int _PersonID = -1;
         private _EnModeMembers _Mode;
         private MemberBL _InformationMember;
+        public event Action<bool> EH_FinishedAddEditMember;
+
 
 
         public UCAddEditInformationMember()
         {
             InitializeComponent();
-            _Mode = _EnModeMembers._kADD_NEW_MEMBER;
+            this._Mode = _EnModeMembers._kADD_NEW_MEMBER;
         }
 
 
         public UCAddEditInformationMember(int memberID)
         {
             InitializeComponent();
-            _MemberID = memberID;
-            _Mode = _EnModeMembers._kUPDATE_INFORMATION_MEMBER;
+            this._MemberID = memberID;
+            this._Mode = _EnModeMembers._kUPDATE_INFORMATION_MEMBER;
         }
 
         private void UCAddEditInformationMember_Load(object sender, EventArgs e)
         {
             _PrepareDefaultsValuesMember();
             ctrlShowInformationPersonByFilter1.FocusTheTextBoxPersonID();
+
+            if (this._Mode == _EnModeMembers._kUPDATE_INFORMATION_MEMBER)
+                _LoadDataMemberInControls();
 
         }
 
@@ -53,15 +58,31 @@ namespace TitanGym_Presentation.Modules.Members.Forms
 
             }
 
+            this._InformationMember = MemberBL.FindTheMemberBy(_MemberID);
 
+            if (this._InformationMember == null) return;
+
+            ctrlShowInformationPersonByFilter1.EnableControls = false;
+            this._Mode = _EnModeMembers._kUPDATE_INFORMATION_MEMBER;
+            lblTitlePerson.Text = "Update Member";
+            GGButtonAddNewMember.Text = "Update Member";
         }
+
+        private void _LoadDataMemberInControls()
+        {
+            GTextBoxEmergencyContactName.Text = this._InformationMember.EmergencyContactName;
+            GTextBoxEmergencyContactPhoneNumber.Text = this._InformationMember.EmergencyContactPhoneNumber;
+            ctrlShowInformationPersonByFilter1.LoadInformationMember(this._MemberID);
+            ctrlShowInformationPersonByFilter1.EnableControls = false;
+        }
+
         private void _PrepareInformationMember()
         {
-            _InformationMember.RegistrationDate = DateTime.Now;
-            _InformationMember.EmergencyContactName = GTextBoxEmergencyContactName.Text.Trim();
-            _InformationMember.EmergencyContactPhoneNumber = GTextBoxEmergencyContactPhoneNumber.Text.Trim();
-            _InformationMember.PersonID = _PersonID;
-            _InformationMember.MembershipStatusID = MemberBL.enMembershipStatus._kACTIVE;
+            this._InformationMember.RegistrationDate = DateTime.Now;
+            this._InformationMember.EmergencyContactName = GTextBoxEmergencyContactName.Text.Trim();
+            this._InformationMember.EmergencyContactPhoneNumber = GTextBoxEmergencyContactPhoneNumber.Text.Trim();
+            this._InformationMember.PersonID = _PersonID;
+            this._InformationMember.MembershipStatusID = MemberBL.enMembershipStatus._kACTIVE;
         }
 
         private void GTextBoxValidating(object sender, CancelEventArgs e)
@@ -85,7 +106,7 @@ namespace TitanGym_Presentation.Modules.Members.Forms
 
             if (PersonID == -1) return;
 
-            _PersonID = PersonID;
+            this._PersonID = PersonID;
 
         }
 
@@ -104,7 +125,7 @@ namespace TitanGym_Presentation.Modules.Members.Forms
 
             }
 
-            if (_PersonID == -1)
+            if (this._PersonID == -1)
             {
                 MessageBox.Show(
                          "You must selected person according the filter",
@@ -116,7 +137,7 @@ namespace TitanGym_Presentation.Modules.Members.Forms
                 return false;
             }
 
-            if (_InformationMember.IsMemberActiveAndExistsBy())
+            if (this._InformationMember.IsMemberActiveAndExistsBy())
             {
                 MessageBox.Show(
                         "This member already Active",
@@ -137,10 +158,10 @@ namespace TitanGym_Presentation.Modules.Members.Forms
 
             if (!_PrepareContraintMemberSection()) return;
 
-
-
-            if (_InformationMember.SaveModeMember())
+            if (this._InformationMember.SaveModeMember())
             {
+                this.EH_FinishedAddEditMember?.Invoke(true);
+
                 if (this._Mode == _EnModeMembers._kADD_NEW_MEMBER)
                     MessageBox.Show("The Member Addedd Successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else MessageBox.Show("The Member Updated Successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);

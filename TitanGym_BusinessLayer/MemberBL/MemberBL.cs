@@ -123,6 +123,16 @@ namespace TitanGym_BusinessLayer.MemberBL
         public static int GetTheMembersPendingExpireBy(int DayPendingExpire)
             => MemberDALQueries.GetTotalThePendingExpireMembershipMembers(DayPendingExpire);
 
+        private bool _UpdateInformationMember()
+            => MemberDALCommands.UpdateInformatonMember(
+                MemberID,
+                EmergencyContactName,
+                EmergencyContactPhoneNumber,
+                RegistrationDate,
+                (byte)MembershipStatusID,
+                PersonID) != -1;
+
+
         public bool SaveModeMember()
         {
 
@@ -133,7 +143,7 @@ namespace TitanGym_BusinessLayer.MemberBL
                     return _AddNewMember();
 
                 case _EnModeMember._kUPDATE_INFORMATION_MEMBER:
-                    return false;
+                    return _UpdateInformationMember();
 
                 default: return false;
             }

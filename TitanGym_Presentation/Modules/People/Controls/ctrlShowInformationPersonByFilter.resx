@@ -120,12 +120,12 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="GGButtonSearchPerson.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAADpSURBVEhL7ZS9DoMgEMdx6+jY0UdDGEyacLD5aD6Go6OP0dHmKChcrAVbnfwlpMOd97/PMnax
-        l5KbkgkYmIBpeXpk3FTUNx8BXRi4wF8ZCkFHP0knDC51E9mkbqyYfWqHCH/c35nqiWGLVqg4v80JoH8O
-        hYDRZd5SW4RQxomM1LSNzywFP5ssMgWSfT3zAFPYU0EhoXcbYqgtAmdkZwU9NW2DW+GqsNuyRrRFH3w2
-        kXgH2h0XvQMV3sEzsmUhoFsCuefvwwf/WQTbVdP/IjXMrfuLyDcwuK3sSJEaK8HWHSlyWrtOEbnI5QXZ
-        I6y5KPWj/AAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAOlJREFUSEvt
+        lL0OgyAQx3Hr6NjRR0MYTJpwsPloPoajo4/R0eYoKFysBVud/CWkw533v88ydrGXkpuSCRiYgGl5emTc
+        VNQ3HwFdGLjAXxkKQUc/SScMLnUT2aRurJh9aocIf9zfmeqJYYtWqDi/zQmgfw6FgNFl3lJbhFDGiYzU
+        tI3PLAU/mywyBZJ9PfMAU9hTQSGhdxtiqC0CZ2RnBT01bYNb4aqw27JGtEUffDaReAfaHRe9AxXewTOy
+        ZSGgWwK55+/DB/9ZBNtV0/8iNcyt+4vINzC4rexIkRorwdYdKXJau04RucjlBdkjrLko9aP8AAAAAElF
+        TkSuQmCC
 </value>
   </data>
 </root>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCMemberList));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -46,11 +47,20 @@
             this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.lblPendingExpiry = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.ContextMenuStripMembersSection = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showInformationPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.deletePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.addNewMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.updateInformationMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewMembers)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
             this.guna2GradientPanel4.SuspendLayout();
+            this.ContextMenuStripMembersSection.SuspendLayout();
             this.SuspendLayout();
             // 
             // GGButtonAddNewPerson
@@ -111,6 +121,7 @@
             this.GDataGridViewMembers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.GDataGridViewMembers.ColumnHeadersHeight = 71;
             this.GDataGridViewMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.GDataGridViewMembers.ContextMenuStrip = this.ContextMenuStripMembersSection;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -274,6 +285,72 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Pending Expiry";
             // 
+            // ContextMenuStripMembersSection
+            // 
+            this.ContextMenuStripMembersSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showInformationPersonToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.deletePersonToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.addNewMemberToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.updateInformationMemberToolStripMenuItem});
+            this.ContextMenuStripMembersSection.Name = "ContextMenuStripPeopleSection";
+            this.ContextMenuStripMembersSection.Size = new System.Drawing.Size(262, 174);
+            // 
+            // showInformationPersonToolStripMenuItem
+            // 
+            this.showInformationPersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showInformationPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationPersonToolStripMenuItem.Image")));
+            this.showInformationPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showInformationPersonToolStripMenuItem.Name = "showInformationPersonToolStripMenuItem";
+            this.showInformationPersonToolStripMenuItem.Size = new System.Drawing.Size(261, 38);
+            this.showInformationPersonToolStripMenuItem.Text = "Show Information Member";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(258, 6);
+            // 
+            // deletePersonToolStripMenuItem
+            // 
+            this.deletePersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deletePersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deletePersonToolStripMenuItem.Image")));
+            this.deletePersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.deletePersonToolStripMenuItem.Name = "deletePersonToolStripMenuItem";
+            this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(261, 38);
+            this.deletePersonToolStripMenuItem.Text = "Delete Member";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(258, 6);
+            // 
+            // addNewMemberToolStripMenuItem
+            // 
+            this.addNewMemberToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.addNewMemberToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewMemberToolStripMenuItem.Image")));
+            this.addNewMemberToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addNewMemberToolStripMenuItem.Name = "addNewMemberToolStripMenuItem";
+            this.addNewMemberToolStripMenuItem.Size = new System.Drawing.Size(261, 38);
+            this.addNewMemberToolStripMenuItem.Text = "Add New Member";
+            this.addNewMemberToolStripMenuItem.Click += new System.EventHandler(this.addNewMemberToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(258, 6);
+            // 
+            // updateInformationMemberToolStripMenuItem
+            // 
+            this.updateInformationMemberToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.updateInformationMemberToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationMemberToolStripMenuItem.Image")));
+            this.updateInformationMemberToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateInformationMemberToolStripMenuItem.Name = "updateInformationMemberToolStripMenuItem";
+            this.updateInformationMemberToolStripMenuItem.Size = new System.Drawing.Size(261, 38);
+            this.updateInformationMemberToolStripMenuItem.Text = "Update Information Member";
+            this.updateInformationMemberToolStripMenuItem.Click += new System.EventHandler(this.updateInformationMemberToolStripMenuItem_Click);
+            // 
             // UCMemberList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,6 +373,7 @@
             this.guna2GradientPanel3.PerformLayout();
             this.guna2GradientPanel4.ResumeLayout(false);
             this.guna2GradientPanel4.PerformLayout();
+            this.ContextMenuStripMembersSection.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,5 +394,13 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel4;
         private System.Windows.Forms.Label lblPendingExpiry;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ContextMenuStrip ContextMenuStripMembersSection;
+        private System.Windows.Forms.ToolStripMenuItem showInformationPersonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem deletePersonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem addNewMemberToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem updateInformationMemberToolStripMenuItem;
     }
 }

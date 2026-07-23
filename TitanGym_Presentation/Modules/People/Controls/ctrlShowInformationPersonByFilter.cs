@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using TitanGym_BusinessLayer.MemberBL;
 
 namespace TitanGym_Presentation.Modules.People.Controls
 {
@@ -40,6 +41,18 @@ namespace TitanGym_Presentation.Modules.People.Controls
 
 
             FocusTheTextBoxPersonID();
+        }
+
+        public void LoadInformationMember(int memberID)
+        {
+            int PersonID = MemberBL.FindTheMemberBy(memberID).PersonID;
+
+            if (ctrlShowInformationPerson1.LoadInformationPerson(PersonID))
+                EHFinishedSearchPerson?.Invoke(this, PersonID);
+
+
+            _PersonID = PersonID;
+            GTextBoxPersonID.Text = _PersonID.ToString();
         }
 
         public void FocusTheTextBoxPersonID()

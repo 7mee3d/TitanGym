@@ -29,19 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ctrlShowInformationPersonByFilter));
-            this.ctrlShowInformationPerson1 = new TitanGym_Presentation.Modules.People.Controls.ctrlShowInformationPerson();
             this.GTextBoxPersonID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.GGButtonSearchPerson = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.ctrlShowInformationPerson1 = new TitanGym_Presentation.Modules.People.Controls.ctrlShowInformationPerson();
             this.SuspendLayout();
-            // 
-            // ctrlShowInformationPerson1
-            // 
-            this.ctrlShowInformationPerson1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
-            this.ctrlShowInformationPerson1.Location = new System.Drawing.Point(3, 92);
-            this.ctrlShowInformationPerson1.Name = "ctrlShowInformationPerson1";
-            this.ctrlShowInformationPerson1.Size = new System.Drawing.Size(908, 237);
-            this.ctrlShowInformationPerson1.TabIndex = 0;
             // 
             // GTextBoxPersonID
             // 
@@ -50,10 +42,10 @@
             this.GTextBoxPersonID.BorderRadius = 4;
             this.GTextBoxPersonID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.GTextBoxPersonID.DefaultText = "";
-            this.GTextBoxPersonID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.GTextBoxPersonID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.GTextBoxPersonID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.GTextBoxPersonID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.GTextBoxPersonID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(75)))), ((int)(((byte)(78)))));
+            this.GTextBoxPersonID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(75)))), ((int)(((byte)(78)))));
+            this.GTextBoxPersonID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(125)))), ((int)(((byte)(128)))));
+            this.GTextBoxPersonID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(95)))), ((int)(((byte)(98)))));
             this.GTextBoxPersonID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.GTextBoxPersonID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.GTextBoxPersonID.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -87,11 +79,11 @@
             this.GGButtonSearchPerson.BorderRadius = 5;
             this.GGButtonSearchPerson.BorderThickness = 1;
             this.GGButtonSearchPerson.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GGButtonSearchPerson.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonSearchPerson.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonSearchPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonSearchPerson.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonSearchPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GGButtonSearchPerson.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
+            this.GGButtonSearchPerson.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
+            this.GGButtonSearchPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
+            this.GGButtonSearchPerson.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
+            this.GGButtonSearchPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(170)))), ((int)(((byte)(176)))));
             this.GGButtonSearchPerson.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonSearchPerson.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonSearchPerson.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -106,6 +98,14 @@
             this.GGButtonSearchPerson.TabIndex = 4;
             this.GGButtonSearchPerson.Text = "Search Person";
             this.GGButtonSearchPerson.Click += new System.EventHandler(this.GGButtonSearchPerson_Click);
+            // 
+            // ctrlShowInformationPerson1
+            // 
+            this.ctrlShowInformationPerson1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
+            this.ctrlShowInformationPerson1.Location = new System.Drawing.Point(3, 92);
+            this.ctrlShowInformationPerson1.Name = "ctrlShowInformationPerson1";
+            this.ctrlShowInformationPerson1.Size = new System.Drawing.Size(908, 237);
+            this.ctrlShowInformationPerson1.TabIndex = 0;
             // 
             // ctrlShowInformationPersonByFilter
             // 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.MemberBL;
+using TitanGym_Presentation.Core.Helpers;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TitanGym_Presentation.Modules.Members.Forms
@@ -161,6 +162,34 @@ namespace TitanGym_Presentation.Modules.Members.Forms
         private void GGButtonAddNewPerson_Click(object sender, EventArgs e)
         {
             AppNavigator.Show(new UCAddEditInformationMember());
+        }
+
+        private void updateInformationMemberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int MemberID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewMembers, 0);
+
+            var ucAddEditMember = new UCAddEditInformationMember(MemberID);
+
+            ucAddEditMember.EH_FinishedAddEditMember += result =>
+            {
+                if (result) UCMemberList_Load(null, null);
+            };
+
+            AppNavigator.Show(ucAddEditMember);
+        }
+
+        private void addNewMemberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            var ucAddEditMember = new UCAddEditInformationMember();
+
+            ucAddEditMember.EH_FinishedAddEditMember += result =>
+            {
+                if (result) UCMemberList_Load(null, null);
+            };
+
+            AppNavigator.Show(ucAddEditMember);
+
         }
     }
 }
