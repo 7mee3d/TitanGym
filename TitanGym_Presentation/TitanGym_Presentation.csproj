@@ -62,6 +62,12 @@
       <DependentUpon>MainPlTitanGymStartProgram.cs</DependentUpon>
     </Compile>
     <Compile Include="Core\Startup\Program.cs" />
+    <Compile Include="Modules\Members\Forms\UCMemberList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Members\Forms\UCMemberList.Designer.cs">
+      <DependentUpon>UCMemberList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\People\Controls\ctrlShowInformationPerson.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Modules\Main PL TitanGym\MainPlTitanGymStartProgram.resx">
       <DependentUpon>MainPlTitanGymStartProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Members\Forms\UCMemberList.resx">
+      <DependentUpon>UCMemberList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\People\Controls\ctrlShowInformationPerson.resx">
       <DependentUpon>ctrlShowInformationPerson.cs</DependentUpon>
@@ -140,7 +149,6 @@
     <Folder Include="Modules\Dashboard\Controls\" />
     <Folder Include="Modules\Dashboard\Forms\" />
     <Folder Include="Modules\Members\Controls\" />
-    <Folder Include="Modules\Members\Forms\" />
     <Folder Include="Modules\Payments\Controls\" />
     <Folder Include="Modules\Payments\Forms\" />
     <Folder Include="Modules\Plans\Controls\" />
