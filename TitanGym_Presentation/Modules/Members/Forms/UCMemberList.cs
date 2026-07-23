@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.MemberBL;
 using TitanGym_Presentation.Core.Helpers;
+using TitanGym_Presentation.Modules.People.Forms;
 
 namespace TitanGym_Presentation.Modules.Members.Forms
 {
@@ -200,6 +201,21 @@ namespace TitanGym_Presentation.Modules.Members.Forms
 
             }
             else MessageBox.Show("The member deleted Faild", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+        }
+
+        private void showInformationMemberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int MemberID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewMembers, 0);
+
+            var ucShowInformationMember = new UCShowInformationMember(MemberID);
+
+            ucShowInformationMember.EH_FinishedShowInfoMember += result =>
+            {
+                if (result) UCMemberList_Load(null, null);
+            };
+
+            AppNavigator.Show(ucShowInformationMember);
 
         }
     }

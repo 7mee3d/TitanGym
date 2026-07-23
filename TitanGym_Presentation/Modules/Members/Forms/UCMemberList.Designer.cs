@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCMemberList));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.GGButtonAddNewPerson = new Guna.UI2.WinForms.Guna2GradientButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCMemberList));
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GDataGridViewMembers = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -48,12 +47,13 @@
             this.lblPendingExpiry = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.ContextMenuStripMembersSection = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.showInformationPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.deleteMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.addNewMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.GGButtonAddNewPerson = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.showInformationMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateInformationMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewMembers)).BeginInit();
@@ -62,30 +62,6 @@
             this.guna2GradientPanel4.SuspendLayout();
             this.ContextMenuStripMembersSection.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // GGButtonAddNewPerson
-            // 
-            this.GGButtonAddNewPerson.BorderRadius = 6;
-            this.GGButtonAddNewPerson.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GGButtonAddNewPerson.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAddNewPerson.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAddNewPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAddNewPerson.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAddNewPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GGButtonAddNewPerson.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewPerson.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewPerson.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GGButtonAddNewPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
-            this.GGButtonAddNewPerson.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPerson.Image")));
-            this.GGButtonAddNewPerson.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.GGButtonAddNewPerson.ImageOffset = new System.Drawing.Point(15, 1);
-            this.GGButtonAddNewPerson.Location = new System.Drawing.Point(1226, 70);
-            this.GGButtonAddNewPerson.Name = "GGButtonAddNewPerson";
-            this.GGButtonAddNewPerson.Size = new System.Drawing.Size(203, 44);
-            this.GGButtonAddNewPerson.TabIndex = 7;
-            this.GGButtonAddNewPerson.Text = "New Member";
-            this.GGButtonAddNewPerson.TextOffset = new System.Drawing.Point(10, 0);
-            this.GGButtonAddNewPerson.Click += new System.EventHandler(this.GGButtonAddNewPerson_Click);
             // 
             // guna2GradientPanel2
             // 
@@ -288,7 +264,7 @@
             // ContextMenuStripMembersSection
             // 
             this.ContextMenuStripMembersSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showInformationPersonToolStripMenuItem,
+            this.showInformationMemberToolStripMenuItem,
             this.toolStripSeparator3,
             this.deleteMemberToolStripMenuItem,
             this.toolStripSeparator1,
@@ -298,19 +274,54 @@
             this.ContextMenuStripMembersSection.Name = "ContextMenuStripPeopleSection";
             this.ContextMenuStripMembersSection.Size = new System.Drawing.Size(262, 196);
             // 
-            // showInformationPersonToolStripMenuItem
-            // 
-            this.showInformationPersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.showInformationPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationPersonToolStripMenuItem.Image")));
-            this.showInformationPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showInformationPersonToolStripMenuItem.Name = "showInformationPersonToolStripMenuItem";
-            this.showInformationPersonToolStripMenuItem.Size = new System.Drawing.Size(261, 38);
-            this.showInformationPersonToolStripMenuItem.Text = "Show Information Member";
-            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(258, 6);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(258, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(258, 6);
+            // 
+            // GGButtonAddNewPerson
+            // 
+            this.GGButtonAddNewPerson.BorderRadius = 6;
+            this.GGButtonAddNewPerson.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GGButtonAddNewPerson.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonAddNewPerson.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonAddNewPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonAddNewPerson.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonAddNewPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GGButtonAddNewPerson.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewPerson.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewPerson.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonAddNewPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.GGButtonAddNewPerson.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPerson.Image")));
+            this.GGButtonAddNewPerson.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.GGButtonAddNewPerson.ImageOffset = new System.Drawing.Point(15, 1);
+            this.GGButtonAddNewPerson.Location = new System.Drawing.Point(1226, 70);
+            this.GGButtonAddNewPerson.Name = "GGButtonAddNewPerson";
+            this.GGButtonAddNewPerson.Size = new System.Drawing.Size(203, 44);
+            this.GGButtonAddNewPerson.TabIndex = 7;
+            this.GGButtonAddNewPerson.Text = "New Member";
+            this.GGButtonAddNewPerson.TextOffset = new System.Drawing.Point(10, 0);
+            this.GGButtonAddNewPerson.Click += new System.EventHandler(this.GGButtonAddNewPerson_Click);
+            // 
+            // showInformationMemberToolStripMenuItem
+            // 
+            this.showInformationMemberToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showInformationMemberToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationMemberToolStripMenuItem.Image")));
+            this.showInformationMemberToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showInformationMemberToolStripMenuItem.Name = "showInformationMemberToolStripMenuItem";
+            this.showInformationMemberToolStripMenuItem.Size = new System.Drawing.Size(261, 38);
+            this.showInformationMemberToolStripMenuItem.Text = "Show Information Member";
+            this.showInformationMemberToolStripMenuItem.Click += new System.EventHandler(this.showInformationMemberToolStripMenuItem_Click);
             // 
             // deleteMemberToolStripMenuItem
             // 
@@ -322,11 +333,6 @@
             this.deleteMemberToolStripMenuItem.Text = "Delete Member";
             this.deleteMemberToolStripMenuItem.Click += new System.EventHandler(this.deleteMemberToolStripMenuItem_Click);
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(258, 6);
-            // 
             // addNewMemberToolStripMenuItem
             // 
             this.addNewMemberToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
@@ -336,11 +342,6 @@
             this.addNewMemberToolStripMenuItem.Size = new System.Drawing.Size(261, 38);
             this.addNewMemberToolStripMenuItem.Text = "Add New Member";
             this.addNewMemberToolStripMenuItem.Click += new System.EventHandler(this.addNewMemberToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(258, 6);
             // 
             // updateInformationMemberToolStripMenuItem
             // 
@@ -396,7 +397,7 @@
         private System.Windows.Forms.Label lblPendingExpiry;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ContextMenuStrip ContextMenuStripMembersSection;
-        private System.Windows.Forms.ToolStripMenuItem showInformationPersonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showInformationMemberToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem deleteMemberToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
