@@ -37,9 +37,9 @@
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GDataGridViewMembers = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblTotalMembers = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.lblActivePlans = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -75,6 +75,7 @@
             this.GGButtonAddNewPerson.TabIndex = 7;
             this.GGButtonAddNewPerson.Text = "New Member";
             this.GGButtonAddNewPerson.TextOffset = new System.Drawing.Point(10, 0);
+            this.GGButtonAddNewPerson.Click += new System.EventHandler(this.GGButtonAddNewPerson_Click);
             // 
             // guna2GradientPanel2
             // 
@@ -170,16 +171,16 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(255, 115);
             this.guna2GradientPanel1.TabIndex = 5;
             // 
-            // label1
+            // lblTotalMembers
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("IBM Plex Sans", 38.24999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(44, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(465, 71);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Member Directory";
+            this.lblTotalMembers.AutoSize = true;
+            this.lblTotalMembers.Font = new System.Drawing.Font("IBM Plex Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalMembers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.lblTotalMembers.Location = new System.Drawing.Point(16, 52);
+            this.lblTotalMembers.Name = "lblTotalMembers";
+            this.lblTotalMembers.Size = new System.Drawing.Size(96, 45);
+            this.lblTotalMembers.TabIndex = 0;
+            this.lblTotalMembers.Text = "1231";
             // 
             // label2
             // 
@@ -192,16 +193,16 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Total Members";
             // 
-            // lblTotalMembers
+            // label1
             // 
-            this.lblTotalMembers.AutoSize = true;
-            this.lblTotalMembers.Font = new System.Drawing.Font("IBM Plex Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalMembers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.lblTotalMembers.Location = new System.Drawing.Point(16, 52);
-            this.lblTotalMembers.Name = "lblTotalMembers";
-            this.lblTotalMembers.Size = new System.Drawing.Size(96, 45);
-            this.lblTotalMembers.TabIndex = 0;
-            this.lblTotalMembers.Text = "1231";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("IBM Plex Sans", 38.24999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(44, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(465, 71);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Member Directory";
             // 
             // guna2GradientPanel3
             // 

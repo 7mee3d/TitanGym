@@ -44,13 +44,12 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Helper\HelperDAL.cs" />
+    <Compile Include="Members\Member DAL Commands\MemberDALCommands.cs" />
     <Compile Include="Members\Member DAL Queries\MemberDALQueries.cs" />
     <Compile Include="People\People DAL Commands\PeopleDALCommands.cs" />
     <Compile Include="People\People DAL Queries\PeopleDALQueries.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Members\Member DAL Commands\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

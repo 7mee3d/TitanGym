@@ -62,6 +62,12 @@
       <DependentUpon>MainPlTitanGymStartProgram.cs</DependentUpon>
     </Compile>
     <Compile Include="Core\Startup\Program.cs" />
+    <Compile Include="Modules\Members\Forms\UCAddEditInformationMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Members\Forms\UCAddEditInformationMember.Designer.cs">
+      <DependentUpon>UCAddEditInformationMember.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Members\Forms\UCMemberList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -73,6 +79,12 @@
     </Compile>
     <Compile Include="Modules\People\Controls\ctrlShowInformationPerson.Designer.cs">
       <DependentUpon>ctrlShowInformationPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\People\Controls\ctrlShowInformationPersonByFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\People\Controls\ctrlShowInformationPersonByFilter.Designer.cs">
+      <DependentUpon>ctrlShowInformationPersonByFilter.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\People\Forms\UCAddEditPerson.cs">
       <SubType>UserControl</SubType>
@@ -97,11 +109,17 @@
     <EmbeddedResource Include="Modules\Main PL TitanGym\MainPlTitanGymStartProgram.resx">
       <DependentUpon>MainPlTitanGymStartProgram.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Members\Forms\UCAddEditInformationMember.resx">
+      <DependentUpon>UCAddEditInformationMember.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\Members\Forms\UCMemberList.resx">
       <DependentUpon>UCMemberList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\People\Controls\ctrlShowInformationPerson.resx">
       <DependentUpon>ctrlShowInformationPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\People\Controls\ctrlShowInformationPersonByFilter.resx">
+      <DependentUpon>ctrlShowInformationPersonByFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\People\Forms\UCAddEditPerson.resx">
       <DependentUpon>UCAddEditPerson.cs</DependentUpon>

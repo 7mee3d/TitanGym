@@ -157,5 +157,10 @@ namespace TitanGym_Presentation.Modules.Members.Forms
 
             }
         }
+
+        private void GGButtonAddNewPerson_Click(object sender, EventArgs e)
+        {
+            AppNavigator.Show(new UCAddEditInformationMember());
+        }
     }
 }

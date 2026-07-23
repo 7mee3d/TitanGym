@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using System;
 using System.Data.SqlClient;
 using TitanGym_DataAccessLayer.Helper;
 
@@ -89,5 +90,94 @@ namespace TitanGym_DataAccessLayer.Members
 
             return NumberPendingExpireMembers;
         }
+
+        public static bool FindTheMemberBy(
+
+                int MemberID,
+                ref string EmergencyContactName,
+                ref string EmergencyContactPhoneNumber,
+                ref DateTime RegistrationDate,
+                ref byte MembershipStatusID,
+                ref int PersonID
+
+                )
+        {
+
+
+            bool FoundedMember = false;
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+
+
+                                                SELECT *
+                                                FROM Members 
+                                                WHERE MemberID = @MemberID
+
+
+
+                       ";
+
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+                    command.AddWithParameter<int>("@MemberID", MemberID);
+
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                        if (reader.Read())
+                        {
+                            FoundedMember = true;
+                            EmergencyContactName = reader.GetTheValueFrom<string>("EmergencyContactName");
+                            EmergencyContactPhoneNumber = reader.GetTheValueFrom<string>("EmergencyContactPhoneNumber");
+                            RegistrationDate = reader.GetTheValueFrom<DateTime>("RegistrationDate");
+                            MembershipStatusID = reader.GetTheValueFrom<byte>("MembershipStatusID");
+                            PersonID = reader.GetTheValueFrom<int>("PersonID");
+
+                        }
+
+                }
+            }
+
+            return FoundedMember;
+
+        }
+
+        public static bool IsMemberActiveAndExsitsBy(int personID)
+        {
+            bool IsExists = false;
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+
+
+                        SELECT TOP 1 FOUND = 1 
+                        FROM Members
+                        WHERE Members.PersonID = @PersonID AND MembershipStatusID = 1 
+
+
+                  ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    command.AddWithParameter<int>("@PersonID", personID);
+                    connection.Open();
+
+                    object result = command.ExecuteScalar();
+
+                    IsExists = result != null && Convert.ToBoolean(result);
+
+                }
+            }
+
+            return IsExists;
+        }
+
     }
 }
