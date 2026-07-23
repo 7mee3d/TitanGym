@@ -32,9 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPlTitanGymStartProgram));
             this.GBorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.MainPanel = new System.Windows.Forms.Panel();
             this.GGradientButtonReports = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGradientButtonAttendance = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGradientButtonPayments = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -45,6 +42,9 @@
             this.GGradientButtonPeople = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGradientButtonDashboard = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -76,36 +76,6 @@
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(254, 956);
             this.guna2GradientPanel1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("IBM Plex Sans Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(78, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "MANAGEMENT PRO";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("IBM Plex Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(71, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TitanGym";
-            // 
-            // MainPanel
-            // 
-            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainPanel.Location = new System.Drawing.Point(254, 0);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1477, 956);
-            this.MainPanel.TabIndex = 1;
             // 
             // GGradientButtonReports
             // 
@@ -286,6 +256,7 @@
             this.GGradientButtonTrainers.Size = new System.Drawing.Size(227, 48);
             this.GGradientButtonTrainers.TabIndex = 2;
             this.GGradientButtonTrainers.Text = "Trainers";
+            this.GGradientButtonTrainers.Click += new System.EventHandler(this.GGradientButtonTrainers_Click);
             // 
             // GGradientButtonMember
             // 
@@ -388,6 +359,36 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("IBM Plex Sans Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(78, 94);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 16);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "MANAGEMENT PRO";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("IBM Plex Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(71, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 37);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "TitanGym";
+            // 
+            // MainPanel
+            // 
+            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainPanel.Location = new System.Drawing.Point(254, 0);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(1477, 956);
+            this.MainPanel.TabIndex = 1;
             // 
             // MainPlTitanGymStartProgram
             // 

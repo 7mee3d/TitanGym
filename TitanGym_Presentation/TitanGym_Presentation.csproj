@@ -116,6 +116,12 @@
     <Compile Include="Modules\People\Forms\UCShowInformationPerson.Designer.cs">
       <DependentUpon>UCShowInformationPerson.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Trainers\Forms\UCTrainersList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Trainers\Forms\UCTrainersList.Designer.cs">
+      <DependentUpon>UCTrainersList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Navigation\AppNavigator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Modules\Main PL TitanGym\MainPlTitanGymStartProgram.resx">
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\People\Forms\UCShowInformationPerson.resx">
       <DependentUpon>UCShowInformationPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Trainers\Forms\UCTrainersList.resx">
+      <DependentUpon>UCTrainersList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -193,7 +202,6 @@
     <Folder Include="Modules\Subscriptions\Controls\" />
     <Folder Include="Modules\Subscriptions\Forms\" />
     <Folder Include="Modules\Trainers\Controls\" />
-    <Folder Include="Modules\Trainers\Forms\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Delete_Icon_TitanGym_24.png" />

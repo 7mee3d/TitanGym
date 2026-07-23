@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using TitanGym_Presentation.Modules.Members.Forms;
 using TitanGym_Presentation.Modules.People.Forms;
+using TitanGym_Presentation.Modules.Trainers.Forms;
 
 namespace TitanGym_Presentation
 {
@@ -25,6 +26,11 @@ namespace TitanGym_Presentation
         private void GGradientButtonMember_Click(object sender, EventArgs e)
         {
             AppNavigator.Show(new UCMemberList());
+        }
+
+        private void GGradientButtonTrainers_Click(object sender, EventArgs e)
+        {
+            AppNavigator.Show(new UCTrainersList());
         }
     }
 }
