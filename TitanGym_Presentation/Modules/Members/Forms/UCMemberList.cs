@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.MemberBL;
 using TitanGym_Presentation.Core.Helpers;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TitanGym_Presentation.Modules.Members.Forms
 {
@@ -27,7 +21,7 @@ namespace TitanGym_Presentation.Modules.Members.Forms
         {
             _DT_AllInfoMembers = MemberBL.GetAllMembers();
             GDataGridViewMembers.DataSource = _DT_AllInfoMembers;
-            //MemberID	PersonID	FullName	MembershipName	NameMembershipStatus	StartDate	EndDate	EmailAddress	PhoneNumber
+
             if (GDataGridViewMembers.Rows.Count > 0)
             {
                 GDataGridViewMembers.Columns[0].HeaderText = "MEMBER ID";
@@ -189,6 +183,23 @@ namespace TitanGym_Presentation.Modules.Members.Forms
             };
 
             AppNavigator.Show(ucAddEditMember);
+
+        }
+
+        private void deleteMemberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure to be delete this member ?", "Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.Cancel)
+                return;
+
+            int MemberID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewMembers, 0);
+
+            if (MemberBL.DeleteMemberBy(MemberID))
+            {
+                UCMemberList_Load(null, null);
+                MessageBox.Show("The member deleted successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else MessageBox.Show("The member deleted Faild", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
         }
     }

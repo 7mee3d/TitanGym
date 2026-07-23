@@ -152,5 +152,8 @@ namespace TitanGym_BusinessLayer.MemberBL
 
         public bool IsMemberActiveAndExistsBy()
             => MemberDALQueries.IsMemberActiveAndExsitsBy(this.PersonID);
+
+        public static bool DeleteMemberBy(int MemberID)
+            => MemberDALCommands.DeleteMemberBy(MemberID);
     }
 }

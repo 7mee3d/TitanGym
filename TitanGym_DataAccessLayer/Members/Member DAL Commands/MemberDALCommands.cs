@@ -127,5 +127,39 @@ namespace TitanGym_DataAccessLayer.Members
             return RowAffective;
         }
 
+        public static bool DeleteMemberBy(int MemberID)
+        {
+
+            bool IsDeleteMember = false;
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+                                        DELETE FROM Members 
+                                        WHERE MemberID = @MemberID 
+                                ";
+
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    command.AddWithParameter<int>("@MemberID", MemberID);
+
+                    connection.Open();
+                    try
+                    {
+                        IsDeleteMember = command.ExecuteNonQuery() > 0;
+                    }
+                    catch
+                    {
+                        return false;
+                    }
+                }
+
+            }
+
+            return IsDeleteMember;
+        }
     }
 }

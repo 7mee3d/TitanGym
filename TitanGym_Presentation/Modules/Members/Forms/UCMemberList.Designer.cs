@@ -50,7 +50,7 @@
             this.ContextMenuStripMembersSection = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.showInformationPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.deletePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.addNewMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -290,13 +290,13 @@
             this.ContextMenuStripMembersSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showInformationPersonToolStripMenuItem,
             this.toolStripSeparator3,
-            this.deletePersonToolStripMenuItem,
+            this.deleteMemberToolStripMenuItem,
             this.toolStripSeparator1,
             this.addNewMemberToolStripMenuItem,
             this.toolStripSeparator2,
             this.updateInformationMemberToolStripMenuItem});
             this.ContextMenuStripMembersSection.Name = "ContextMenuStripPeopleSection";
-            this.ContextMenuStripMembersSection.Size = new System.Drawing.Size(262, 174);
+            this.ContextMenuStripMembersSection.Size = new System.Drawing.Size(262, 196);
             // 
             // showInformationPersonToolStripMenuItem
             // 
@@ -312,14 +312,15 @@
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(258, 6);
             // 
-            // deletePersonToolStripMenuItem
+            // deleteMemberToolStripMenuItem
             // 
-            this.deletePersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deletePersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deletePersonToolStripMenuItem.Image")));
-            this.deletePersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.deletePersonToolStripMenuItem.Name = "deletePersonToolStripMenuItem";
-            this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(261, 38);
-            this.deletePersonToolStripMenuItem.Text = "Delete Member";
+            this.deleteMemberToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteMemberToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteMemberToolStripMenuItem.Image")));
+            this.deleteMemberToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.deleteMemberToolStripMenuItem.Name = "deleteMemberToolStripMenuItem";
+            this.deleteMemberToolStripMenuItem.Size = new System.Drawing.Size(261, 38);
+            this.deleteMemberToolStripMenuItem.Text = "Delete Member";
+            this.deleteMemberToolStripMenuItem.Click += new System.EventHandler(this.deleteMemberToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -397,7 +398,7 @@
         private System.Windows.Forms.ContextMenuStrip ContextMenuStripMembersSection;
         private System.Windows.Forms.ToolStripMenuItem showInformationPersonToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem deletePersonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteMemberToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem addNewMemberToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
