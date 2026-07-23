@@ -116,6 +116,12 @@
     <Compile Include="Modules\People\Forms\UCShowInformationPerson.Designer.cs">
       <DependentUpon>UCShowInformationPerson.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Trainers\Forms\UCAddEditTrainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Trainers\Forms\UCAddEditTrainer.Designer.cs">
+      <DependentUpon>UCAddEditTrainer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Trainers\Forms\UCTrainersList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\People\Forms\UCShowInformationPerson.resx">
       <DependentUpon>UCShowInformationPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Trainers\Forms\UCAddEditTrainer.resx">
+      <DependentUpon>UCAddEditTrainer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Trainers\Forms\UCTrainersList.resx">
       <DependentUpon>UCTrainersList.cs</DependentUpon>

@@ -59,5 +59,10 @@ namespace TitanGym_Presentation.Modules.Trainers.Forms
         {
             _LoadInformationTrainersInDGV();
         }
+
+        private void GGButtonAddNewTrainer_Click(object sender, EventArgs e)
+        {
+            AppNavigator.Show(new UCAddEditTrainer());
+        }
     }
 }

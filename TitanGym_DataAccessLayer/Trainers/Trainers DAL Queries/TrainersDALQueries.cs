@@ -28,7 +28,7 @@ namespace TitanGym_DataAccessLayer.Trainers
                                                SPEC.SpecializationName,
                                                EmpStatus.NameEmploymentStatus,
                                                TRA.HireDate,
-                                               TRA.Salary,
+                                               SPEC.Salary,
                                                COUNT(TA.MemberID) AS MemberAssignmentsWithTrainer
 
                                     FROM Trainers TRA
@@ -54,8 +54,9 @@ namespace TitanGym_DataAccessLayer.Trainers
                                 PEOP.LastName,
                                 SPEC.SpecializationName,
                                 EmpStatus.NameEmploymentStatus,
-                                TRA.HireDate,
-                                TRA.Salary;
+                                SPEC.Salary,
+                                TRA.HireDate;
+                           
 ";
 
                 using (SqlCommand command = new SqlCommand(Query, connection))
