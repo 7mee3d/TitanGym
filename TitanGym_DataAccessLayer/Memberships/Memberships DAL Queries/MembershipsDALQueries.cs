@@ -81,5 +81,57 @@ namespace TitanGym_DataAccessLayer.Memberships
 
             return IsExists;
         }
+
+        public static bool FindMembershipPlan(
+
+                int membershipPlanID,
+                ref string membershipPlanName,
+                ref string decripation,
+                ref double salary,
+                ref byte avalbailtyStatusID,
+                ref byte duration
+
+            )
+        {
+
+
+            bool Founded = false;
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+
+
+                                SELECT *
+                                FROM Memberships
+                                WHERE MembershipID = @MembershipID 
+
+
+                 ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+                    command.AddWithParameter<int>("@MembershipID", membershipPlanID);
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                        if (reader.Read())
+                        {
+                            Founded = true;
+                            membershipPlanName = reader.GetTheValueFrom<string>("MembershipName");
+                            duration = reader.GetTheValueFrom<byte>("Duration");
+                            salary = reader.GetTheValueFrom<double>("MonthlyPrice");
+                            decripation = reader.GetTheValueFrom<string>("Description");
+                            avalbailtyStatusID = reader.GetTheValueFrom<byte>("AvailabilityStatusID");
+
+                        }
+
+                }
+            }
+
+            return Founded;
+        }
+
     }
 }

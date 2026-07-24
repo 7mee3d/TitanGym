@@ -17,11 +17,19 @@ namespace TitanGym_Presentation.Modules.Plans.Forms
 
         private _EnModeMembershipPlan _ModeMembership;
         private MembershipBL _InformationMembership;
+        private int _MembershipPlanID = -1;
 
         public UCAddEditMembershipPlans()
         {
             InitializeComponent();
             _ModeMembership = _EnModeMembershipPlan._kADD_NEW_MEMBERSHIP_PLAN;
+        }
+
+        public UCAddEditMembershipPlans(int MembershipPlanID)
+        {
+            InitializeComponent();
+            _ModeMembership = _EnModeMembershipPlan._kUPDATE_INFORMATION_MEMBERSHIP_PLAN;
+            this._MembershipPlanID = MembershipPlanID;
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
@@ -48,6 +56,28 @@ namespace TitanGym_Presentation.Modules.Plans.Forms
                 return;
 
             }
+
+            _InformationMembership = MembershipBL.FindMembershipBy(_MembershipPlanID);
+
+            if (_InformationMembership is null)
+            {
+                MessageBox.Show("This membership plan is not exists", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            lblTitleMembershipPlan.Text = "Update Plan";
+            GGButtonAddNewPlan.Text = "Update Plan";
+
+        }
+
+        private void _LoadDataMembershipPlanInControls()
+        {
+
+            GTextBoxMembershipName.Text = _InformationMembership.MembershipName;
+            GTextBoxDescription.Text = _InformationMembership.Description;
+            GTextBoxDuration.Text = _InformationMembership.Duration.ToString();
+            GTextBoxMonthlySalary.Text = _InformationMembership.MonthlyPrice.ToString();
+            GComboBoxAvailabilityStatuses.SelectedValue = _InformationMembership.AvailabilityStatusID;
 
         }
 
@@ -134,6 +164,9 @@ namespace TitanGym_Presentation.Modules.Plans.Forms
         private void UCAddEditMembershipPlans_Load(object sender, EventArgs e)
         {
             _DefaultValuesMemberships();
+
+            if (_ModeMembership == _EnModeMembershipPlan._kUPDATE_INFORMATION_MEMBERSHIP_PLAN)
+                _LoadDataMembershipPlanInControls();
         }
 
         private void GTextBoxDuration_KeyPress(object sender, KeyPressEventArgs e)

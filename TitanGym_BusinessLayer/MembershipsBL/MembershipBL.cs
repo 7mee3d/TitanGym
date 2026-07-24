@@ -55,6 +55,37 @@ namespace TitanGym_BusinessLayer.MembershipsBL
             this.ModeMembershipPlan = EnModeMembersipPlan._kADD_NEW_MEMBERSHIP_PLAN;
         }
 
+        public static MembershipBL FindMembershipBy(int MemberShipPlanID)
+        {
+
+
+            string membershipName = "", description = "";
+            byte duration = 0, availabilityStatusID = 0;
+            double monthlyPrice = 0.0d;
+
+            bool Founded = MembershipsDALQueries.FindMembershipPlan(
+                MemberShipPlanID,
+                ref membershipName,
+                ref description,
+                ref monthlyPrice,
+                ref availabilityStatusID,
+                ref duration
+                );
+
+            if (Founded)
+                return new MembershipBL(
+                    MemberShipPlanID,
+                    membershipName,
+                    description,
+                    duration,
+                    availabilityStatusID,
+                    monthlyPrice
+                    );
+
+            else return null;
+
+        }
+
         private bool _AddNewMembershipPlan()
         {
             this.MembershipID = MembershipsDALCommands.InsertNewMembershipPlan(
@@ -65,6 +96,11 @@ namespace TitanGym_BusinessLayer.MembershipsBL
                 this.AvailabilityStatusID);
 
             return this.MembershipID != -1;
+        }
+
+        private bool _UpdateInformationMembershipPlan()
+        {
+            return MembershipsDALCommands.UpdateInformationMembershipPlan(this.MembershipID, this.MembershipName, this.Duration, this.MonthlyPrice, this.Description, this.AvailabilityStatusID);
         }
 
         public bool SaveModeMembershipPlan()
@@ -78,7 +114,7 @@ namespace TitanGym_BusinessLayer.MembershipsBL
                     return _AddNewMembershipPlan();
 
                 case EnModeMembersipPlan._kUPDATE_INFORMATION_MEMBERSHIP_PLAN:
-                    return false;
+                    return _UpdateInformationMembershipPlan();
 
                 default: return false;
             }
