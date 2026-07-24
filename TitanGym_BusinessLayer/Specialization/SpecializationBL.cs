@@ -38,6 +38,20 @@ namespace TitanGym_BusinessLayer.Specialization
 
         }
 
+        public static SpecializationBL FindTheSpecializationBy(byte SpecializationID)
+        {
+
+            string SpecializationName = "";
+
+            bool Founded = SpecializationDALQueries.FindSpecializationBy(SpecializationID, ref SpecializationName);
+
+            if (Founded)
+                return new SpecializationBL(SpecializationName, SpecializationID);
+            else
+                return null;
+
+        }
+
         public static DataTable GetAllSpecializations()
             => SpecializationDALQueries.GetAllSpecializations();
 

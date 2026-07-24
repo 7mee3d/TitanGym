@@ -116,11 +116,23 @@
     <Compile Include="Modules\People\Forms\UCShowInformationPerson.Designer.cs">
       <DependentUpon>UCShowInformationPerson.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Trainers\Controls\ctrlShowInformationTrainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Trainers\Controls\ctrlShowInformationTrainer.Designer.cs">
+      <DependentUpon>ctrlShowInformationTrainer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Trainers\Forms\UCAddEditTrainer.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Modules\Trainers\Forms\UCAddEditTrainer.Designer.cs">
       <DependentUpon>UCAddEditTrainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Trainers\Forms\UCShowInformationTrainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Trainers\Forms\UCShowInformationTrainer.Designer.cs">
+      <DependentUpon>UCShowInformationTrainer.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\Trainers\Forms\UCTrainersList.cs">
       <SubType>UserControl</SubType>
@@ -160,8 +172,14 @@
     <EmbeddedResource Include="Modules\People\Forms\UCShowInformationPerson.resx">
       <DependentUpon>UCShowInformationPerson.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Trainers\Controls\ctrlShowInformationTrainer.resx">
+      <DependentUpon>ctrlShowInformationTrainer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\Trainers\Forms\UCAddEditTrainer.resx">
       <DependentUpon>UCAddEditTrainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Trainers\Forms\UCShowInformationTrainer.resx">
+      <DependentUpon>UCShowInformationTrainer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Trainers\Forms\UCTrainersList.resx">
       <DependentUpon>UCTrainersList.cs</DependentUpon>
@@ -210,7 +228,6 @@
     <Folder Include="Modules\Reports\Forms\" />
     <Folder Include="Modules\Subscriptions\Controls\" />
     <Folder Include="Modules\Subscriptions\Forms\" />
-    <Folder Include="Modules\Trainers\Controls\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Delete_Icon_TitanGym_24.png" />

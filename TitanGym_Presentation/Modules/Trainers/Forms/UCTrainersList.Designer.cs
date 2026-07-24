@@ -177,6 +177,7 @@
             this.showInformationTrainerToolStripMenuItem.Name = "showInformationTrainerToolStripMenuItem";
             this.showInformationTrainerToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
             this.showInformationTrainerToolStripMenuItem.Text = "Show Information Trainer";
+            this.showInformationTrainerToolStripMenuItem.Click += new System.EventHandler(this.showInformationTrainerToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 

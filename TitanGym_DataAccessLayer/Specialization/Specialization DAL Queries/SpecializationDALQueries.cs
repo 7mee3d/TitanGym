@@ -85,5 +85,46 @@ namespace TitanGym_DataAccessLayer.Specialization
 
             return Founded;
         }
+
+        public static bool FindSpecializationBy(byte SpecializationID, ref string SpecializationName)
+        {
+
+
+            bool Founded = false;
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+
+
+		                     SELECT 
+                                        SpecializationID,
+                                        SpecializationName	
+                                       
+
+			                 FROM Specializations
+                             WHERE SpecializationID = @SpecializationID ;
+    
+            
+                ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+                    command.AddWithParameter<byte>("@SpecializationID", SpecializationID);
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                        if (reader.Read())
+                        {
+                            Founded = true;
+                            SpecializationName = reader.GetTheValueFrom<string>("SpecializationName");
+                        }
+                }
+
+            }
+
+            return Founded;
+        }
     }
 }

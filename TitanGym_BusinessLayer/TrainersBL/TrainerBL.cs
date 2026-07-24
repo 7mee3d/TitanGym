@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Data;
+using TitanGym_BusinessLayer.Employment_StatusesBL;
+using TitanGym_BusinessLayer.Specialization;
 using TitanGym_DataAccessLayer.Trainers;
 
 namespace TitanGym_BusinessLayer.TrainersBL
@@ -33,6 +35,32 @@ namespace TitanGym_BusinessLayer.TrainersBL
                     _InformationPerson = PeopleBL.PeopleBL.FindThePersonBy(PersonID);
 
                 return _InformationPerson;
+            }
+        }
+
+        private SpecializationBL _InformationSpecialization;
+        public SpecializationBL SpecializationInformation
+        {
+
+            get
+            {
+                if (_InformationSpecialization == null)
+                    _InformationSpecialization = SpecializationBL.FindTheSpecializationBy(this.SpecializationID);
+
+                return _InformationSpecialization;
+            }
+        }
+
+        private EmploymentStatusesBL _InformationEmploymentStatuses;
+        public EmploymentStatusesBL InformationEmploymentStatuses
+        {
+
+            get
+            {
+                if (_InformationEmploymentStatuses == null)
+                    _InformationEmploymentStatuses = EmploymentStatusesBL.FindEmploymentStatuesBy(this.EmploymentStatusID);
+
+                return _InformationEmploymentStatuses;
             }
         }
 

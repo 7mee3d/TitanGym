@@ -132,5 +132,19 @@ namespace TitanGym_Presentation.Modules.Trainers.Forms
             else MessageBox.Show("The trainer deleted Faild", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
         }
+
+        private void showInformationTrainerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int TrainerID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewTrainers, 0);
+
+            var ucShowInformationTrainer = new UCShowInformationTrainer(TrainerID);
+
+            ucShowInformationTrainer.FinishedShowInfoTrainer += result =>
+            {
+                if (result) UCTrainersList_Load(null, null);
+            };
+
+            AppNavigator.Show(ucShowInformationTrainer);
+        }
     }
 }

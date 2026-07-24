@@ -25,6 +25,16 @@ namespace TitanGym_BusinessLayer.Employment_StatusesBL
             else return null;
         }
 
+        public static EmploymentStatusesBL FindEmploymentStatuesBy(byte employmentStatusesID)
+        {
+            string EmploymentStatuesName = "";
+
+            bool Founded = EmploymentStatusesDALQueries.FindEmploymentStatusesBy(employmentStatusesID, ref EmploymentStatuesName);
+            if (Founded)
+                return new EmploymentStatusesBL(employmentStatusesID, EmploymentStatuesName);
+            else return null;
+        }
+
         public static DataTable GetAllEmploymentStatuses()
             => EmploymentStatusesDALQueries.GetAllEmploymentStatuses();
 
