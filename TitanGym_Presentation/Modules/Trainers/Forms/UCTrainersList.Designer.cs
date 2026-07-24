@@ -289,7 +289,7 @@
             this.GGButtonAddNewTrainer.Name = "GGButtonAddNewTrainer";
             this.GGButtonAddNewTrainer.Size = new System.Drawing.Size(237, 44);
             this.GGButtonAddNewTrainer.TabIndex = 7;
-            this.GGButtonAddNewTrainer.Text = "Add New Trainer";
+            this.GGButtonAddNewTrainer.Text = "ADD NEW TRAINER";
             this.GGButtonAddNewTrainer.TextOffset = new System.Drawing.Point(10, 0);
             this.GGButtonAddNewTrainer.Click += new System.EventHandler(this.GGButtonAddNewTrainer_Click);
             // 

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AvailabilityStatusesBL\AvailabilityStatusBL.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Employment StatusesBL\EmploymentStatusesBL.cs" />
     <Compile Include="MemberBL\MemberBL.cs" />
@@ -56,5 +57,6 @@
       <Name>TitanGym_DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

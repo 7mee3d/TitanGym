@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.MembershipsBL;
 
@@ -26,7 +20,7 @@ namespace TitanGym_Presentation.Modules.Plans.Forms
             GDataGridViewMembershipPlans.DataSource = _DT_AllInformationMembershipPlans;
 
             if (GDataGridViewMembershipPlans.Rows.Count > 0)
-            {//MembershipID	MembershipName	Duration	MonthlyPrice	Description	AvailabilityStatusID
+            {
 
                 GDataGridViewMembershipPlans.Columns[0].HeaderText = "MEMBERSHIP ID";
                 GDataGridViewMembershipPlans.Columns[0].Width = 60;
@@ -48,9 +42,22 @@ namespace TitanGym_Presentation.Modules.Plans.Forms
 
             }
         }
+
         private void UCMembershipPlansList_Load(object sender, EventArgs e)
         {
             _LoadInformationMembershipPlans();
+        }
+
+        private void GGButtonAddNewPlan_Click(object sender, EventArgs e)
+        {
+            var ucAddEditMembershipPlans = new UCAddEditMembershipPlans();
+
+            ucAddEditMembershipPlans.FinishedAddEditMembershipPlan += result =>
+            {
+                if (result) UCMembershipPlansList_Load(null, null);
+            };
+
+            AppNavigator.Show(ucAddEditMembershipPlans);
         }
     }
 }

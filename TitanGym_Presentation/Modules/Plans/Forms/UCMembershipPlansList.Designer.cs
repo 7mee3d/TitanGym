@@ -28,42 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCMembershipPlansList));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.GGButtonAddNewTrainer = new Guna.UI2.WinForms.Guna2GradientButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCMembershipPlansList));
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GDataGridViewMembershipPlans = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.GGButtonAddNewPlan = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewMembershipPlans)).BeginInit();
             this.SuspendLayout();
-            // 
-            // GGButtonAddNewTrainer
-            // 
-            this.GGButtonAddNewTrainer.BorderRadius = 6;
-            this.GGButtonAddNewTrainer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GGButtonAddNewTrainer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAddNewTrainer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAddNewTrainer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAddNewTrainer.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAddNewTrainer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GGButtonAddNewTrainer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewTrainer.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewTrainer.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GGButtonAddNewTrainer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
-            this.GGButtonAddNewTrainer.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewTrainer.Image")));
-            this.GGButtonAddNewTrainer.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.GGButtonAddNewTrainer.ImageOffset = new System.Drawing.Point(15, 1);
-            this.GGButtonAddNewTrainer.Location = new System.Drawing.Point(1192, 72);
-            this.GGButtonAddNewTrainer.Name = "GGButtonAddNewTrainer";
-            this.GGButtonAddNewTrainer.Size = new System.Drawing.Size(237, 44);
-            this.GGButtonAddNewTrainer.TabIndex = 11;
-            this.GGButtonAddNewTrainer.Text = "CREATE NEW PLAN";
-            this.GGButtonAddNewTrainer.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // guna2GradientPanel2
             // 
@@ -167,12 +144,36 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Configure and manage subscription tiers for your facility.";
             // 
+            // GGButtonAddNewPlan
+            // 
+            this.GGButtonAddNewPlan.BorderRadius = 6;
+            this.GGButtonAddNewPlan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GGButtonAddNewPlan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonAddNewPlan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonAddNewPlan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonAddNewPlan.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonAddNewPlan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GGButtonAddNewPlan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewPlan.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewPlan.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonAddNewPlan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
+            this.GGButtonAddNewPlan.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPlan.Image")));
+            this.GGButtonAddNewPlan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.GGButtonAddNewPlan.ImageOffset = new System.Drawing.Point(15, 1);
+            this.GGButtonAddNewPlan.Location = new System.Drawing.Point(1192, 72);
+            this.GGButtonAddNewPlan.Name = "GGButtonAddNewPlan";
+            this.GGButtonAddNewPlan.Size = new System.Drawing.Size(237, 44);
+            this.GGButtonAddNewPlan.TabIndex = 11;
+            this.GGButtonAddNewPlan.Text = "CREATE NEW PLAN";
+            this.GGButtonAddNewPlan.TextOffset = new System.Drawing.Point(10, 0);
+            this.GGButtonAddNewPlan.Click += new System.EventHandler(this.GGButtonAddNewPlan_Click);
+            // 
             // UCMembershipPlansList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
-            this.Controls.Add(this.GGButtonAddNewTrainer);
+            this.Controls.Add(this.GGButtonAddNewPlan);
             this.Controls.Add(this.guna2GradientPanel2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -188,7 +189,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2GradientButton GGButtonAddNewTrainer;
+        private Guna.UI2.WinForms.Guna2GradientButton GGButtonAddNewPlan;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2DataGridView GDataGridViewMembershipPlans;
         private System.Windows.Forms.Label label1;

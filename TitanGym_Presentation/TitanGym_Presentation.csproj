@@ -116,6 +116,12 @@
     <Compile Include="Modules\People\Forms\UCShowInformationPerson.Designer.cs">
       <DependentUpon>UCShowInformationPerson.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Plans\Forms\UCAddEditMembershipPlans.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Plans\Forms\UCAddEditMembershipPlans.Designer.cs">
+      <DependentUpon>UCAddEditMembershipPlans.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Plans\Forms\UCMembershipPlansList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\People\Forms\UCShowInformationPerson.resx">
       <DependentUpon>UCShowInformationPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Plans\Forms\UCAddEditMembershipPlans.resx">
+      <DependentUpon>UCAddEditMembershipPlans.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Plans\Forms\UCMembershipPlansList.resx">
       <DependentUpon>UCMembershipPlansList.cs</DependentUpon>

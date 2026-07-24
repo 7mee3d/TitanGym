@@ -42,9 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Availability Statuses\Availability Statuses DAL Queries\AvailabilityStatusesDALQueries.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Employment Statuses\Employment Statuses DAL Queries\EmploymentStatusesDALQueries.cs" />
     <Compile Include="Helper\HelperDAL.cs" />
+    <Compile Include="Memberships\Memberships DAL Commands\MembershipsDALCommands.cs" />
     <Compile Include="Memberships\Memberships DAL Queries\MembershipsDALQueries.cs" />
     <Compile Include="Members\Member DAL Commands\MemberDALCommands.cs" />
     <Compile Include="Members\Member DAL Queries\MemberDALQueries.cs" />
@@ -55,8 +57,6 @@
     <Compile Include="Trainers\Trainers DAL Commands\TrainerDALCommands.cs" />
     <Compile Include="Trainers\Trainers DAL Queries\TrainersDALQueries.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Memberships\Memberships DAL Commands\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

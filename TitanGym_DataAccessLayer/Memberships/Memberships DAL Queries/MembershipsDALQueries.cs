@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using TitanGym_DataAccessLayer.Helper;
 
@@ -48,5 +49,37 @@ namespace TitanGym_DataAccessLayer.Memberships
             return DT_AllInformationMembershipPlans;
         }
 
+        public static bool IsMembershipExistsBy(string MembershipName)
+        {
+
+            bool IsExists = false;
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+
+
+                                    SELECT FOUND = 1 
+                                    FROM Memberships MEM
+                                    WHERE MEM.MembershipName  = @MembershipName
+
+
+                 ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    command.AddWithParameter<string>("@MembershipName", MembershipName);
+                    connection.Open();
+
+                    object result = command.ExecuteScalar();
+                    IsExists = result != null && Convert.ToBoolean(result);
+
+                }
+            }
+
+            return IsExists;
+        }
     }
 }
