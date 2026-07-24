@@ -130,5 +130,40 @@ namespace TitanGym_DataAccessLayer.Trainers
 
             return IsUpdated;
         }
+
+
+        public static bool DeleteTrainer(int trainerID)
+        {
+
+            bool IsDeleted = false;
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+                string Query = @"
+
+                                        DELETE FROM Trainers 
+                                        WHERE TrainerID = @TrainerID 
+
+                                ";
+
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+                    command.AddWithParameter<int>("@TrainerID", trainerID);
+                    connection.Open();
+
+                    try
+                    {
+                        IsDeleted = command.ExecuteNonQuery() > 0;
+                    }
+                    catch
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return IsDeleted;
+        }
     }
 }

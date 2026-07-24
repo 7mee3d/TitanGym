@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TitanGym_DataAccessLayer.Trainers;
 
 namespace TitanGym_BusinessLayer.TrainersBL
@@ -38,7 +34,6 @@ namespace TitanGym_BusinessLayer.TrainersBL
 
                 return _InformationPerson;
             }
-
         }
 
         public TrainerBL(
@@ -107,13 +102,27 @@ namespace TitanGym_BusinessLayer.TrainersBL
 
         private bool _AddNewTrainer()
         {
-            this.TrainerID = TrainerDALCommands.InsertNewTrainer(this.HireDate, this.Salary, this.SpecializationID, this.EmploymentStatusID, this.PersonID);
+            this.TrainerID = TrainerDALCommands.InsertNewTrainer(
+                this.HireDate,
+                this.Salary,
+                this.SpecializationID,
+                this.EmploymentStatusID,
+                this.PersonID
+                );
+
             return this.TrainerID != -1;
         }
 
         private bool _UpdateInformationTrainer()
         {
-            return TrainerDALCommands.UpdasteInformationTrainer(TrainerID, HireDate, Salary, SpecializationID, EmploymentStatusID, PersonID);
+            return TrainerDALCommands.UpdasteInformationTrainer(
+                TrainerID,
+                HireDate,
+                Salary,
+                SpecializationID,
+                EmploymentStatusID,
+                PersonID
+                );
         }
 
         public bool SaveModeTrainer()
@@ -134,6 +143,8 @@ namespace TitanGym_BusinessLayer.TrainersBL
             }
         }
 
+        public static bool DeleteTrainer(int trainerID)
+            => TrainerDALCommands.DeleteTrainer(trainerID);
 
         public static DataTable GetAllTrainers()
             => TrainersDALQueries.GetAllTrainers();

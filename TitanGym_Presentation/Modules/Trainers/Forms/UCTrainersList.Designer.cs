@@ -191,6 +191,7 @@
             this.deleteTrainerToolStripMenuItem.Name = "deleteTrainerToolStripMenuItem";
             this.deleteTrainerToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
             this.deleteTrainerToolStripMenuItem.Text = "Delete Trainer";
+            this.deleteTrainerToolStripMenuItem.Click += new System.EventHandler(this.deleteTrainerToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 

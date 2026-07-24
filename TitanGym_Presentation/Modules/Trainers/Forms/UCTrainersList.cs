@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.TrainersBL;
 using TitanGym_Presentation.Core.Helpers;
@@ -24,7 +18,6 @@ namespace TitanGym_Presentation.Modules.Trainers.Forms
 
         private void _LoadInformationTrainersInDGV()
         {
-            //TrainerID	PersonID	FullName	SpecializationName	NameEmploymentStatus	HireDate	Salary	MemberAssignmentsWithTrainer
             _DT_AllInfoTrainers = TrainerBL.GetAllTrainers();
             GDataGridViewTrainers.DataSource = _DT_AllInfoTrainers;
 
@@ -113,6 +106,31 @@ namespace TitanGym_Presentation.Modules.Trainers.Forms
 
 
             AppNavigator.Show(ucShowInformationPerson);
+        }
+
+        private void deleteTrainerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (MessageBox.Show(
+                "Are you sure to be delete this trainer ?",
+                "Message",
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Exclamation) == DialogResult.Cancel
+                )
+
+                return;
+
+            int TrainerID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewTrainers, 0);
+
+
+            if (TrainerBL.DeleteTrainer(TrainerID))
+            {
+                UCTrainersList_Load(null, null);
+                MessageBox.Show("The trainer deleted successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else MessageBox.Show("The trainer deleted Faild", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
         }
     }
 }
