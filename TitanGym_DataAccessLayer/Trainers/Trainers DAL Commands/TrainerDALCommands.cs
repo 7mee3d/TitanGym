@@ -72,5 +72,63 @@ namespace TitanGym_DataAccessLayer.Trainers
 
             return TrainerID;
         }
+
+        public static bool UpdasteInformationTrainer(
+
+                       int TrainerID,
+                       DateTime HireDate,
+                       double Salary,
+                       byte SpecializationID,
+                       byte EmploymentStatusID,
+                       int PersonID
+
+            )
+        {
+
+
+            bool IsUpdated = false;
+
+            using (SqlConnection connection = new SqlConnection(Helper.HelperDAL.TitanGymConnectionString))
+            {
+
+
+                string Query = @"
+
+
+                                        UPDATE Trainers
+
+                                             SET
+                                                    HireDate = @HireDate, 
+                                                    Salary = @Salary, 
+                                                    SpecializationID = @SpecializationID,
+                                                    EmploymentStatusID= @EmploymentStatusID,
+                                                    PersonID = @PersonID
+                                                
+                                        
+                                      WHERE TrainerID = @TrainerID
+
+                   ";
+
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    command.AddWithParameter<DateTime>("@HireDate", HireDate);
+                    command.AddWithParameter<double>("@Salary", Salary);
+                    command.AddWithParameter<byte>("@SpecializationID", SpecializationID);
+                    command.AddWithParameter<byte>("@EmploymentStatusID", EmploymentStatusID);
+                    command.AddWithParameter<int>("@PersonID", PersonID);
+                    command.AddWithParameter<int>("@TrainerID", TrainerID);
+
+                    connection.Open();
+
+                    IsUpdated = command.ExecuteNonQuery() > 0;
+
+
+                }
+            }
+
+            return IsUpdated;
+        }
     }
 }

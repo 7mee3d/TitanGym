@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -40,10 +41,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.GGButtonAddNewTrainer = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ContextMenuStripTrainersSection = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showInformationTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.deleteTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.addNewTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.updateInformationTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewTrainers)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.ContextMenuStripTrainersSection.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel2
@@ -80,6 +92,7 @@
             this.GDataGridViewTrainers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.GDataGridViewTrainers.ColumnHeadersHeight = 57;
             this.GDataGridViewTrainers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.GDataGridViewTrainers.ContextMenuStrip = this.ContextMenuStripTrainersSection;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,6 +208,87 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // ContextMenuStripTrainersSection
+            // 
+            this.ContextMenuStripTrainersSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripSeparator4,
+            this.showInformationTrainerToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.deleteTrainerToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.addNewTrainerToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.updateInformationTrainerToolStripMenuItem});
+            this.ContextMenuStripTrainersSection.Name = "ContextMenuStripPeopleSection";
+            this.ContextMenuStripTrainersSection.Size = new System.Drawing.Size(255, 218);
+            // 
+            // showInformationTrainerToolStripMenuItem
+            // 
+            this.showInformationTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showInformationTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationTrainerToolStripMenuItem.Image")));
+            this.showInformationTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showInformationTrainerToolStripMenuItem.Name = "showInformationTrainerToolStripMenuItem";
+            this.showInformationTrainerToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
+            this.showInformationTrainerToolStripMenuItem.Text = "Show Information Trainer";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(251, 6);
+            // 
+            // deleteTrainerToolStripMenuItem
+            // 
+            this.deleteTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteTrainerToolStripMenuItem.Image")));
+            this.deleteTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.deleteTrainerToolStripMenuItem.Name = "deleteTrainerToolStripMenuItem";
+            this.deleteTrainerToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
+            this.deleteTrainerToolStripMenuItem.Text = "Delete Trainer";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(251, 6);
+            // 
+            // addNewTrainerToolStripMenuItem
+            // 
+            this.addNewTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.addNewTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewTrainerToolStripMenuItem.Image")));
+            this.addNewTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addNewTrainerToolStripMenuItem.Name = "addNewTrainerToolStripMenuItem";
+            this.addNewTrainerToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
+            this.addNewTrainerToolStripMenuItem.Text = "Add New Trainer";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(251, 6);
+            // 
+            // updateInformationTrainerToolStripMenuItem
+            // 
+            this.updateInformationTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.updateInformationTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationTrainerToolStripMenuItem.Image")));
+            this.updateInformationTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateInformationTrainerToolStripMenuItem.Name = "updateInformationTrainerToolStripMenuItem";
+            this.updateInformationTrainerToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
+            this.updateInformationTrainerToolStripMenuItem.Text = "Update Information Trainer";
+            this.updateInformationTrainerToolStripMenuItem.Click += new System.EventHandler(this.updateInformationTrainerToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
+            this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(254, 38);
+            this.toolStripMenuItem1.Text = "Show Information Person";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(251, 6);
+            // 
             // UCTrainersList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,6 +306,7 @@
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ContextMenuStripTrainersSection.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,5 +321,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ContextMenuStrip ContextMenuStripTrainersSection;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem showInformationTrainerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem deleteTrainerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem addNewTrainerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem updateInformationTrainerToolStripMenuItem;
     }
 }

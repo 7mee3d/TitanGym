@@ -72,10 +72,48 @@ namespace TitanGym_BusinessLayer.TrainersBL
             _Mode = _EnModeTrainer._kADD_NEW_TRAINER;
         }
 
+        public static TrainerBL FindTrainerBy(int trainerID)
+        {
+
+            int personID = 0;
+
+            DateTime hireDate = DateTime.Now;
+            double salary = 0.0d;
+            byte specializationID = 0, employmentStatusID = 0;
+
+
+            bool IsFounded = TrainersDALQueries.FindTheTrainerBy(
+                trainerID,
+                ref hireDate,
+                ref specializationID,
+                ref employmentStatusID,
+                ref personID,
+                ref salary
+                );
+
+            if (IsFounded)
+                return new TrainerBL(
+
+                    trainerID,
+                    personID,
+                    hireDate,
+                    salary,
+                    specializationID,
+                    employmentStatusID
+
+                    );
+            else return null;
+        }
+
         private bool _AddNewTrainer()
         {
             this.TrainerID = TrainerDALCommands.InsertNewTrainer(this.HireDate, this.Salary, this.SpecializationID, this.EmploymentStatusID, this.PersonID);
             return this.TrainerID != -1;
+        }
+
+        private bool _UpdateInformationTrainer()
+        {
+            return TrainerDALCommands.UpdasteInformationTrainer(TrainerID, HireDate, Salary, SpecializationID, EmploymentStatusID, PersonID);
         }
 
         public bool SaveModeTrainer()
@@ -87,6 +125,10 @@ namespace TitanGym_BusinessLayer.TrainersBL
                 case _EnModeTrainer._kADD_NEW_TRAINER:
                     _Mode = _EnModeTrainer._kUPDATE_INFORMATION_TRAINER;
                     return _AddNewTrainer();
+
+                case _EnModeTrainer._kUPDATE_INFORMATION_TRAINER:
+                    return _UpdateInformationTrainer();
+
                 default: return false;
 
             }

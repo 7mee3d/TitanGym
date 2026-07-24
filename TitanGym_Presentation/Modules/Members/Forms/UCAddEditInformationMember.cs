@@ -72,7 +72,7 @@ namespace TitanGym_Presentation.Modules.Members.Forms
         {
             GTextBoxEmergencyContactName.Text = this._InformationMember.EmergencyContactName;
             GTextBoxEmergencyContactPhoneNumber.Text = this._InformationMember.EmergencyContactPhoneNumber;
-            ctrlShowInformationPersonByFilter1.LoadInformationMember(this._MemberID);
+            ctrlShowInformationPersonByFilter1.LoadInformationPerson(this._InformationMember.PersonID);
             ctrlShowInformationPersonByFilter1.EnableControls = false;
         }
 
@@ -125,6 +125,7 @@ namespace TitanGym_Presentation.Modules.Members.Forms
 
             }
 
+
             if (this._PersonID == -1)
             {
                 MessageBox.Show(
@@ -136,6 +137,7 @@ namespace TitanGym_Presentation.Modules.Members.Forms
 
                 return false;
             }
+
 
             if (this._InformationMember.IsMemberActiveAndExistsBy())
             {

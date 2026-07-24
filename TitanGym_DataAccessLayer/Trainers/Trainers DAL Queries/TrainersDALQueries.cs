@@ -104,5 +104,58 @@ namespace TitanGym_DataAccessLayer.Trainers
 
             return IsExists;
         }
+
+        public static bool FindTheTrainerBy(
+
+            int trainerID,
+            ref DateTime HireDate,
+            ref byte SpecializationID,
+            ref byte EmploymentStatusID,
+            ref int PersonID,
+            ref double Salary
+
+
+            )
+        {
+            bool Founded = false;
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+
+                                    SELECT *
+                                    FROM Trainers 
+                                    WHERE Trainers.TrainerID = @TrainerID
+
+
+                ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    command.AddWithParameter<int>("@TrainerID", trainerID);
+
+                    connection.Open();
+
+                    //TrainerID	HireDate	SpecializationID	EmploymentStatusID	PersonID	Salary
+                    using (SqlDataReader reader = command.ExecuteReader())
+                        if (reader.Read())
+                        {
+                            Founded = true;
+                            HireDate = reader.GetTheValueFrom<DateTime>("HireDate");
+                            SpecializationID = reader.GetTheValueFrom<byte>("SpecializationID");
+                            EmploymentStatusID = reader.GetTheValueFrom<byte>("EmploymentStatusID");
+                            PersonID = reader.GetTheValueFrom<int>("PersonID");
+                            Salary = reader.GetTheValueFrom<double>("Salary");
+                        }
+                }
+
+
+            }
+
+            return Founded;
+        }
+
     }
 }

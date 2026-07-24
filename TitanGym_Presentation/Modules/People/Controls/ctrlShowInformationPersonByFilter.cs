@@ -43,9 +43,8 @@ namespace TitanGym_Presentation.Modules.People.Controls
             FocusTheTextBoxPersonID();
         }
 
-        public void LoadInformationMember(int memberID)
+        public void LoadInformationPerson(int PersonID)
         {
-            int PersonID = MemberBL.FindTheMemberBy(memberID).PersonID;
 
             if (ctrlShowInformationPerson1.LoadInformationPerson(PersonID))
                 EHFinishedSearchPerson?.Invoke(this, PersonID);
