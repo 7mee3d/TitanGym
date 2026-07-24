@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.MembershipsBL;
+using TitanGym_Presentation.Core.Helpers;
 
 namespace TitanGym_Presentation.Modules.Plans.Forms
 {
@@ -51,6 +52,32 @@ namespace TitanGym_Presentation.Modules.Plans.Forms
         private void GGButtonAddNewPlan_Click(object sender, EventArgs e)
         {
             var ucAddEditMembershipPlans = new UCAddEditMembershipPlans();
+
+            ucAddEditMembershipPlans.FinishedAddEditMembershipPlan += result =>
+            {
+                if (result) UCMembershipPlansList_Load(null, null);
+            };
+
+            AppNavigator.Show(ucAddEditMembershipPlans);
+        }
+
+        private void addNewMemberHipToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ucAddEditMembershipPlans = new UCAddEditMembershipPlans();
+
+            ucAddEditMembershipPlans.FinishedAddEditMembershipPlan += result =>
+            {
+                if (result) UCMembershipPlansList_Load(null, null);
+            };
+
+            AppNavigator.Show(ucAddEditMembershipPlans);
+        }
+
+        private void updateInformationMembershipToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int MembershipID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewMembershipPlans, 0);
+
+            var ucAddEditMembershipPlans = new UCAddEditMembershipPlans(MembershipID);
 
             ucAddEditMembershipPlans.FinishedAddEditMembershipPlan += result =>
             {

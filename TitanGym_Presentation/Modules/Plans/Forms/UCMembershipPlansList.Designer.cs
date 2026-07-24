@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -38,8 +39,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.GGButtonAddNewPlan = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.ContextMenuStripMembershipPlansSection = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showInformationMembershipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.addNewMemberHipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.updateInformationMembershipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewMembershipPlans)).BeginInit();
+            this.ContextMenuStripMembershipPlansSection.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel2
@@ -76,6 +84,7 @@
             this.GDataGridViewMembershipPlans.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.GDataGridViewMembershipPlans.ColumnHeadersHeight = 57;
             this.GDataGridViewMembershipPlans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.GDataGridViewMembershipPlans.ContextMenuStrip = this.ContextMenuStripMembershipPlansSection;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -168,6 +177,56 @@
             this.GGButtonAddNewPlan.TextOffset = new System.Drawing.Point(10, 0);
             this.GGButtonAddNewPlan.Click += new System.EventHandler(this.GGButtonAddNewPlan_Click);
             // 
+            // ContextMenuStripMembershipPlansSection
+            // 
+            this.ContextMenuStripMembershipPlansSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showInformationMembershipToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.addNewMemberHipToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.updateInformationMembershipToolStripMenuItem});
+            this.ContextMenuStripMembershipPlansSection.Name = "ContextMenuStripPeopleSection";
+            this.ContextMenuStripMembershipPlansSection.Size = new System.Drawing.Size(287, 130);
+            // 
+            // showInformationMembershipToolStripMenuItem
+            // 
+            this.showInformationMembershipToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showInformationMembershipToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationMembershipToolStripMenuItem.Image")));
+            this.showInformationMembershipToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showInformationMembershipToolStripMenuItem.Name = "showInformationMembershipToolStripMenuItem";
+            this.showInformationMembershipToolStripMenuItem.Size = new System.Drawing.Size(286, 38);
+            this.showInformationMembershipToolStripMenuItem.Text = "Show Information Person";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(283, 6);
+            // 
+            // addNewMemberHipToolStripMenuItem
+            // 
+            this.addNewMemberHipToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.addNewMemberHipToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewMemberHipToolStripMenuItem.Image")));
+            this.addNewMemberHipToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addNewMemberHipToolStripMenuItem.Name = "addNewMemberHipToolStripMenuItem";
+            this.addNewMemberHipToolStripMenuItem.Size = new System.Drawing.Size(286, 38);
+            this.addNewMemberHipToolStripMenuItem.Text = "Add New Membership";
+            this.addNewMemberHipToolStripMenuItem.Click += new System.EventHandler(this.addNewMemberHipToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(283, 6);
+            // 
+            // updateInformationMembershipToolStripMenuItem
+            // 
+            this.updateInformationMembershipToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.updateInformationMembershipToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationMembershipToolStripMenuItem.Image")));
+            this.updateInformationMembershipToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateInformationMembershipToolStripMenuItem.Name = "updateInformationMembershipToolStripMenuItem";
+            this.updateInformationMembershipToolStripMenuItem.Size = new System.Drawing.Size(286, 38);
+            this.updateInformationMembershipToolStripMenuItem.Text = "Update Information Membership";
+            this.updateInformationMembershipToolStripMenuItem.Click += new System.EventHandler(this.updateInformationMembershipToolStripMenuItem_Click);
+            // 
             // UCMembershipPlansList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,6 +241,7 @@
             this.Load += new System.EventHandler(this.UCMembershipPlansList_Load);
             this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewMembershipPlans)).EndInit();
+            this.ContextMenuStripMembershipPlansSection.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +254,11 @@
         private Guna.UI2.WinForms.Guna2DataGridView GDataGridViewMembershipPlans;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ContextMenuStrip ContextMenuStripMembershipPlansSection;
+        private System.Windows.Forms.ToolStripMenuItem showInformationMembershipToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem addNewMemberHipToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem updateInformationMembershipToolStripMenuItem;
     }
 }
