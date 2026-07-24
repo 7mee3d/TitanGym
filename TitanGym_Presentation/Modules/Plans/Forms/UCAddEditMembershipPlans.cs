@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.AvailabilityStatusesBL;
 using TitanGym_BusinessLayer.MembershipsBL;
@@ -73,7 +74,7 @@ namespace TitanGym_Presentation.Modules.Plans.Forms
             }
 
             if (this._ModeMembership == _EnModeMembershipPlan._kADD_NEW_MEMBERSHIP_PLAN)
-                if (this._InformationMembership.IsMembershipPlanNameExists())
+                if (MembershipBL.IsMembershipPlanNameExists(GTextBoxMembershipName.Text.Trim()))
                 {
                     MessageBox.Show(
                       "This Membership name already exists , Try enter new membership name",
@@ -101,8 +102,10 @@ namespace TitanGym_Presentation.Modules.Plans.Forms
 
         private void _AddNewMembershipPlan()
         {
-            _PrepareInformationMembershipPlan();
             if (!_PrepareContraintsMembershipPlans()) return;
+
+            _PrepareInformationMembershipPlan();
+
 
             if (_InformationMembership.SaveModeMembershipPlan())
             {
@@ -131,6 +134,29 @@ namespace TitanGym_Presentation.Modules.Plans.Forms
         private void UCAddEditMembershipPlans_Load(object sender, EventArgs e)
         {
             _DefaultValuesMemberships();
+        }
+
+        private void GTextBoxDuration_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar));
+        }
+
+        private void GTextBoxMonthlySalary_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.');
+        }
+
+        private void GTextBoxValidating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Guna2TextBox G2TB = sender as Guna2TextBox;
+
+            if (string.IsNullOrWhiteSpace(G2TB.Text.Trim()))
+            {
+                e.Cancel = true;
+                errorProviderMembershipPlan.SetError(G2TB, "This field is empty");
+
+            }
+            else e.Cancel = false;
         }
     }
 }

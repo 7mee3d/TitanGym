@@ -87,7 +87,7 @@ namespace TitanGym_BusinessLayer.MembershipsBL
         public static DataTable GetAllInformationMembershipPlans()
             => MembershipsDALQueries.GetAllMembershipPlans();
 
-        public bool IsMembershipPlanNameExists()
-            => MembershipsDALQueries.IsMembershipExistsBy(this.MembershipName);
+        public static bool IsMembershipPlanNameExists(string membershipName)
+            => MembershipsDALQueries.IsMembershipExistsBy(membershipName);
     }
 }
