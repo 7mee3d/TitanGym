@@ -37,5 +37,43 @@ namespace TitanGym_DataAccessLayer.Employment_Statuses
 
             return DT_AllEmploymentStatuses;
         }
+
+        public static bool FindEmploymentStatusesBy(string EmploymentStatusesName, ref byte EmploymentStatusesID)
+        {
+
+
+            bool Founded = false;
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+
+
+		                    
+                            SELECT *
+                            FROM EmploymentStatuses
+                            WHERE NameEmploymentStatus = @NameEmploymentStatus ;
+    
+            
+                ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+                    command.AddWithParameter<string>("@NameEmploymentStatus", EmploymentStatusesName);
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                        if (reader.Read())
+                        {
+                            Founded = true;
+                            EmploymentStatusesID = reader.GetTheValueFrom<byte>("EmploymentStatusID");
+                        }
+                }
+
+            }
+
+            return Founded;
+        }
     }
 }

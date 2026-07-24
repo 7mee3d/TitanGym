@@ -30,17 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAddEditTrainer));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.GTextBoxSalary = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.GComboBoxEmploymentStatus = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.GComboBoxSpecialization = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ctrlShowInformationPersonByFilter1 = new TitanGym_Presentation.Modules.People.Controls.ctrlShowInformationPersonByFilter();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.GGButtonAddNewTrainer = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGButtonCancel = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTitleTrainer = new System.Windows.Forms.Label();
-            this.ctrlShowInformationPersonByFilter1 = new TitanGym_Presentation.Modules.People.Controls.ctrlShowInformationPersonByFilter();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -52,6 +54,8 @@
             this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
             this.guna2Panel1.BorderRadius = 8;
             this.guna2Panel1.BorderThickness = 1;
+            this.guna2Panel1.Controls.Add(this.GTextBoxSalary);
+            this.guna2Panel1.Controls.Add(this.label4);
             this.guna2Panel1.Controls.Add(this.GComboBoxEmploymentStatus);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.GComboBoxSpecialization);
@@ -63,6 +67,42 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(993, 681);
             this.guna2Panel1.TabIndex = 2;
+            // 
+            // GTextBoxSalary
+            // 
+            this.GTextBoxSalary.Animated = true;
+            this.GTextBoxSalary.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.GTextBoxSalary.BorderRadius = 4;
+            this.GTextBoxSalary.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.GTextBoxSalary.DefaultText = "";
+            this.GTextBoxSalary.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.GTextBoxSalary.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.GTextBoxSalary.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.GTextBoxSalary.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.GTextBoxSalary.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
+            this.GTextBoxSalary.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GTextBoxSalary.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.GTextBoxSalary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.GTextBoxSalary.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.GTextBoxSalary.Location = new System.Drawing.Point(675, 505);
+            this.GTextBoxSalary.Name = "GTextBoxSalary";
+            this.GTextBoxSalary.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(72)))), ((int)(((byte)(74)))));
+            this.GTextBoxSalary.PlaceholderText = "e.g 1501";
+            this.GTextBoxSalary.SelectedText = "";
+            this.GTextBoxSalary.Size = new System.Drawing.Size(208, 46);
+            this.GTextBoxSalary.TabIndex = 7;
+            this.GTextBoxSalary.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GTextBoxSalary_KeyPress);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.label4.Location = new System.Drawing.Point(671, 478);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(106, 21);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Trainer Salary";
             // 
             // GComboBoxEmploymentStatus
             // 
@@ -77,9 +117,9 @@
             this.GComboBoxEmploymentStatus.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GComboBoxEmploymentStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
             this.GComboBoxEmploymentStatus.ItemHeight = 38;
-            this.GComboBoxEmploymentStatus.Location = new System.Drawing.Point(552, 505);
+            this.GComboBoxEmploymentStatus.Location = new System.Drawing.Point(392, 505);
             this.GComboBoxEmploymentStatus.Name = "GComboBoxEmploymentStatus";
-            this.GComboBoxEmploymentStatus.Size = new System.Drawing.Size(350, 44);
+            this.GComboBoxEmploymentStatus.Size = new System.Drawing.Size(237, 44);
             this.GComboBoxEmploymentStatus.TabIndex = 5;
             // 
             // label3
@@ -87,7 +127,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label3.Location = new System.Drawing.Point(548, 481);
+            this.label3.Location = new System.Drawing.Point(388, 478);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(146, 21);
             this.label3.TabIndex = 2;
@@ -106,9 +146,9 @@
             this.GComboBoxSpecialization.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GComboBoxSpecialization.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
             this.GComboBoxSpecialization.ItemHeight = 38;
-            this.GComboBoxSpecialization.Location = new System.Drawing.Point(95, 505);
+            this.GComboBoxSpecialization.Location = new System.Drawing.Point(109, 505);
             this.GComboBoxSpecialization.Name = "GComboBoxSpecialization";
-            this.GComboBoxSpecialization.Size = new System.Drawing.Size(350, 44);
+            this.GComboBoxSpecialization.Size = new System.Drawing.Size(237, 44);
             this.GComboBoxSpecialization.TabIndex = 5;
             // 
             // label1
@@ -116,11 +156,20 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label1.Location = new System.Drawing.Point(91, 481);
+            this.label1.Location = new System.Drawing.Point(105, 478);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 21);
             this.label1.TabIndex = 2;
             this.label1.Text = "Specialization";
+            // 
+            // ctrlShowInformationPersonByFilter1
+            // 
+            this.ctrlShowInformationPersonByFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
+            this.ctrlShowInformationPersonByFilter1.Location = new System.Drawing.Point(39, 121);
+            this.ctrlShowInformationPersonByFilter1.Name = "ctrlShowInformationPersonByFilter1";
+            this.ctrlShowInformationPersonByFilter1.Size = new System.Drawing.Size(915, 333);
+            this.ctrlShowInformationPersonByFilter1.TabIndex = 1;
+            this.ctrlShowInformationPersonByFilter1.EHFinishedSearchPerson += new System.EventHandler<int>(this.ctrlShowInformationPersonByFilter1_EHFinishedSearchPerson);
             // 
             // guna2Panel3
             // 
@@ -162,6 +211,7 @@
             this.GGButtonAddNewTrainer.Size = new System.Drawing.Size(198, 47);
             this.GGButtonAddNewTrainer.TabIndex = 2;
             this.GGButtonAddNewTrainer.Text = "Add Trainer";
+            this.GGButtonAddNewTrainer.Click += new System.EventHandler(this.GGButtonAddNewTrainer_Click);
             // 
             // GGButtonCancel
             // 
@@ -224,15 +274,6 @@
             this.lblTitleTrainer.TabIndex = 0;
             this.lblTitleTrainer.Text = "Add New Trainer";
             // 
-            // ctrlShowInformationPersonByFilter1
-            // 
-            this.ctrlShowInformationPersonByFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
-            this.ctrlShowInformationPersonByFilter1.Location = new System.Drawing.Point(39, 121);
-            this.ctrlShowInformationPersonByFilter1.Name = "ctrlShowInformationPersonByFilter1";
-            this.ctrlShowInformationPersonByFilter1.Size = new System.Drawing.Size(915, 333);
-            this.ctrlShowInformationPersonByFilter1.TabIndex = 1;
-            this.ctrlShowInformationPersonByFilter1.EHFinishedSearchPerson += new System.EventHandler<int>(this.ctrlShowInformationPersonByFilter1_EHFinishedSearchPerson);
-            // 
             // UCAddEditTrainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,5 +306,7 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ComboBox GComboBoxEmploymentStatus;
         private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2TextBox GTextBoxSalary;
+        private System.Windows.Forms.Label label4;
     }
 }

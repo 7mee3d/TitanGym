@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.Employment_StatusesBL;
 using TitanGym_BusinessLayer.Specialization;
@@ -18,6 +11,7 @@ namespace TitanGym_Presentation.Modules.Trainers.Forms
         private int _PersonID = -1;
         private _EnTrainerMode _ModeTrainer;
         private TrainerBL _InformationTrainer;
+        public event Action<bool> FinishedAddEditInfoTrainer;
 
         private enum _EnTrainerMode
         {
@@ -65,6 +59,78 @@ namespace TitanGym_Presentation.Modules.Trainers.Forms
                 return;
             }
         }
+
+
+        private void _PrepareInformationTrainer()
+        {
+            _InformationTrainer.EmploymentStatusID = SpecializationBL.FindTheSpecializationBy(GComboBoxSpecialization.Text).SpecializationID;
+            _InformationTrainer.SpecializationID = EmploymentStatusesBL.FindEmploymentStatuesBy(GComboBoxEmploymentStatus.Text).EmploymentStatusesID;
+            _InformationTrainer.Salary = Convert.ToDouble(GTextBoxSalary.Text.Trim());
+            _InformationTrainer.HireDate = DateTime.Now;
+            _InformationTrainer.PersonID = _PersonID;
+
+        }
+
+        private bool _PrepareContraintTrainerSextion()
+        {
+
+            if (!this.ValidateChildren())
+            {
+                MessageBox.Show(
+                  "Some fileds are not valide!, put the mouse over the red icon(s) to see the error",
+                  "Validation Error",
+                  MessageBoxButtons.OK,
+                  MessageBoxIcon.Error
+                  );
+                return false;
+            }
+
+            if (_PersonID == -1)
+            {
+                MessageBox.Show(
+                "Please , Must select the person to be link the person with trainer",
+                "Message Error",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error
+                );
+                return false;
+            }
+
+            if (TrainerBL.IsExistsTrainerBy(_PersonID))
+            {
+                MessageBox.Show(
+                "This person already linking with other trainer , try enter again",
+                "Message Error",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error
+                );
+                return false;
+            }
+
+            return true;
+        }
+
+        private void _AddNewTrainer()
+        {
+            if (!_PrepareContraintTrainerSextion()) return;
+
+            _PrepareInformationTrainer();
+
+            if (_InformationTrainer.SaveModeTrainer())
+            {
+                FinishedAddEditInfoTrainer?.Invoke(true);
+
+                if (_ModeTrainer == _EnTrainerMode._kADD_NEW_TRAINER)
+                    MessageBox.Show("The trainer added sccessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else MessageBox.Show("The trainer updated  sccessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else MessageBox.Show("The trainer added/Updated faild", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            lblTitleTrainer.Text = "Update Trainer";
+            GGButtonAddNewTrainer.Text = "Update Trainer";
+            _ModeTrainer = _EnTrainerMode._kUPDATE_INFORMATION_TRAINER;
+        }
+
         private void UCAddEditTrainer_Load(object sender, EventArgs e)
         {
             _DefaulValuesTrainersSection();
@@ -77,6 +143,16 @@ namespace TitanGym_Presentation.Modules.Trainers.Forms
             if (PersonID == -1) return;
 
             _PersonID = PersonID;
+        }
+
+        private void GGButtonAddNewTrainer_Click(object sender, EventArgs e)
+        {
+            _AddNewTrainer();
+        }
+
+        private void GTextBoxSalary_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.');
         }
     }
 }

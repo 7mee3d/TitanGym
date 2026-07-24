@@ -21,8 +21,8 @@ namespace TitanGym_DataAccessLayer.Specialization
 
 		                     SELECT 
                                         SpecializationID,
-                                        SpecializationName	,
-                                        ISNULL ( Salary , 0 )  AS Salary
+                                        SpecializationName	
+                                       
 
 			                 FROM Specializations
     
@@ -43,6 +43,47 @@ namespace TitanGym_DataAccessLayer.Specialization
             }
 
             return DT_AllSpecializations;
+        }
+
+        public static bool FindSpecializationBy(string SpecializationName, ref byte SpecializationID)
+        {
+
+
+            bool Founded = false;
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+
+
+		                     SELECT 
+                                        SpecializationID,
+                                        SpecializationName	
+                                       
+
+			                 FROM Specializations
+                             WHERE SpecializationName = @SpecializationName ;
+    
+            
+                ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+                    command.AddWithParameter<string>("@SpecializationName", SpecializationName);
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                        if (reader.Read())
+                        {
+                            Founded = true;
+                            SpecializationID = reader.GetTheValueFrom<byte>("SpecializationID");
+                        }
+                }
+
+            }
+
+            return Founded;
         }
     }
 }

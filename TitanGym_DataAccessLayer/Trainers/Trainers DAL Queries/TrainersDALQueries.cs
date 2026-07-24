@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using TitanGym_DataAccessLayer.Helper;
 
@@ -28,7 +29,7 @@ namespace TitanGym_DataAccessLayer.Trainers
                                                SPEC.SpecializationName,
                                                EmpStatus.NameEmploymentStatus,
                                                TRA.HireDate,
-                                               SPEC.Salary,
+                                               ISNULL(TRA.Salary ,0),
                                                COUNT(TA.MemberID) AS MemberAssignmentsWithTrainer
 
                                     FROM Trainers TRA
@@ -54,7 +55,7 @@ namespace TitanGym_DataAccessLayer.Trainers
                                 PEOP.LastName,
                                 SPEC.SpecializationName,
                                 EmpStatus.NameEmploymentStatus,
-                                SPEC.Salary,
+                                TRA.Salary,
                                 TRA.HireDate;
                            
 ";
@@ -70,6 +71,38 @@ namespace TitanGym_DataAccessLayer.Trainers
             }
 
             return DT_AllTrainers;
+        }
+
+        public static bool IsExistsTrainerBy(int PersonID)
+        {
+
+            bool IsExists = false;
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+
+                            SELECT FOUND = 1 
+                            FROM Trainers 
+                            WHERE PersonID = @PersonID;
+
+
+                 ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+                    command.AddWithParameter<int>("@PersonID", PersonID);
+
+                    connection.Open();
+
+                    object result = command.ExecuteScalar();
+
+                    IsExists = result != null && Convert.ToBoolean(result);
+                }
+            }
+
+            return IsExists;
         }
     }
 }
