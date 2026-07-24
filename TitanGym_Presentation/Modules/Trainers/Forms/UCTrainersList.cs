@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.TrainersBL;
 using TitanGym_Presentation.Core.Helpers;
+using TitanGym_Presentation.Modules.People.Forms;
 
 namespace TitanGym_Presentation.Modules.Trainers.Forms
 {
@@ -85,6 +86,33 @@ namespace TitanGym_Presentation.Modules.Trainers.Forms
             };
 
             AppNavigator.Show(ucAddEditInfoTrainer);
+        }
+
+        private void addNewTrainerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ucAddEditInfoTrainer = new UCAddEditTrainer();
+
+            ucAddEditInfoTrainer.FinishedAddEditInfoTrainer += result =>
+            {
+                if (result) UCTrainersList_Load(null, null);
+            };
+
+            AppNavigator.Show(ucAddEditInfoTrainer);
+        }
+
+        private void ShowInformationPersontoolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            int PersonID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewTrainers, 1);
+
+            var ucShowInformationPerson = new UCShowInformationPerson(PersonID);
+
+            ucShowInformationPerson.FinishedShowInfoPerson += result =>
+            {
+                if (result) UCTrainersList_Load(null, null);
+            };
+
+
+            AppNavigator.Show(ucShowInformationPerson);
         }
     }
 }
