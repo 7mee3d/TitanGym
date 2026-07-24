@@ -116,6 +116,12 @@
     <Compile Include="Modules\People\Forms\UCShowInformationPerson.Designer.cs">
       <DependentUpon>UCShowInformationPerson.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Plans\Forms\UCMembershipPlansList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Plans\Forms\UCMembershipPlansList.Designer.cs">
+      <DependentUpon>UCMembershipPlansList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Trainers\Controls\ctrlShowInformationTrainer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     <EmbeddedResource Include="Modules\People\Forms\UCShowInformationPerson.resx">
       <DependentUpon>UCShowInformationPerson.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Plans\Forms\UCMembershipPlansList.resx">
+      <DependentUpon>UCMembershipPlansList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\Trainers\Controls\ctrlShowInformationTrainer.resx">
       <DependentUpon>ctrlShowInformationTrainer.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,7 +232,6 @@
     <Folder Include="Modules\Payments\Controls\" />
     <Folder Include="Modules\Payments\Forms\" />
     <Folder Include="Modules\Plans\Controls\" />
-    <Folder Include="Modules\Plans\Forms\" />
     <Folder Include="Modules\Reports\Controls\" />
     <Folder Include="Modules\Reports\Forms\" />
     <Folder Include="Modules\Subscriptions\Controls\" />

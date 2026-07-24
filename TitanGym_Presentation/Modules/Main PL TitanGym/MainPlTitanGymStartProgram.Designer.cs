@@ -226,6 +226,7 @@
             this.GGradientButtonPlans.Size = new System.Drawing.Size(227, 48);
             this.GGradientButtonPlans.TabIndex = 2;
             this.GGradientButtonPlans.Text = "Plans";
+            this.GGradientButtonPlans.Click += new System.EventHandler(this.GGradientButtonPlans_Click);
             // 
             // GGradientButtonTrainers
             // 

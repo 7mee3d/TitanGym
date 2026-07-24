@@ -29,38 +29,38 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCPeopleList));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GDataGridViewPeople = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ContextMenuStripPeopleSection = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.GGButtonAddNewPerson = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.deletePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addNewPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateInformationPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.showInformationPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.deletePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.addNewPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.updateInformationPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.GGButtonAddNewPerson = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewPeople)).BeginInit();
             this.ContextMenuStripPeopleSection.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("IBM Plex Sans", 38.24999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
             this.label1.Location = new System.Drawing.Point(41, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(432, 71);
@@ -91,6 +91,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Quick Filters:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(27, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
@@ -107,47 +117,47 @@
             this.GDataGridViewPeople.AllowUserToAddRows = false;
             this.GDataGridViewPeople.AllowUserToDeleteRows = false;
             this.GDataGridViewPeople.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.GDataGridViewPeople.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.GDataGridViewPeople.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.GDataGridViewPeople.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GDataGridViewPeople.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(201)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GDataGridViewPeople.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(201)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GDataGridViewPeople.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.GDataGridViewPeople.ColumnHeadersHeight = 57;
             this.GDataGridViewPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.GDataGridViewPeople.ContextMenuStrip = this.ContextMenuStripPeopleSection;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GDataGridViewPeople.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GDataGridViewPeople.DefaultCellStyle = dataGridViewCellStyle7;
             this.GDataGridViewPeople.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
             this.GDataGridViewPeople.Location = new System.Drawing.Point(3, 3);
             this.GDataGridViewPeople.MultiSelect = false;
             this.GDataGridViewPeople.Name = "GDataGridViewPeople";
             this.GDataGridViewPeople.ReadOnly = true;
             this.GDataGridViewPeople.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GDataGridViewPeople.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GDataGridViewPeople.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.GDataGridViewPeople.RowHeadersVisible = false;
             this.GDataGridViewPeople.RowTemplate.Height = 64;
             this.GDataGridViewPeople.Size = new System.Drawing.Size(1373, 643);
@@ -183,17 +193,62 @@
             this.toolStripSeparator2,
             this.updateInformationPersonToolStripMenuItem});
             this.ContextMenuStripPeopleSection.Name = "ContextMenuStripPeopleSection";
-            this.ContextMenuStripPeopleSection.Size = new System.Drawing.Size(254, 196);
+            this.ContextMenuStripPeopleSection.Size = new System.Drawing.Size(254, 174);
+            // 
+            // showInformationPersonToolStripMenuItem
+            // 
+            this.showInformationPersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showInformationPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationPersonToolStripMenuItem.Image")));
+            this.showInformationPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showInformationPersonToolStripMenuItem.Name = "showInformationPersonToolStripMenuItem";
+            this.showInformationPersonToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
+            this.showInformationPersonToolStripMenuItem.Text = "Show Information Person";
+            this.showInformationPersonToolStripMenuItem.Click += new System.EventHandler(this.showInformationPersonToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(250, 6);
+            // 
+            // deletePersonToolStripMenuItem
+            // 
+            this.deletePersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deletePersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deletePersonToolStripMenuItem.Image")));
+            this.deletePersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.deletePersonToolStripMenuItem.Name = "deletePersonToolStripMenuItem";
+            this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
+            this.deletePersonToolStripMenuItem.Text = "Delete Person";
+            this.deletePersonToolStripMenuItem.Click += new System.EventHandler(this.deletePersonToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(250, 6);
             // 
+            // addNewPersonToolStripMenuItem
+            // 
+            this.addNewPersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.addNewPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewPersonToolStripMenuItem.Image")));
+            this.addNewPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addNewPersonToolStripMenuItem.Name = "addNewPersonToolStripMenuItem";
+            this.addNewPersonToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
+            this.addNewPersonToolStripMenuItem.Text = "Add New Person";
+            this.addNewPersonToolStripMenuItem.Click += new System.EventHandler(this.addNewPersonToolStripMenuItem_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(250, 6);
+            // 
+            // updateInformationPersonToolStripMenuItem
+            // 
+            this.updateInformationPersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.updateInformationPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationPersonToolStripMenuItem.Image")));
+            this.updateInformationPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateInformationPersonToolStripMenuItem.Name = "updateInformationPersonToolStripMenuItem";
+            this.updateInformationPersonToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
+            this.updateInformationPersonToolStripMenuItem.Text = "Update Information Person";
+            this.updateInformationPersonToolStripMenuItem.Click += new System.EventHandler(this.updateInformationPersonToolStripMenuItem_Click);
             // 
             // GGButtonAddNewPerson
             // 
@@ -219,61 +274,6 @@
             this.GGButtonAddNewPerson.TextOffset = new System.Drawing.Point(10, 0);
             this.GGButtonAddNewPerson.Click += new System.EventHandler(this.GGButtonAddNewPerson_Click);
             // 
-            // deletePersonToolStripMenuItem
-            // 
-            this.deletePersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deletePersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deletePersonToolStripMenuItem.Image")));
-            this.deletePersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.deletePersonToolStripMenuItem.Name = "deletePersonToolStripMenuItem";
-            this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
-            this.deletePersonToolStripMenuItem.Text = "Delete Person";
-            this.deletePersonToolStripMenuItem.Click += new System.EventHandler(this.deletePersonToolStripMenuItem_Click);
-            // 
-            // addNewPersonToolStripMenuItem
-            // 
-            this.addNewPersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.addNewPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewPersonToolStripMenuItem.Image")));
-            this.addNewPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.addNewPersonToolStripMenuItem.Name = "addNewPersonToolStripMenuItem";
-            this.addNewPersonToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
-            this.addNewPersonToolStripMenuItem.Text = "Add New Person";
-            this.addNewPersonToolStripMenuItem.Click += new System.EventHandler(this.addNewPersonToolStripMenuItem_Click);
-            // 
-            // updateInformationPersonToolStripMenuItem
-            // 
-            this.updateInformationPersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.updateInformationPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationPersonToolStripMenuItem.Image")));
-            this.updateInformationPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.updateInformationPersonToolStripMenuItem.Name = "updateInformationPersonToolStripMenuItem";
-            this.updateInformationPersonToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
-            this.updateInformationPersonToolStripMenuItem.Text = "Update Information Person";
-            this.updateInformationPersonToolStripMenuItem.Click += new System.EventHandler(this.updateInformationPersonToolStripMenuItem_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(250, 6);
-            // 
-            // showInformationPersonToolStripMenuItem
-            // 
-            this.showInformationPersonToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.showInformationPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationPersonToolStripMenuItem.Image")));
-            this.showInformationPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showInformationPersonToolStripMenuItem.Name = "showInformationPersonToolStripMenuItem";
-            this.showInformationPersonToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
-            this.showInformationPersonToolStripMenuItem.Text = "Show Information Person";
-            this.showInformationPersonToolStripMenuItem.Click += new System.EventHandler(this.showInformationPersonToolStripMenuItem_Click);
-            // 
             // UCPeopleList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -288,10 +288,10 @@
             this.Load += new System.EventHandler(this.UCPeopleList_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewPeople)).EndInit();
             this.ContextMenuStripPeopleSection.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

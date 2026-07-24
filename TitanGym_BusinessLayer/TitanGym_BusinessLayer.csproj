@@ -44,9 +44,10 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Employment StatusesBL\EmploymentStatusesBL.cs" />
     <Compile Include="MemberBL\MemberBL.cs" />
+    <Compile Include="MembershipsBL\MembershipBL.cs" />
     <Compile Include="PeopleBL\PeopleBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Specialization\SpecializationBL.cs" />
+    <Compile Include="SpecializationBL\SpecializationBL.cs" />
     <Compile Include="TrainersBL\TrainerBL.cs" />
   </ItemGroup>
   <ItemGroup>
