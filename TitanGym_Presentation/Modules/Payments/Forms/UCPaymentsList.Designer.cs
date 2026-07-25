@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCPaymentsList));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -40,9 +41,12 @@
             this.lblTotalRevenue = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ContextMenuStripPaymentsPlansSection = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showInformationPaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewPayments)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
+            this.ContextMenuStripPaymentsPlansSection.SuspendLayout();
             this.SuspendLayout();
             // 
             // GGButtonAddNewPerson
@@ -102,6 +106,7 @@
             this.GDataGridViewPayments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.GDataGridViewPayments.ColumnHeadersHeight = 71;
             this.GDataGridViewPayments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.GDataGridViewPayments.ContextMenuStrip = this.ContextMenuStripPaymentsPlansSection;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,6 +200,23 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Payments Directory";
             // 
+            // ContextMenuStripPaymentsPlansSection
+            // 
+            this.ContextMenuStripPaymentsPlansSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showInformationPaymentToolStripMenuItem});
+            this.ContextMenuStripPaymentsPlansSection.Name = "ContextMenuStripPeopleSection";
+            this.ContextMenuStripPaymentsPlansSection.Size = new System.Drawing.Size(255, 42);
+            // 
+            // showInformationPaymentToolStripMenuItem
+            // 
+            this.showInformationPaymentToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showInformationPaymentToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationPaymentToolStripMenuItem.Image")));
+            this.showInformationPaymentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showInformationPaymentToolStripMenuItem.Name = "showInformationPaymentToolStripMenuItem";
+            this.showInformationPaymentToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
+            this.showInformationPaymentToolStripMenuItem.Text = "Show Information Payment";
+            this.showInformationPaymentToolStripMenuItem.Click += new System.EventHandler(this.showInformationPaymentToolStripMenuItem_Click);
+            // 
             // UCPaymentsList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,6 +233,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewPayments)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
+            this.ContextMenuStripPaymentsPlansSection.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,5 +248,7 @@
         private System.Windows.Forms.Label lblTotalRevenue;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ContextMenuStrip ContextMenuStripPaymentsPlansSection;
+        private System.Windows.Forms.ToolStripMenuItem showInformationPaymentToolStripMenuItem;
     }
 }

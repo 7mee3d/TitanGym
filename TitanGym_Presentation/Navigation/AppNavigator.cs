@@ -6,7 +6,7 @@ namespace TitanGym_Presentation
 {
     internal class AppNavigator
     {
-        public static Panel _MainPanel;
+        private static Panel _MainPanel;
 
         private static Stack<UserControl> _ST_UserControls = new Stack<UserControl>();
 

@@ -98,6 +98,12 @@
     <Compile Include="Modules\Payments\Forms\UCPaymentsList.Designer.cs">
       <DependentUpon>UCPaymentsList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Payments\Forms\UCShowInformationPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Payments\Forms\UCShowInformationPayment.Designer.cs">
+      <DependentUpon>UCShowInformationPayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\People\Controls\ctrlShowInformationPerson.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Payments\Forms\UCPaymentsList.resx">
       <DependentUpon>UCPaymentsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Payments\Forms\UCShowInformationPayment.resx">
+      <DependentUpon>UCShowInformationPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\People\Controls\ctrlShowInformationPerson.resx">
       <DependentUpon>ctrlShowInformationPerson.cs</DependentUpon>

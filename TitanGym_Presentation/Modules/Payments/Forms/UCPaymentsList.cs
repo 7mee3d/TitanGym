@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.PaymentsBL;
+using TitanGym_Presentation.Core.Helpers;
 
 namespace TitanGym_Presentation.Modules.Payments.Forms
 {
@@ -74,6 +75,21 @@ namespace TitanGym_Presentation.Modules.Payments.Forms
 
 
             lblTotalRevenue.Text = TotalRevenue.ToString("C");
+        }
+
+        private void showInformationPaymentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int PaymentID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewPayments, 0);
+
+            var ucShowInforPayment = new UCShowInformationPayment(PaymentID);
+
+            ucShowInforPayment.FinishedShowInfoPayment += result =>
+            {
+                if (result) UCPaymentsList_Load(null, null);
+
+            };
+
+            AppNavigator.Show(ucShowInforPayment);
         }
     }
 }

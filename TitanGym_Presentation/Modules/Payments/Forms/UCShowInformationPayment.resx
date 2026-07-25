@@ -117,38 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="GGButtonAddNewPerson.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAPhJREFUSEvt
-        kjsSgjAQhlcrSkuPk9Jj7CyOzjiQeBOPwJEoLS05giVOQhLDEgg+Cgq+mQzM5t93AFaWDckHkGo3JFvz
-        /1e6oO+T669quew7SDam6lzW3naUte0m2onVzyzAVc0Zs2um7ga4uXPG7JrPEtgRkbx7mxmR1AmaQOd3
-        ZPX9MwqKzAjMYkNntuTQzoMn94GYQd49U+sQXa5nVtAf8F0mEZgBqVu0ZSqfW30XIZ0ACxFdFJuvf+/a
-        joXgYeJQiX3nsgK87rgM8LIHUpVLbPQndeayIR9XpJPJQ3osDvscuTnJ7AThzF2yqcM1SaacY3auWVk0
-        L90l/WZy8RTMAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <metadata name="ContextMenuStripPaymentsPlansSection.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="showInformationPaymentToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        5AAAAOQBXaJ52AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMTSURBVFhHzZfZ
-        TxNRFIf5C1ye9IEo+gRGMAaFBxcqoCmp0sUW6OKgQkF2KNJCW1o0LiWaoAYUlBdRg8EoEo0aEIVIlS2E
-        uMWo0ViiookmaDSSiD9zL1LKtNWZdlBP8j3M5M4539y5Z+ZOSIhnhInmRcQm9InESS6ROGlEYFwRsYm9
-        IfOj586o6RlhUfH2rnNFEz8eVmE2ILnDVsTZ2HXdER6zof7JjTKvC4WC5CY12HXd8V8LNB7OxIdeC07X
-        ZNHjtlO5eOc0I0evQnamCsYiNb4N25C5QwmpIhmDrQavHEEJaDRyPG03Ys7SNXB1laPKqMPj62X0/NSY
-        K415OOHIwFi/dcZ5QQV0OgV2ble6BdYmiNFQnYGmI3o012bj8skc93h2DkEEbGU6WAwabJJspgIbJRJ0
-        NBXgbksxztdNC6jVsyjwaaASocvjvB7Bg6ulUKbIUO/IoGuCnSMogfamfFrYeaGYHnc3F+LzoJWe9xzX
-        d7GEzsT4sM0rR1ACQsBb4Fm7ESqFFCr5JKlbZXjvNHsl5gpvgc4zBTi+i8GXBhPFxqjx6NpuvLhpor3P
-        BdKygguw74wrggm87DQhJU3ml3RGge/37cELkLZKU0ihVyspSpkUr7unp5QvvAWEhrfAq9smFBiykG/I
-        phQZ9PjYZ/VKzBXeAmQNyPc1wt7voiQZ9nNaA56MeDyygAS21bbg2JsJitJ+9O93gS8B8mjKizV+sZZq
-        hekCsqlYJdEiXptFiRan0uIk+fMOo1/IGHbxgASEhrfAaI8Z1WYGjopJDlkY+gVkJ+YKbwGyBirUqeix
-        51L0cgXdA5AuYL/z/cG7Cy415GCgtYRC9nd1Hq/iSkZNBdh3xpU/CiyKituyIHzd+AELA0clg4NWBgpp
-        Mpx78mYIvL1TgWpbOh3ji5q9OwLrAhKLI0VatUY2OpWA7HDDV8ZDKUlG1OpE+in+OmRzz5IvhtpKvYpz
-        FiDBlvC1ww0EzgIklkTGqaYk/okAidBfM+Frix0It84W/v7n1FcQiYXL1o/5+N3miysiJvEe+/f8J9Xu
-        6e4VzCmWAAAAAElFTkSuQmCC
-</value>
-  </data>
 </root>
