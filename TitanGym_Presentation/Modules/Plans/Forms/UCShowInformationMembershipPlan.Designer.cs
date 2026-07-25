@@ -1,6 +1,6 @@
-﻿namespace TitanGym_Presentation.Modules.People.Forms
+﻿namespace TitanGym_Presentation.Modules.Plans.Forms
 {
-    partial class UCShowInformationPerson
+    partial class UCShowInformationMembershipPlan
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,21 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.GGButtonBack = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.ctrlShowInformationPerson1 = new TitanGym_Presentation.Modules.People.Controls.ctrlShowInformationPerson();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ctrlShowInformationMembershipPlan1 = new TitanGym_Presentation.Modules.Plans.Controls.ctrlShowInformationMembershipPlan();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("IBM Plex Sans", 38.24999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label1.Location = new System.Drawing.Point(41, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(644, 71);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Show Information Person";
             // 
             // GGButtonBack
             // 
@@ -64,32 +53,43 @@
             this.GGButtonBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonBack.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GGButtonBack.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GGButtonBack.Location = new System.Drawing.Point(284, 633);
+            this.GGButtonBack.Location = new System.Drawing.Point(395, 611);
             this.GGButtonBack.Name = "GGButtonBack";
             this.GGButtonBack.Size = new System.Drawing.Size(129, 47);
-            this.GGButtonBack.TabIndex = 3;
+            this.GGButtonBack.TabIndex = 5;
             this.GGButtonBack.Text = "Back";
             this.GGButtonBack.Click += new System.EventHandler(this.GGButtonBack_Click);
             // 
-            // ctrlShowInformationPerson1
+            // label1
             // 
-            this.ctrlShowInformationPerson1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
-            this.ctrlShowInformationPerson1.Location = new System.Drawing.Point(284, 365);
-            this.ctrlShowInformationPerson1.Name = "ctrlShowInformationPerson1";
-            this.ctrlShowInformationPerson1.Size = new System.Drawing.Size(908, 237);
-            this.ctrlShowInformationPerson1.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("IBM Plex Sans", 38.24999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.label1.Location = new System.Drawing.Point(41, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(896, 71);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Show Information Membership Plan";
             // 
-            // UCShowInformationPerson
+            // ctrlShowInformationMembershipPlan1
+            // 
+            this.ctrlShowInformationMembershipPlan1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
+            this.ctrlShowInformationMembershipPlan1.Location = new System.Drawing.Point(395, 347);
+            this.ctrlShowInformationMembershipPlan1.Name = "ctrlShowInformationMembershipPlan1";
+            this.ctrlShowInformationMembershipPlan1.Size = new System.Drawing.Size(686, 232);
+            this.ctrlShowInformationMembershipPlan1.TabIndex = 0;
+            // 
+            // UCShowInformationMembershipPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.Controls.Add(this.GGButtonBack);
-            this.Controls.Add(this.ctrlShowInformationPerson1);
             this.Controls.Add(this.label1);
-            this.Name = "UCShowInformationPerson";
+            this.Controls.Add(this.ctrlShowInformationMembershipPlan1);
+            this.Name = "UCShowInformationMembershipPlan";
             this.Size = new System.Drawing.Size(1477, 956);
-            this.Load += new System.EventHandler(this.UCShowInformationPerson_Load);
+            this.Load += new System.EventHandler(this.UCShowInformationMembershipPlan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,8 +97,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private Controls.ctrlShowInformationPerson ctrlShowInformationPerson1;
+        private Controls.ctrlShowInformationMembershipPlan ctrlShowInformationMembershipPlan1;
         private Guna.UI2.WinForms.Guna2GradientButton GGButtonBack;
+        private System.Windows.Forms.Label label1;
     }
 }

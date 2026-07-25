@@ -116,6 +116,12 @@
     <Compile Include="Modules\People\Forms\UCShowInformationPerson.Designer.cs">
       <DependentUpon>UCShowInformationPerson.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Plans\Controls\ctrlShowInformationMembershipPlan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Plans\Controls\ctrlShowInformationMembershipPlan.Designer.cs">
+      <DependentUpon>ctrlShowInformationMembershipPlan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Plans\Forms\UCAddEditMembershipPlans.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -127,6 +133,12 @@
     </Compile>
     <Compile Include="Modules\Plans\Forms\UCMembershipPlansList.Designer.cs">
       <DependentUpon>UCMembershipPlansList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Plans\Forms\UCShowInformationMembershipPlan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Plans\Forms\UCShowInformationMembershipPlan.Designer.cs">
+      <DependentUpon>UCShowInformationMembershipPlan.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\Trainers\Controls\ctrlShowInformationTrainer.cs">
       <SubType>UserControl</SubType>
@@ -184,11 +196,17 @@
     <EmbeddedResource Include="Modules\People\Forms\UCShowInformationPerson.resx">
       <DependentUpon>UCShowInformationPerson.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Plans\Controls\ctrlShowInformationMembershipPlan.resx">
+      <DependentUpon>ctrlShowInformationMembershipPlan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\Plans\Forms\UCAddEditMembershipPlans.resx">
       <DependentUpon>UCAddEditMembershipPlans.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Plans\Forms\UCMembershipPlansList.resx">
       <DependentUpon>UCMembershipPlansList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Plans\Forms\UCShowInformationMembershipPlan.resx">
+      <DependentUpon>UCShowInformationMembershipPlan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Trainers\Controls\ctrlShowInformationTrainer.resx">
       <DependentUpon>ctrlShowInformationTrainer.cs</DependentUpon>
@@ -240,7 +258,6 @@
     <Folder Include="Modules\Dashboard\Forms\" />
     <Folder Include="Modules\Payments\Controls\" />
     <Folder Include="Modules\Payments\Forms\" />
-    <Folder Include="Modules\Plans\Controls\" />
     <Folder Include="Modules\Reports\Controls\" />
     <Folder Include="Modules\Reports\Forms\" />
     <Folder Include="Modules\Subscriptions\Controls\" />

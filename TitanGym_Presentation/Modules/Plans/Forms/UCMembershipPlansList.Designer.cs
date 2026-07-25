@@ -38,12 +38,12 @@
             this.GDataGridViewMembershipPlans = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.GGButtonAddNewPlan = new Guna.UI2.WinForms.Guna2GradientButton();
             this.ContextMenuStripMembershipPlansSection = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.showInformationMembershipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.addNewMemberHipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.GGButtonAddNewPlan = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.showInformationMembershipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewMemberHipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateInformationMembershipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewMembershipPlans)).BeginInit();
@@ -153,6 +153,27 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Configure and manage subscription tiers for your facility.";
             // 
+            // ContextMenuStripMembershipPlansSection
+            // 
+            this.ContextMenuStripMembershipPlansSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showInformationMembershipToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.addNewMemberHipToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.updateInformationMembershipToolStripMenuItem});
+            this.ContextMenuStripMembershipPlansSection.Name = "ContextMenuStripPeopleSection";
+            this.ContextMenuStripMembershipPlansSection.Size = new System.Drawing.Size(306, 130);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(302, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(302, 6);
+            // 
             // GGButtonAddNewPlan
             // 
             this.GGButtonAddNewPlan.BorderRadius = 6;
@@ -177,30 +198,15 @@
             this.GGButtonAddNewPlan.TextOffset = new System.Drawing.Point(10, 0);
             this.GGButtonAddNewPlan.Click += new System.EventHandler(this.GGButtonAddNewPlan_Click);
             // 
-            // ContextMenuStripMembershipPlansSection
-            // 
-            this.ContextMenuStripMembershipPlansSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showInformationMembershipToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.addNewMemberHipToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.updateInformationMembershipToolStripMenuItem});
-            this.ContextMenuStripMembershipPlansSection.Name = "ContextMenuStripPeopleSection";
-            this.ContextMenuStripMembershipPlansSection.Size = new System.Drawing.Size(287, 130);
-            // 
             // showInformationMembershipToolStripMenuItem
             // 
             this.showInformationMembershipToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
             this.showInformationMembershipToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationMembershipToolStripMenuItem.Image")));
             this.showInformationMembershipToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.showInformationMembershipToolStripMenuItem.Name = "showInformationMembershipToolStripMenuItem";
-            this.showInformationMembershipToolStripMenuItem.Size = new System.Drawing.Size(286, 38);
-            this.showInformationMembershipToolStripMenuItem.Text = "Show Information Person";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(283, 6);
+            this.showInformationMembershipToolStripMenuItem.Size = new System.Drawing.Size(305, 38);
+            this.showInformationMembershipToolStripMenuItem.Text = "Show Information Membership Plan";
+            this.showInformationMembershipToolStripMenuItem.Click += new System.EventHandler(this.showInformationMembershipToolStripMenuItem_Click);
             // 
             // addNewMemberHipToolStripMenuItem
             // 
@@ -208,14 +214,9 @@
             this.addNewMemberHipToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewMemberHipToolStripMenuItem.Image")));
             this.addNewMemberHipToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewMemberHipToolStripMenuItem.Name = "addNewMemberHipToolStripMenuItem";
-            this.addNewMemberHipToolStripMenuItem.Size = new System.Drawing.Size(286, 38);
+            this.addNewMemberHipToolStripMenuItem.Size = new System.Drawing.Size(305, 38);
             this.addNewMemberHipToolStripMenuItem.Text = "Add New Membership";
             this.addNewMemberHipToolStripMenuItem.Click += new System.EventHandler(this.addNewMemberHipToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(283, 6);
             // 
             // updateInformationMembershipToolStripMenuItem
             // 
@@ -223,7 +224,7 @@
             this.updateInformationMembershipToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationMembershipToolStripMenuItem.Image")));
             this.updateInformationMembershipToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.updateInformationMembershipToolStripMenuItem.Name = "updateInformationMembershipToolStripMenuItem";
-            this.updateInformationMembershipToolStripMenuItem.Size = new System.Drawing.Size(286, 38);
+            this.updateInformationMembershipToolStripMenuItem.Size = new System.Drawing.Size(305, 38);
             this.updateInformationMembershipToolStripMenuItem.Text = "Update Information Membership";
             this.updateInformationMembershipToolStripMenuItem.Click += new System.EventHandler(this.updateInformationMembershipToolStripMenuItem_Click);
             // 

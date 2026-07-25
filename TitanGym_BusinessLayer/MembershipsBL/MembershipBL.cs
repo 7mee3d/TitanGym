@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using TitanGym_BusinessLayer.AvailabilityStatusesBL;
 using TitanGym_DataAccessLayer.Memberships;
 
 namespace TitanGym_BusinessLayer.MembershipsBL
@@ -22,6 +23,20 @@ namespace TitanGym_BusinessLayer.MembershipsBL
         public byte AvailabilityStatusID { get; set; }
         public double MonthlyPrice { get; set; }
         public EnModeMembersipPlan ModeMembershipPlan { get; set; }
+
+        private AvailabilityStatusBL _InformationAvailabilityStatus;
+
+        public AvailabilityStatusBL InformationAvailabilityStatus
+        {
+            get
+            {
+                if (_InformationAvailabilityStatus is null)
+                    _InformationAvailabilityStatus = AvailabilityStatusBL.FindTheAvailabilityStatus(AvailabilityStatusID);
+
+                return _InformationAvailabilityStatus;
+            }
+        }
+
 
         public MembershipBL(
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Web.Security;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.MembershipsBL;
 using TitanGym_Presentation.Core.Helpers;
@@ -85,6 +86,20 @@ namespace TitanGym_Presentation.Modules.Plans.Forms
             };
 
             AppNavigator.Show(ucAddEditMembershipPlans);
+        }
+
+        private void showInformationMembershipToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            byte MembershipPlanID = HelpersPL.GetValueFromDataGridView<byte>(GDataGridViewMembershipPlans, 0);
+
+            var ucShowInformationMembershipPlan = new UCShowInformationMembershipPlan(MembershipPlanID);
+
+            ucShowInformationMembershipPlan.FinishedShowInfoMembershipPlan += result =>
+            {
+                if (result) UCMembershipPlansList_Load(null, null);
+            };
+
+            AppNavigator.Show(ucShowInformationMembershipPlan);
         }
     }
 }
