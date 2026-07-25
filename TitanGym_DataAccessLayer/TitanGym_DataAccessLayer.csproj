@@ -49,11 +49,14 @@
     <Compile Include="Memberships\Memberships DAL Queries\MembershipsDALQueries.cs" />
     <Compile Include="Members\Member DAL Commands\MemberDALCommands.cs" />
     <Compile Include="Members\Member DAL Queries\MemberDALQueries.cs" />
+    <Compile Include="Payment Methods\Payment Method DAL Queries\PaymentMethodDALQueries.cs" />
+    <Compile Include="Payment Statuses\Payment Status DAL Queries\PaymentStatusDALQueries.cs" />
     <Compile Include="Payments\Payments DAL Queries\PaymentsDALQueries.cs" />
     <Compile Include="People\People DAL Commands\PeopleDALCommands.cs" />
     <Compile Include="People\People DAL Queries\PeopleDALQueries.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Specialization\Specialization DAL Queries\SpecializationDALQueries.cs" />
+    <Compile Include="Subscriptions\Subscriptions DAL Queries\SubscriptionDALQueries.cs" />
     <Compile Include="Trainers\Trainers DAL Commands\TrainerDALCommands.cs" />
     <Compile Include="Trainers\Trainers DAL Queries\TrainersDALQueries.cs" />
   </ItemGroup>

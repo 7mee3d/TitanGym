@@ -1,13 +1,13 @@
-﻿
-using System;
+﻿using System;
 using System.Data;
+using TitanGym_BusinessLayer.SubscriptionBL;
 using TitanGym_DataAccessLayer.Payments;
 
 namespace TitanGym_BusinessLayer.PaymentsBL
 {
     public class PaymentsBL
     {
-        //PaymentID	SubscriptionID	PaymentDate	Amount	Note	PaymentMethodID	PaymentStatusID
+
 
         public int PaymentID { get; set; }
         public int SubscriptionID { get; set; }
@@ -47,6 +47,20 @@ namespace TitanGym_BusinessLayer.PaymentsBL
 
         }
 
+        private SubscriptionBL.SubscriptionBL _InformationSubscription;
+
+        public SubscriptionBL.SubscriptionBL InformationSubscription
+        {
+
+            get
+            {
+                if (_InformationSubscription is null)
+                    _InformationSubscription = SubscriptionBL.SubscriptionBL.FindTheSubscriptionBy(this.SubscriptionID);
+
+                return _InformationSubscription;
+            }
+
+        }
 
         public PaymentsBL(
 
@@ -80,9 +94,9 @@ namespace TitanGym_BusinessLayer.PaymentsBL
             this.Note = default;
         }
 
-        public static PaymentsBL FindPaymentBy(int SubscriptionID)
+        public static PaymentsBL FindPaymentBy(int PaymentID)
         {
-            int PaymentID = 0;
+            int SubscriptionID = 0;
 
             DateTime PaymentDate = DateTime.Now;
             double Amount = 0.0d;
@@ -91,8 +105,8 @@ namespace TitanGym_BusinessLayer.PaymentsBL
 
             bool IsFounded = PaymentsDALQueries.FindThePaymentBy(
 
-                SubscriptionID,
-                ref PaymentID,
+                PaymentID,
+                ref SubscriptionID,
                 ref PaymentDate,
                 ref Amount,
                 ref Note,

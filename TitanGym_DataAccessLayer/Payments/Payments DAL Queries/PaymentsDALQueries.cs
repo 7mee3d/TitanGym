@@ -52,10 +52,10 @@ namespace TitanGym_DataAccessLayer.Payments
             return DT_AllInformationPayments;
         }
 
-        public static int FindThePaymentBy(
+        public static bool FindThePaymentBy(
 
-            int SubscriptionID,
-            ref int PaymentID,
+            int PaymentID,
+            ref int SubscriptionID,
             ref DateTime PaymentDate,
             ref double Amount,
             ref string Note,
@@ -86,14 +86,14 @@ namespace TitanGym_DataAccessLayer.Payments
                                    FROM Payments PAY
 
 
-                        WHERE PAY.SubscriptionID = @SubscriptionID
+                        WHERE PAY.PaymentID = @PaymentID
 
 
                 ";
 
                 using (SqlCommand command = new SqlCommand(Query, connection))
                 {
-                    command.AddWithParameter<int>("@SubscriptionID", SubscriptionID);
+                    command.AddWithParameter<int>("@PaymentID", PaymentID);
                     connection.Open();
 
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -101,8 +101,7 @@ namespace TitanGym_DataAccessLayer.Payments
                         {
                             Founded = true;
 
-
-                            PaymentID = reader.GetTheValueFrom<int>("PaymentID");
+                            SubscriptionID = reader.GetTheValueFrom<int>("SubscriptionID");
                             PaymentDate = reader.GetTheValueFrom<DateTime>("PaymentDate");
                             Amount = reader.GetTheValueFrom<double>("Amount");
                             Note = reader.GetTheValueFrom<string>("Note");
