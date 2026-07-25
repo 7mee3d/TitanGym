@@ -166,6 +166,7 @@
             this.GGradientButtonPayments.Size = new System.Drawing.Size(227, 48);
             this.GGradientButtonPayments.TabIndex = 2;
             this.GGradientButtonPayments.Text = "Payments";
+            this.GGradientButtonPayments.Click += new System.EventHandler(this.GGradientButtonPayments_Click);
             // 
             // GGradientButtonSubscriptions
             // 

@@ -86,6 +86,12 @@
     <Compile Include="Modules\Members\Forms\UCShowInformationMember.Designer.cs">
       <DependentUpon>UCShowInformationMember.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Payments\Forms\UCPaymentsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Payments\Forms\UCPaymentsList.Designer.cs">
+      <DependentUpon>UCPaymentsList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\People\Controls\ctrlShowInformationPerson.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     <EmbeddedResource Include="Modules\Members\Forms\UCShowInformationMember.resx">
       <DependentUpon>UCShowInformationMember.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Payments\Forms\UCPaymentsList.resx">
+      <DependentUpon>UCPaymentsList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\People\Controls\ctrlShowInformationPerson.resx">
       <DependentUpon>ctrlShowInformationPerson.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,7 +266,6 @@
     <Folder Include="Modules\Dashboard\Controls\" />
     <Folder Include="Modules\Dashboard\Forms\" />
     <Folder Include="Modules\Payments\Controls\" />
-    <Folder Include="Modules\Payments\Forms\" />
     <Folder Include="Modules\Reports\Controls\" />
     <Folder Include="Modules\Reports\Forms\" />
     <Folder Include="Modules\Subscriptions\Controls\" />
