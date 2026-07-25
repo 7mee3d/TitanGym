@@ -17,6 +17,37 @@ namespace TitanGym_BusinessLayer.PaymentsBL
         public double Amount { get; set; }
         public string Note { get; set; }
 
+        private Payment_MethodsBL.PaymentMethodBL _InformationPaymentMethod;
+
+        public Payment_MethodsBL.PaymentMethodBL InformationPaymentMethod
+        {
+
+            get
+            {
+                if (_InformationPaymentMethod is null)
+                    _InformationPaymentMethod = Payment_MethodsBL.PaymentMethodBL.FindPaymentMethodBy(this.PaymentMethodID);
+
+                return _InformationPaymentMethod;
+            }
+
+        }
+
+        private Payment_StatusesBL.PaymentStatusesBL _InformationPaymentStatus;
+
+        public Payment_StatusesBL.PaymentStatusesBL InformationPaymentStatus
+        {
+
+            get
+            {
+                if (_InformationPaymentStatus is null)
+                    _InformationPaymentStatus = Payment_StatusesBL.PaymentStatusesBL.FindPaymentStatusBy(this.PaymentStatusID);
+
+                return _InformationPaymentStatus;
+            }
+
+        }
+
+
         public PaymentsBL(
 
             int paymentID,
@@ -58,10 +89,31 @@ namespace TitanGym_BusinessLayer.PaymentsBL
             string Note = "";
             byte PaymentMethodID = 0, PaymentStatusID = 0;
 
-            bool IsFounded = PaymentsDALQueries.FindThePaymentBy(SubscriptionID, ref PaymentID, ref PaymentDate, ref Amount, ref Note, ref PaymentMethodID, ref PaymentStatusID);
+            bool IsFounded = PaymentsDALQueries.FindThePaymentBy(
+
+                SubscriptionID,
+                ref PaymentID,
+                ref PaymentDate,
+                ref Amount,
+                ref Note,
+                ref PaymentMethodID,
+                ref PaymentStatusID
+
+                );
 
             if (IsFounded)
-                return new PaymentsBL(PaymentID, SubscriptionID, PaymentMethodID, PaymentStatusID, PaymentDate, Amount, Note);
+                return new PaymentsBL(
+
+                    PaymentID,
+                    SubscriptionID,
+                    PaymentMethodID,
+                    PaymentStatusID,
+                    PaymentDate,
+                    Amount,
+                    Note
+
+                    );
+
             else
                 return null;
 
