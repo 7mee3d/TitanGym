@@ -37,9 +37,8 @@
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblSubscriptionTitle = new System.Windows.Forms.Label();
             this.GGButtonAddNewSubscription = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.ctrlShowInformationMemberWithFilter1 = new TitanGym_Presentation.Modules.Members.Controls.ctrlShowInformationMemberWithFilter();
             this.GDateTimePickerStartDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.GDateTimePickerEndDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -47,6 +46,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.GComboBoxSubscriptionStatus = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ctrlShowInformationMemberWithFilter1 = new TitanGym_Presentation.Modules.Members.Controls.ctrlShowInformationMemberWithFilter();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -83,10 +83,10 @@
             this.GTextBoxSubscriptionFees.BorderRadius = 4;
             this.GTextBoxSubscriptionFees.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.GTextBoxSubscriptionFees.DefaultText = "";
-            this.GTextBoxSubscriptionFees.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.GTextBoxSubscriptionFees.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.GTextBoxSubscriptionFees.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.GTextBoxSubscriptionFees.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.GTextBoxSubscriptionFees.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(75)))), ((int)(((byte)(78)))));
+            this.GTextBoxSubscriptionFees.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(75)))), ((int)(((byte)(78)))));
+            this.GTextBoxSubscriptionFees.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(125)))), ((int)(((byte)(128)))));
+            this.GTextBoxSubscriptionFees.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(95)))), ((int)(((byte)(98)))));
             this.GTextBoxSubscriptionFees.Enabled = false;
             this.GTextBoxSubscriptionFees.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.GTextBoxSubscriptionFees.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -167,7 +167,7 @@
             // 
             this.guna2Panel6.BorderRadius = 8;
             this.guna2Panel6.Controls.Add(this.label6);
-            this.guna2Panel6.Controls.Add(this.label7);
+            this.guna2Panel6.Controls.Add(this.lblSubscriptionTitle);
             this.guna2Panel6.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
             this.guna2Panel6.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel6.Location = new System.Drawing.Point(3, 3);
@@ -186,16 +186,16 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Register a new profile to the Apex Pulse ecosystem.";
             // 
-            // label7
+            // lblSubscriptionTitle
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("IBM Plex Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label7.Location = new System.Drawing.Point(12, 19);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(354, 45);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Add New Subscription";
+            this.lblSubscriptionTitle.AutoSize = true;
+            this.lblSubscriptionTitle.Font = new System.Drawing.Font("IBM Plex Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubscriptionTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.lblSubscriptionTitle.Location = new System.Drawing.Point(12, 19);
+            this.lblSubscriptionTitle.Name = "lblSubscriptionTitle";
+            this.lblSubscriptionTitle.Size = new System.Drawing.Size(354, 45);
+            this.lblSubscriptionTitle.TabIndex = 0;
+            this.lblSubscriptionTitle.Text = "Add New Subscription";
             // 
             // GGButtonAddNewSubscription
             // 
@@ -224,14 +224,7 @@
             this.GGButtonAddNewSubscription.Size = new System.Drawing.Size(198, 47);
             this.GGButtonAddNewSubscription.TabIndex = 2;
             this.GGButtonAddNewSubscription.Text = "Add Subscription";
-            // 
-            // ctrlShowInformationMemberWithFilter1
-            // 
-            this.ctrlShowInformationMemberWithFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
-            this.ctrlShowInformationMemberWithFilter1.Location = new System.Drawing.Point(3, 110);
-            this.ctrlShowInformationMemberWithFilter1.Name = "ctrlShowInformationMemberWithFilter1";
-            this.ctrlShowInformationMemberWithFilter1.Size = new System.Drawing.Size(1054, 368);
-            this.ctrlShowInformationMemberWithFilter1.TabIndex = 6;
+            this.GGButtonAddNewSubscription.Click += new System.EventHandler(this.GGButtonAddNewSubscription_Click);
             // 
             // GDateTimePickerStartDate
             // 
@@ -293,6 +286,7 @@
             this.GComboBoxMembershipType.Name = "GComboBoxMembershipType";
             this.GComboBoxMembershipType.Size = new System.Drawing.Size(258, 44);
             this.GComboBoxMembershipType.TabIndex = 9;
+            this.GComboBoxMembershipType.SelectedValueChanged += new System.EventHandler(this.GComboBoxMembershipType_SelectedValueChanged);
             // 
             // label9
             // 
@@ -334,6 +328,14 @@
             this.GComboBoxSubscriptionStatus.Size = new System.Drawing.Size(258, 44);
             this.GComboBoxSubscriptionStatus.TabIndex = 9;
             // 
+            // ctrlShowInformationMemberWithFilter1
+            // 
+            this.ctrlShowInformationMemberWithFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
+            this.ctrlShowInformationMemberWithFilter1.Location = new System.Drawing.Point(3, 110);
+            this.ctrlShowInformationMemberWithFilter1.Name = "ctrlShowInformationMemberWithFilter1";
+            this.ctrlShowInformationMemberWithFilter1.Size = new System.Drawing.Size(1054, 368);
+            this.ctrlShowInformationMemberWithFilter1.TabIndex = 6;
+            // 
             // UCAddEditSubscription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,6 +344,7 @@
             this.Controls.Add(this.guna2Panel4);
             this.Name = "UCAddEditSubscription";
             this.Size = new System.Drawing.Size(1477, 956);
+            this.Load += new System.EventHandler(this.UCAddEditSubscription_Load);
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
             this.guna2Panel5.ResumeLayout(false);
@@ -362,7 +365,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblSubscriptionTitle;
         private Members.Controls.ctrlShowInformationMemberWithFilter ctrlShowInformationMemberWithFilter1;
         private Guna.UI2.WinForms.Guna2DateTimePicker GDateTimePickerStartDate;
         private Guna.UI2.WinForms.Guna2DateTimePicker GDateTimePickerEndDate;

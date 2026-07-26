@@ -51,6 +51,7 @@
     <Compile Include="PeopleBL\PeopleBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpecializationBL\SpecializationBL.cs" />
+    <Compile Include="Subscription StatusesBL\SubscriptionStatusBL.cs" />
     <Compile Include="SubscriptionBL\SubscriptionBL.cs" />
     <Compile Include="TrainersBL\TrainerBL.cs" />
   </ItemGroup>

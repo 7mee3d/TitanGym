@@ -15,6 +15,8 @@ namespace TitanGym_Presentation.Modules.Members.Controls
             InitializeComponent();
         }
 
+        private int _MemberID = -1;
+        public int MemberID { get { return _MemberID; } }
         private void _DefaultValues()
         {
             ctrlShowInformationMember1._DefaultValuesMember();
@@ -34,6 +36,7 @@ namespace TitanGym_Presentation.Modules.Members.Controls
             }
 
             ctrlShowInformationMember1.LoadInformationMember(MemberID);
+            _MemberID = MemberID;
         }
 
         private void GGButtonAddNewMember_Click(object sender, EventArgs e)
