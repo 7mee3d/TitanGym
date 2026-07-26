@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -58,11 +59,24 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
             }
 
             lblTotalSubscriptions.Text = GDataGridViewSubscriptions.Rows.Count.ToString();
+
+            int TotalActiveSubscriptions = 0;
+
+            foreach (DataRow DR in _DT_AllSubscriptions.Rows)
+                if (DR["NameSubscriptionStatus"].ToString() == "Active")
+                    ++TotalActiveSubscriptions;
+
+            lblTotalActiveSubscriptions.Text = TotalActiveSubscriptions.ToString();
         }
 
         private void UCSubscriptionsList_Load(object sender, EventArgs e)
         {
             _LoadInformationSubscriptions();
+        }
+
+        private void GDataGridViewSubscriptions_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+
         }
     }
 }
