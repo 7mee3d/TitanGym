@@ -197,6 +197,7 @@
             this.GGradientButtonSubscriptions.Size = new System.Drawing.Size(227, 48);
             this.GGradientButtonSubscriptions.TabIndex = 2;
             this.GGradientButtonSubscriptions.Text = "Subscriptions";
+            this.GGradientButtonSubscriptions.Click += new System.EventHandler(this.GGradientButtonSubscriptions_Click);
             // 
             // GGradientButtonPlans
             // 

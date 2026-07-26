@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Runtime.InteropServices.ComTypes;
+using System.Data;
 using TitanGym_BusinessLayer.MembershipsBL;
 using TitanGym_DataAccessLayer.Subscriptions;
 
@@ -8,7 +8,6 @@ namespace TitanGym_BusinessLayer.SubscriptionBL
     public class SubscriptionBL
     {
 
-        ///SubscriptionID	StartDate	EndDate	SubscriptionFees	SubscriptionStatusID	MemberID	MembershipID
 
         public enum EnModeSubscription
         {
@@ -42,7 +41,6 @@ namespace TitanGym_BusinessLayer.SubscriptionBL
         }
 
         private MembershipsBL.MembershipBL _InformationMembership;
-
         public MembershipsBL.MembershipBL InformationMembership
         {
             get
@@ -88,7 +86,6 @@ namespace TitanGym_BusinessLayer.SubscriptionBL
             this.ModeSubscription = EnModeSubscription._kADD_NEW_SUBSCRIPTION;
         }
 
-
         public static SubscriptionBL FindTheSubscriptionBy(int SubscriptionID)
         {
 
@@ -125,5 +122,8 @@ namespace TitanGym_BusinessLayer.SubscriptionBL
             else return null;
 
         }
+
+        public static DataTable GetAllSubscription()
+                => SubscriptionDALQueries.GetAllSubscription();
     }
 }

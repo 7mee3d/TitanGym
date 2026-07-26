@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using TitanGym_DataAccessLayer.Helper;
 
@@ -60,5 +61,61 @@ namespace TitanGym_DataAccessLayer.Subscriptions
 
             return IsFounded;
         }
+
+        public static DataTable GetAllSubscription()
+        {
+
+            DataTable DT_AllInformationSubscription = new DataTable();
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+
+
+                        SELECT 
+                        
+                             SUB.SubscriptionID ,
+                             MEM.MemberID ,
+                             MEMSHIP.MembershipID , 
+                             CONCAT (PEOP.FirstName , ' ' , PEOP.SecondName , ' ' , PEOP.ThirdName , ' ' , PEOP.LastName)  AS MemberName,
+                             MEMSHIP.MembershipName , 
+                             MEMSHIP.Duration,
+                             SUB.StartDate , 
+                             SUB.EndDate ,
+                             SUB.SubscriptionFees , 
+                             SUBSTATUS.NameSubscriptionStatus 
+                        
+                        FROM Subscriptions SUB
+
+                        INNER JOIN Members MEM 
+                        ON MEM.MemberID = SUB.MemberID 
+
+                        INNER JOIN Memberships MEMSHIP 
+                        ON MEMSHIP.MembershipID = SUB.MembershipID
+
+                        INNER JOIN People PEOP
+                        ON PEOP.PersonID = MEM.PersonID 
+
+                        INNER JOIN SubscriptionStatuses SUBSTATUS 
+                        ON SUBSTATUS.SubscriptionStatusID = SUB.SubscriptionStatusID
+
+
+                ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                        if (reader.HasRows)
+                            DT_AllInformationSubscription.Load(reader);
+                }
+            }
+
+            return DT_AllInformationSubscription;
+        }
+
     }
 }
