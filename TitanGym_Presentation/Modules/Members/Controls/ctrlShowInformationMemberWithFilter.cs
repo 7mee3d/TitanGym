@@ -22,6 +22,21 @@ namespace TitanGym_Presentation.Modules.Members.Controls
             ctrlShowInformationMember1._DefaultValuesMember();
         }
 
+        private bool _EnableControls;
+
+        public bool EnableControls
+        {
+            set
+            {
+                _EnableControls = value;
+
+                GGButtonAddNewMember.Enabled = _EnableControls;
+                GGButtonSearchMember.Enabled = _EnableControls;
+                GTextBoxMemberID.Enabled = _EnableControls;
+
+            }
+        }
+
         private void GGButtonSearchMember_Click(object sender, EventArgs e)
         {
             int MemberID = Convert.ToInt32(GTextBoxMemberID.Text.Trim());
@@ -37,6 +52,25 @@ namespace TitanGym_Presentation.Modules.Members.Controls
 
             ctrlShowInformationMember1.LoadInformationMember(MemberID);
             _MemberID = MemberID;
+        }
+
+        public void LoadInformationMember(int memberID)
+        {
+
+            if (memberID <= 0) return;
+
+            _InformationMember = MemberBL.FindTheMemberBy(memberID);
+
+            if (_InformationMember is null)
+            {
+                _DefaultValues();
+                MessageBox.Show("This member is not exists", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            ctrlShowInformationMember1.LoadInformationMember(memberID);
+            _MemberID = memberID;
+
         }
 
         private void GGButtonAddNewMember_Click(object sender, EventArgs e)

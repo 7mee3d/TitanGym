@@ -10,6 +10,7 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
     {
         private SubscriptionBL _InformationSubscription;
         private double _TotalSubFees = 0.0d;
+        private int _SubscriptionID = -1;
 
         private enum _EnSubscriptionMode
         {
@@ -25,6 +26,13 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
             _ModeSubscription = _EnSubscriptionMode._kADD_NEW_SUBSCRIPTION;
         }
 
+        public UCAddEditSubscription(int subcriptionID)
+        {
+            InitializeComponent();
+            _ModeSubscription = _EnSubscriptionMode._kADD_NEW_SUBSCRIPTION;
+            _SubscriptionID = subcriptionID;
+        }
+
         private void _DefaultValues()
         {
             _LoadMembershipsTypeInCB();
@@ -37,6 +45,28 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
                 GGButtonAddNewSubscription.Text = "Add Subscription";
                 return;
             }
+
+            _InformationSubscription = SubscriptionBL.FindTheSubscriptionBy(_SubscriptionID);
+
+            if (_InformationSubscription is null)
+            {
+                MessageBox.Show("This subscription is not exists", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            ctrlShowInformationMemberWithFilter1.EnableControls = false;
+        }
+
+        private void _LoadInformatioNSubscriptionInControls()
+        {
+
+            GComboBoxSubscriptionStatus.SelectedValue = _InformationSubscription.SubscriptionStatusID;
+            GComboBoxMembershipType.SelectedValue = _InformationSubscription.MembershipID;
+            GDateTimePickerEndDate.Value = _InformationSubscription.EndDate;
+            GDateTimePickerStartDate.Value = _InformationSubscription.StartDate;
+            GTextBoxSubscriptionFees.Text = _InformationSubscription.SubscriptionFees.ToString();
+
+            ctrlShowInformationMemberWithFilter1.LoadInformationMember(_InformationSubscription.MemberID);
 
         }
 
@@ -145,11 +175,16 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
             lblSubscriptionTitle.Text = "Update Subscription";
             GGButtonAddNewSubscription.Text = "Update Subscription";
             this._ModeSubscription = _EnSubscriptionMode._kUPDATE_INFORMATION_SUBSCRIPTION;
+            ctrlShowInformationMemberWithFilter1.EnableControls = false;
+
         }
 
         private void UCAddEditSubscription_Load(object sender, EventArgs e)
         {
             _DefaultValues();
+
+            if (this._ModeSubscription == _EnSubscriptionMode._kUPDATE_INFORMATION_SUBSCRIPTION)
+                _LoadInformatioNSubscriptionInControls();
         }
 
         private void GComboBoxMembershipType_SelectedValueChanged(object sender, EventArgs e)
