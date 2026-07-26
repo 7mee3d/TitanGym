@@ -19,7 +19,21 @@ namespace TitanGym_Presentation.Modules.Members.Forms
         private int _PersonID = -1;
         private _EnModeMembers _Mode;
         private MemberBL _InformationMember;
-        public event Action<bool> EH_FinishedAddEditMember;
+
+        public class SpeacialInfoMemberEventArgs : EventArgs
+        {
+            public bool IsAddOrEditMember { get; private set; }
+            public int NewMemberID { get; private set; }
+
+            public SpeacialInfoMemberEventArgs(bool isAddOrEditMember, int newMemberID)
+            {
+                this.IsAddOrEditMember = isAddOrEditMember;
+                this.NewMemberID = newMemberID;
+            }
+
+        }
+
+        public event Action<SpeacialInfoMemberEventArgs> EH_FinishedAddEditMember;
 
 
 
@@ -162,13 +176,14 @@ namespace TitanGym_Presentation.Modules.Members.Forms
 
             if (this._InformationMember.SaveModeMember())
             {
-                this.EH_FinishedAddEditMember?.Invoke(true);
+                this.EH_FinishedAddEditMember?.Invoke(new SpeacialInfoMemberEventArgs(true, this._InformationMember.MemberID));
 
                 if (this._Mode == _EnModeMembers._kADD_NEW_MEMBER)
                     MessageBox.Show("The Member Addedd Successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else MessageBox.Show("The Member Updated Successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
+
             else MessageBox.Show("The Member Addedd/Updated Faild", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             this._Mode = _EnModeMembers._kUPDATE_INFORMATION_MEMBER;

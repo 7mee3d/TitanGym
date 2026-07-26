@@ -125,5 +125,36 @@ namespace TitanGym_BusinessLayer.SubscriptionBL
 
         public static DataTable GetAllSubscription()
                 => SubscriptionDALQueries.GetAllSubscription();
+
+        private bool _AddNewSubscription()
+        {
+            this.SubscriptionID = SubscriptionsDALCommands.InsertNewSubscription(
+                StartDate,
+                EndDate,
+                SubscriptionFees,
+                SubscriptionStatusID,
+                MemberID,
+                MembershipID
+                );
+
+            return this.SubscriptionID != -1;
+        }
+
+        public bool SaveModeSubscription()
+        {
+
+            switch (this.ModeSubscription)
+            {
+                case EnModeSubscription._kADD_NEW_SUBSCRIPTION:
+                    this.ModeSubscription = EnModeSubscription._kUPDATE_INFORMATION_SUBSCRIPTION;
+                    return _AddNewSubscription();
+
+                case EnModeSubscription._kUPDATE_INFORMATION_SUBSCRIPTION:
+                    return false;
+
+                default: return false;
+            }
+        }
+
     }
 }

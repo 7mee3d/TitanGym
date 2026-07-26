@@ -14,10 +14,12 @@ namespace TitanGym_Presentation.Modules.Members.Controls
 
         public MemberBL MemberInformation { get => _MemberInfo; }
 
-        private void _DefaultValuesMember()
+        public void _DefaultValuesMember()
         {
             lblEmergencyContactName.Text = "[???]";
             label.Text = "[???]";
+
+            ctrlShowInformationPerson1._DefaultValues();
         }
 
         public void LoadInformationMember(int MemberID)

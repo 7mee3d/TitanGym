@@ -14,7 +14,7 @@ namespace TitanGym_Presentation.Modules.People.Controls
 
         private PeopleBL _InformationPerson;
 
-        private void _DefaultValues()
+        public void _DefaultValues()
         {
             lblPersonID.Text = "[???]";
             lblFullName.Text = "[???]";

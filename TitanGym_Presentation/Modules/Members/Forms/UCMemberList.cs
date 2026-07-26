@@ -167,7 +167,7 @@ namespace TitanGym_Presentation.Modules.Members.Forms
 
             ucAddEditMember.EH_FinishedAddEditMember += result =>
             {
-                if (result) UCMemberList_Load(null, null);
+                if (result.IsAddOrEditMember) UCMemberList_Load(null, null);
             };
 
             AppNavigator.Show(ucAddEditMember);
@@ -180,7 +180,7 @@ namespace TitanGym_Presentation.Modules.Members.Forms
 
             ucAddEditMember.EH_FinishedAddEditMember += result =>
             {
-                if (result) UCMemberList_Load(null, null);
+                if (result.IsAddOrEditMember) UCMemberList_Load(null, null);
             };
 
             AppNavigator.Show(ucAddEditMember);

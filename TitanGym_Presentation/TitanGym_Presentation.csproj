@@ -68,6 +68,12 @@
     <Compile Include="Modules\Members\Controls\ctrlShowInformationMember.Designer.cs">
       <DependentUpon>ctrlShowInformationMember.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Members\Controls\ctrlShowInformationMemberWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Members\Controls\ctrlShowInformationMemberWithFilter.Designer.cs">
+      <DependentUpon>ctrlShowInformationMemberWithFilter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Members\Forms\UCAddEditInformationMember.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,6 +164,12 @@
     <Compile Include="Modules\Plans\Forms\UCShowInformationMembershipPlan.Designer.cs">
       <DependentUpon>UCShowInformationMembershipPlan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Subscriptions\Forms\UCAddEditSubscription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Subscriptions\Forms\UCAddEditSubscription.Designer.cs">
+      <DependentUpon>UCAddEditSubscription.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Subscriptions\Forms\UCSubscriptionsList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -195,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Members\Controls\ctrlShowInformationMember.resx">
       <DependentUpon>ctrlShowInformationMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Members\Controls\ctrlShowInformationMemberWithFilter.resx">
+      <DependentUpon>ctrlShowInformationMemberWithFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Members\Forms\UCAddEditInformationMember.resx">
       <DependentUpon>UCAddEditInformationMember.cs</DependentUpon>
@@ -240,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Plans\Forms\UCShowInformationMembershipPlan.resx">
       <DependentUpon>UCShowInformationMembershipPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Subscriptions\Forms\UCAddEditSubscription.resx">
+      <DependentUpon>UCAddEditSubscription.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Subscriptions\Forms\UCSubscriptionsList.resx">
       <DependentUpon>UCSubscriptionsList.cs</DependentUpon>

@@ -56,6 +56,7 @@
     <Compile Include="People\People DAL Queries\PeopleDALQueries.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Specialization\Specialization DAL Queries\SpecializationDALQueries.cs" />
+    <Compile Include="Subscriptions\Subscriptions DAL Commands\SubscriptionsDALCommands.cs" />
     <Compile Include="Subscriptions\Subscriptions DAL Queries\SubscriptionDALQueries.cs" />
     <Compile Include="Trainers\Trainers DAL Commands\TrainerDALCommands.cs" />
     <Compile Include="Trainers\Trainers DAL Queries\TrainersDALQueries.cs" />
