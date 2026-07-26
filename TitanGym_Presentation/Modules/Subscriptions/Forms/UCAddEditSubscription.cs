@@ -12,6 +12,8 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
         private double _TotalSubFees = 0.0d;
         private int _SubscriptionID = -1;
 
+        public event Action<bool> FinishedAddEditSubscription;
+
         private enum _EnSubscriptionMode
         {
             _kADD_NEW_SUBSCRIPTION = 1,
@@ -29,8 +31,16 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
         public UCAddEditSubscription(int subcriptionID)
         {
             InitializeComponent();
-            _ModeSubscription = _EnSubscriptionMode._kADD_NEW_SUBSCRIPTION;
+            _ModeSubscription = _EnSubscriptionMode._kUPDATE_INFORMATION_SUBSCRIPTION;
             _SubscriptionID = subcriptionID;
+        }
+
+        private void _HandleTheDateTime()
+        {
+            GDateTimePickerStartDate.MinDate = DateTime.Now;
+            GDateTimePickerEndDate.MinDate = GDateTimePickerStartDate.MinDate;
+            GDateTimePickerEndDate.Value = GDateTimePickerStartDate.MinDate;
+            GDateTimePickerEndDate.Value = GDateTimePickerStartDate.MinDate;
         }
 
         private void _DefaultValues()
@@ -43,6 +53,7 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
                 _InformationSubscription = new SubscriptionBL();
                 lblSubscriptionTitle.Text = "Add New Subscription";
                 GGButtonAddNewSubscription.Text = "Add Subscription";
+                _HandleTheDateTime();
                 return;
             }
 
@@ -66,6 +77,7 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
             GDateTimePickerStartDate.Value = _InformationSubscription.StartDate;
             GTextBoxSubscriptionFees.Text = _InformationSubscription.SubscriptionFees.ToString();
 
+            GDateTimePickerStartDate.Enabled = false;
             ctrlShowInformationMemberWithFilter1.LoadInformationMember(_InformationSubscription.MemberID);
 
         }
@@ -165,6 +177,8 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
 
             if (this._InformationSubscription.SaveModeSubscription())
             {
+                FinishedAddEditSubscription?.Invoke(true);
+
                 if (_ModeSubscription == _EnSubscriptionMode._kADD_NEW_SUBSCRIPTION)
                     MessageBox.Show("The subscription added sccessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else MessageBox.Show("The subscription updated sccessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);

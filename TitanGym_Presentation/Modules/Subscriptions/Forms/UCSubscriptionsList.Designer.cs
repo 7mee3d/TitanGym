@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -46,12 +47,21 @@
             this.label5 = new System.Windows.Forms.Label();
             this.GGButtonAddNewSubscription = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ContextMenuStripSubscriptionSection = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showInformationSubscriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.addNewSubscriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.updateInformationSubscritpionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.expiredSubscriptiontoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewSubscriptions)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
             this.guna2GradientPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.ContextMenuStripSubscriptionSection.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel2
@@ -88,6 +98,7 @@
             this.GDataGridViewSubscriptions.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.GDataGridViewSubscriptions.ColumnHeadersHeight = 57;
             this.GDataGridViewSubscriptions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.GDataGridViewSubscriptions.ContextMenuStrip = this.ContextMenuStripSubscriptionSection;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -274,6 +285,73 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // ContextMenuStripSubscriptionSection
+            // 
+            this.ContextMenuStripSubscriptionSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showInformationSubscriptionToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.addNewSubscriptionToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.updateInformationSubscritpionToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.expiredSubscriptiontoolStripMenuItem});
+            this.ContextMenuStripSubscriptionSection.Name = "ContextMenuStripPeopleSection";
+            this.ContextMenuStripSubscriptionSection.Size = new System.Drawing.Size(289, 196);
+            // 
+            // showInformationSubscriptionToolStripMenuItem
+            // 
+            this.showInformationSubscriptionToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showInformationSubscriptionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationSubscriptionToolStripMenuItem.Image")));
+            this.showInformationSubscriptionToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showInformationSubscriptionToolStripMenuItem.Name = "showInformationSubscriptionToolStripMenuItem";
+            this.showInformationSubscriptionToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.showInformationSubscriptionToolStripMenuItem.Text = "Show Information Subscription";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(285, 6);
+            // 
+            // addNewSubscriptionToolStripMenuItem
+            // 
+            this.addNewSubscriptionToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.addNewSubscriptionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewSubscriptionToolStripMenuItem.Image")));
+            this.addNewSubscriptionToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addNewSubscriptionToolStripMenuItem.Name = "addNewSubscriptionToolStripMenuItem";
+            this.addNewSubscriptionToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.addNewSubscriptionToolStripMenuItem.Text = "Add New Subscription";
+            this.addNewSubscriptionToolStripMenuItem.Click += new System.EventHandler(this.addNewSubscriptionToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(285, 6);
+            // 
+            // updateInformationSubscritpionToolStripMenuItem
+            // 
+            this.updateInformationSubscritpionToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.updateInformationSubscritpionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationSubscritpionToolStripMenuItem.Image")));
+            this.updateInformationSubscritpionToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateInformationSubscritpionToolStripMenuItem.Name = "updateInformationSubscritpionToolStripMenuItem";
+            this.updateInformationSubscritpionToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.updateInformationSubscritpionToolStripMenuItem.Text = "Update Information Subscription";
+            this.updateInformationSubscritpionToolStripMenuItem.Click += new System.EventHandler(this.updateInformationSubscritpionToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(285, 6);
+            // 
+            // expiredSubscriptiontoolStripMenuItem
+            // 
+            this.expiredSubscriptiontoolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.expiredSubscriptiontoolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("expiredSubscriptiontoolStripMenuItem.Image")));
+            this.expiredSubscriptiontoolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.expiredSubscriptiontoolStripMenuItem.Name = "expiredSubscriptiontoolStripMenuItem";
+            this.expiredSubscriptiontoolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.expiredSubscriptiontoolStripMenuItem.Text = "Expired Subscription";
+            this.expiredSubscriptiontoolStripMenuItem.Click += new System.EventHandler(this.expiredSubscriptiontoolStripMenuItem_Click);
+            // 
             // UCSubscriptionsList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,6 +375,7 @@
             this.guna2GradientPanel4.ResumeLayout(false);
             this.guna2GradientPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ContextMenuStripSubscriptionSection.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,5 +396,13 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel4;
         private System.Windows.Forms.Label lblTotalSubscriptions;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ContextMenuStrip ContextMenuStripSubscriptionSection;
+        private System.Windows.Forms.ToolStripMenuItem showInformationSubscriptionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem addNewSubscriptionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem updateInformationSubscritpionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem expiredSubscriptiontoolStripMenuItem;
     }
 }

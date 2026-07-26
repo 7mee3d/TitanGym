@@ -77,5 +77,69 @@ namespace TitanGym_DataAccessLayer.Subscriptions
 
             return SubscriptionID;
         }
+
+        public static bool UpdateInformationSubscription(
+            int subscriptionID,
+            DateTime startDate,
+            DateTime endDate,
+            double subscriptionFees,
+            byte subscriptionStatusID,
+            int memberID,
+            int membershipID
+
+            )
+        {
+
+
+
+            bool IsUpdated = false;
+
+            using (SqlConnection connection = new SqlConnection(Helper.HelperDAL.TitanGymConnectionString))
+            {
+
+
+                string Query = @"
+
+                                    UPDATE Subscriptions
+                                   
+                                    SET
+                                        StartDate = @StartDate,
+                                        EndDate = @EndDate,
+                                        SubscriptionFees = @SubscriptionFees,
+                                        SubscriptionStatusID = @SubscriptionStatusID,
+                                        MemberID = @MemberID,
+                                        MembershipID = @MembershipID
+                                  
+
+
+                                    WHERE SubscriptionID = @SubscriptionID
+
+
+                ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    command.AddWithParameter<DateTime>("@StartDate", startDate);
+                    command.AddWithParameter<DateTime>("@EndDate", endDate);
+                    command.AddWithParameter<double>("@SubscriptionFees", subscriptionFees);
+                    command.AddWithParameter<byte>("@SubscriptionStatusID", subscriptionStatusID);
+                    command.AddWithParameter<int>("@MemberID", memberID);
+                    command.AddWithParameter<int>("@MembershipID", membershipID);
+                    command.AddWithParameter<int>("@SubscriptionID", subscriptionID);
+
+                    connection.Open();
+
+                    object result = command.ExecuteScalar();
+
+                    IsUpdated = command.ExecuteNonQuery() > 0;
+
+
+                }
+
+            }
+
+            return IsUpdated;
+        }
     }
 }

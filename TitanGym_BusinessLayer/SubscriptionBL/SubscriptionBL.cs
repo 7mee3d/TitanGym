@@ -140,21 +140,57 @@ namespace TitanGym_BusinessLayer.SubscriptionBL
             return this.SubscriptionID != -1;
         }
 
+        private bool _UpdateInformationSubscription()
+        {
+            return SubscriptionsDALCommands.UpdateInformationSubscription(
+                SubscriptionID,
+                  StartDate,
+                  EndDate,
+                  SubscriptionFees,
+                  SubscriptionStatusID,
+                  MemberID,
+                  MembershipID
+                  );
+
+        }
+
         public bool SaveModeSubscription()
         {
 
             switch (this.ModeSubscription)
             {
                 case EnModeSubscription._kADD_NEW_SUBSCRIPTION:
-                    this.ModeSubscription = EnModeSubscription._kUPDATE_INFORMATION_SUBSCRIPTION;
-                    return _AddNewSubscription();
+                    if (_AddNewSubscription())
+                    {
+                        this.ModeSubscription = EnModeSubscription._kUPDATE_INFORMATION_SUBSCRIPTION;
+                        return true;
+                    }
+
+                    return false;
 
                 case EnModeSubscription._kUPDATE_INFORMATION_SUBSCRIPTION:
-                    return false;
+                    return _UpdateInformationSubscription();
 
                 default: return false;
             }
         }
 
+        public bool ExpireSubscription()
+        {
+
+            if (this.SubscriptionStatusID == 2 || this.SubscriptionStatusID == 3 || this.SubscriptionStatusID == 4)
+                return false;
+
+            if (this.EndDate > DateTime.Now) return false;
+
+            this.SubscriptionStatusID = 2;
+            this.ModeSubscription = EnModeSubscription._kUPDATE_INFORMATION_SUBSCRIPTION;
+
+            if (!SaveModeSubscription()) return false;
+
+
+            return true;
+
+        }
     }
 }
