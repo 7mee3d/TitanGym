@@ -164,6 +164,12 @@
     <Compile Include="Modules\Plans\Forms\UCShowInformationMembershipPlan.Designer.cs">
       <DependentUpon>UCShowInformationMembershipPlan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Subscriptions\Controls\ctrlShowInformationSubscription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Subscriptions\Controls\ctrlShowInformationSubscription.Designer.cs">
+      <DependentUpon>ctrlShowInformationSubscription.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Subscriptions\Forms\UCAddEditSubscription.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -256,6 +262,9 @@
     <EmbeddedResource Include="Modules\Plans\Forms\UCShowInformationMembershipPlan.resx">
       <DependentUpon>UCShowInformationMembershipPlan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Subscriptions\Controls\ctrlShowInformationSubscription.resx">
+      <DependentUpon>ctrlShowInformationSubscription.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\Subscriptions\Forms\UCAddEditSubscription.resx">
       <DependentUpon>UCAddEditSubscription.cs</DependentUpon>
     </EmbeddedResource>
@@ -312,7 +321,6 @@
     <Folder Include="Modules\Dashboard\Forms\" />
     <Folder Include="Modules\Reports\Controls\" />
     <Folder Include="Modules\Reports\Forms\" />
-    <Folder Include="Modules\Subscriptions\Controls\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Delete_Icon_TitanGym_24.png" />

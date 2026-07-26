@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using TitanGym_BusinessLayer.MembershipsBL;
+using TitanGym_BusinessLayer.Subscription_StatusesBL;
 using TitanGym_DataAccessLayer.Subscriptions;
 
 namespace TitanGym_BusinessLayer.SubscriptionBL
@@ -50,6 +51,21 @@ namespace TitanGym_BusinessLayer.SubscriptionBL
 
                 return _InformationMembership;
             }
+        }
+
+        private SubscriptionStatusBL _InformationSubscriptionStatus;
+
+        public SubscriptionStatusBL InformatioNSubscriptionStatus
+        {
+
+            get
+            {
+                if (_InformationSubscriptionStatus is null)
+                    _InformationSubscriptionStatus = SubscriptionStatusBL.FindTheSubscriptionStatusBy(this.SubscriptionStatusID);
+
+                return _InformationSubscriptionStatus;
+            }
+
         }
 
         public SubscriptionBL(
