@@ -1,6 +1,6 @@
-﻿namespace TitanGym_Presentation.Modules.Trainers.Forms
+﻿namespace TitanGym_Presentation.Modules.Subscriptions.Forms
 {
-    partial class UCShowInformationTrainer
+    partial class UCShowInformationSubscription
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.GGButtonBack = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.ctrlShowInformationTrainer1 = new TitanGym_Presentation.Modules.Trainers.Controls.ctrlShowInformationTrainer();
+            this.ctrlShowInformationSubscription1 = new TitanGym_Presentation.Modules.Subscriptions.Controls.ctrlShowInformationSubscription();
             this.SuspendLayout();
             // 
             // GGButtonBack
@@ -53,10 +53,10 @@
             this.GGButtonBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonBack.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GGButtonBack.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GGButtonBack.Location = new System.Drawing.Point(229, 627);
+            this.GGButtonBack.Location = new System.Drawing.Point(217, 768);
             this.GGButtonBack.Name = "GGButtonBack";
             this.GGButtonBack.Size = new System.Drawing.Size(129, 47);
-            this.GGButtonBack.TabIndex = 6;
+            this.GGButtonBack.TabIndex = 5;
             this.GGButtonBack.Text = "Back";
             this.GGButtonBack.Click += new System.EventHandler(this.GGButtonBack_Click);
             // 
@@ -67,29 +67,29 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
             this.label1.Location = new System.Drawing.Point(41, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(649, 71);
+            this.label1.Size = new System.Drawing.Size(783, 71);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Show Information Trainer";
+            this.label1.Text = "Show Information Subscription";
             // 
-            // ctrlShowInformationTrainer1
+            // ctrlShowInformationSubscription1
             // 
-            this.ctrlShowInformationTrainer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
-            this.ctrlShowInformationTrainer1.Location = new System.Drawing.Point(229, 327);
-            this.ctrlShowInformationTrainer1.Name = "ctrlShowInformationTrainer1";
-            this.ctrlShowInformationTrainer1.Size = new System.Drawing.Size(1018, 260);
-            this.ctrlShowInformationTrainer1.TabIndex = 7;
+            this.ctrlShowInformationSubscription1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
+            this.ctrlShowInformationSubscription1.Location = new System.Drawing.Point(217, 244);
+            this.ctrlShowInformationSubscription1.Name = "ctrlShowInformationSubscription1";
+            this.ctrlShowInformationSubscription1.Size = new System.Drawing.Size(1043, 495);
+            this.ctrlShowInformationSubscription1.TabIndex = 0;
             // 
-            // UCShowInformationTrainer
+            // UCShowInformationSubscription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
-            this.Controls.Add(this.ctrlShowInformationTrainer1);
             this.Controls.Add(this.GGButtonBack);
             this.Controls.Add(this.label1);
-            this.Name = "UCShowInformationTrainer";
+            this.Controls.Add(this.ctrlShowInformationSubscription1);
+            this.Name = "UCShowInformationSubscription";
             this.Size = new System.Drawing.Size(1477, 956);
-            this.Load += new System.EventHandler(this.UCShowInformationTrainer_Load);
+            this.Load += new System.EventHandler(this.UCShowInformationSubscription_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,8 +97,8 @@
 
         #endregion
 
+        private Controls.ctrlShowInformationSubscription ctrlShowInformationSubscription1;
         private Guna.UI2.WinForms.Guna2GradientButton GGButtonBack;
         private System.Windows.Forms.Label label1;
-        private Controls.ctrlShowInformationTrainer ctrlShowInformationTrainer1;
     }
 }

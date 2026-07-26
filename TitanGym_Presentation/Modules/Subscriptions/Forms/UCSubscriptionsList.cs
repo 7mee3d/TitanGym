@@ -128,5 +128,20 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
             }
             else MessageBox.Show("The subscription expired Faild", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void showInformationSubscriptionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int SubscriptionID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewSubscriptions, 0);
+
+            var ucShowInformationSubscription = new UCShowInformationSubscription(SubscriptionID);
+
+            ucShowInformationSubscription.FinishedShowInfoSubscription += result =>
+            {
+                if (result) UCSubscriptionsList_Load(null, null);
+
+            };
+
+            AppNavigator.Show(ucShowInformationSubscription);
+        }
     }
 }
