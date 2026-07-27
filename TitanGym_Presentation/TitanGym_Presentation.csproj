@@ -212,6 +212,12 @@
     <Compile Include="Modules\Trainers\Forms\UCTrainersList.Designer.cs">
       <DependentUpon>UCTrainersList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Users\Forms\UCUsersList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Users\Forms\UCUsersList.Designer.cs">
+      <DependentUpon>UCUsersList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Navigation\AppNavigator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Modules\Main PL TitanGym\MainPlTitanGymStartProgram.resx">
@@ -291,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Trainers\Forms\UCTrainersList.resx">
       <DependentUpon>UCTrainersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Users\Forms\UCUsersList.resx">
+      <DependentUpon>UCUsersList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

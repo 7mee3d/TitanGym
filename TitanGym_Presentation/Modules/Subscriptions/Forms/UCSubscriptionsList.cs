@@ -82,7 +82,15 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
 
         private void GGButtonAddNewSubscription_Click(object sender, EventArgs e)
         {
-            AppNavigator.Show(new UCAddEditSubscription());
+            var ucAddEditSubscription = new UCAddEditSubscription();
+
+            ucAddEditSubscription.FinishedAddEditSubscription += result =>
+            {
+                if (result) UCSubscriptionsList_Load(null, null);
+
+            };
+
+            AppNavigator.Show(ucAddEditSubscription);
         }
 
         private void addNewSubscriptionToolStripMenuItem_Click(object sender, EventArgs e)

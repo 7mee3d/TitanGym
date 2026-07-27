@@ -203,7 +203,7 @@ namespace TitanGym_Presentation.Modules.People.Forms
 
             openFileDialogSelectImagePerson.Title = "Select image person";
             openFileDialogSelectImagePerson.RestoreDirectory = true;
-            openFileDialogSelectImagePerson.Filter = "PNG IMAGE|*.png|JPGE IAMGE|*jpge";
+            openFileDialogSelectImagePerson.Filter = "PNG IMAGE|*.png|JPGE IAMGE|*jpeg";
             // openFileDialogSelectImagePerson.InitialDirectory = Environment.CurrentDirectory;
 
             if (openFileDialogSelectImagePerson.ShowDialog() == DialogResult.OK)

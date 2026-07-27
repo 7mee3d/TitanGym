@@ -54,6 +54,7 @@
     <Compile Include="Subscription StatusesBL\SubscriptionStatusBL.cs" />
     <Compile Include="SubscriptionBL\SubscriptionBL.cs" />
     <Compile Include="TrainersBL\TrainerBL.cs" />
+    <Compile Include="UsersBL\UserBL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TitanGym_DataAccessLayer\TitanGym_DataAccessLayer.csproj">

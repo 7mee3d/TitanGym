@@ -61,6 +61,7 @@
     <Compile Include="Subscriptions\Subscriptions DAL Queries\SubscriptionDALQueries.cs" />
     <Compile Include="Trainers\Trainers DAL Commands\TrainerDALCommands.cs" />
     <Compile Include="Trainers\Trainers DAL Queries\TrainersDALQueries.cs" />
+    <Compile Include="Users\Users DAL Queries\UsersDALQueries.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Payments\Payments DAL Commands\" />

@@ -6,6 +6,7 @@ using TitanGym_Presentation.Modules.People.Forms;
 using TitanGym_Presentation.Modules.Plans.Forms;
 using TitanGym_Presentation.Modules.Subscriptions.Forms;
 using TitanGym_Presentation.Modules.Trainers.Forms;
+using TitanGym_Presentation.Modules.Users.Forms;
 
 namespace TitanGym_Presentation
 {
@@ -50,6 +51,11 @@ namespace TitanGym_Presentation
         private void GGradientButtonSubscriptions_Click(object sender, EventArgs e)
         {
             AppNavigator.Show(new UCSubscriptionsList());
+        }
+
+        private void GGButtonUsers_Click(object sender, EventArgs e)
+        {
+            AppNavigator.Show(new UCUsersList());
         }
     }
 }
