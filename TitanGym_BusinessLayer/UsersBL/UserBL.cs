@@ -23,6 +23,51 @@ namespace TitanGym_BusinessLayer.UsersBL
         public byte RoleID { get; set; }
         public EnUsersMode ModeUser { get; private set; }
 
+        private PeopleBL.PeopleBL _InformationPerson;
+
+        public PeopleBL.PeopleBL InformationPerson
+        {
+
+            get
+            {
+                if (_InformationPerson is null)
+                    _InformationPerson = PeopleBL.PeopleBL.FindThePersonBy(this.PersonID);
+
+                return _InformationPerson;
+            }
+
+        }
+
+        private RolesBL.RoleBL _InformationRole;
+
+
+        public RolesBL.RoleBL InformationRole
+        {
+
+            get
+            {
+                if (_InformationRole is null)
+                    _InformationRole = RolesBL.RoleBL.FindTheRoleBy(this.RoleID);
+
+                return _InformationRole;
+            }
+        }
+
+        public Account_StatusesBL.AccountStatusBL _InformatioNAccountStatus;
+
+        public Account_StatusesBL.AccountStatusBL InformationAccountStatus
+        {
+
+            get
+            {
+                if (_InformatioNAccountStatus is null)
+                    _InformatioNAccountStatus = Account_StatusesBL.AccountStatusBL.FindTheAccountStatusBy(this.AccountStatusID);
+
+                return _InformatioNAccountStatus;
+            }
+        }
+
+
         public UserBL(
 
             int userID,
