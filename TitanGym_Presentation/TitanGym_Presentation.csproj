@@ -170,6 +170,12 @@
     <Compile Include="Modules\Subscriptions\Controls\ctrlShowInformationSubscription.Designer.cs">
       <DependentUpon>ctrlShowInformationSubscription.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Subscriptions\Controls\ctrlShowInformationSubscriptionByFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Subscriptions\Controls\ctrlShowInformationSubscriptionByFilter.Designer.cs">
+      <DependentUpon>ctrlShowInformationSubscriptionByFilter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Subscriptions\Forms\UCAddEditSubscription.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -294,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Subscriptions\Controls\ctrlShowInformationSubscription.resx">
       <DependentUpon>ctrlShowInformationSubscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Subscriptions\Controls\ctrlShowInformationSubscriptionByFilter.resx">
+      <DependentUpon>ctrlShowInformationSubscriptionByFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Subscriptions\Forms\UCAddEditSubscription.resx">
       <DependentUpon>UCAddEditSubscription.cs</DependentUpon>

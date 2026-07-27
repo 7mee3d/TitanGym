@@ -12,7 +12,20 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
         private double _TotalSubFees = 0.0d;
         private int _SubscriptionID = -1;
 
-        public event Action<bool> FinishedAddEditSubscription;
+        public class SubscriptionInfoEventArgs : EventArgs
+        {
+            public bool IsAddSubscription { get; set; }
+            public int SubscriptionID { get; set; }
+
+            public SubscriptionInfoEventArgs(bool isAddSubscription, int subscriptionID)
+            {
+                this.IsAddSubscription = isAddSubscription;
+                this.SubscriptionID = subscriptionID;
+            }
+        }
+
+
+        public event Action<SubscriptionInfoEventArgs> FinishedAddEditSubscription;
 
         private enum _EnSubscriptionMode
         {
@@ -177,7 +190,7 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
 
             if (this._InformationSubscription.SaveModeSubscription())
             {
-                FinishedAddEditSubscription?.Invoke(true);
+                FinishedAddEditSubscription?.Invoke(new SubscriptionInfoEventArgs(true, _InformationSubscription.SubscriptionID));
 
                 if (_ModeSubscription == _EnSubscriptionMode._kADD_NEW_SUBSCRIPTION)
                     MessageBox.Show("The subscription added sccessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
