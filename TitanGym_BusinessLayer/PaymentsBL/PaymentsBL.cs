@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Data;
-using TitanGym_BusinessLayer.SubscriptionBL;
 using TitanGym_DataAccessLayer.Payments;
 
 namespace TitanGym_BusinessLayer.PaymentsBL
@@ -8,6 +7,11 @@ namespace TitanGym_BusinessLayer.PaymentsBL
     public class PaymentsBL
     {
 
+        public enum EnPaymentMode
+        {
+            _kADD_NEW_PAYMENT = 1,
+            _kUPDATE_INFORMATION_PAYMENT = 2
+        };
 
         public int PaymentID { get; set; }
         public int SubscriptionID { get; set; }
@@ -16,6 +20,7 @@ namespace TitanGym_BusinessLayer.PaymentsBL
         public DateTime PaymentDate { get; set; }
         public double Amount { get; set; }
         public string Note { get; set; }
+        public EnPaymentMode ModePayment { get; set; }
 
         private Payment_MethodsBL.PaymentMethodBL _InformationPaymentMethod;
 
@@ -81,6 +86,7 @@ namespace TitanGym_BusinessLayer.PaymentsBL
             this.PaymentDate = paymentDate;
             this.Amount = amount;
             this.Note = note;
+            this.ModePayment = EnPaymentMode._kUPDATE_INFORMATION_PAYMENT;
         }
 
         public PaymentsBL()
@@ -92,6 +98,7 @@ namespace TitanGym_BusinessLayer.PaymentsBL
             this.PaymentDate = default;
             this.Amount = default;
             this.Note = default;
+            this.ModePayment = EnPaymentMode._kADD_NEW_PAYMENT;
         }
 
         public static PaymentsBL FindPaymentBy(int PaymentID)
@@ -132,6 +139,34 @@ namespace TitanGym_BusinessLayer.PaymentsBL
                 return null;
 
         }
+
+        private bool _AddNewPayment()
+        {
+            this.PaymentID = PaymentsDALCommands.InsertNewPayment(SubscriptionID, PaymentMethodID, PaymentStatusID, PaymentDate, Amount, Note);
+            return this.PaymentID != -1;
+        }
+
+        public bool SavePaymentMode()
+        {
+            switch (this.ModePayment)
+            {
+                case EnPaymentMode._kADD_NEW_PAYMENT:
+                    if (_AddNewPayment())
+                    {
+                        this.ModePayment = EnPaymentMode._kUPDATE_INFORMATION_PAYMENT;
+                        return true;
+                    }
+
+                    return false;
+
+                case EnPaymentMode._kUPDATE_INFORMATION_PAYMENT:
+                    return false;
+
+                default: return false;
+            }
+
+        }
+
 
         public static DataTable GetAllPayments()
             => PaymentsDALQueries.GetAllPayemnts();

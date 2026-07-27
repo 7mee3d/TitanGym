@@ -52,6 +52,7 @@
     <Compile Include="Members\Member DAL Queries\MemberDALQueries.cs" />
     <Compile Include="Payment Methods\Payment Method DAL Queries\PaymentMethodDALQueries.cs" />
     <Compile Include="Payment Statuses\Payment Status DAL Queries\PaymentStatusDALQueries.cs" />
+    <Compile Include="Payments\Payments DAL Commands\PaymentsDALCommands.cs" />
     <Compile Include="Payments\Payments DAL Queries\PaymentsDALQueries.cs" />
     <Compile Include="People\People DAL Commands\PeopleDALCommands.cs" />
     <Compile Include="People\People DAL Queries\PeopleDALQueries.cs" />
@@ -66,8 +67,6 @@
     <Compile Include="Users\Users DAL Commands\UsersDALCommands.cs" />
     <Compile Include="Users\Users DAL Queries\UsersDALQueries.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Payments\Payments DAL Commands\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

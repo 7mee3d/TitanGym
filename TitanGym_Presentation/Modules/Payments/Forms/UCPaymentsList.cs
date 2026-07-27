@@ -91,5 +91,20 @@ namespace TitanGym_Presentation.Modules.Payments.Forms
 
             AppNavigator.Show(ucShowInforPayment);
         }
+
+        private void GGButtonAddNewPayment_Click(object sender, EventArgs e)
+        {
+
+            var ucAddEditPayment = new UCAddEditPayments();
+
+            ucAddEditPayment.FinishedAddEditPayment += result =>
+            {
+                if (result) UCPaymentsList_Load(null, null);
+
+            };
+
+            AppNavigator.Show(ucAddEditPayment);
+        }
     }
 }
+

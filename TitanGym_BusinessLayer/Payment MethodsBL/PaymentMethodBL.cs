@@ -1,5 +1,6 @@
 ﻿
 
+using System.Data;
 using TitanGym_DataAccessLayer.Payment_Methods;
 
 namespace TitanGym_BusinessLayer.Payment_MethodsBL
@@ -35,5 +36,7 @@ namespace TitanGym_BusinessLayer.Payment_MethodsBL
             else return null;
         }
 
+        public static DataTable GetAllPaymentMethods()
+            => PaymentMethodDALQueries.GetAllPaymentMethods();
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.Data;
+using System.Data.SqlClient;
 using TitanGym_DataAccessLayer.Helper;
 
 namespace TitanGym_DataAccessLayer.Payment_Methods
@@ -43,5 +44,36 @@ namespace TitanGym_DataAccessLayer.Payment_Methods
 
             return IsFounded;
         }
+
+        public static DataTable GetAllPaymentMethods()
+        {
+
+            DataTable DT_AllPayments = new DataTable();
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+
+                                        SELECT *
+                                        FROM PaymentMethods
+
+                ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                        if (reader.HasRows)
+                            DT_AllPayments.Load(reader);
+                }
+
+            }
+
+            return DT_AllPayments;
+        }
+
     }
 }

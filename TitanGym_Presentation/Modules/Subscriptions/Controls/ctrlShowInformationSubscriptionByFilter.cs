@@ -28,6 +28,7 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Controls
                 MessageBox.Show("This subscription is not exists", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             _SubscriptionID = SubscirptionID;
             ctrlShowInformationSubscription1.LoadInformationSubscription(SubscirptionID);
         }
@@ -40,6 +41,8 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Controls
             {
                 if (result.IsAddSubscription)
                 {
+                    GTextBoxSubscriptionID.Text = result.SubscriptionID.ToString();
+                    _SubscriptionID = result.SubscriptionID;
                     ctrlShowInformationSubscription1.LoadInformationSubscription(result.SubscriptionID);
                 }
             };

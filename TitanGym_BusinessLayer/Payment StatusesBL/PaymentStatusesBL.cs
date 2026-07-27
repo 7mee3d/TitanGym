@@ -1,5 +1,6 @@
 ﻿
 
+using System.Data;
 using TitanGym_DataAccessLayer.Payment_Statuses;
 
 namespace TitanGym_BusinessLayer.Payment_StatusesBL
@@ -39,5 +40,8 @@ namespace TitanGym_BusinessLayer.Payment_StatusesBL
                 return new PaymentStatusesBL(paymentStatusID, NamePaymentStatus);
             else return null;
         }
+
+        public static DataTable GetAllPaymentStatus()
+            => PaymentStatusDALQueries.GetAllPaymentStatus();
     }
 }

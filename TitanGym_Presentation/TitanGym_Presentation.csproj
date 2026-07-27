@@ -98,6 +98,12 @@
     <Compile Include="Modules\Payments\Controls\ctrlShowInformationPayment.Designer.cs">
       <DependentUpon>ctrlShowInformationPayment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Payments\Forms\UCAddEditPayments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Payments\Forms\UCAddEditPayments.Designer.cs">
+      <DependentUpon>UCAddEditPayments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Payments\Forms\UCPaymentsList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -264,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Payments\Controls\ctrlShowInformationPayment.resx">
       <DependentUpon>ctrlShowInformationPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Payments\Forms\UCAddEditPayments.resx">
+      <DependentUpon>UCAddEditPayments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Payments\Forms\UCPaymentsList.resx">
       <DependentUpon>UCPaymentsList.cs</DependentUpon>

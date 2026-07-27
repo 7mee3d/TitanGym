@@ -34,43 +34,44 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.GGButtonAddNewPerson = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.GGButtonAddNewPayment = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GDataGridViewPayments = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.ContextMenuStripPaymentsPlansSection = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showInformationPaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.lblTotalRevenue = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ContextMenuStripPaymentsPlansSection = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.showInformationPaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewPayments)).BeginInit();
-            this.guna2GradientPanel1.SuspendLayout();
             this.ContextMenuStripPaymentsPlansSection.SuspendLayout();
+            this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // GGButtonAddNewPerson
+            // GGButtonAddNewPayment
             // 
-            this.GGButtonAddNewPerson.BorderRadius = 6;
-            this.GGButtonAddNewPerson.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GGButtonAddNewPerson.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAddNewPerson.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAddNewPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAddNewPerson.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAddNewPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GGButtonAddNewPerson.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewPerson.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewPerson.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GGButtonAddNewPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
-            this.GGButtonAddNewPerson.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPerson.Image")));
-            this.GGButtonAddNewPerson.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.GGButtonAddNewPerson.ImageOffset = new System.Drawing.Point(15, 1);
-            this.GGButtonAddNewPerson.Location = new System.Drawing.Point(1226, 75);
-            this.GGButtonAddNewPerson.Name = "GGButtonAddNewPerson";
-            this.GGButtonAddNewPerson.Size = new System.Drawing.Size(203, 44);
-            this.GGButtonAddNewPerson.TabIndex = 13;
-            this.GGButtonAddNewPerson.Text = "New Payment";
-            this.GGButtonAddNewPerson.TextOffset = new System.Drawing.Point(10, 0);
+            this.GGButtonAddNewPayment.BorderRadius = 6;
+            this.GGButtonAddNewPayment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GGButtonAddNewPayment.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonAddNewPayment.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonAddNewPayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonAddNewPayment.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonAddNewPayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GGButtonAddNewPayment.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewPayment.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewPayment.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonAddNewPayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.GGButtonAddNewPayment.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPayment.Image")));
+            this.GGButtonAddNewPayment.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.GGButtonAddNewPayment.ImageOffset = new System.Drawing.Point(15, 1);
+            this.GGButtonAddNewPayment.Location = new System.Drawing.Point(1226, 75);
+            this.GGButtonAddNewPayment.Name = "GGButtonAddNewPayment";
+            this.GGButtonAddNewPayment.Size = new System.Drawing.Size(203, 44);
+            this.GGButtonAddNewPayment.TabIndex = 13;
+            this.GGButtonAddNewPayment.Text = "NEW PAYMENT";
+            this.GGButtonAddNewPayment.TextOffset = new System.Drawing.Point(10, 0);
+            this.GGButtonAddNewPayment.Click += new System.EventHandler(this.GGButtonAddNewPayment_Click);
             // 
             // guna2GradientPanel2
             // 
@@ -154,6 +155,23 @@
             this.GDataGridViewPayments.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.GDataGridViewPayments.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.GDataGridViewPayments_DataBindingComplete);
             // 
+            // ContextMenuStripPaymentsPlansSection
+            // 
+            this.ContextMenuStripPaymentsPlansSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showInformationPaymentToolStripMenuItem});
+            this.ContextMenuStripPaymentsPlansSection.Name = "ContextMenuStripPeopleSection";
+            this.ContextMenuStripPaymentsPlansSection.Size = new System.Drawing.Size(255, 42);
+            // 
+            // showInformationPaymentToolStripMenuItem
+            // 
+            this.showInformationPaymentToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showInformationPaymentToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationPaymentToolStripMenuItem.Image")));
+            this.showInformationPaymentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showInformationPaymentToolStripMenuItem.Name = "showInformationPaymentToolStripMenuItem";
+            this.showInformationPaymentToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
+            this.showInformationPaymentToolStripMenuItem.Text = "Show Information Payment";
+            this.showInformationPaymentToolStripMenuItem.Click += new System.EventHandler(this.showInformationPaymentToolStripMenuItem_Click);
+            // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
@@ -200,29 +218,12 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Payments Directory";
             // 
-            // ContextMenuStripPaymentsPlansSection
-            // 
-            this.ContextMenuStripPaymentsPlansSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showInformationPaymentToolStripMenuItem});
-            this.ContextMenuStripPaymentsPlansSection.Name = "ContextMenuStripPeopleSection";
-            this.ContextMenuStripPaymentsPlansSection.Size = new System.Drawing.Size(255, 42);
-            // 
-            // showInformationPaymentToolStripMenuItem
-            // 
-            this.showInformationPaymentToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.showInformationPaymentToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationPaymentToolStripMenuItem.Image")));
-            this.showInformationPaymentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showInformationPaymentToolStripMenuItem.Name = "showInformationPaymentToolStripMenuItem";
-            this.showInformationPaymentToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
-            this.showInformationPaymentToolStripMenuItem.Text = "Show Information Payment";
-            this.showInformationPaymentToolStripMenuItem.Click += new System.EventHandler(this.showInformationPaymentToolStripMenuItem_Click);
-            // 
             // UCPaymentsList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
-            this.Controls.Add(this.GGButtonAddNewPerson);
+            this.Controls.Add(this.GGButtonAddNewPayment);
             this.Controls.Add(this.guna2GradientPanel2);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.label1);
@@ -231,9 +232,9 @@
             this.Load += new System.EventHandler(this.UCPaymentsList_Load);
             this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewPayments)).EndInit();
+            this.ContextMenuStripPaymentsPlansSection.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            this.ContextMenuStripPaymentsPlansSection.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,7 +242,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2GradientButton GGButtonAddNewPerson;
+        private Guna.UI2.WinForms.Guna2GradientButton GGButtonAddNewPayment;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2DataGridView GDataGridViewPayments;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
