@@ -95,5 +95,60 @@ namespace TitanGym_DataAccessLayer.Users
 
             return IsExists;
         }
+
+        public static bool FindTheUserBy(
+                        int userID,
+                        ref string username,
+                        ref string password,
+                        ref DateTime creationDateUser,
+                        ref byte accountStatusID,
+                        ref int personID,
+                        ref byte roleID
+
+            )
+        {
+
+
+            bool IsFound = false;
+
+
+            using (SqlConnection connection = new SqlConnection(Helper.HelperDAL.TitanGymConnectionString))
+            {
+
+
+                string Query = @"
+
+                                SELECT *
+                                FROM Users
+                                WHERE UserID = @UserID ; 
+                ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+                    command.AddWithParameter<int>("@UserID", userID);
+
+                    connection.Open();
+
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                        if (reader.Read())
+                        {
+                            IsFound = true;
+                            username = reader.GetTheValueFrom<string>("Username");
+                            password = reader.GetTheValueFrom<string>("Password");
+                            creationDateUser = reader.GetTheValueFrom<DateTime>("CreationDateUser");
+                            accountStatusID = reader.GetTheValueFrom<byte>("AccountStatusID");
+                            personID = reader.GetTheValueFrom<int>("PersonID");
+                            roleID = reader.GetTheValueFrom<byte>("RoleID");
+
+                        }
+
+                }
+            }
+
+            return IsFound;
+        }
+
+
     }
 }

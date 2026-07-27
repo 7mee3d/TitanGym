@@ -57,6 +57,19 @@ namespace TitanGym_BusinessLayer.UsersBL
             this.ModeUser = EnUsersMode._kADD_NEW_USER;
         }
 
+        public static UserBL FindTheUserBy(int UserID)
+        {
+            string username = "", password = "";
+            DateTime creationDateUser = DateTime.Now;
+            byte accountStatusID = 0, roleID = 0;
+            int personID = 0;
+
+            bool IsFound = UsersDALQueries.FindTheUserBy(UserID, ref username, ref password, ref creationDateUser, ref accountStatusID, ref personID, ref roleID);
+
+            if (IsFound)
+                return new UserBL(UserID, username, password, creationDateUser, accountStatusID, personID, roleID);
+            else return null;
+        }
 
         public static DataTable GetAllUsers()
             => UsersDALQueries.GetAllUsers();
@@ -65,14 +78,28 @@ namespace TitanGym_BusinessLayer.UsersBL
         private bool _AddNewUser()
         {
             this.UserID = UsersDALCommands.InsertNewUser(
-                Username,
-                Password,
-                CreationDateUser,
-                AccountStatusID,
-                PersonID,
-                RoleID);
+                this.Username,
+                this.Password,
+                this.CreationDateUser,
+                this.AccountStatusID,
+                this.PersonID,
+                this.RoleID);
 
             return this.UserID != -1;
+
+        }
+
+        private bool _UpdateInformationUser()
+        {
+            return UsersDALCommands.UpdateInformationUser(
+                 this.UserID,
+                 this.Username,
+                 this.Password,
+                 this.CreationDateUser,
+                 this.AccountStatusID,
+                 this.PersonID,
+                 this.RoleID);
+
 
         }
 
@@ -92,7 +119,7 @@ namespace TitanGym_BusinessLayer.UsersBL
                     return false;
 
                 case EnUsersMode._kUPDATE_INFORMATION_USER:
-                    return false;
+                    return _UpdateInformationUser();
 
                 default: return false;
             }

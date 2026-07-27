@@ -17,12 +17,20 @@ namespace TitanGym_Presentation.Modules.Users.Forms
         private UserBL _InformationUser;
         private int _PersonID = -1;
         public event Action<bool> FinishedAddEditUser;
+        private int _UserID = -1;
 
 
         public UCAddEditUser()
         {
             InitializeComponent();
             _ModeUser = _EnModeUsers._kADD_NEW_USER;
+        }
+
+        public UCAddEditUser(int UserID)
+        {
+            InitializeComponent();
+            _ModeUser = _EnModeUsers._kUPDATE_INFORMATION_USER;
+            _UserID = UserID;
         }
 
 
@@ -54,6 +62,30 @@ namespace TitanGym_Presentation.Modules.Users.Forms
                 return;
             }
 
+            _InformationUser = UserBL.FindTheUserBy(_UserID);
+
+            if (_InformationUser is null)
+            {
+                MessageBox.Show("This user is not exists", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+
+            }
+
+            lblTitleUser.Text = "Update User";
+            GGButtonAddNewUser.Text = "Update User";
+            this._ModeUser = _EnModeUsers._kUPDATE_INFORMATION_USER;
+        }
+
+        private void _LoadInformationUserInControls()
+        {
+
+            GTextBoxUsername.Text = _InformationUser.Username;
+            GTextBoxPassword.Text = _InformationUser.Password;
+            GComboBoxRoles.SelectedValue = _InformationUser.RoleID;
+            GComboBoxAccountStatuses.SelectedValue = _InformationUser.AccountStatusID;
+            ctrlShowInformationPersonByFilter1.LoadInformationPerson(_InformationUser.PersonID);
+            ctrlShowInformationPersonByFilter1.EnableControls = false;
+            lblCreationDate.Text = _InformationUser.CreationDateUser.ToString("dd/MM/yyyy");
         }
 
         private void _PrepareInformationUser()
@@ -168,6 +200,9 @@ namespace TitanGym_Presentation.Modules.Users.Forms
         private void UCAddEditUser_Load(object sender, EventArgs e)
         {
             _DefaultValues();
+
+            if (this._ModeUser == _EnModeUsers._kUPDATE_INFORMATION_USER)
+                _LoadInformationUserInControls();
         }
 
         private void GGButtonAddNewUser_Click(object sender, EventArgs e)
@@ -207,6 +242,11 @@ namespace TitanGym_Presentation.Modules.Users.Forms
             else
                 e.Cancel = false;
 
+        }
+
+        private void GGButtonCancel_Click_1(object sender, EventArgs e)
+        {
+            AppNavigator.Back();
         }
     }
 }

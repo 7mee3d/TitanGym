@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.UsersBL;
+using TitanGym_Presentation.Core.Helpers;
 
 namespace TitanGym_Presentation.Modules.Users.Forms
 {
@@ -55,6 +56,34 @@ namespace TitanGym_Presentation.Modules.Users.Forms
         }
 
         private void GGButtonAddNewUser_Click(object sender, EventArgs e)
+        {
+            var ucAddEditUser = new UCAddEditUser();
+
+            ucAddEditUser.FinishedAddEditUser += result =>
+            {
+                if (result) UCUsersList_Load(null, null);
+
+            };
+
+            AppNavigator.Show(ucAddEditUser);
+        }
+
+        private void updateInformationTrainerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int UserID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewUsers, 0);
+
+            var ucAddEditUser = new UCAddEditUser(UserID);
+
+            ucAddEditUser.FinishedAddEditUser += result =>
+            {
+                if (result) UCUsersList_Load(null, null);
+
+            };
+
+            AppNavigator.Show(ucAddEditUser);
+        }
+
+        private void addNewUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var ucAddEditUser = new UCAddEditUser();
 

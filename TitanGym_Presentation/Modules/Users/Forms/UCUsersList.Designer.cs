@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -44,10 +45,21 @@
             this.lblTotalUsers = new System.Windows.Forms.Label();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.ContextMenuStripUsersSection = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ShowInformationPersontoolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.showInformationUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.deleteUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.addNewUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.updateInformationTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewUsers)).BeginInit();
             this.guna2GradientPanel3.SuspendLayout();
             this.guna2GradientPanel4.SuspendLayout();
+            this.ContextMenuStripUsersSection.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel2
@@ -84,6 +96,7 @@
             this.GDataGridViewUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.GDataGridViewUsers.ColumnHeadersHeight = 57;
             this.GDataGridViewUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.GDataGridViewUsers.ContextMenuStrip = this.ContextMenuStripUsersSection;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -246,6 +259,88 @@
             this.guna2GradientPanel4.Size = new System.Drawing.Size(229, 88);
             this.guna2GradientPanel4.TabIndex = 9;
             // 
+            // ContextMenuStripUsersSection
+            // 
+            this.ContextMenuStripUsersSection.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ShowInformationPersontoolStripMenuItem1,
+            this.toolStripSeparator4,
+            this.showInformationUserToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.deleteUserToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.addNewUserToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.updateInformationTrainerToolStripMenuItem});
+            this.ContextMenuStripUsersSection.Name = "ContextMenuStripPeopleSection";
+            this.ContextMenuStripUsersSection.Size = new System.Drawing.Size(243, 240);
+            // 
+            // ShowInformationPersontoolStripMenuItem1
+            // 
+            this.ShowInformationPersontoolStripMenuItem1.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ShowInformationPersontoolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("ShowInformationPersontoolStripMenuItem1.Image")));
+            this.ShowInformationPersontoolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.ShowInformationPersontoolStripMenuItem1.Name = "ShowInformationPersontoolStripMenuItem1";
+            this.ShowInformationPersontoolStripMenuItem1.Size = new System.Drawing.Size(242, 38);
+            this.ShowInformationPersontoolStripMenuItem1.Text = "Show Information Person";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(239, 6);
+            // 
+            // showInformationUserToolStripMenuItem
+            // 
+            this.showInformationUserToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showInformationUserToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationUserToolStripMenuItem.Image")));
+            this.showInformationUserToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showInformationUserToolStripMenuItem.Name = "showInformationUserToolStripMenuItem";
+            this.showInformationUserToolStripMenuItem.Size = new System.Drawing.Size(242, 38);
+            this.showInformationUserToolStripMenuItem.Text = "Show Information User";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(239, 6);
+            // 
+            // deleteUserToolStripMenuItem
+            // 
+            this.deleteUserToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteUserToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteUserToolStripMenuItem.Image")));
+            this.deleteUserToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.deleteUserToolStripMenuItem.Name = "deleteUserToolStripMenuItem";
+            this.deleteUserToolStripMenuItem.Size = new System.Drawing.Size(242, 38);
+            this.deleteUserToolStripMenuItem.Text = "Delete User";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(239, 6);
+            // 
+            // addNewUserToolStripMenuItem
+            // 
+            this.addNewUserToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.addNewUserToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewUserToolStripMenuItem.Image")));
+            this.addNewUserToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addNewUserToolStripMenuItem.Name = "addNewUserToolStripMenuItem";
+            this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(242, 38);
+            this.addNewUserToolStripMenuItem.Text = "Add New User";
+            this.addNewUserToolStripMenuItem.Click += new System.EventHandler(this.addNewUserToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(239, 6);
+            // 
+            // updateInformationTrainerToolStripMenuItem
+            // 
+            this.updateInformationTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.updateInformationTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationTrainerToolStripMenuItem.Image")));
+            this.updateInformationTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateInformationTrainerToolStripMenuItem.Name = "updateInformationTrainerToolStripMenuItem";
+            this.updateInformationTrainerToolStripMenuItem.Size = new System.Drawing.Size(242, 38);
+            this.updateInformationTrainerToolStripMenuItem.Text = "Update Information User";
+            this.updateInformationTrainerToolStripMenuItem.Click += new System.EventHandler(this.updateInformationTrainerToolStripMenuItem_Click);
+            // 
             // UCUsersList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,6 +361,7 @@
             this.guna2GradientPanel3.PerformLayout();
             this.guna2GradientPanel4.ResumeLayout(false);
             this.guna2GradientPanel4.PerformLayout();
+            this.ContextMenuStripUsersSection.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,5 +380,15 @@
         private System.Windows.Forms.Label lblTotalUsers;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel4;
+        private System.Windows.Forms.ContextMenuStrip ContextMenuStripUsersSection;
+        private System.Windows.Forms.ToolStripMenuItem ShowInformationPersontoolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem showInformationUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem deleteUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem addNewUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem updateInformationTrainerToolStripMenuItem;
     }
 }

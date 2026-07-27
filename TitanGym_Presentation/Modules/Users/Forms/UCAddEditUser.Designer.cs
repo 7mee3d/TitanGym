@@ -287,6 +287,7 @@
             this.GGButtonCancel.Size = new System.Drawing.Size(129, 47);
             this.GGButtonCancel.TabIndex = 2;
             this.GGButtonCancel.Text = "Cancel";
+            this.GGButtonCancel.Click += new System.EventHandler(this.GGButtonCancel_Click_1);
             // 
             // guna2Panel2
             // 

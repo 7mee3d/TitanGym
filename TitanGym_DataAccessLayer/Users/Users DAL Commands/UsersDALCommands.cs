@@ -77,6 +77,62 @@ namespace TitanGym_DataAccessLayer.Users
             return UserID;
         }
 
+        public static bool UpdateInformationUser(
+                    int userID,
+                    string username,
+                    string password,
+                    DateTime creationDateUser,
+                    byte accountStatusID,
+                    int personID,
+                    int roleID
+            )
+        {
+
+
+            bool IsUpdated = false;
+
+            using (SqlConnection connection = new SqlConnection(Helper.HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+
+
+
+                                UPDATE Users
+
+                                SET
+                                    username = @username,
+                                    password = @password,
+                                    accountStatusID = @accountStatusID,
+                                    personID = @personID,
+                                    roleID = @roleID
+
+
+                               WHERE UserID = @UserID ; 
+
+
+                ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    command.AddWithParameter<int>("@UserID", userID);
+                    command.AddWithParameter<string>("@username", username);
+                    command.AddWithParameter<string>("@password", password);
+                    //command.AddWithParameter<DateTime>("@creationDateUser", creationDateUser);
+                    command.AddWithParameter<byte>("@accountStatusID", accountStatusID);
+                    command.AddWithParameter<int>("@personID", personID);
+                    command.AddWithParameter<int>("@roleID", roleID);
+
+                    connection.Open();
+
+                    IsUpdated = command.ExecuteNonQuery() > 0;
+                }
+            }
+
+            return IsUpdated;
+        }
+
 
 
     }
