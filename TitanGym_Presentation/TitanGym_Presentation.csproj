@@ -212,6 +212,12 @@
     <Compile Include="Modules\Trainers\Forms\UCTrainersList.Designer.cs">
       <DependentUpon>UCTrainersList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Users\Forms\UCAddEditUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Users\Forms\UCAddEditUser.Designer.cs">
+      <DependentUpon>UCAddEditUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Users\Forms\UCUsersList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -297,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Trainers\Forms\UCTrainersList.resx">
       <DependentUpon>UCTrainersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Users\Forms\UCAddEditUser.resx">
+      <DependentUpon>UCAddEditUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Users\Forms\UCUsersList.resx">
       <DependentUpon>UCUsersList.cs</DependentUpon>

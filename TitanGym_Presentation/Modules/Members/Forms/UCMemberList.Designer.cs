@@ -344,12 +344,12 @@
             this.GGButtonAddNewPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
             this.GGButtonAddNewPerson.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPerson.Image")));
             this.GGButtonAddNewPerson.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.GGButtonAddNewPerson.ImageOffset = new System.Drawing.Point(15, 1);
-            this.GGButtonAddNewPerson.Location = new System.Drawing.Point(1226, 70);
+            this.GGButtonAddNewPerson.ImageOffset = new System.Drawing.Point(8, 1);
+            this.GGButtonAddNewPerson.Location = new System.Drawing.Point(1206, 70);
             this.GGButtonAddNewPerson.Name = "GGButtonAddNewPerson";
-            this.GGButtonAddNewPerson.Size = new System.Drawing.Size(203, 44);
+            this.GGButtonAddNewPerson.Size = new System.Drawing.Size(223, 44);
             this.GGButtonAddNewPerson.TabIndex = 7;
-            this.GGButtonAddNewPerson.Text = "New Member";
+            this.GGButtonAddNewPerson.Text = "ADD NEW MEMBER";
             this.GGButtonAddNewPerson.TextOffset = new System.Drawing.Point(10, 0);
             this.GGButtonAddNewPerson.Click += new System.EventHandler(this.GGButtonAddNewPerson_Click);
             // 

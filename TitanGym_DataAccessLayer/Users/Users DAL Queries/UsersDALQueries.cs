@@ -1,7 +1,9 @@
 ﻿
 
+using System;
 using System.Data;
 using System.Data.SqlClient;
+using TitanGym_DataAccessLayer.Helper;
 
 namespace TitanGym_DataAccessLayer.Users
 {
@@ -25,7 +27,6 @@ namespace TitanGym_DataAccessLayer.Users
                             US.PersonID ,
                             CONCAT(PEOP.FirstName , ' ' , PEOP.SecondName , ' ' , PEOP.ThirdName , ' ' , PEOP.LastName) AS FullNamePerson ,
                             US.Username ,
-                            US.Password ,
                             US.CreationDateUser ,
                             ACCSTATUS.AccountStatusName ,
                             RO.RoleName
@@ -53,6 +54,46 @@ namespace TitanGym_DataAccessLayer.Users
             }
 
             return DT_AllUsers;
+        }
+
+        public static bool IsUserExistsBy(string Username)
+        {
+
+            bool IsExists = false;
+
+            using (SqlConnection connection = new SqlConnection(Helper.HelperDAL.TitanGymConnectionString))
+            {
+
+
+                string Query = @"
+
+
+
+                                SELECT FOUND = 1 
+                                FROM Users
+                                WHERE LOWER (Users.Username ) = LOWER (@Username);
+
+
+            ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    command.AddWithParameter<string>("@Username", Username);
+                    connection.Open();
+
+
+
+                    object result = command.ExecuteScalar();
+
+                    IsExists = result != null && Convert.ToBoolean(result);
+
+                }
+
+
+            }
+
+            return IsExists;
         }
     }
 }
