@@ -86,7 +86,7 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
 
             ucAddEditSubscription.FinishedAddEditSubscription += result =>
             {
-                if (result) UCSubscriptionsList_Load(null, null);
+                if (result.IsAddSubscription) UCSubscriptionsList_Load(null, null);
 
             };
 
@@ -99,7 +99,7 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
 
             ucAddEditSubscription.FinishedAddEditSubscription += result =>
             {
-                if (result) UCSubscriptionsList_Load(null, null);
+                if (result.IsAddSubscription) UCSubscriptionsList_Load(null, null);
 
             };
 
@@ -115,7 +115,7 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
 
             ucAddEditSubscription.FinishedAddEditSubscription += result =>
             {
-                if (result) UCSubscriptionsList_Load(null, null);
+                if (result.IsAddSubscription) UCSubscriptionsList_Load(null, null);
 
             };
 
