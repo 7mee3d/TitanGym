@@ -212,11 +212,23 @@
     <Compile Include="Modules\Trainers\Forms\UCTrainersList.Designer.cs">
       <DependentUpon>UCTrainersList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Users\Controls\ctrlShowInformationUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Users\Controls\ctrlShowInformationUser.Designer.cs">
+      <DependentUpon>ctrlShowInformationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Users\Forms\UCAddEditUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Modules\Users\Forms\UCAddEditUser.Designer.cs">
       <DependentUpon>UCAddEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Users\Forms\UCShowInformationUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Users\Forms\UCShowInformationUser.Designer.cs">
+      <DependentUpon>UCShowInformationUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\Users\Forms\UCUsersList.cs">
       <SubType>UserControl</SubType>
@@ -304,8 +316,14 @@
     <EmbeddedResource Include="Modules\Trainers\Forms\UCTrainersList.resx">
       <DependentUpon>UCTrainersList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Users\Controls\ctrlShowInformationUser.resx">
+      <DependentUpon>ctrlShowInformationUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\Users\Forms\UCAddEditUser.resx">
       <DependentUpon>UCAddEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Users\Forms\UCShowInformationUser.resx">
+      <DependentUpon>UCShowInformationUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Users\Forms\UCUsersList.resx">
       <DependentUpon>UCUsersList.cs</DependentUpon>

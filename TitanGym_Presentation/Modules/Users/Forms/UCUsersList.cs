@@ -3,6 +3,7 @@ using System.Data;
 using System.Windows.Forms;
 using TitanGym_BusinessLayer.UsersBL;
 using TitanGym_Presentation.Core.Helpers;
+using TitanGym_Presentation.Modules.People.Forms;
 
 namespace TitanGym_Presentation.Modules.Users.Forms
 {
@@ -94,6 +95,36 @@ namespace TitanGym_Presentation.Modules.Users.Forms
             };
 
             AppNavigator.Show(ucAddEditUser);
+        }
+
+        private void ShowInformationPersontoolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            int PersonID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewUsers, 1);
+
+            var ucShowInformationPersonID = new UCShowInformationPerson(PersonID);
+
+            ucShowInformationPersonID.FinishedShowInfoPerson += result =>
+            {
+                if (result) UCUsersList_Load(null, null);
+
+            };
+
+            AppNavigator.Show(ucShowInformationPersonID);
+        }
+
+        private void showInformationUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int UserID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewUsers, 0);
+
+            var ucShowInformationUser = new UCShowInformationUser(UserID);
+
+            ucShowInformationUser.FinishedShowInfoUser += result =>
+            {
+                if (result) UCUsersList_Load(null, null);
+
+            };
+
+            AppNavigator.Show(ucShowInformationUser);
         }
     }
 }

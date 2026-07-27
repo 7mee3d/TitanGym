@@ -202,7 +202,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ctrlShowInformationPerson1);
             this.Name = "ctrlShowInformationUser";
-            this.Size = new System.Drawing.Size(950, 443);
+            this.Size = new System.Drawing.Size(906, 443);
             this.ResumeLayout(false);
             this.PerformLayout();
 
