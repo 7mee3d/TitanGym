@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using TitanGym_Presentation.Modules.Dashboard.Forms;
 using TitanGym_Presentation.Modules.Members.Forms;
 using TitanGym_Presentation.Modules.Payments.Forms;
 using TitanGym_Presentation.Modules.People.Forms;
@@ -62,6 +63,11 @@ namespace TitanGym_Presentation
         private void GGradientButtonTrainerAssigenments_Click(object sender, EventArgs e)
         {
             AppNavigator.Show(new UCTrainerAssignmentsList());
+        }
+
+        private void GGradientButtonDashboard_Click(object sender, EventArgs e)
+        {
+            AppNavigator.Show(new UCDashboard());
         }
     }
 }

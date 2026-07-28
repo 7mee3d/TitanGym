@@ -169,7 +169,7 @@
             this.GGradientButtonTrainerAssigenments.Size = new System.Drawing.Size(227, 48);
             this.GGradientButtonTrainerAssigenments.TabIndex = 2;
             this.GGradientButtonTrainerAssigenments.Text = "Trainer Assignements";
-            this.GGradientButtonTrainerAssigenments.TextOffset = new System.Drawing.Point(16, 0);
+            this.GGradientButtonTrainerAssigenments.TextOffset = new System.Drawing.Point(25, 0);
             this.GGradientButtonTrainerAssigenments.Click += new System.EventHandler(this.GGradientButtonTrainerAssigenments_Click);
             // 
             // GGradientButtonPayments
@@ -387,6 +387,7 @@
             this.GGradientButtonDashboard.Size = new System.Drawing.Size(227, 48);
             this.GGradientButtonDashboard.TabIndex = 2;
             this.GGradientButtonDashboard.Text = "Dashboard";
+            this.GGradientButtonDashboard.Click += new System.EventHandler(this.GGradientButtonDashboard_Click);
             // 
             // pictureBox1
             // 

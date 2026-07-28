@@ -115,5 +115,41 @@ namespace TitanGym_DataAccessLayer.Trainer_Assignments
 
             return IsFound;
         }
+
+
+        public static int GetTotalMembersAssigementsWithTrainers()
+        {
+
+            int TotalMembers = 0;
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+
+                string Query = @"
+
+
+                                    SELECT COUNT(MEM.MemberID) AS [TotalMembersAssigementTrainers]
+                                    FROM TrainerAssignments TA 
+                                    INNER JOIN Members MEM
+                                    ON MEM.MemberID = TA.MemberID 
+
+                  ";
+
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    connection.Open();
+
+                    object result = command.ExecuteScalar();
+                    if (result != null && int.TryParse(result.ToString(), out int Total))
+                        TotalMembers = Total;
+                }
+
+            }
+
+            return TotalMembers;
+        }
     }
 }

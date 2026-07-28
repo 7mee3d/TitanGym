@@ -55,6 +55,12 @@
     <Compile Include="Core\Helpers\HelpersPL.cs" />
     <Compile Include="Core\Utility\Utility.cs" />
     <Compile Include="Core\Validation\Validation.cs" />
+    <Compile Include="Modules\Dashboard\Forms\UCDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Dashboard\Forms\UCDashboard.Designer.cs">
+      <DependentUpon>UCDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Main PL TitanGym\MainPlTitanGymStartProgram.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +268,9 @@
     </Compile>
     <Compile Include="Navigation\AppNavigator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Modules\Dashboard\Forms\UCDashboard.resx">
+      <DependentUpon>UCDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\Main PL TitanGym\MainPlTitanGymStartProgram.resx">
       <DependentUpon>MainPlTitanGymStartProgram.cs</DependentUpon>
     </EmbeddedResource>
@@ -397,7 +406,6 @@
   <ItemGroup>
     <Folder Include="Images\" />
     <Folder Include="Modules\Dashboard\Controls\" />
-    <Folder Include="Modules\Dashboard\Forms\" />
     <Folder Include="Modules\Reports\Controls\" />
     <Folder Include="Modules\Reports\Forms\" />
     <Folder Include="Modules\Trainer Assignments\Controls\" />

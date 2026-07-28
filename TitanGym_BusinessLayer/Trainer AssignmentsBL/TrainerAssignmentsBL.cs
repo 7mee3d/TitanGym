@@ -102,5 +102,8 @@ namespace TitanGym_BusinessLayer.Trainer_AssignmentsBL
         public static DataTable GetAllTrainerAssignments()
             => TrainerAssignmentsDALQueries.GetAllTrainerAssignments();
 
+        public static int GetTotalMemberAssigementsTrainers()
+            => TrainerAssignmentsDALQueries.GetTotalMembersAssigementsWithTrainers();
+
     }
 }
