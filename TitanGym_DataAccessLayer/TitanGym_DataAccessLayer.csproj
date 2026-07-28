@@ -62,6 +62,7 @@
     <Compile Include="Subscription Statuses\Subscription Statuses DAL Queries\SubscriptionStatusesDALQueries.cs" />
     <Compile Include="Subscriptions\Subscriptions DAL Commands\SubscriptionsDALCommands.cs" />
     <Compile Include="Subscriptions\Subscriptions DAL Queries\SubscriptionDALQueries.cs" />
+    <Compile Include="Trainer Assignments\Trainer Assignments DAL Queries\TrainerAssignmentsDALQueries.cs" />
     <Compile Include="Trainers\Trainers DAL Commands\TrainerDALCommands.cs" />
     <Compile Include="Trainers\Trainers DAL Queries\TrainersDALQueries.cs" />
     <Compile Include="Users\Users DAL Commands\UsersDALCommands.cs" />

@@ -34,7 +34,7 @@
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GGradientButtonReports = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGButtonUsers = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.GGradientButtonAttendance = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.GGradientButtonTrainerAssigenments = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGradientButtonPayments = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGradientButtonSubscriptions = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGradientButtonPlans = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -62,7 +62,7 @@
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
             this.guna2GradientPanel1.Controls.Add(this.GGradientButtonReports);
             this.guna2GradientPanel1.Controls.Add(this.GGButtonUsers);
-            this.guna2GradientPanel1.Controls.Add(this.GGradientButtonAttendance);
+            this.guna2GradientPanel1.Controls.Add(this.GGradientButtonTrainerAssigenments);
             this.guna2GradientPanel1.Controls.Add(this.GGradientButtonPayments);
             this.guna2GradientPanel1.Controls.Add(this.GGradientButtonSubscriptions);
             this.guna2GradientPanel1.Controls.Add(this.GGradientButtonPlans);
@@ -140,35 +140,37 @@
             this.GGButtonUsers.Text = "Users";
             this.GGButtonUsers.Click += new System.EventHandler(this.GGButtonUsers_Click);
             // 
-            // GGradientButtonAttendance
+            // GGradientButtonTrainerAssigenments
             // 
-            this.GGradientButtonAttendance.Animated = true;
-            this.GGradientButtonAttendance.AnimatedGIF = true;
-            this.GGradientButtonAttendance.BackColor = System.Drawing.Color.Transparent;
-            this.GGradientButtonAttendance.BorderRadius = 10;
-            this.GGradientButtonAttendance.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.GGradientButtonAttendance.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(54)))), ((int)(((byte)(69)))));
-            this.GGradientButtonAttendance.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(54)))), ((int)(((byte)(69)))));
-            this.GGradientButtonAttendance.CheckedState.Font = new System.Drawing.Font("IBM Plex Sans Medium", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GGradientButtonAttendance.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.GGradientButtonAttendance.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            this.GGradientButtonAttendance.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GGradientButtonAttendance.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GGradientButtonAttendance.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGradientButtonAttendance.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGradientButtonAttendance.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GGradientButtonAttendance.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            this.GGradientButtonAttendance.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            this.GGradientButtonAttendance.Font = new System.Drawing.Font("IBM Plex Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GGradientButtonAttendance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(201)))), ((int)(((byte)(204)))));
-            this.GGradientButtonAttendance.Image = ((System.Drawing.Image)(resources.GetObject("GGradientButtonAttendance.Image")));
-            this.GGradientButtonAttendance.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.GGradientButtonAttendance.ImageOffset = new System.Drawing.Point(20, 0);
-            this.GGradientButtonAttendance.Location = new System.Drawing.Point(14, 704);
-            this.GGradientButtonAttendance.Name = "GGradientButtonAttendance";
-            this.GGradientButtonAttendance.Size = new System.Drawing.Size(227, 48);
-            this.GGradientButtonAttendance.TabIndex = 2;
-            this.GGradientButtonAttendance.Text = "Attendance";
+            this.GGradientButtonTrainerAssigenments.Animated = true;
+            this.GGradientButtonTrainerAssigenments.AnimatedGIF = true;
+            this.GGradientButtonTrainerAssigenments.BackColor = System.Drawing.Color.Transparent;
+            this.GGradientButtonTrainerAssigenments.BorderRadius = 10;
+            this.GGradientButtonTrainerAssigenments.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.GGradientButtonTrainerAssigenments.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(54)))), ((int)(((byte)(69)))));
+            this.GGradientButtonTrainerAssigenments.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(54)))), ((int)(((byte)(69)))));
+            this.GGradientButtonTrainerAssigenments.CheckedState.Font = new System.Drawing.Font("IBM Plex Sans Medium", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGradientButtonTrainerAssigenments.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.GGradientButtonTrainerAssigenments.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.GGradientButtonTrainerAssigenments.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GGradientButtonTrainerAssigenments.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GGradientButtonTrainerAssigenments.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGradientButtonTrainerAssigenments.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGradientButtonTrainerAssigenments.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GGradientButtonTrainerAssigenments.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
+            this.GGradientButtonTrainerAssigenments.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
+            this.GGradientButtonTrainerAssigenments.Font = new System.Drawing.Font("IBM Plex Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGradientButtonTrainerAssigenments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(201)))), ((int)(((byte)(204)))));
+            this.GGradientButtonTrainerAssigenments.Image = ((System.Drawing.Image)(resources.GetObject("GGradientButtonTrainerAssigenments.Image")));
+            this.GGradientButtonTrainerAssigenments.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.GGradientButtonTrainerAssigenments.ImageOffset = new System.Drawing.Point(20, 0);
+            this.GGradientButtonTrainerAssigenments.Location = new System.Drawing.Point(14, 704);
+            this.GGradientButtonTrainerAssigenments.Name = "GGradientButtonTrainerAssigenments";
+            this.GGradientButtonTrainerAssigenments.Size = new System.Drawing.Size(227, 48);
+            this.GGradientButtonTrainerAssigenments.TabIndex = 2;
+            this.GGradientButtonTrainerAssigenments.Text = "Trainer Assignements";
+            this.GGradientButtonTrainerAssigenments.TextOffset = new System.Drawing.Point(16, 0);
+            this.GGradientButtonTrainerAssigenments.Click += new System.EventHandler(this.GGradientButtonTrainerAssigenments_Click);
             // 
             // GGradientButtonPayments
             // 
@@ -455,7 +457,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2GradientButton GGradientButtonReports;
-        private Guna.UI2.WinForms.Guna2GradientButton GGradientButtonAttendance;
+        private Guna.UI2.WinForms.Guna2GradientButton GGradientButtonTrainerAssigenments;
         private Guna.UI2.WinForms.Guna2GradientButton GGradientButtonPayments;
         private Guna.UI2.WinForms.Guna2GradientButton GGradientButtonSubscriptions;
         private Guna.UI2.WinForms.Guna2GradientButton GGradientButtonPlans;

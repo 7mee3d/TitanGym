@@ -200,6 +200,12 @@
     <Compile Include="Modules\Subscriptions\Forms\UCSubscriptionsList.Designer.cs">
       <DependentUpon>UCSubscriptionsList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Trainer Assignments\Forms\UCTrainerAssignmentsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Trainer Assignments\Forms\UCTrainerAssignmentsList.Designer.cs">
+      <DependentUpon>UCTrainerAssignmentsList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Trainers\Controls\ctrlShowInformationTrainer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -322,6 +328,9 @@
     <EmbeddedResource Include="Modules\Subscriptions\Forms\UCSubscriptionsList.resx">
       <DependentUpon>UCSubscriptionsList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Trainer Assignments\Forms\UCTrainerAssignmentsList.resx">
+      <DependentUpon>UCTrainerAssignmentsList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\Trainers\Controls\ctrlShowInformationTrainer.resx">
       <DependentUpon>ctrlShowInformationTrainer.cs</DependentUpon>
     </EmbeddedResource>
@@ -378,12 +387,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
-    <Folder Include="Modules\Attendance\Controls\" />
-    <Folder Include="Modules\Attendance\Forms\" />
     <Folder Include="Modules\Dashboard\Controls\" />
     <Folder Include="Modules\Dashboard\Forms\" />
     <Folder Include="Modules\Reports\Controls\" />
     <Folder Include="Modules\Reports\Forms\" />
+    <Folder Include="Modules\Trainer Assignments\Controls\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Delete_Icon_TitanGym_24.png" />

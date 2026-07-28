@@ -55,6 +55,7 @@
     <Compile Include="SpecializationBL\SpecializationBL.cs" />
     <Compile Include="Subscription StatusesBL\SubscriptionStatusBL.cs" />
     <Compile Include="SubscriptionBL\SubscriptionBL.cs" />
+    <Compile Include="Trainer AssignmentsBL\TrainerAssignmentsBL.cs" />
     <Compile Include="TrainersBL\TrainerBL.cs" />
     <Compile Include="UsersBL\UserBL.cs" />
   </ItemGroup>
