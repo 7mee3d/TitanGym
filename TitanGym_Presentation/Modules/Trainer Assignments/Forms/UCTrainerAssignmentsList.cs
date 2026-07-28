@@ -61,5 +61,19 @@ namespace TitanGym_Presentation.Modules.Trainer_Assignments.Forms
         {
             _LoadInformationTrainerAssignments();
         }
+
+        private void GGButtonAssigementMember_Click(object sender, EventArgs e)
+        {
+            var ucAssigmentMembertoTrainer = new UCAssigementEditMemberTrainer();
+
+            ucAssigmentMembertoTrainer.FinishedAddEditAssigemntTrainer += result =>
+            {
+                if (result) UCTrainerAssignmentsList_Load(null, null);
+
+
+            };
+
+            AppNavigator.Show(ucAssigmentMembertoTrainer);
+        }
     }
 }

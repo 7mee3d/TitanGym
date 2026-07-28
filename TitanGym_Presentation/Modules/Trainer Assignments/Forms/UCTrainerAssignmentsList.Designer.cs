@@ -39,7 +39,7 @@
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.lblTotalActiveSubscriptions = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.GGButtonAddNewSubscription = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.GGButtonAssigementMember = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GDataGridViewTrainerAssignments = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -124,28 +124,29 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Active Subscriptions";
             // 
-            // GGButtonAddNewSubscription
+            // GGButtonAssigementMember
             // 
-            this.GGButtonAddNewSubscription.BorderRadius = 6;
-            this.GGButtonAddNewSubscription.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GGButtonAddNewSubscription.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAddNewSubscription.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAddNewSubscription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAddNewSubscription.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAddNewSubscription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GGButtonAddNewSubscription.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewSubscription.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewSubscription.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GGButtonAddNewSubscription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
-            this.GGButtonAddNewSubscription.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewSubscription.Image")));
-            this.GGButtonAddNewSubscription.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.GGButtonAddNewSubscription.ImageOffset = new System.Drawing.Point(15, 1);
-            this.GGButtonAddNewSubscription.Location = new System.Drawing.Point(1161, 70);
-            this.GGButtonAddNewSubscription.Name = "GGButtonAddNewSubscription";
-            this.GGButtonAddNewSubscription.Size = new System.Drawing.Size(268, 44);
-            this.GGButtonAddNewSubscription.TabIndex = 12;
-            this.GGButtonAddNewSubscription.Text = "ADD NEW SUBSCRIPTION";
-            this.GGButtonAddNewSubscription.TextOffset = new System.Drawing.Point(10, 0);
+            this.GGButtonAssigementMember.BorderRadius = 6;
+            this.GGButtonAssigementMember.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GGButtonAssigementMember.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonAssigementMember.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonAssigementMember.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonAssigementMember.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonAssigementMember.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GGButtonAssigementMember.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.GGButtonAssigementMember.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.GGButtonAssigementMember.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonAssigementMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
+            this.GGButtonAssigementMember.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAssigementMember.Image")));
+            this.GGButtonAssigementMember.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.GGButtonAssigementMember.ImageOffset = new System.Drawing.Point(15, 1);
+            this.GGButtonAssigementMember.Location = new System.Drawing.Point(1192, 70);
+            this.GGButtonAssigementMember.Name = "GGButtonAssigementMember";
+            this.GGButtonAssigementMember.Size = new System.Drawing.Size(237, 44);
+            this.GGButtonAssigementMember.TabIndex = 12;
+            this.GGButtonAssigementMember.Text = "Assigement Member";
+            this.GGButtonAssigementMember.TextOffset = new System.Drawing.Point(10, 0);
+            this.GGButtonAssigementMember.Click += new System.EventHandler(this.GGButtonAssigementMember_Click);
             // 
             // guna2GradientPanel2
             // 
@@ -279,7 +280,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.Controls.Add(this.guna2GradientPanel4);
             this.Controls.Add(this.guna2GradientPanel3);
-            this.Controls.Add(this.GGButtonAddNewSubscription);
+            this.Controls.Add(this.GGButtonAssigementMember);
             this.Controls.Add(this.guna2GradientPanel2);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.label1);
@@ -308,7 +309,7 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
         private System.Windows.Forms.Label lblTotalActiveSubscriptions;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2GradientButton GGButtonAddNewSubscription;
+        private Guna.UI2.WinForms.Guna2GradientButton GGButtonAssigementMember;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2DataGridView GDataGridViewTrainerAssignments;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;

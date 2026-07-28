@@ -200,6 +200,12 @@
     <Compile Include="Modules\Subscriptions\Forms\UCSubscriptionsList.Designer.cs">
       <DependentUpon>UCSubscriptionsList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Trainer Assignments\Forms\UCAssigementEditMemberTrainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Trainer Assignments\Forms\UCAssigementEditMemberTrainer.Designer.cs">
+      <DependentUpon>UCAssigementEditMemberTrainer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Trainer Assignments\Forms\UCTrainerAssignmentsList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -327,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Subscriptions\Forms\UCSubscriptionsList.resx">
       <DependentUpon>UCSubscriptionsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Trainer Assignments\Forms\UCAssigementEditMemberTrainer.resx">
+      <DependentUpon>UCAssigementEditMemberTrainer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Trainer Assignments\Forms\UCTrainerAssignmentsList.resx">
       <DependentUpon>UCTrainerAssignmentsList.cs</DependentUpon>

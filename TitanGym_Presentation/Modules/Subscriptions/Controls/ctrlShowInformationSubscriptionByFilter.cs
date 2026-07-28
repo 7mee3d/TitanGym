@@ -15,6 +15,7 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Controls
         private SubscriptionBL _InformationSubscription;
         private int _SubscriptionID = -1;
 
+        public SubscriptionBL InformatioNSubscription { get { return _InformationSubscription; } }
         public int SubscriptionID { get { return _SubscriptionID; } }
 
         private void GGButtonSearchSubscription_Click(object sender, EventArgs e)
