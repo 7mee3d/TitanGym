@@ -56,6 +56,27 @@ namespace TitanGym_BusinessLayer.Trainer_AssignmentsBL
             return this.TrainerAssignmentID != -1;
         }
 
+        private bool UpdateInformatioNTrainerAssigement()
+        {
+            return TrainerAssignmentsDALCommands.UpdateInformatioNTrianerAssigement(TrainerAssignmentID, AssignmentDate, Note, TrainerID, MemberID);
+        }
+
+        public static TrainerAssignmentsBL FindTheTrainerAssigementBy(int TrainerAssigementID)
+        {
+
+
+            DateTime assignmentDate = DateTime.Now;
+            string note = "";
+            int trainerID = 0, memberID = 0;
+
+            bool IsFound = TrainerAssignmentsDALQueries.FindTheTrainerAssigements(TrainerAssigementID, ref assignmentDate, ref note, ref trainerID, ref memberID);
+            if (IsFound)
+                return new TrainerAssignmentsBL(TrainerAssigementID, assignmentDate, note, trainerID, memberID);
+            else return null;
+        }
+
+
+
         public bool SaveModeAssigmentTrainer()
         {
 
@@ -71,7 +92,7 @@ namespace TitanGym_BusinessLayer.Trainer_AssignmentsBL
                     return false;
 
                 case EnModeTrainerAssigements._kUPDATE_INFORMATION_ASSIGEMENT_MEMBER_TRAINER:
-                    return false;
+                    return UpdateInformatioNTrainerAssigement();
 
                 default: return false;
             }

@@ -17,12 +17,20 @@ namespace TitanGym_Presentation.Modules.Trainer_Assignments.Forms
         private _EnModeAssigementMember _ModeAssigement;
         private TrainerAssignmentsBL _InformationAssigement;
         public event Action<bool> FinishedAddEditAssigemntTrainer;
+        private int _TrainerAssigementID;
 
 
         public UCAssigementEditMemberTrainer()
         {
             InitializeComponent();
             this._ModeAssigement = _EnModeAssigementMember._kASSIGEMENT_MEMBER_TO_TRAINER;
+        }
+
+        public UCAssigementEditMemberTrainer(int TrainerAssigementID)
+        {
+            InitializeComponent();
+            this._ModeAssigement = _EnModeAssigementMember._kUPDATE_INFORMATION_ASSIGEMENT_MEMBER_TO_TRAINER;
+            _TrainerAssigementID = TrainerAssigementID;
         }
 
         private void _LoadInformatioNTrainerInCB()
@@ -42,6 +50,30 @@ namespace TitanGym_Presentation.Modules.Trainer_Assignments.Forms
                 GGButtonAssgementMember.Text = "Assigement Member";
                 return;
             }
+
+            _InformationAssigement = TrainerAssignmentsBL.FindTheTrainerAssigementBy(_TrainerAssigementID);
+
+            if (_InformationAssigement is null)
+            {
+                MessageBox.Show("This Trainer Assigement is not exists", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+
+            }
+            ctrlShowInformationSubscriptionByFilter1.EnableControls = false;
+            lblAssigementMembers.Text = "Update Assigement Member To Trainer";
+            GGButtonAssgementMember.Text = "Update Assigement Member";
+            this._ModeAssigement = _EnModeAssigementMember._kUPDATE_INFORMATION_ASSIGEMENT_MEMBER_TO_TRAINER;
+        }
+
+        private void _LoadInformationTrainerAssigementInControls()
+        {
+            int SubscriptionID = SubscriptionBL.FindTheSubscriptionByMemberID(_InformationAssigement.MemberID).SubscriptionID;
+
+            ctrlShowInformationSubscriptionByFilter1.LoadInformationSubscription(SubscriptionID);
+            GComboBoxTrainers.SelectedValue = _InformationAssigement.TrainerID;
+            GTextBoxNote.Text = _InformationAssigement.Note;
+            lblAssigementDateMember.Text = _InformationAssigement.AssignmentDate.ToString("dd/MM/yyyy");
+
         }
 
         private void _PrepareInformationTrainerAssigement()
@@ -143,6 +175,9 @@ namespace TitanGym_Presentation.Modules.Trainer_Assignments.Forms
         private void UCAssigementEditMemberTrainer_Load(object sender, EventArgs e)
         {
             _DefaultValues();
+
+            if (this._ModeAssigement == _EnModeAssigementMember._kUPDATE_INFORMATION_ASSIGEMENT_MEMBER_TO_TRAINER)
+                _LoadInformationTrainerAssigementInControls();
         }
 
         private void GGButtonAssgementMember_Click(object sender, EventArgs e)

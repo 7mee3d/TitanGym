@@ -73,5 +73,56 @@ namespace TitanGym_DataAccessLayer.Trainer_Assignments
 
             return AssigementTrainerID;
         }
+
+        public static bool UpdateInformatioNTrianerAssigement(
+                int TrainerAssigementID,
+                DateTime assignmentDate,
+                string note,
+                int trainerID,
+                int memberID
+
+            )
+        {
+
+            bool IsUpdated = false;
+
+            using (SqlConnection connection = new SqlConnection(Helper.HelperDAL.TitanGymConnectionString))
+            {
+
+
+                string Query = @"
+
+
+                        UPDATE TrainerAssignments
+                                                      
+                         SET
+                                                        AssignmentDate = @AssignmentDate,
+                                                        Note = @Note, 
+                                                        TrainerID = @TrainerID,
+                                                        MemberID = @MemberID
+
+
+                        WHERE TrainerAssignmentID = @TrainerAssignmentID;
+                    ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    command.AddWithParameter<int>("@TrainerAssignmentID", TrainerAssigementID);
+                    command.AddWithParameter<DateTime>("@AssignmentDate", assignmentDate);
+                    command.AddWithParameter<string>("@Note", note);
+                    command.AddWithParameter<int>("@TrainerID", trainerID);
+                    command.AddWithParameter<int>("@MemberID", memberID);
+
+                    connection.Open();
+
+                    IsUpdated = command.ExecuteNonQuery() > 0;
+
+
+                }
+            }
+
+            return IsUpdated;
+        }
     }
 }

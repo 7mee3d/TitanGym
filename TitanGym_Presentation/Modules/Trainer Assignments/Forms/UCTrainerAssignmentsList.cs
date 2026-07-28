@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TitanGym_BusinessLayer.SubscriptionBL;
 using TitanGym_BusinessLayer.Trainer_AssignmentsBL;
+using TitanGym_Presentation.Core.Helpers;
+using TitanGym_Presentation.Modules.Subscriptions.Forms;
 
 namespace TitanGym_Presentation.Modules.Trainer_Assignments.Forms
 {
@@ -74,6 +77,52 @@ namespace TitanGym_Presentation.Modules.Trainer_Assignments.Forms
             };
 
             AppNavigator.Show(ucAssigmentMembertoTrainer);
+        }
+
+        private void AssigementMemberToTrainerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ucAssigmentMembertoTrainer = new UCAssigementEditMemberTrainer();
+
+            ucAssigmentMembertoTrainer.FinishedAddEditAssigemntTrainer += result =>
+            {
+                if (result) UCTrainerAssignmentsList_Load(null, null);
+
+
+            };
+
+            AppNavigator.Show(ucAssigmentMembertoTrainer);
+        }
+
+        private void updateInformationAssigementMemberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int TrainerAssigementID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewTrainerAssignments, 0);
+
+            var ucAssigmentMembertoTrainer = new UCAssigementEditMemberTrainer(TrainerAssigementID);
+
+            ucAssigmentMembertoTrainer.FinishedAddEditAssigemntTrainer += result =>
+            {
+                if (result) UCTrainerAssignmentsList_Load(null, null);
+
+
+            };
+
+            AppNavigator.Show(ucAssigmentMembertoTrainer);
+        }
+
+        private void showInformationSubscriptionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int MemberID = HelpersPL.GetValueFromDataGridView<int>(GDataGridViewTrainerAssignments, 1);
+
+            int SubscriptionID = SubscriptionBL.FindTheSubscriptionByMemberID(MemberID).SubscriptionID;
+
+            var ucShowInformationSubscription = new UCShowInformationSubscription(SubscriptionID);
+
+            ucShowInformationSubscription.FinishedShowInfoSubscription += result =>
+            {
+                if (result) UCTrainerAssignmentsList_Load(null, null);
+            };
+
+            AppNavigator.Show(ucShowInformationSubscription);
         }
     }
 }

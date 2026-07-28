@@ -12,7 +12,7 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Controls
             InitializeComponent();
         }
 
-        private void _DefaultValues()
+        public void DefaultValues()
         {
 
             lblMembershipType.Text = "[???]";
@@ -33,7 +33,7 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Controls
 
             if (_InformationSubscription is null)
             {
-                _DefaultValues();
+                DefaultValues();
                 MessageBox.Show("This subscription is not exists", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }

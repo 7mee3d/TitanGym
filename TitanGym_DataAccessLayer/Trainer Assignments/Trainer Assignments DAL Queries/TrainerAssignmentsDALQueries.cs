@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using TitanGym_DataAccessLayer.Helper;
 
@@ -65,6 +66,54 @@ namespace TitanGym_DataAccessLayer.Trainer_Assignments
             }
 
             return DT_AllTrainerAssignments;
+        }
+
+        public static bool FindTheTrainerAssigements(
+
+               int trainerAssignmentID,
+                ref DateTime assignmentDate,
+                ref string note,
+                ref int trainerID,
+                ref int memberID
+            )
+        {
+
+
+            bool IsFound = false;
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+
+                string Query = @"
+
+                    SELECT *
+                    FROM TrainerAssignments
+                    WHERE TrainerAssignmentID = @TrainerAssignmentID
+
+
+                 ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    command.AddWithParameter<int>("@TrainerAssignmentID", trainerAssignmentID);
+
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                        if (reader.Read())
+                        {
+                            IsFound = true;
+                            assignmentDate = reader.GetTheValueFrom<DateTime>("AssignmentDate");
+                            note = reader.GetTheValueFrom<string>("Note");
+                            trainerID = reader.GetTheValueFrom<int>("TrainerID");
+                            memberID = reader.GetTheValueFrom<int>("MemberID");
+                        }
+                }
+            }
+
+            return IsFound;
         }
     }
 }

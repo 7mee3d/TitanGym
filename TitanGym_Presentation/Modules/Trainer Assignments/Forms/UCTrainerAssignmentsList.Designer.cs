@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCTrainerAssignmentsList));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -46,12 +47,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ContextMenuStripTrainerAssigements = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showInformationSubscriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.AssigementMemberToTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.updateInformationAssigementMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.guna2GradientPanel4.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewTrainerAssignments)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.ContextMenuStripTrainerAssigements.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel4
@@ -182,6 +191,7 @@
             this.GDataGridViewTrainerAssignments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.GDataGridViewTrainerAssignments.ColumnHeadersHeight = 57;
             this.GDataGridViewTrainerAssignments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.GDataGridViewTrainerAssignments.ContextMenuStrip = this.ContextMenuStripTrainerAssigements;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -273,6 +283,63 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Trainer Assigenments Directory";
             // 
+            // ContextMenuStripTrainerAssigements
+            // 
+            this.ContextMenuStripTrainerAssigements.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showInformationSubscriptionToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.AssigementMemberToTrainerToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.updateInformationAssigementMemberToolStripMenuItem,
+            this.toolStripSeparator1});
+            this.ContextMenuStripTrainerAssigements.Name = "ContextMenuStripPeopleSection";
+            this.ContextMenuStripTrainerAssigements.Size = new System.Drawing.Size(334, 136);
+            // 
+            // showInformationSubscriptionToolStripMenuItem
+            // 
+            this.showInformationSubscriptionToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showInformationSubscriptionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationSubscriptionToolStripMenuItem.Image")));
+            this.showInformationSubscriptionToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showInformationSubscriptionToolStripMenuItem.Name = "showInformationSubscriptionToolStripMenuItem";
+            this.showInformationSubscriptionToolStripMenuItem.Size = new System.Drawing.Size(333, 38);
+            this.showInformationSubscriptionToolStripMenuItem.Text = "Show Information Subscription";
+            this.showInformationSubscriptionToolStripMenuItem.Click += new System.EventHandler(this.showInformationSubscriptionToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(330, 6);
+            // 
+            // AssigementMemberToTrainerToolStripMenuItem
+            // 
+            this.AssigementMemberToTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.AssigementMemberToTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("AssigementMemberToTrainerToolStripMenuItem.Image")));
+            this.AssigementMemberToTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.AssigementMemberToTrainerToolStripMenuItem.Name = "AssigementMemberToTrainerToolStripMenuItem";
+            this.AssigementMemberToTrainerToolStripMenuItem.Size = new System.Drawing.Size(333, 38);
+            this.AssigementMemberToTrainerToolStripMenuItem.Text = "Assigement Member";
+            this.AssigementMemberToTrainerToolStripMenuItem.Click += new System.EventHandler(this.AssigementMemberToTrainerToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(330, 6);
+            // 
+            // updateInformationAssigementMemberToolStripMenuItem
+            // 
+            this.updateInformationAssigementMemberToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.updateInformationAssigementMemberToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationAssigementMemberToolStripMenuItem.Image")));
+            this.updateInformationAssigementMemberToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateInformationAssigementMemberToolStripMenuItem.Name = "updateInformationAssigementMemberToolStripMenuItem";
+            this.updateInformationAssigementMemberToolStripMenuItem.Size = new System.Drawing.Size(333, 38);
+            this.updateInformationAssigementMemberToolStripMenuItem.Text = "Update Information Assigement Member";
+            this.updateInformationAssigementMemberToolStripMenuItem.Click += new System.EventHandler(this.updateInformationAssigementMemberToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(330, 6);
+            // 
             // UCTrainerAssignmentsList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,6 +363,7 @@
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ContextMenuStripTrainerAssigements.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,5 +384,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ContextMenuStrip ContextMenuStripTrainerAssigements;
+        private System.Windows.Forms.ToolStripMenuItem showInformationSubscriptionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem AssigementMemberToTrainerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem updateInformationAssigementMemberToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }

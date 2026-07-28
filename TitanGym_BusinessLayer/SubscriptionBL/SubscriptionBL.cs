@@ -139,6 +139,43 @@ namespace TitanGym_BusinessLayer.SubscriptionBL
 
         }
 
+        public static SubscriptionBL FindTheSubscriptionByMemberID(int MemberID)
+        {
+
+            DateTime startDate = DateTime.Now, endDate = DateTime.Now;
+
+            double subscriptionFees = 0.0d;
+            byte subscriptionStatusID = 0;
+
+            int SubscriptionID = 0, membershipID = 0;
+
+            bool IsFounded = SubscriptionDALQueries.FindTheSubscriptionBy(
+
+                MemberID,
+                ref SubscriptionID,
+                ref startDate,
+                ref endDate,
+                ref subscriptionFees,
+                ref subscriptionStatusID,
+                ref membershipID
+                );
+
+            if (IsFounded)
+                return new SubscriptionBL(
+
+                    SubscriptionID,
+                    startDate,
+                    endDate,
+                    subscriptionFees,
+                    subscriptionStatusID,
+                    MemberID,
+                    membershipID
+                    );
+
+            else return null;
+
+        }
+
         public static DataTable GetAllSubscription()
                 => SubscriptionDALQueries.GetAllSubscription();
 

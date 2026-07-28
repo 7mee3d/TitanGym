@@ -62,6 +62,60 @@ namespace TitanGym_DataAccessLayer.Subscriptions
             return IsFounded;
         }
 
+        public static bool FindTheSubscriptionBy(
+
+              int MemberID,
+             ref int SubscriptionID,
+             ref DateTime StartDate,
+             ref DateTime EndDate,
+             ref double SubscriptionFees,
+             ref byte SubscriptionStatusID,
+             ref int MembershipID
+
+            )
+        {
+
+
+            bool IsFounded = false;
+
+            using (SqlConnection connection = new SqlConnection(Helper.HelperDAL.TitanGymConnectionString))
+            {
+
+                string Query = @"
+
+
+                            SELECT *
+                            FROM Subscriptions
+                            WHERE MemberID = @MemberID
+
+                ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    command.AddWithParameter<int>("@MemberID", MemberID);
+
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                        if (reader.Read())
+                        {
+                            IsFounded = true;
+
+                            SubscriptionID = reader.GetTheValueFrom<int>("SubscriptionID");
+                            StartDate = reader.GetTheValueFrom<DateTime>("StartDate");
+                            EndDate = reader.GetTheValueFrom<DateTime>("EndDate");
+                            SubscriptionFees = reader.GetTheValueFrom<double>("SubscriptionFees");
+                            SubscriptionStatusID = reader.GetTheValueFrom<byte>("SubscriptionStatusID");
+                            MembershipID = reader.GetTheValueFrom<int>("MembershipID");
+                        }
+                }
+
+            }
+
+            return IsFounded;
+        }
+
         public static DataTable GetAllSubscription()
         {
 

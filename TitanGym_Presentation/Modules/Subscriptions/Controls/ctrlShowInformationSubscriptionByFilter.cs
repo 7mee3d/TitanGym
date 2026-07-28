@@ -18,6 +18,17 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Controls
         public SubscriptionBL InformatioNSubscription { get { return _InformationSubscription; } }
         public int SubscriptionID { get { return _SubscriptionID; } }
 
+        public bool EnableControls
+        {
+            set
+            {
+                GGButtonAddNewSubscription.Enabled = value;
+                GGButtonSearchSubscription.Enabled = value;
+                GTextBoxSubscriptionID.Enabled = value;
+            }
+
+        }
+
         private void GGButtonSearchSubscription_Click(object sender, EventArgs e)
         {
             int SubscirptionID = Convert.ToInt32(GTextBoxSubscriptionID.Text.Trim());
@@ -32,6 +43,25 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Controls
 
             _SubscriptionID = SubscirptionID;
             ctrlShowInformationSubscription1.LoadInformationSubscription(SubscirptionID);
+        }
+
+        public void LoadInformationSubscription(int subscriptionID)
+        {
+
+            if (subscriptionID <= 0) return;
+            _InformationSubscription = SubscriptionBL.FindTheSubscriptionBy(subscriptionID);
+
+            if (_InformationSubscription is null)
+            {
+                ctrlShowInformationSubscription1.DefaultValues();
+                MessageBox.Show("This subscription is not exists", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
+            _SubscriptionID = subscriptionID;
+            GTextBoxSubscriptionID.Text = _SubscriptionID.ToString();
+            ctrlShowInformationSubscription1.LoadInformationSubscription(subscriptionID);
         }
 
         private void GGButtonAddNewSubscription_Click(object sender, EventArgs e)
