@@ -17,11 +17,22 @@ namespace TitanGym_Presentation.Modules.People.Forms
             _kUPDATE_INFORMATION_PERSON = 2
         }
 
+        public class InformationPersonEventArgs : EventArgs
+        {
+            public int NewPersonID { get; private set; }
+            public bool IsAddedOrEdited { get; private set; }
+
+            public InformationPersonEventArgs(int newPersonID, bool isAddedOrEdited)
+            {
+                this.NewPersonID = newPersonID;
+                this.IsAddedOrEdited = isAddedOrEdited;
+            }
+        }
 
         private PeopleBL _InformationPerson;
         private readonly int _PersonID;
         private _EnModePerson _ModePerson = _EnModePerson._kADD_NEW_PERSON;
-        public event Action<bool> FinihedAddEditPerson;
+        public event Action<InformationPersonEventArgs> FinihedAddEditPerson;
 
 
         public UCAddEditPerson()
@@ -100,7 +111,7 @@ namespace TitanGym_Presentation.Modules.People.Forms
                     MessageBox.Show("The Person Added Sccessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else MessageBox.Show("The Person Updated Sccessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                FinihedAddEditPerson?.Invoke(true);
+                FinihedAddEditPerson?.Invoke(new InformationPersonEventArgs(_InformationPerson.PersonID, true));
             }
             else MessageBox.Show("The Person Added Faild", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 

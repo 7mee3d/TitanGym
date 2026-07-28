@@ -95,7 +95,7 @@ namespace TitanGym_Presentation.Modules.Members.Forms
             this._InformationMember.RegistrationDate = DateTime.Now;
             this._InformationMember.EmergencyContactName = GTextBoxEmergencyContactName.Text.Trim();
             this._InformationMember.EmergencyContactPhoneNumber = GTextBoxEmergencyContactPhoneNumber.Text.Trim();
-            this._InformationMember.PersonID = _PersonID;
+            this._InformationMember.PersonID = ctrlShowInformationPersonByFilter1.PersonID;
             this._InformationMember.MembershipStatusID = MemberBL.enMembershipStatus._kACTIVE;
         }
 
@@ -108,7 +108,7 @@ namespace TitanGym_Presentation.Modules.Members.Forms
                 e.Cancel = true;
                 ErrorProviderMemberSection.SetError(textBox, "This Field Empty");
             }
-            e.Cancel = false;
+            else e.Cancel = false;
         }
 
         private void GTextBoxEmergencyContactPhoneNumber_KeyPress(object sender, KeyPressEventArgs e)
@@ -140,7 +140,7 @@ namespace TitanGym_Presentation.Modules.Members.Forms
             }
 
 
-            if (this._PersonID == -1)
+            if (this._PersonID == -1 && ctrlShowInformationPersonByFilter1.PersonID == -1)
             {
                 MessageBox.Show(
                          "You must selected person according the filter",

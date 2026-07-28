@@ -69,7 +69,7 @@ namespace TitanGym_Presentation.Modules.People.Forms
 
             AddEditPerson.FinihedAddEditPerson += (Result) =>
             {
-                if (Result) UCPeopleList_Load(null, null);
+                if (Result.IsAddedOrEdited) UCPeopleList_Load(null, null);
             };
 
 
@@ -102,7 +102,7 @@ namespace TitanGym_Presentation.Modules.People.Forms
 
             AddEditPerson.FinihedAddEditPerson += (Result) =>
             {
-                if (Result) UCPeopleList_Load(null, null);
+                if (Result.IsAddedOrEdited) UCPeopleList_Load(null, null);
             };
 
 
@@ -115,7 +115,7 @@ namespace TitanGym_Presentation.Modules.People.Forms
 
             AddEditPerson.FinihedAddEditPerson += (Result) =>
             {
-                if (Result) UCPeopleList_Load(null, null);
+                if (Result.IsAddedOrEdited) UCPeopleList_Load(null, null);
             };
 
             AppNavigator.Show(AddEditPerson);

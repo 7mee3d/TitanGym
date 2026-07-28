@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using TitanGym_BusinessLayer.MemberBL;
+using TitanGym_Presentation.Modules.People.Forms;
 
 namespace TitanGym_Presentation.Modules.People.Controls
 {
@@ -15,6 +15,8 @@ namespace TitanGym_Presentation.Modules.People.Controls
         public event EventHandler<int> EHFinishedSearchPerson;
 
         private bool _EnableControl = false;
+
+        public int PersonID { get { return _PersonID; } }
 
         public bool EnableControls
         {
@@ -58,6 +60,24 @@ namespace TitanGym_Presentation.Modules.People.Controls
         {
             GTextBoxPersonID.Focus();
             GTextBoxPersonID.SelectAll();
+        }
+
+        private void GGButtonAddNewPerson_Click(object sender, EventArgs e)
+        {
+            var ucAddEditPerson = new UCAddEditPerson();
+
+            ucAddEditPerson.FinihedAddEditPerson += result =>
+            {
+                if (result.IsAddedOrEdited)
+                {
+                    int NewPersonID = result.NewPersonID;
+                    GTextBoxPersonID.Text = NewPersonID.ToString();
+                    _PersonID = NewPersonID;
+                    ctrlShowInformationPerson1.LoadInformationPerson(NewPersonID);
+                }
+            };
+
+            AppNavigator.Show(ucAddEditPerson);
         }
     }
 }

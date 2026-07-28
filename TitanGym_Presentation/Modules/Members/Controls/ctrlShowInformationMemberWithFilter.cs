@@ -84,6 +84,7 @@ namespace TitanGym_Presentation.Modules.Members.Controls
                     int NewMemberID = result.NewMemberID;
                     ctrlShowInformationMember1.LoadInformationMember(NewMemberID);
                     GTextBoxMemberID.Text = NewMemberID.ToString();
+                    _MemberID = NewMemberID;
                 }
             };
 

@@ -33,6 +33,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.GGButtonSearchPerson = new Guna.UI2.WinForms.Guna2GradientButton();
             this.ctrlShowInformationPerson1 = new TitanGym_Presentation.Modules.People.Controls.ctrlShowInformationPerson();
+            this.GGButtonAddNewPerson = new Guna.UI2.WinForms.Guna2GradientButton();
             this.SuspendLayout();
             // 
             // GTextBoxPersonID
@@ -107,11 +108,41 @@
             this.ctrlShowInformationPerson1.Size = new System.Drawing.Size(908, 237);
             this.ctrlShowInformationPerson1.TabIndex = 0;
             // 
+            // GGButtonAddNewPerson
+            // 
+            this.GGButtonAddNewPerson.Animated = true;
+            this.GGButtonAddNewPerson.AnimatedGIF = true;
+            this.GGButtonAddNewPerson.BackColor = System.Drawing.Color.Transparent;
+            this.GGButtonAddNewPerson.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewPerson.BorderRadius = 5;
+            this.GGButtonAddNewPerson.BorderThickness = 1;
+            this.GGButtonAddNewPerson.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GGButtonAddNewPerson.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
+            this.GGButtonAddNewPerson.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
+            this.GGButtonAddNewPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
+            this.GGButtonAddNewPerson.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
+            this.GGButtonAddNewPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(170)))), ((int)(((byte)(176)))));
+            this.GGButtonAddNewPerson.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewPerson.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewPerson.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonAddNewPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
+            this.GGButtonAddNewPerson.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewPerson.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewPerson.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPerson.Image")));
+            this.GGButtonAddNewPerson.ImageOffset = new System.Drawing.Point(-2, 0);
+            this.GGButtonAddNewPerson.Location = new System.Drawing.Point(708, 49);
+            this.GGButtonAddNewPerson.Name = "GGButtonAddNewPerson";
+            this.GGButtonAddNewPerson.Size = new System.Drawing.Size(166, 38);
+            this.GGButtonAddNewPerson.TabIndex = 4;
+            this.GGButtonAddNewPerson.Text = "Add New Person";
+            this.GGButtonAddNewPerson.Click += new System.EventHandler(this.GGButtonAddNewPerson_Click);
+            // 
             // ctrlShowInformationPersonByFilter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
+            this.Controls.Add(this.GGButtonAddNewPerson);
             this.Controls.Add(this.GGButtonSearchPerson);
             this.Controls.Add(this.GTextBoxPersonID);
             this.Controls.Add(this.label5);
@@ -129,5 +160,6 @@
         private Guna.UI2.WinForms.Guna2TextBox GTextBoxPersonID;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2GradientButton GGButtonSearchPerson;
+        private Guna.UI2.WinForms.Guna2GradientButton GGButtonAddNewPerson;
     }
 }
