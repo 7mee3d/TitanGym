@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using TitanGym_BusinessLayer.UsersBL;
 using TitanGym_Presentation.Core.Utility;
 using TitanGym_Presentation.Modules.Dashboard.Forms;
+using TitanGym_Presentation.Modules.Login.Forms;
 using TitanGym_Presentation.Modules.Members.Forms;
 using TitanGym_Presentation.Modules.Payments.Forms;
 using TitanGym_Presentation.Modules.People.Forms;
@@ -94,6 +95,15 @@ namespace TitanGym_Presentation
         private void MainPlTitanGymStartProgram_Activated(object sender, EventArgs e)
         {
             AppNavigator.Show(new UCDashboard());
+        }
+
+        private void GGButtonExitTitanGYM_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            UCLoginTitanGym uCLoginTitanGym = new UCLoginTitanGym();
+            uCLoginTitanGym.ShowDialog();
+
         }
     }
 }

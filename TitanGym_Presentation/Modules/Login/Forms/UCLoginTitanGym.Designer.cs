@@ -41,6 +41,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.GControlBoxClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -151,6 +152,7 @@
             this.GTextBoxPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
             this.GTextBoxPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.GTextBoxPassword.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GTextBoxPassword.ForeColor = System.Drawing.Color.White;
             this.GTextBoxPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GTextBoxPassword.IconLeft = ((System.Drawing.Image)(resources.GetObject("GTextBoxPassword.IconLeft")));
             this.GTextBoxPassword.IconLeftOffset = new System.Drawing.Point(10, 0);
@@ -178,6 +180,7 @@
             this.GTextBoxUsername.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
             this.GTextBoxUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.GTextBoxUsername.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GTextBoxUsername.ForeColor = System.Drawing.Color.White;
             this.GTextBoxUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GTextBoxUsername.IconLeft = ((System.Drawing.Image)(resources.GetObject("GTextBoxUsername.IconLeft")));
             this.GTextBoxUsername.IconLeftOffset = new System.Drawing.Point(10, 0);
@@ -236,12 +239,28 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "TitanGYM System";
             // 
+            // GControlBoxClose
+            // 
+            this.GControlBoxClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.GControlBoxClose.BackColor = System.Drawing.Color.Transparent;
+            this.GControlBoxClose.BorderRadius = 3;
+            this.GControlBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GControlBoxClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GControlBoxClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GControlBoxClose.IconColor = System.Drawing.Color.Black;
+            this.GControlBoxClose.Location = new System.Drawing.Point(1650, 27);
+            this.GControlBoxClose.Name = "GControlBoxClose";
+            this.GControlBoxClose.Size = new System.Drawing.Size(33, 30);
+            this.GControlBoxClose.TabIndex = 1;
+            this.GControlBoxClose.Click += new System.EventHandler(this.GControlBoxClose_Click);
+            // 
             // UCLoginTitanGym
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(1731, 956);
+            this.Controls.Add(this.GControlBoxClose);
             this.Controls.Add(this.guna2GradientPanel1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -270,5 +289,6 @@
         private Guna.UI2.WinForms.Guna2CheckBox GCheckBoxRememberMe;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2ControlBox GControlBoxClose;
     }
 }

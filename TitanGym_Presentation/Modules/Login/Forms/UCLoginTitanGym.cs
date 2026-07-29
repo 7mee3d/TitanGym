@@ -62,5 +62,10 @@ namespace TitanGym_Presentation.Modules.Login.Forms
 
 
         }
+
+        private void GControlBoxClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
