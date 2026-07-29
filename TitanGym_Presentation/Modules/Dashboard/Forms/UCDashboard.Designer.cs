@@ -69,7 +69,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("IBM Plex Sans", 38.24999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label1.Location = new System.Drawing.Point(42, 45);
+            this.label1.Location = new System.Drawing.Point(42, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(292, 71);
             this.label1.TabIndex = 5;
@@ -83,7 +83,7 @@
             this.guna2GradientPanel4.Controls.Add(this.label5);
             this.guna2GradientPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
             this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            this.guna2GradientPanel4.Location = new System.Drawing.Point(54, 208);
+            this.guna2GradientPanel4.Location = new System.Drawing.Point(54, 141);
             this.guna2GradientPanel4.Name = "guna2GradientPanel4";
             this.guna2GradientPanel4.Size = new System.Drawing.Size(280, 109);
             this.guna2GradientPanel4.TabIndex = 9;
@@ -118,7 +118,7 @@
             this.guna2GradientPanel1.Controls.Add(this.label3);
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(408, 208);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(408, 141);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(280, 109);
             this.guna2GradientPanel1.TabIndex = 9;
@@ -153,7 +153,7 @@
             this.guna2GradientPanel2.Controls.Add(this.label6);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(762, 208);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(762, 141);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.Size = new System.Drawing.Size(280, 109);
             this.guna2GradientPanel2.TabIndex = 9;
@@ -188,7 +188,7 @@
             this.guna2GradientPanel3.Controls.Add(this.label8);
             this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            this.guna2GradientPanel3.Location = new System.Drawing.Point(1116, 208);
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(1116, 141);
             this.guna2GradientPanel3.Name = "guna2GradientPanel3";
             this.guna2GradientPanel3.Size = new System.Drawing.Size(280, 109);
             this.guna2GradientPanel3.TabIndex = 9;
@@ -223,7 +223,7 @@
             this.guna2GradientPanel5.Controls.Add(this.label10);
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            this.guna2GradientPanel5.Location = new System.Drawing.Point(314, 361);
+            this.guna2GradientPanel5.Location = new System.Drawing.Point(314, 294);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
             this.guna2GradientPanel5.Size = new System.Drawing.Size(374, 109);
             this.guna2GradientPanel5.TabIndex = 9;
@@ -258,7 +258,7 @@
             this.guna2GradientPanel6.Controls.Add(this.label12);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            this.guna2GradientPanel6.Location = new System.Drawing.Point(762, 361);
+            this.guna2GradientPanel6.Location = new System.Drawing.Point(762, 294);
             this.guna2GradientPanel6.Name = "guna2GradientPanel6";
             this.guna2GradientPanel6.Size = new System.Drawing.Size(280, 109);
             this.guna2GradientPanel6.TabIndex = 9;
@@ -291,7 +291,7 @@
             this.guna2GradientPanel7.BorderRadius = 5;
             this.guna2GradientPanel7.BorderThickness = 1;
             this.guna2GradientPanel7.Controls.Add(this.GDataGridViewSubscriptions);
-            this.guna2GradientPanel7.Location = new System.Drawing.Point(49, 558);
+            this.guna2GradientPanel7.Location = new System.Drawing.Point(49, 504);
             this.guna2GradientPanel7.Name = "guna2GradientPanel7";
             this.guna2GradientPanel7.Size = new System.Drawing.Size(1379, 351);
             this.guna2GradientPanel7.TabIndex = 10;
@@ -370,7 +370,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("IBM Plex Sans", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label2.Location = new System.Drawing.Point(42, 503);
+            this.label2.Location = new System.Drawing.Point(42, 449);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(277, 40);
             this.label2.TabIndex = 5;
@@ -391,7 +391,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UCDashboard";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCDashboard_Load);
             this.guna2GradientPanel4.ResumeLayout(false);
             this.guna2GradientPanel4.PerformLayout();

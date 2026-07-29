@@ -43,10 +43,6 @@
             this.GGButtonAssigementMember = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GDataGridViewTrainerAssignments = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.ContextMenuStripTrainerAssigements = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.showInformationSubscriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
@@ -54,13 +50,17 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.updateInformationAssigementMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientPanel4.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewTrainerAssignments)).BeginInit();
+            this.ContextMenuStripTrainerAssigements.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.ContextMenuStripTrainerAssigements.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel4
@@ -163,9 +163,9 @@
             this.guna2GradientPanel2.BorderRadius = 5;
             this.guna2GradientPanel2.BorderThickness = 1;
             this.guna2GradientPanel2.Controls.Add(this.GDataGridViewTrainerAssignments);
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(53, 263);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(53, 261);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(1379, 649);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(1379, 605);
             this.guna2GradientPanel2.TabIndex = 11;
             // 
             // GDataGridViewTrainerAssignments
@@ -216,7 +216,7 @@
             this.GDataGridViewTrainerAssignments.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.GDataGridViewTrainerAssignments.RowHeadersVisible = false;
             this.GDataGridViewTrainerAssignments.RowTemplate.Height = 64;
-            this.GDataGridViewTrainerAssignments.Size = new System.Drawing.Size(1373, 643);
+            this.GDataGridViewTrainerAssignments.Size = new System.Drawing.Size(1373, 599);
             this.GDataGridViewTrainerAssignments.TabIndex = 0;
             this.GDataGridViewTrainerAssignments.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GDataGridViewTrainerAssignments.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -237,51 +237,6 @@
             this.GDataGridViewTrainerAssignments.ThemeStyle.RowsStyle.Height = 64;
             this.GDataGridViewTrainerAssignments.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
             this.GDataGridViewTrainerAssignments.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            // 
-            // guna2GradientPanel1
-            // 
-            this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel1.BorderRadius = 15;
-            this.guna2GradientPanel1.Controls.Add(this.label2);
-            this.guna2GradientPanel1.Controls.Add(this.pictureBox1);
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(53, 158);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(875, 88);
-            this.guna2GradientPanel1.TabIndex = 10;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("IBM Plex Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(61, 33);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 22);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Quick Filters:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("IBM Plex Sans", 38.24999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label1.Location = new System.Drawing.Point(44, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(791, 71);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Trainer Assigenments Directory";
             // 
             // ContextMenuStripTrainerAssigements
             // 
@@ -340,6 +295,51 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(330, 6);
             // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.BorderRadius = 15;
+            this.guna2GradientPanel1.Controls.Add(this.label2);
+            this.guna2GradientPanel1.Controls.Add(this.pictureBox1);
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(53, 158);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(875, 88);
+            this.guna2GradientPanel1.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("IBM Plex Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label2.Location = new System.Drawing.Point(61, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 22);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Quick Filters:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(27, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("IBM Plex Sans", 38.24999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.label1.Location = new System.Drawing.Point(44, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(791, 71);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Trainer Assigenments Directory";
+            // 
             // UCTrainerAssignmentsList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,7 +352,7 @@
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.label1);
             this.Name = "UCTrainerAssignmentsList";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCTrainerAssignmentsList_Load);
             this.guna2GradientPanel4.ResumeLayout(false);
             this.guna2GradientPanel4.PerformLayout();
@@ -360,10 +360,10 @@
             this.guna2GradientPanel3.PerformLayout();
             this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewTrainerAssignments)).EndInit();
+            this.ContextMenuStripTrainerAssigements.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ContextMenuStripTrainerAssigements.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

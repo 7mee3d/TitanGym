@@ -8,7 +8,6 @@ namespace TitanGym_BusinessLayer.Payment_MethodsBL
     public class PaymentMethodBL
     {
 
-        //PaymentMethodID NamePaymentMethod
 
         public byte PaymentMethodID { get; set; }
         public string NamePaymentMethod { get; set; }

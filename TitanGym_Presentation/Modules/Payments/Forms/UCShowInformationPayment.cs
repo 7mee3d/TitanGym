@@ -24,5 +24,7 @@ namespace TitanGym_Presentation.Modules.Payments.Forms
             ctrlShowInformationPayment1.LoadInformationPayment(_PaymentID);
             FinishedShowInfoPayment?.Invoke(false);
         }
+
+
     }
 }

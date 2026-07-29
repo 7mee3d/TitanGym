@@ -68,9 +68,9 @@
             this.guna2GradientPanel2.BorderRadius = 5;
             this.guna2GradientPanel2.BorderThickness = 1;
             this.guna2GradientPanel2.Controls.Add(this.GDataGridViewUsers);
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(53, 263);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(56, 266);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(1379, 649);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(1379, 594);
             this.guna2GradientPanel2.TabIndex = 10;
             // 
             // GDataGridViewUsers
@@ -121,7 +121,7 @@
             this.GDataGridViewUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.GDataGridViewUsers.RowHeadersVisible = false;
             this.GDataGridViewUsers.RowTemplate.Height = 64;
-            this.GDataGridViewUsers.Size = new System.Drawing.Size(1373, 643);
+            this.GDataGridViewUsers.Size = new System.Drawing.Size(1373, 588);
             this.GDataGridViewUsers.TabIndex = 0;
             this.GDataGridViewUsers.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GDataGridViewUsers.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -156,7 +156,7 @@
             this.toolStripSeparator2,
             this.updateInformationTrainerToolStripMenuItem});
             this.ContextMenuStripUsersSection.Name = "ContextMenuStripPeopleSection";
-            this.ContextMenuStripUsersSection.Size = new System.Drawing.Size(243, 240);
+            this.ContextMenuStripUsersSection.Size = new System.Drawing.Size(243, 218);
             // 
             // ShowInformationPersontoolStripMenuItem1
             // 
@@ -348,14 +348,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
-            this.Controls.Add(this.GGButtonAddNewUser);
             this.Controls.Add(this.guna2GradientPanel2);
+            this.Controls.Add(this.GGButtonAddNewUser);
             this.Controls.Add(this.guna2GradientPanel4);
             this.Controls.Add(this.guna2GradientPanel3);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.label1);
             this.Name = "UCUsersList";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCUsersList_Load);
             this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewUsers)).EndInit();

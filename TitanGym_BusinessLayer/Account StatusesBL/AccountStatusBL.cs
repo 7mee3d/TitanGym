@@ -6,7 +6,7 @@ namespace TitanGym_BusinessLayer.Account_StatusesBL
     public class AccountStatusBL
     {
 
-        //AccountStatusID	AccountStatusName 
+
 
         public byte AccountStatusID { get; set; }
         public string AccountStatusName { get; set; }

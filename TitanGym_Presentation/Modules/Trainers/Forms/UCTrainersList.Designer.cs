@@ -64,9 +64,9 @@
             this.guna2GradientPanel2.BorderRadius = 5;
             this.guna2GradientPanel2.BorderThickness = 1;
             this.guna2GradientPanel2.Controls.Add(this.GDataGridViewTrainers);
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(53, 263);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(53, 255);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(1379, 649);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(1379, 599);
             this.guna2GradientPanel2.TabIndex = 6;
             // 
             // GDataGridViewTrainers
@@ -117,7 +117,7 @@
             this.GDataGridViewTrainers.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.GDataGridViewTrainers.RowHeadersVisible = false;
             this.GDataGridViewTrainers.RowTemplate.Height = 64;
-            this.GDataGridViewTrainers.Size = new System.Drawing.Size(1373, 643);
+            this.GDataGridViewTrainers.Size = new System.Drawing.Size(1373, 593);
             this.GDataGridViewTrainers.TabIndex = 0;
             this.GDataGridViewTrainers.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GDataGridViewTrainers.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -303,7 +303,7 @@
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.label1);
             this.Name = "UCTrainersList";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCTrainersList_Load);
             this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewTrainers)).EndInit();

@@ -64,7 +64,7 @@
             this.GGButtonBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonBack.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GGButtonBack.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GGButtonBack.Location = new System.Drawing.Point(284, 633);
+            this.GGButtonBack.Location = new System.Drawing.Point(284, 603);
             this.GGButtonBack.Name = "GGButtonBack";
             this.GGButtonBack.Size = new System.Drawing.Size(129, 47);
             this.GGButtonBack.TabIndex = 3;
@@ -74,10 +74,11 @@
             // ctrlShowInformationPerson1
             // 
             this.ctrlShowInformationPerson1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
-            this.ctrlShowInformationPerson1.Location = new System.Drawing.Point(284, 365);
+            this.ctrlShowInformationPerson1.Location = new System.Drawing.Point(284, 335);
             this.ctrlShowInformationPerson1.Name = "ctrlShowInformationPerson1";
             this.ctrlShowInformationPerson1.Size = new System.Drawing.Size(908, 237);
             this.ctrlShowInformationPerson1.TabIndex = 2;
+            this.ctrlShowInformationPerson1.Load += new System.EventHandler(this.ctrlShowInformationPerson1_Load);
             // 
             // UCShowInformationPerson
             // 
@@ -88,7 +89,7 @@
             this.Controls.Add(this.ctrlShowInformationPerson1);
             this.Controls.Add(this.label1);
             this.Name = "UCShowInformationPerson";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCShowInformationPerson_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

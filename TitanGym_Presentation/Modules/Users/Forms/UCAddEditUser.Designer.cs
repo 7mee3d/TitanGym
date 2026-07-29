@@ -35,6 +35,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.GComboBoxAccountStatuses = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ctrlShowInformationPersonByFilter1 = new TitanGym_Presentation.Modules.People.Controls.ctrlShowInformationPersonByFilter();
             this.lblCreationDate = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.GTextBoxPassword = new Guna.UI2.WinForms.Guna2TextBox();
@@ -48,7 +49,6 @@
             this.lblTitleUser = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.errorProviderUsersSection = new System.Windows.Forms.ErrorProvider(this.components);
-            this.ctrlShowInformationPersonByFilter1 = new TitanGym_Presentation.Modules.People.Controls.ctrlShowInformationPersonByFilter();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -74,7 +74,7 @@
             this.guna2Panel1.Controls.Add(this.guna2Panel3);
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
             this.guna2Panel1.Controls.Add(this.label3);
-            this.guna2Panel1.Location = new System.Drawing.Point(242, 138);
+            this.guna2Panel1.Location = new System.Drawing.Point(242, 82);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(993, 746);
             this.guna2Panel1.TabIndex = 1;
@@ -136,6 +136,15 @@
             this.label1.Size = new System.Drawing.Size(117, 21);
             this.label1.TabIndex = 6;
             this.label1.Text = "Account Status";
+            // 
+            // ctrlShowInformationPersonByFilter1
+            // 
+            this.ctrlShowInformationPersonByFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
+            this.ctrlShowInformationPersonByFilter1.Location = new System.Drawing.Point(39, 110);
+            this.ctrlShowInformationPersonByFilter1.Name = "ctrlShowInformationPersonByFilter1";
+            this.ctrlShowInformationPersonByFilter1.Size = new System.Drawing.Size(915, 333);
+            this.ctrlShowInformationPersonByFilter1.TabIndex = 4;
+            this.ctrlShowInformationPersonByFilter1.EHFinishedSearchPerson += new System.EventHandler<int>(this.ctrlShowInformationPersonByFilter1_EHFinishedSearchPerson);
             // 
             // lblCreationDate
             // 
@@ -338,15 +347,6 @@
             // 
             this.errorProviderUsersSection.ContainerControl = this;
             // 
-            // ctrlShowInformationPersonByFilter1
-            // 
-            this.ctrlShowInformationPersonByFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
-            this.ctrlShowInformationPersonByFilter1.Location = new System.Drawing.Point(39, 110);
-            this.ctrlShowInformationPersonByFilter1.Name = "ctrlShowInformationPersonByFilter1";
-            this.ctrlShowInformationPersonByFilter1.Size = new System.Drawing.Size(915, 333);
-            this.ctrlShowInformationPersonByFilter1.TabIndex = 4;
-            this.ctrlShowInformationPersonByFilter1.EHFinishedSearchPerson += new System.EventHandler<int>(this.ctrlShowInformationPersonByFilter1_EHFinishedSearchPerson);
-            // 
             // UCAddEditUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,7 +355,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.Controls.Add(this.guna2Panel1);
             this.Name = "UCAddEditUser";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCAddEditUser_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();

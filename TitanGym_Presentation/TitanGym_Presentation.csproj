@@ -406,8 +406,6 @@
   <ItemGroup>
     <Folder Include="Images\" />
     <Folder Include="Modules\Dashboard\Controls\" />
-    <Folder Include="Modules\Reports\Controls\" />
-    <Folder Include="Modules\Reports\Forms\" />
     <Folder Include="Modules\Trainer Assignments\Controls\" />
   </ItemGroup>
   <ItemGroup>

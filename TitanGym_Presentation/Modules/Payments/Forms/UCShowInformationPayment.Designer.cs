@@ -53,7 +53,7 @@
             this.GGButtonBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonBack.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GGButtonBack.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GGButtonBack.Location = new System.Drawing.Point(280, 739);
+            this.GGButtonBack.Location = new System.Drawing.Point(280, 719);
             this.GGButtonBack.Name = "GGButtonBack";
             this.GGButtonBack.Size = new System.Drawing.Size(129, 47);
             this.GGButtonBack.TabIndex = 8;
@@ -74,7 +74,7 @@
             // ctrlShowInformationPayment1
             // 
             this.ctrlShowInformationPayment1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
-            this.ctrlShowInformationPayment1.Location = new System.Drawing.Point(280, 257);
+            this.ctrlShowInformationPayment1.Location = new System.Drawing.Point(280, 237);
             this.ctrlShowInformationPayment1.Name = "ctrlShowInformationPayment1";
             this.ctrlShowInformationPayment1.Size = new System.Drawing.Size(916, 461);
             this.ctrlShowInformationPayment1.TabIndex = 9;
@@ -88,7 +88,7 @@
             this.Controls.Add(this.GGButtonBack);
             this.Controls.Add(this.label1);
             this.Name = "UCShowInformationPayment";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCShowInformationPayment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

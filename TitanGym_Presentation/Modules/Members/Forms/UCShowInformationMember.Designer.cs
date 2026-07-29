@@ -64,7 +64,7 @@
             this.GGButtonBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonBack.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GGButtonBack.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GGButtonBack.Location = new System.Drawing.Point(215, 639);
+            this.GGButtonBack.Location = new System.Drawing.Point(215, 606);
             this.GGButtonBack.Name = "GGButtonBack";
             this.GGButtonBack.Size = new System.Drawing.Size(129, 47);
             this.GGButtonBack.TabIndex = 4;
@@ -74,7 +74,7 @@
             // ctrlShowInformationMember1
             // 
             this.ctrlShowInformationMember1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
-            this.ctrlShowInformationMember1.Location = new System.Drawing.Point(215, 341);
+            this.ctrlShowInformationMember1.Location = new System.Drawing.Point(215, 308);
             this.ctrlShowInformationMember1.Name = "ctrlShowInformationMember1";
             this.ctrlShowInformationMember1.Size = new System.Drawing.Size(1046, 277);
             this.ctrlShowInformationMember1.TabIndex = 5;
@@ -88,7 +88,7 @@
             this.Controls.Add(this.GGButtonBack);
             this.Controls.Add(this.label1);
             this.Name = "UCShowInformationMember";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCShowInformationMember_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

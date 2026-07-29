@@ -62,7 +62,7 @@
             this.guna2Panel1.Controls.Add(this.ctrlShowInformationPersonByFilter1);
             this.guna2Panel1.Controls.Add(this.guna2Panel3);
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
-            this.guna2Panel1.Location = new System.Drawing.Point(242, 138);
+            this.guna2Panel1.Location = new System.Drawing.Point(242, 90);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(993, 681);
             this.guna2Panel1.TabIndex = 1;
@@ -264,7 +264,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.Controls.Add(this.guna2Panel1);
             this.Name = "UCAddEditInformationMember";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCAddEditInformationMember_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();

@@ -79,9 +79,9 @@
             this.guna2GradientPanel2.BorderRadius = 5;
             this.guna2GradientPanel2.BorderThickness = 1;
             this.guna2GradientPanel2.Controls.Add(this.GDataGridViewPayments);
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(53, 315);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(53, 293);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(1379, 592);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(1379, 570);
             this.guna2GradientPanel2.TabIndex = 12;
             // 
             // GDataGridViewPayments
@@ -132,7 +132,7 @@
             this.GDataGridViewPayments.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.GDataGridViewPayments.RowHeadersVisible = false;
             this.GDataGridViewPayments.RowTemplate.Height = 64;
-            this.GDataGridViewPayments.Size = new System.Drawing.Size(1373, 586);
+            this.GDataGridViewPayments.Size = new System.Drawing.Size(1373, 564);
             this.GDataGridViewPayments.TabIndex = 0;
             this.GDataGridViewPayments.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GDataGridViewPayments.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -180,7 +180,7 @@
             this.guna2GradientPanel1.Controls.Add(this.label2);
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(56, 167);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(56, 154);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(255, 115);
             this.guna2GradientPanel1.TabIndex = 11;
@@ -228,7 +228,7 @@
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.label1);
             this.Name = "UCPaymentsList";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCPaymentsList_Load);
             this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewPayments)).EndInit();

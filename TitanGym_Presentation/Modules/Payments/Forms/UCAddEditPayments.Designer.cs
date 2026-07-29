@@ -31,21 +31,21 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAddEditPayments));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.GComboBoxPaymentMethods = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.GComboBoxPaymentStatus = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.ctrlShowInformationSubscriptionByFilter1 = new TitanGym_Presentation.Modules.Subscriptions.Controls.ctrlShowInformationSubscriptionByFilter();
+            this.GTextBoxNote = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.GTextBoxAmount = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.GGButtonAddNewPayment = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGButtonCancel = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTitlePayment = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ctrlShowInformationSubscriptionByFilter1 = new TitanGym_Presentation.Modules.Subscriptions.Controls.ctrlShowInformationSubscriptionByFilter();
-            this.label1 = new System.Windows.Forms.Label();
-            this.GTextBoxNote = new Guna.UI2.WinForms.Guna2TextBox();
-            this.GComboBoxPaymentStatus = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.GComboBoxPaymentMethods = new Guna.UI2.WinForms.Guna2ComboBox();
             this.errorProviderPayment = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -70,10 +70,111 @@
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.guna2Panel3);
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
-            this.guna2Panel1.Location = new System.Drawing.Point(212, 38);
+            this.guna2Panel1.Location = new System.Drawing.Point(212, 10);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1053, 876);
+            this.guna2Panel1.Size = new System.Drawing.Size(1053, 863);
             this.guna2Panel1.TabIndex = 1;
+            // 
+            // GComboBoxPaymentMethods
+            // 
+            this.GComboBoxPaymentMethods.BackColor = System.Drawing.Color.Transparent;
+            this.GComboBoxPaymentMethods.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.GComboBoxPaymentMethods.BorderRadius = 5;
+            this.GComboBoxPaymentMethods.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.GComboBoxPaymentMethods.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GComboBoxPaymentMethods.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
+            this.GComboBoxPaymentMethods.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GComboBoxPaymentMethods.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GComboBoxPaymentMethods.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GComboBoxPaymentMethods.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.GComboBoxPaymentMethods.ItemHeight = 38;
+            this.GComboBoxPaymentMethods.Location = new System.Drawing.Point(850, 723);
+            this.GComboBoxPaymentMethods.Name = "GComboBoxPaymentMethods";
+            this.GComboBoxPaymentMethods.Size = new System.Drawing.Size(188, 44);
+            this.GComboBoxPaymentMethods.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.label4.Location = new System.Drawing.Point(846, 696);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(135, 21);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Payment Methods";
+            // 
+            // GComboBoxPaymentStatus
+            // 
+            this.GComboBoxPaymentStatus.BackColor = System.Drawing.Color.Transparent;
+            this.GComboBoxPaymentStatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.GComboBoxPaymentStatus.BorderRadius = 5;
+            this.GComboBoxPaymentStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.GComboBoxPaymentStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GComboBoxPaymentStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
+            this.GComboBoxPaymentStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GComboBoxPaymentStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GComboBoxPaymentStatus.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GComboBoxPaymentStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.GComboBoxPaymentStatus.ItemHeight = 38;
+            this.GComboBoxPaymentStatus.Location = new System.Drawing.Point(578, 723);
+            this.GComboBoxPaymentStatus.Name = "GComboBoxPaymentStatus";
+            this.GComboBoxPaymentStatus.Size = new System.Drawing.Size(258, 44);
+            this.GComboBoxPaymentStatus.TabIndex = 7;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.label9.Location = new System.Drawing.Point(574, 696);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(136, 21);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Payment Statuses";
+            // 
+            // ctrlShowInformationSubscriptionByFilter1
+            // 
+            this.ctrlShowInformationSubscriptionByFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
+            this.ctrlShowInformationSubscriptionByFilter1.Location = new System.Drawing.Point(3, 89);
+            this.ctrlShowInformationSubscriptionByFilter1.Name = "ctrlShowInformationSubscriptionByFilter1";
+            this.ctrlShowInformationSubscriptionByFilter1.Size = new System.Drawing.Size(1047, 581);
+            this.ctrlShowInformationSubscriptionByFilter1.TabIndex = 1;
+            // 
+            // GTextBoxNote
+            // 
+            this.GTextBoxNote.Animated = true;
+            this.GTextBoxNote.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.GTextBoxNote.BorderRadius = 4;
+            this.GTextBoxNote.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.GTextBoxNote.DefaultText = "";
+            this.GTextBoxNote.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.GTextBoxNote.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.GTextBoxNote.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.GTextBoxNote.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.GTextBoxNote.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
+            this.GTextBoxNote.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GTextBoxNote.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.GTextBoxNote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.GTextBoxNote.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.GTextBoxNote.Location = new System.Drawing.Point(241, 723);
+            this.GTextBoxNote.Name = "GTextBoxNote";
+            this.GTextBoxNote.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(72)))), ((int)(((byte)(74)))));
+            this.GTextBoxNote.PlaceholderText = "e.g Emad";
+            this.GTextBoxNote.SelectedText = "";
+            this.GTextBoxNote.Size = new System.Drawing.Size(323, 46);
+            this.GTextBoxNote.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.label1.Location = new System.Drawing.Point(237, 693);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Note";
             // 
             // GTextBoxAmount
             // 
@@ -101,6 +202,17 @@
             this.GTextBoxAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GTextBoxAmount_KeyPress);
             this.GTextBoxAmount.Validating += new System.ComponentModel.CancelEventHandler(this.GTextBoxAmount_Validating);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.label3.Location = new System.Drawing.Point(24, 693);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 21);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Amount";
+            // 
             // guna2Panel3
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
@@ -109,7 +221,7 @@
             this.guna2Panel3.Controls.Add(this.GGButtonCancel);
             this.guna2Panel3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
             this.guna2Panel3.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.guna2Panel3.Location = new System.Drawing.Point(2, 788);
+            this.guna2Panel3.Location = new System.Drawing.Point(2, 777);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(1048, 87);
             this.guna2Panel3.TabIndex = 0;
@@ -204,118 +316,6 @@
             this.lblTitlePayment.TabIndex = 0;
             this.lblTitlePayment.Text = "Add New Payment";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label3.Location = new System.Drawing.Point(24, 693);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 21);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Amount";
-            // 
-            // ctrlShowInformationSubscriptionByFilter1
-            // 
-            this.ctrlShowInformationSubscriptionByFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
-            this.ctrlShowInformationSubscriptionByFilter1.Location = new System.Drawing.Point(3, 89);
-            this.ctrlShowInformationSubscriptionByFilter1.Name = "ctrlShowInformationSubscriptionByFilter1";
-            this.ctrlShowInformationSubscriptionByFilter1.Size = new System.Drawing.Size(1047, 581);
-            this.ctrlShowInformationSubscriptionByFilter1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label1.Location = new System.Drawing.Point(237, 693);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Note";
-            // 
-            // GTextBoxNote
-            // 
-            this.GTextBoxNote.Animated = true;
-            this.GTextBoxNote.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.GTextBoxNote.BorderRadius = 4;
-            this.GTextBoxNote.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.GTextBoxNote.DefaultText = "";
-            this.GTextBoxNote.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.GTextBoxNote.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.GTextBoxNote.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.GTextBoxNote.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.GTextBoxNote.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
-            this.GTextBoxNote.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GTextBoxNote.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.GTextBoxNote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.GTextBoxNote.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GTextBoxNote.Location = new System.Drawing.Point(241, 723);
-            this.GTextBoxNote.Name = "GTextBoxNote";
-            this.GTextBoxNote.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(72)))), ((int)(((byte)(74)))));
-            this.GTextBoxNote.PlaceholderText = "e.g Emad";
-            this.GTextBoxNote.SelectedText = "";
-            this.GTextBoxNote.Size = new System.Drawing.Size(323, 46);
-            this.GTextBoxNote.TabIndex = 1;
-            // 
-            // GComboBoxPaymentStatus
-            // 
-            this.GComboBoxPaymentStatus.BackColor = System.Drawing.Color.Transparent;
-            this.GComboBoxPaymentStatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.GComboBoxPaymentStatus.BorderRadius = 5;
-            this.GComboBoxPaymentStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.GComboBoxPaymentStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.GComboBoxPaymentStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
-            this.GComboBoxPaymentStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GComboBoxPaymentStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GComboBoxPaymentStatus.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GComboBoxPaymentStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.GComboBoxPaymentStatus.ItemHeight = 38;
-            this.GComboBoxPaymentStatus.Location = new System.Drawing.Point(578, 723);
-            this.GComboBoxPaymentStatus.Name = "GComboBoxPaymentStatus";
-            this.GComboBoxPaymentStatus.Size = new System.Drawing.Size(258, 44);
-            this.GComboBoxPaymentStatus.TabIndex = 7;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label9.Location = new System.Drawing.Point(574, 696);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(136, 21);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Payment Statuses";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label4.Location = new System.Drawing.Point(846, 696);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 21);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Payment Methods";
-            // 
-            // GComboBoxPaymentMethods
-            // 
-            this.GComboBoxPaymentMethods.BackColor = System.Drawing.Color.Transparent;
-            this.GComboBoxPaymentMethods.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.GComboBoxPaymentMethods.BorderRadius = 5;
-            this.GComboBoxPaymentMethods.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.GComboBoxPaymentMethods.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.GComboBoxPaymentMethods.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
-            this.GComboBoxPaymentMethods.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GComboBoxPaymentMethods.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GComboBoxPaymentMethods.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GComboBoxPaymentMethods.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.GComboBoxPaymentMethods.ItemHeight = 38;
-            this.GComboBoxPaymentMethods.Location = new System.Drawing.Point(850, 723);
-            this.GComboBoxPaymentMethods.Name = "GComboBoxPaymentMethods";
-            this.GComboBoxPaymentMethods.Size = new System.Drawing.Size(188, 44);
-            this.GComboBoxPaymentMethods.TabIndex = 7;
-            // 
             // errorProviderPayment
             // 
             this.errorProviderPayment.ContainerControl = this;
@@ -327,7 +327,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.Controls.Add(this.guna2Panel1);
             this.Name = "UCAddEditPayments";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCAddEditPayments_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();

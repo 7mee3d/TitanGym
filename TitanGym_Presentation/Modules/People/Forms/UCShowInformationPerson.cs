@@ -31,5 +31,10 @@ namespace TitanGym_Presentation.Modules.People.Forms
         {
             AppNavigator.Back();
         }
+
+        private void ctrlShowInformationPerson1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

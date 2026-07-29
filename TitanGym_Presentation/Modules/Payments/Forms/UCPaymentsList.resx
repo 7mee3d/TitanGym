@@ -120,9 +120,9 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="GGButtonAddNewPayment.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAABXSURBVEhLY2AYBaMABZjZ/Gcws/2PLkw9YGb7n5HWFgx9H9DcAuoEEcylUIzMRsYIcVJTFzYL
-        zDEtQGAbKgUdyS4lFdDDAuoEBS4wdJIpLkBzC0bBkAQApaNLL01gDjsAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAFdJREFUSEtj
+        YBgFowAFmNn8ZzCz/Y8uTD1gZvufkdYWDH0f0NwC6gQRzKVQjMxGxghxUlMXNgvMMS1AYBsqBR3JLiUV
+        0MMC6gQFLjB0kikuQHMLRsGQBAClo0svTWAOOwAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="ContextMenuStripPaymentsPlansSection.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

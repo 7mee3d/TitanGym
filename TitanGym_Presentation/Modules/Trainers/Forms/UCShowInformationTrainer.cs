@@ -25,5 +25,7 @@ namespace TitanGym_Presentation.Modules.Trainers.Forms
             ctrlShowInformationTrainer1.LoadInformationTrainer(_TrainerID);
             FinishedShowInfoTrainer?.Invoke(false);
         }
+
+
     }
 }

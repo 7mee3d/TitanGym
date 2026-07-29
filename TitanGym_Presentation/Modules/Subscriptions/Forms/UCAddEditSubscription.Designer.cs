@@ -32,21 +32,21 @@
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.GTextBoxSubscriptionFees = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.GComboBoxMembershipType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.GComboBoxSubscriptionStatus = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.GDateTimePickerEndDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.GDateTimePickerStartDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.ctrlShowInformationMemberWithFilter1 = new TitanGym_Presentation.Modules.Members.Controls.ctrlShowInformationMemberWithFilter();
+            this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.GGButtonAddNewSubscription = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.lblSubscriptionTitle = new System.Windows.Forms.Label();
-            this.GGButtonAddNewSubscription = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.GDateTimePickerStartDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.GDateTimePickerEndDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.GComboBoxMembershipType = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.GComboBoxSubscriptionStatus = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.ctrlShowInformationMemberWithFilter1 = new TitanGym_Presentation.Modules.Members.Controls.ctrlShowInformationMemberWithFilter();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -71,7 +71,7 @@
             this.guna2Panel4.Controls.Add(this.label5);
             this.guna2Panel4.Controls.Add(this.guna2Panel5);
             this.guna2Panel4.Controls.Add(this.guna2Panel6);
-            this.guna2Panel4.Location = new System.Drawing.Point(242, 96);
+            this.guna2Panel4.Location = new System.Drawing.Point(242, 66);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(1060, 764);
             this.guna2Panel4.TabIndex = 7;
@@ -112,6 +112,116 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Subscription Fees";
             // 
+            // GComboBoxMembershipType
+            // 
+            this.GComboBoxMembershipType.BackColor = System.Drawing.Color.Transparent;
+            this.GComboBoxMembershipType.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.GComboBoxMembershipType.BorderRadius = 5;
+            this.GComboBoxMembershipType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.GComboBoxMembershipType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GComboBoxMembershipType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
+            this.GComboBoxMembershipType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GComboBoxMembershipType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GComboBoxMembershipType.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GComboBoxMembershipType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.GComboBoxMembershipType.ItemHeight = 38;
+            this.GComboBoxMembershipType.Location = new System.Drawing.Point(125, 613);
+            this.GComboBoxMembershipType.Name = "GComboBoxMembershipType";
+            this.GComboBoxMembershipType.Size = new System.Drawing.Size(258, 44);
+            this.GComboBoxMembershipType.TabIndex = 9;
+            this.GComboBoxMembershipType.SelectedValueChanged += new System.EventHandler(this.GComboBoxMembershipType_SelectedValueChanged);
+            // 
+            // GComboBoxSubscriptionStatus
+            // 
+            this.GComboBoxSubscriptionStatus.BackColor = System.Drawing.Color.Transparent;
+            this.GComboBoxSubscriptionStatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.GComboBoxSubscriptionStatus.BorderRadius = 5;
+            this.GComboBoxSubscriptionStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.GComboBoxSubscriptionStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GComboBoxSubscriptionStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
+            this.GComboBoxSubscriptionStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GComboBoxSubscriptionStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GComboBoxSubscriptionStatus.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GComboBoxSubscriptionStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.GComboBoxSubscriptionStatus.ItemHeight = 38;
+            this.GComboBoxSubscriptionStatus.Location = new System.Drawing.Point(682, 521);
+            this.GComboBoxSubscriptionStatus.Name = "GComboBoxSubscriptionStatus";
+            this.GComboBoxSubscriptionStatus.Size = new System.Drawing.Size(258, 44);
+            this.GComboBoxSubscriptionStatus.TabIndex = 9;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.label9.Location = new System.Drawing.Point(121, 586);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(132, 21);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Membership Type";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.label3.Location = new System.Drawing.Point(678, 494);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(147, 21);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Subscription Status";
+            // 
+            // GDateTimePickerEndDate
+            // 
+            this.GDateTimePickerEndDate.BorderRadius = 4;
+            this.GDateTimePickerEndDate.Checked = true;
+            this.GDateTimePickerEndDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.GDateTimePickerEndDate.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GDateTimePickerEndDate.ForeColor = System.Drawing.Color.White;
+            this.GDateTimePickerEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.GDateTimePickerEndDate.Location = new System.Drawing.Point(396, 521);
+            this.GDateTimePickerEndDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.GDateTimePickerEndDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.GDateTimePickerEndDate.Name = "GDateTimePickerEndDate";
+            this.GDateTimePickerEndDate.Size = new System.Drawing.Size(246, 40);
+            this.GDateTimePickerEndDate.TabIndex = 7;
+            this.GDateTimePickerEndDate.Value = new System.DateTime(2026, 7, 26, 14, 37, 17, 427);
+            // 
+            // GDateTimePickerStartDate
+            // 
+            this.GDateTimePickerStartDate.BorderRadius = 4;
+            this.GDateTimePickerStartDate.Checked = true;
+            this.GDateTimePickerStartDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.GDateTimePickerStartDate.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GDateTimePickerStartDate.ForeColor = System.Drawing.Color.White;
+            this.GDateTimePickerStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.GDateTimePickerStartDate.Location = new System.Drawing.Point(125, 521);
+            this.GDateTimePickerStartDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.GDateTimePickerStartDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.GDateTimePickerStartDate.Name = "GDateTimePickerStartDate";
+            this.GDateTimePickerStartDate.Size = new System.Drawing.Size(246, 40);
+            this.GDateTimePickerStartDate.TabIndex = 7;
+            this.GDateTimePickerStartDate.Value = new System.DateTime(2026, 7, 26, 14, 37, 17, 427);
+            // 
+            // ctrlShowInformationMemberWithFilter1
+            // 
+            this.ctrlShowInformationMemberWithFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
+            this.ctrlShowInformationMemberWithFilter1.Location = new System.Drawing.Point(3, 110);
+            this.ctrlShowInformationMemberWithFilter1.Name = "ctrlShowInformationMemberWithFilter1";
+            this.ctrlShowInformationMemberWithFilter1.Size = new System.Drawing.Size(1054, 368);
+            this.ctrlShowInformationMemberWithFilter1.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.label2.Location = new System.Drawing.Point(392, 490);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 21);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "End Date ";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -135,6 +245,35 @@
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(1058, 87);
             this.guna2Panel5.TabIndex = 0;
+            // 
+            // GGButtonAddNewSubscription
+            // 
+            this.GGButtonAddNewSubscription.Animated = true;
+            this.GGButtonAddNewSubscription.AnimatedGIF = true;
+            this.GGButtonAddNewSubscription.BackColor = System.Drawing.Color.Transparent;
+            this.GGButtonAddNewSubscription.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewSubscription.BorderRadius = 5;
+            this.GGButtonAddNewSubscription.BorderThickness = 1;
+            this.GGButtonAddNewSubscription.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GGButtonAddNewSubscription.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonAddNewSubscription.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonAddNewSubscription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonAddNewSubscription.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonAddNewSubscription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GGButtonAddNewSubscription.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewSubscription.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewSubscription.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonAddNewSubscription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
+            this.GGButtonAddNewSubscription.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewSubscription.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewSubscription.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewSubscription.Image")));
+            this.GGButtonAddNewSubscription.ImageOffset = new System.Drawing.Point(-5, 0);
+            this.GGButtonAddNewSubscription.Location = new System.Drawing.Point(840, 22);
+            this.GGButtonAddNewSubscription.Name = "GGButtonAddNewSubscription";
+            this.GGButtonAddNewSubscription.Size = new System.Drawing.Size(198, 47);
+            this.GGButtonAddNewSubscription.TabIndex = 2;
+            this.GGButtonAddNewSubscription.Text = "Add Subscription";
+            this.GGButtonAddNewSubscription.Click += new System.EventHandler(this.GGButtonAddNewSubscription_Click);
             // 
             // guna2GradientButton2
             // 
@@ -197,145 +336,6 @@
             this.lblSubscriptionTitle.TabIndex = 0;
             this.lblSubscriptionTitle.Text = "Add New Subscription";
             // 
-            // GGButtonAddNewSubscription
-            // 
-            this.GGButtonAddNewSubscription.Animated = true;
-            this.GGButtonAddNewSubscription.AnimatedGIF = true;
-            this.GGButtonAddNewSubscription.BackColor = System.Drawing.Color.Transparent;
-            this.GGButtonAddNewSubscription.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewSubscription.BorderRadius = 5;
-            this.GGButtonAddNewSubscription.BorderThickness = 1;
-            this.GGButtonAddNewSubscription.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GGButtonAddNewSubscription.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAddNewSubscription.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAddNewSubscription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAddNewSubscription.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAddNewSubscription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GGButtonAddNewSubscription.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewSubscription.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewSubscription.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GGButtonAddNewSubscription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
-            this.GGButtonAddNewSubscription.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewSubscription.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewSubscription.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewSubscription.Image")));
-            this.GGButtonAddNewSubscription.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.GGButtonAddNewSubscription.Location = new System.Drawing.Point(840, 22);
-            this.GGButtonAddNewSubscription.Name = "GGButtonAddNewSubscription";
-            this.GGButtonAddNewSubscription.Size = new System.Drawing.Size(198, 47);
-            this.GGButtonAddNewSubscription.TabIndex = 2;
-            this.GGButtonAddNewSubscription.Text = "Add Subscription";
-            this.GGButtonAddNewSubscription.Click += new System.EventHandler(this.GGButtonAddNewSubscription_Click);
-            // 
-            // GDateTimePickerStartDate
-            // 
-            this.GDateTimePickerStartDate.BorderRadius = 4;
-            this.GDateTimePickerStartDate.Checked = true;
-            this.GDateTimePickerStartDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GDateTimePickerStartDate.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GDateTimePickerStartDate.ForeColor = System.Drawing.Color.White;
-            this.GDateTimePickerStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.GDateTimePickerStartDate.Location = new System.Drawing.Point(125, 521);
-            this.GDateTimePickerStartDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.GDateTimePickerStartDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.GDateTimePickerStartDate.Name = "GDateTimePickerStartDate";
-            this.GDateTimePickerStartDate.Size = new System.Drawing.Size(246, 40);
-            this.GDateTimePickerStartDate.TabIndex = 7;
-            this.GDateTimePickerStartDate.Value = new System.DateTime(2026, 7, 26, 14, 37, 17, 427);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label2.Location = new System.Drawing.Point(392, 490);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 21);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "End Date ";
-            // 
-            // GDateTimePickerEndDate
-            // 
-            this.GDateTimePickerEndDate.BorderRadius = 4;
-            this.GDateTimePickerEndDate.Checked = true;
-            this.GDateTimePickerEndDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GDateTimePickerEndDate.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GDateTimePickerEndDate.ForeColor = System.Drawing.Color.White;
-            this.GDateTimePickerEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.GDateTimePickerEndDate.Location = new System.Drawing.Point(396, 521);
-            this.GDateTimePickerEndDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.GDateTimePickerEndDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.GDateTimePickerEndDate.Name = "GDateTimePickerEndDate";
-            this.GDateTimePickerEndDate.Size = new System.Drawing.Size(246, 40);
-            this.GDateTimePickerEndDate.TabIndex = 7;
-            this.GDateTimePickerEndDate.Value = new System.DateTime(2026, 7, 26, 14, 37, 17, 427);
-            // 
-            // GComboBoxMembershipType
-            // 
-            this.GComboBoxMembershipType.BackColor = System.Drawing.Color.Transparent;
-            this.GComboBoxMembershipType.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.GComboBoxMembershipType.BorderRadius = 5;
-            this.GComboBoxMembershipType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.GComboBoxMembershipType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.GComboBoxMembershipType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
-            this.GComboBoxMembershipType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GComboBoxMembershipType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GComboBoxMembershipType.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GComboBoxMembershipType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.GComboBoxMembershipType.ItemHeight = 38;
-            this.GComboBoxMembershipType.Location = new System.Drawing.Point(125, 613);
-            this.GComboBoxMembershipType.Name = "GComboBoxMembershipType";
-            this.GComboBoxMembershipType.Size = new System.Drawing.Size(258, 44);
-            this.GComboBoxMembershipType.TabIndex = 9;
-            this.GComboBoxMembershipType.SelectedValueChanged += new System.EventHandler(this.GComboBoxMembershipType_SelectedValueChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label9.Location = new System.Drawing.Point(121, 586);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(132, 21);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Membership Type";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label3.Location = new System.Drawing.Point(678, 494);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 21);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Subscription Status";
-            // 
-            // GComboBoxSubscriptionStatus
-            // 
-            this.GComboBoxSubscriptionStatus.BackColor = System.Drawing.Color.Transparent;
-            this.GComboBoxSubscriptionStatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.GComboBoxSubscriptionStatus.BorderRadius = 5;
-            this.GComboBoxSubscriptionStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.GComboBoxSubscriptionStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.GComboBoxSubscriptionStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
-            this.GComboBoxSubscriptionStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GComboBoxSubscriptionStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GComboBoxSubscriptionStatus.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GComboBoxSubscriptionStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.GComboBoxSubscriptionStatus.ItemHeight = 38;
-            this.GComboBoxSubscriptionStatus.Location = new System.Drawing.Point(682, 521);
-            this.GComboBoxSubscriptionStatus.Name = "GComboBoxSubscriptionStatus";
-            this.GComboBoxSubscriptionStatus.Size = new System.Drawing.Size(258, 44);
-            this.GComboBoxSubscriptionStatus.TabIndex = 9;
-            // 
-            // ctrlShowInformationMemberWithFilter1
-            // 
-            this.ctrlShowInformationMemberWithFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
-            this.ctrlShowInformationMemberWithFilter1.Location = new System.Drawing.Point(3, 110);
-            this.ctrlShowInformationMemberWithFilter1.Name = "ctrlShowInformationMemberWithFilter1";
-            this.ctrlShowInformationMemberWithFilter1.Size = new System.Drawing.Size(1054, 368);
-            this.ctrlShowInformationMemberWithFilter1.TabIndex = 6;
-            // 
             // UCAddEditSubscription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,7 +343,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.Controls.Add(this.guna2Panel4);
             this.Name = "UCAddEditSubscription";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCAddEditSubscription_Load);
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();

@@ -53,7 +53,7 @@
             this.GGButtonBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonBack.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GGButtonBack.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GGButtonBack.Location = new System.Drawing.Point(395, 611);
+            this.GGButtonBack.Location = new System.Drawing.Point(395, 588);
             this.GGButtonBack.Name = "GGButtonBack";
             this.GGButtonBack.Size = new System.Drawing.Size(129, 47);
             this.GGButtonBack.TabIndex = 5;
@@ -74,7 +74,7 @@
             // ctrlShowInformationMembershipPlan1
             // 
             this.ctrlShowInformationMembershipPlan1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
-            this.ctrlShowInformationMembershipPlan1.Location = new System.Drawing.Point(395, 347);
+            this.ctrlShowInformationMembershipPlan1.Location = new System.Drawing.Point(395, 324);
             this.ctrlShowInformationMembershipPlan1.Name = "ctrlShowInformationMembershipPlan1";
             this.ctrlShowInformationMembershipPlan1.Size = new System.Drawing.Size(686, 232);
             this.ctrlShowInformationMembershipPlan1.TabIndex = 0;
@@ -88,7 +88,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ctrlShowInformationMembershipPlan1);
             this.Name = "UCShowInformationMembershipPlan";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCShowInformationMembershipPlan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -31,7 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAssigementEditMemberTrainer));
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.GTextBoxNote = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ctrlShowInformationSubscriptionByFilter1 = new TitanGym_Presentation.Modules.Subscriptions.Controls.ctrlShowInformationSubscriptionByFilter();
             this.GComboBoxTrainers = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblAssigementDateMember = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.GGButtonAssgementMember = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -39,11 +44,6 @@
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.lblAssigementMembers = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblAssigementDateMember = new System.Windows.Forms.Label();
-            this.GTextBoxNote = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.ctrlShowInformationSubscriptionByFilter1 = new TitanGym_Presentation.Modules.Subscriptions.Controls.ctrlShowInformationSubscriptionByFilter();
             this.errorProviderAssigementTrainers = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
@@ -66,10 +66,54 @@
             this.guna2Panel4.Controls.Add(this.label3);
             this.guna2Panel4.Controls.Add(this.guna2Panel5);
             this.guna2Panel4.Controls.Add(this.guna2Panel6);
-            this.guna2Panel4.Location = new System.Drawing.Point(208, 30);
+            this.guna2Panel4.Location = new System.Drawing.Point(208, 8);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(1060, 904);
+            this.guna2Panel4.Size = new System.Drawing.Size(1060, 869);
             this.guna2Panel4.TabIndex = 8;
+            // 
+            // GTextBoxNote
+            // 
+            this.GTextBoxNote.Animated = true;
+            this.GTextBoxNote.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.GTextBoxNote.BorderRadius = 4;
+            this.GTextBoxNote.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.GTextBoxNote.DefaultText = "";
+            this.GTextBoxNote.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(75)))), ((int)(((byte)(78)))));
+            this.GTextBoxNote.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(75)))), ((int)(((byte)(78)))));
+            this.GTextBoxNote.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(125)))), ((int)(((byte)(128)))));
+            this.GTextBoxNote.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(95)))), ((int)(((byte)(98)))));
+            this.GTextBoxNote.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
+            this.GTextBoxNote.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GTextBoxNote.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.GTextBoxNote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.GTextBoxNote.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
+            this.GTextBoxNote.Location = new System.Drawing.Point(319, 725);
+            this.GTextBoxNote.Name = "GTextBoxNote";
+            this.GTextBoxNote.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(72)))), ((int)(((byte)(74)))));
+            this.GTextBoxNote.PlaceholderText = "12312123";
+            this.GTextBoxNote.SelectedText = "";
+            this.GTextBoxNote.Size = new System.Drawing.Size(377, 46);
+            this.GTextBoxNote.TabIndex = 12;
+            this.GTextBoxNote.Validating += new System.ComponentModel.CancelEventHandler(this.GTextBoxNote_Validating);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.label2.Location = new System.Drawing.Point(315, 695);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 21);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Note";
+            // 
+            // ctrlShowInformationSubscriptionByFilter1
+            // 
+            this.ctrlShowInformationSubscriptionByFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
+            this.ctrlShowInformationSubscriptionByFilter1.Location = new System.Drawing.Point(7, 94);
+            this.ctrlShowInformationSubscriptionByFilter1.Name = "ctrlShowInformationSubscriptionByFilter1";
+            this.ctrlShowInformationSubscriptionByFilter1.Size = new System.Drawing.Size(1047, 609);
+            this.ctrlShowInformationSubscriptionByFilter1.TabIndex = 10;
             // 
             // GComboBoxTrainers
             // 
@@ -84,17 +128,39 @@
             this.GComboBoxTrainers.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GComboBoxTrainers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
             this.GComboBoxTrainers.ItemHeight = 38;
-            this.GComboBoxTrainers.Location = new System.Drawing.Point(23, 757);
+            this.GComboBoxTrainers.Location = new System.Drawing.Point(23, 727);
             this.GComboBoxTrainers.Name = "GComboBoxTrainers";
             this.GComboBoxTrainers.Size = new System.Drawing.Size(258, 44);
             this.GComboBoxTrainers.TabIndex = 9;
+            // 
+            // lblAssigementDateMember
+            // 
+            this.lblAssigementDateMember.AutoSize = true;
+            this.lblAssigementDateMember.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssigementDateMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.lblAssigementDateMember.Location = new System.Drawing.Point(914, 737);
+            this.lblAssigementDateMember.Name = "lblAssigementDateMember";
+            this.lblAssigementDateMember.Size = new System.Drawing.Size(16, 21);
+            this.lblAssigementDateMember.TabIndex = 8;
+            this.lblAssigementDateMember.Text = "-";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.label1.Location = new System.Drawing.Point(718, 737);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(199, 21);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Assigement Date Member : ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label3.Location = new System.Drawing.Point(19, 730);
+            this.label3.Location = new System.Drawing.Point(19, 700);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 21);
             this.label3.TabIndex = 8;
@@ -108,7 +174,7 @@
             this.guna2Panel5.Controls.Add(this.guna2GradientButton2);
             this.guna2Panel5.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
             this.guna2Panel5.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.guna2Panel5.Location = new System.Drawing.Point(2, 815);
+            this.guna2Panel5.Location = new System.Drawing.Point(2, 780);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(1058, 87);
             this.guna2Panel5.TabIndex = 0;
@@ -178,7 +244,7 @@
             this.guna2Panel6.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel6.Location = new System.Drawing.Point(3, 3);
             this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(1054, 101);
+            this.guna2Panel6.Size = new System.Drawing.Size(1054, 88);
             this.guna2Panel6.TabIndex = 0;
             // 
             // label6
@@ -186,7 +252,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(201)))), ((int)(((byte)(204)))));
-            this.label6.Location = new System.Drawing.Point(16, 62);
+            this.label6.Location = new System.Drawing.Point(16, 54);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(309, 19);
             this.label6.TabIndex = 0;
@@ -197,77 +263,11 @@
             this.lblAssigementMembers.AutoSize = true;
             this.lblAssigementMembers.Font = new System.Drawing.Font("IBM Plex Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAssigementMembers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.lblAssigementMembers.Location = new System.Drawing.Point(12, 19);
+            this.lblAssigementMembers.Location = new System.Drawing.Point(12, 11);
             this.lblAssigementMembers.Name = "lblAssigementMembers";
             this.lblAssigementMembers.Size = new System.Drawing.Size(328, 45);
             this.lblAssigementMembers.TabIndex = 0;
             this.lblAssigementMembers.Text = "Assigement Member";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label1.Location = new System.Drawing.Point(718, 767);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 21);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Assigement Date Member : ";
-            // 
-            // lblAssigementDateMember
-            // 
-            this.lblAssigementDateMember.AutoSize = true;
-            this.lblAssigementDateMember.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssigementDateMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.lblAssigementDateMember.Location = new System.Drawing.Point(914, 767);
-            this.lblAssigementDateMember.Name = "lblAssigementDateMember";
-            this.lblAssigementDateMember.Size = new System.Drawing.Size(16, 21);
-            this.lblAssigementDateMember.TabIndex = 8;
-            this.lblAssigementDateMember.Text = "-";
-            // 
-            // GTextBoxNote
-            // 
-            this.GTextBoxNote.Animated = true;
-            this.GTextBoxNote.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.GTextBoxNote.BorderRadius = 4;
-            this.GTextBoxNote.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.GTextBoxNote.DefaultText = "";
-            this.GTextBoxNote.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(75)))), ((int)(((byte)(78)))));
-            this.GTextBoxNote.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(75)))), ((int)(((byte)(78)))));
-            this.GTextBoxNote.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(125)))), ((int)(((byte)(128)))));
-            this.GTextBoxNote.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(95)))), ((int)(((byte)(98)))));
-            this.GTextBoxNote.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
-            this.GTextBoxNote.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GTextBoxNote.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.GTextBoxNote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.GTextBoxNote.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GTextBoxNote.Location = new System.Drawing.Point(319, 755);
-            this.GTextBoxNote.Name = "GTextBoxNote";
-            this.GTextBoxNote.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(72)))), ((int)(((byte)(74)))));
-            this.GTextBoxNote.PlaceholderText = "12312123";
-            this.GTextBoxNote.SelectedText = "";
-            this.GTextBoxNote.Size = new System.Drawing.Size(377, 46);
-            this.GTextBoxNote.TabIndex = 12;
-            this.GTextBoxNote.Validating += new System.ComponentModel.CancelEventHandler(this.GTextBoxNote_Validating);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("IBM Plex Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label2.Location = new System.Drawing.Point(315, 725);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 21);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Note";
-            // 
-            // ctrlShowInformationSubscriptionByFilter1
-            // 
-            this.ctrlShowInformationSubscriptionByFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
-            this.ctrlShowInformationSubscriptionByFilter1.Location = new System.Drawing.Point(7, 110);
-            this.ctrlShowInformationSubscriptionByFilter1.Name = "ctrlShowInformationSubscriptionByFilter1";
-            this.ctrlShowInformationSubscriptionByFilter1.Size = new System.Drawing.Size(1047, 609);
-            this.ctrlShowInformationSubscriptionByFilter1.TabIndex = 10;
             // 
             // errorProviderAssigementTrainers
             // 
@@ -280,7 +280,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.Controls.Add(this.guna2Panel4);
             this.Name = "UCAssigementEditMemberTrainer";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCAssigementEditMemberTrainer_Load);
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();

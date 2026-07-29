@@ -5,7 +5,6 @@ namespace TitanGym_BusinessLayer.Subscription_StatusesBL
 {
     public class SubscriptionStatusBL
     {
-        //SubscriptionStatusID	NameSubscriptionStatus
 
         public byte SubscriptionStatusID { get; set; }
         public string NameSubscriptionStatus { get; set; }

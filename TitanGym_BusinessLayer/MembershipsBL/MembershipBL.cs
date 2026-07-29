@@ -6,7 +6,6 @@ namespace TitanGym_BusinessLayer.MembershipsBL
 {
     public class MembershipBL
     {
-        ///MembershipID	MembershipName	Duration	MonthlyPrice	Description	AvailabilityStatusID
 
         public enum EnModeMembersipPlan
         {

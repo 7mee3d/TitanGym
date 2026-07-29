@@ -7,7 +7,6 @@ namespace TitanGym_BusinessLayer.Payment_StatusesBL
 {
     public class PaymentStatusesBL
     {
-        //PaymentStatusID	NamePaymentStatus
 
         public byte PaymentStatusID { get; set; }
         public string NamePaymentStatus { get; set; }

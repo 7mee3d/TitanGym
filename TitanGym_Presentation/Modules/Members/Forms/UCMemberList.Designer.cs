@@ -69,9 +69,9 @@
             this.guna2GradientPanel2.BorderRadius = 5;
             this.guna2GradientPanel2.BorderThickness = 1;
             this.guna2GradientPanel2.Controls.Add(this.GDataGridViewMembers);
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(53, 310);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(56, 353);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(1379, 592);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(1379, 500);
             this.guna2GradientPanel2.TabIndex = 6;
             // 
             // GDataGridViewMembers
@@ -107,7 +107,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.GDataGridViewMembers.DefaultCellStyle = dataGridViewCellStyle3;
             this.GDataGridViewMembers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.GDataGridViewMembers.Location = new System.Drawing.Point(3, 3);
+            this.GDataGridViewMembers.Location = new System.Drawing.Point(0, 3);
             this.GDataGridViewMembers.MultiSelect = false;
             this.GDataGridViewMembers.Name = "GDataGridViewMembers";
             this.GDataGridViewMembers.ReadOnly = true;
@@ -122,7 +122,7 @@
             this.GDataGridViewMembers.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.GDataGridViewMembers.RowHeadersVisible = false;
             this.GDataGridViewMembers.RowTemplate.Height = 64;
-            this.GDataGridViewMembers.Size = new System.Drawing.Size(1373, 586);
+            this.GDataGridViewMembers.Size = new System.Drawing.Size(1376, 494);
             this.GDataGridViewMembers.TabIndex = 0;
             this.GDataGridViewMembers.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GDataGridViewMembers.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -365,7 +365,7 @@
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.label1);
             this.Name = "UCMemberList";
-            this.Size = new System.Drawing.Size(1477, 956);
+            this.Size = new System.Drawing.Size(1477, 885);
             this.Load += new System.EventHandler(this.UCMemberList_Load);
             this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewMembers)).EndInit();
