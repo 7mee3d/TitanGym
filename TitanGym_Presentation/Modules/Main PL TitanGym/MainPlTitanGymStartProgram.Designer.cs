@@ -39,6 +39,7 @@
             this.lblRole = new System.Windows.Forms.Label();
             this.lblNameUser = new System.Windows.Forms.Label();
             this.GPictureBoxUser = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.GGButtonExitTitanGYM = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGButtonUsers = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGradientButtonTrainerAssigenments = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGradientButtonPayments = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -49,7 +50,6 @@
             this.GGradientButtonPeople = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGradientButtonDashboard = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.GGButtonExitTitanGYM = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GPictureBoxUser)).BeginInit();
@@ -132,11 +132,11 @@
             // lblRole
             // 
             this.lblRole.AutoSize = true;
-            this.lblRole.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.Font = new System.Drawing.Font("IBM Plex Sans", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.lblRole.Location = new System.Drawing.Point(1232, 35);
+            this.lblRole.Location = new System.Drawing.Point(1177, 35);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(35, 19);
+            this.lblRole.Size = new System.Drawing.Size(32, 16);
             this.lblRole.TabIndex = 1;
             this.lblRole.Text = "Role";
             // 
@@ -145,7 +145,7 @@
             this.lblNameUser.AutoSize = true;
             this.lblNameUser.Font = new System.Drawing.Font("IBM Plex Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.lblNameUser.Location = new System.Drawing.Point(1232, 10);
+            this.lblNameUser.Location = new System.Drawing.Point(1177, 10);
             this.lblNameUser.Name = "lblNameUser";
             this.lblNameUser.Size = new System.Drawing.Size(85, 22);
             this.lblNameUser.TabIndex = 1;
@@ -163,6 +163,38 @@
             this.GPictureBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.GPictureBoxUser.TabIndex = 0;
             this.GPictureBoxUser.TabStop = false;
+            // 
+            // GGButtonExitTitanGYM
+            // 
+            this.GGButtonExitTitanGYM.Animated = true;
+            this.GGButtonExitTitanGYM.AnimatedGIF = true;
+            this.GGButtonExitTitanGYM.BackColor = System.Drawing.Color.Transparent;
+            this.GGButtonExitTitanGYM.BorderRadius = 10;
+            this.GGButtonExitTitanGYM.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.GGButtonExitTitanGYM.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(54)))), ((int)(((byte)(69)))));
+            this.GGButtonExitTitanGYM.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(54)))), ((int)(((byte)(69)))));
+            this.GGButtonExitTitanGYM.CheckedState.Font = new System.Drawing.Font("IBM Plex Sans Medium", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonExitTitanGYM.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.GGButtonExitTitanGYM.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.GGButtonExitTitanGYM.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GGButtonExitTitanGYM.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonExitTitanGYM.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonExitTitanGYM.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonExitTitanGYM.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonExitTitanGYM.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GGButtonExitTitanGYM.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
+            this.GGButtonExitTitanGYM.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
+            this.GGButtonExitTitanGYM.Font = new System.Drawing.Font("IBM Plex Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonExitTitanGYM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(201)))), ((int)(((byte)(204)))));
+            this.GGButtonExitTitanGYM.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonExitTitanGYM.Image")));
+            this.GGButtonExitTitanGYM.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.GGButtonExitTitanGYM.ImageOffset = new System.Drawing.Point(20, 0);
+            this.GGButtonExitTitanGYM.Location = new System.Drawing.Point(16, 888);
+            this.GGButtonExitTitanGYM.Name = "GGButtonExitTitanGYM";
+            this.GGButtonExitTitanGYM.Size = new System.Drawing.Size(227, 48);
+            this.GGButtonExitTitanGYM.TabIndex = 2;
+            this.GGButtonExitTitanGYM.Text = "Exit";
+            this.GGButtonExitTitanGYM.Click += new System.EventHandler(this.GGButtonExitTitanGYM_Click);
             // 
             // GGButtonUsers
             // 
@@ -464,38 +496,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // GGButtonExitTitanGYM
-            // 
-            this.GGButtonExitTitanGYM.Animated = true;
-            this.GGButtonExitTitanGYM.AnimatedGIF = true;
-            this.GGButtonExitTitanGYM.BackColor = System.Drawing.Color.Transparent;
-            this.GGButtonExitTitanGYM.BorderRadius = 10;
-            this.GGButtonExitTitanGYM.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.GGButtonExitTitanGYM.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(54)))), ((int)(((byte)(69)))));
-            this.GGButtonExitTitanGYM.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(54)))), ((int)(((byte)(69)))));
-            this.GGButtonExitTitanGYM.CheckedState.Font = new System.Drawing.Font("IBM Plex Sans Medium", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GGButtonExitTitanGYM.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.GGButtonExitTitanGYM.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.GGButtonExitTitanGYM.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GGButtonExitTitanGYM.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonExitTitanGYM.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonExitTitanGYM.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonExitTitanGYM.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonExitTitanGYM.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GGButtonExitTitanGYM.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            this.GGButtonExitTitanGYM.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
-            this.GGButtonExitTitanGYM.Font = new System.Drawing.Font("IBM Plex Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GGButtonExitTitanGYM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(201)))), ((int)(((byte)(204)))));
-            this.GGButtonExitTitanGYM.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonExitTitanGYM.Image")));
-            this.GGButtonExitTitanGYM.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.GGButtonExitTitanGYM.ImageOffset = new System.Drawing.Point(20, 0);
-            this.GGButtonExitTitanGYM.Location = new System.Drawing.Point(16, 897);
-            this.GGButtonExitTitanGYM.Name = "GGButtonExitTitanGYM";
-            this.GGButtonExitTitanGYM.Size = new System.Drawing.Size(227, 48);
-            this.GGButtonExitTitanGYM.TabIndex = 2;
-            this.GGButtonExitTitanGYM.Text = "Exit";
-            this.GGButtonExitTitanGYM.Click += new System.EventHandler(this.GGButtonExitTitanGYM_Click);
-            // 
             // MainPlTitanGymStartProgram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -509,7 +509,6 @@
             this.Name = "MainPlTitanGymStartProgram";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Activated += new System.EventHandler(this.MainPlTitanGymStartProgram_Activated);
             this.Load += new System.EventHandler(this.MainPlTitanGymStartProgram_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();

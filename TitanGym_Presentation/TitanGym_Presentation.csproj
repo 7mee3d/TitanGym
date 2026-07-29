@@ -75,6 +75,12 @@
       <DependentUpon>MainPlTitanGymStartProgram.cs</DependentUpon>
     </Compile>
     <Compile Include="Core\Startup\Program.cs" />
+    <Compile Include="Modules\Main PL TitanGym\UCScreenAccessDenied.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Main PL TitanGym\UCScreenAccessDenied.Designer.cs">
+      <DependentUpon>UCScreenAccessDenied.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Members\Controls\ctrlShowInformationMember.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -283,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Main PL TitanGym\MainPlTitanGymStartProgram.resx">
       <DependentUpon>MainPlTitanGymStartProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Main PL TitanGym\UCScreenAccessDenied.resx">
+      <DependentUpon>UCScreenAccessDenied.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Members\Controls\ctrlShowInformationMember.resx">
       <DependentUpon>ctrlShowInformationMember.cs</DependentUpon>

@@ -48,6 +48,7 @@ namespace TitanGym_BusinessLayer.UsersBL
         public byte RoleID { get; set; }
         public EnUsersMode ModeUser { get; private set; }
 
+
         private PeopleBL.PeopleBL _InformationPerson;
 
         public PeopleBL.PeopleBL InformationPerson

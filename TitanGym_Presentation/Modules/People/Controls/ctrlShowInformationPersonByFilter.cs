@@ -38,6 +38,7 @@ namespace TitanGym_Presentation.Modules.People.Controls
             int.TryParse(GTextBoxPersonID.Text.Trim(), out int ID);
 
             _PersonID = ID;
+
             if (ctrlShowInformationPerson1.LoadInformationPerson(_PersonID))
                 EHFinishedSearchPerson?.Invoke(this, _PersonID);
 

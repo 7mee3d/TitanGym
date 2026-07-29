@@ -4,6 +4,7 @@ using TitanGym_BusinessLayer.UsersBL;
 using TitanGym_Presentation.Core.Utility;
 using TitanGym_Presentation.Modules.Dashboard.Forms;
 using TitanGym_Presentation.Modules.Login.Forms;
+using TitanGym_Presentation.Modules.Main_PL_TitanGym;
 using TitanGym_Presentation.Modules.Members.Forms;
 using TitanGym_Presentation.Modules.Payments.Forms;
 using TitanGym_Presentation.Modules.People.Forms;
@@ -20,23 +21,46 @@ namespace TitanGym_Presentation
     {
         private UserBL _InfomrationUser;
 
+        private enum _EnPremissionsRole
+        {
+            _kDASHBOARD = 1,
+            _kPEOPLE = 2,
+            _kMEMBERS = 3,
+            _kTRAINERS = 8,
+            _kPLANS = 16,
+            _kSUBSCRIPTIONS = 32,
+            _kPAYMENT = 64,
+            _kTRAINER_ASSIGEMENTS = 128,
+            _kUSERS = 256
+        };
+
+        private bool _CheckTheUserPassPermissions(int Permissions, _EnPremissionsRole premissionsRole)
+        {
+            return ((Permissions & (int)premissionsRole) == (int)premissionsRole);
+        }
+
+
         public MainPlTitanGymStartProgram(UserBL infromtionUser)
         {
             InitializeComponent();
             _InfomrationUser = infromtionUser;
+        }
 
-
+        private void _CheckAndShowUCAccordingPermissions(int Permissions, _EnPremissionsRole enPremissionsRole, UserControl userControl)
+        {
+            if (_CheckTheUserPassPermissions(Permissions, enPremissionsRole))
+                AppNavigator.Show(userControl);
+            else AppNavigator.Show(new UCScreenAccessDenied());
         }
 
         private void GGradientButtonPeople_Click(object sender, EventArgs e)
-        {
-            AppNavigator.Show(new UCPeopleList());
-        }
+          => _CheckAndShowUCAccordingPermissions(_InfomrationUser.InformationRole.PermissionsRole, _EnPremissionsRole._kPEOPLE, new UCPeopleList());
+
 
         private void MainPlTitanGymStartProgram_Load(object sender, EventArgs e)
         {
             AppNavigator.Initialization(MainPanel);
-            AppNavigator.Show(new UCDashboard());
+            _CheckAndShowUCAccordingPermissions(_InfomrationUser.InformationRole.PermissionsRole, _EnPremissionsRole._kDASHBOARD, new UCPeopleList());
             _LoadInformationUserAfterLogin();
         }
 
@@ -52,50 +76,35 @@ namespace TitanGym_Presentation
         }
 
         private void GGradientButtonMember_Click(object sender, EventArgs e)
-        {
-            AppNavigator.Show(new UCMemberList());
-        }
+            => _CheckAndShowUCAccordingPermissions(_InfomrationUser.InformationRole.PermissionsRole, _EnPremissionsRole._kMEMBERS, new UCMemberList());
+
 
         private void GGradientButtonTrainers_Click(object sender, EventArgs e)
-        {
-            AppNavigator.Show(new UCTrainersList());
-        }
+         => _CheckAndShowUCAccordingPermissions(_InfomrationUser.InformationRole.PermissionsRole, _EnPremissionsRole._kTRAINERS, new UCTrainersList());
+
 
         private void GGradientButtonPlans_Click(object sender, EventArgs e)
-        {
-            AppNavigator.Show(new UCMembershipPlansList());
-        }
+          => _CheckAndShowUCAccordingPermissions(_InfomrationUser.InformationRole.PermissionsRole, _EnPremissionsRole._kPLANS, new UCMembershipPlansList());
 
         private void GGradientButtonPayments_Click(object sender, EventArgs e)
-        {
-            AppNavigator.Show(new UCPaymentsList());
+           => _CheckAndShowUCAccordingPermissions(_InfomrationUser.InformationRole.PermissionsRole, _EnPremissionsRole._kPAYMENT, new UCPaymentsList());
 
-        }
 
         private void GGradientButtonSubscriptions_Click(object sender, EventArgs e)
-        {
-            AppNavigator.Show(new UCSubscriptionsList());
-        }
+           => _CheckAndShowUCAccordingPermissions(_InfomrationUser.InformationRole.PermissionsRole, _EnPremissionsRole._kSUBSCRIPTIONS, new UCSubscriptionsList());
+
 
         private void GGButtonUsers_Click(object sender, EventArgs e)
-        {
-            AppNavigator.Show(new UCUsersList());
-        }
+          => _CheckAndShowUCAccordingPermissions(_InfomrationUser.InformationRole.PermissionsRole, _EnPremissionsRole._kUSERS, new UCUsersList());
+
 
         private void GGradientButtonTrainerAssigenments_Click(object sender, EventArgs e)
-        {
-            AppNavigator.Show(new UCTrainerAssignmentsList());
-        }
+          => _CheckAndShowUCAccordingPermissions(_InfomrationUser.InformationRole.PermissionsRole, _EnPremissionsRole._kTRAINER_ASSIGEMENTS, new UCTrainerAssignmentsList());
+
 
         private void GGradientButtonDashboard_Click(object sender, EventArgs e)
-        {
-            AppNavigator.Show(new UCDashboard());
-        }
+           => _CheckAndShowUCAccordingPermissions(_InfomrationUser.InformationRole.PermissionsRole, _EnPremissionsRole._kDASHBOARD, new UCDashboard());
 
-        private void MainPlTitanGymStartProgram_Activated(object sender, EventArgs e)
-        {
-            AppNavigator.Show(new UCDashboard());
-        }
 
         private void GGButtonExitTitanGYM_Click(object sender, EventArgs e)
         {

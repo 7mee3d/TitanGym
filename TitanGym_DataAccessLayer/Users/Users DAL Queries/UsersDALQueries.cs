@@ -140,7 +140,6 @@ namespace TitanGym_DataAccessLayer.Users
                             accountStatusID = reader.GetTheValueFrom<byte>("AccountStatusID");
                             personID = reader.GetTheValueFrom<int>("PersonID");
                             roleID = reader.GetTheValueFrom<byte>("RoleID");
-
                         }
 
                 }
@@ -193,7 +192,6 @@ namespace TitanGym_DataAccessLayer.Users
                             accountStatusID = reader.GetTheValueFrom<byte>("AccountStatusID");
                             personID = reader.GetTheValueFrom<int>("PersonID");
                             roleID = reader.GetTheValueFrom<byte>("RoleID");
-
                         }
 
                 }

@@ -34,14 +34,14 @@
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GCheckBoxRememberMe = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.GGradientButtonLogin = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.GTextBoxPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.GTextBoxUsername = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.GControlBoxClose = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.GGradientButtonLogin = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.GTextBoxPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.GTextBoxUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -88,7 +88,7 @@
             this.GCheckBoxRememberMe.Location = new System.Drawing.Point(36, 353);
             this.GCheckBoxRememberMe.Name = "GCheckBoxRememberMe";
             this.GCheckBoxRememberMe.Size = new System.Drawing.Size(114, 23);
-            this.GCheckBoxRememberMe.TabIndex = 5;
+            this.GCheckBoxRememberMe.TabIndex = 2;
             this.GCheckBoxRememberMe.Text = "Remember Me";
             this.GCheckBoxRememberMe.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(147)))), ((int)(((byte)(150)))));
             this.GCheckBoxRememberMe.UncheckedState.BorderRadius = 1;
@@ -106,6 +106,57 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(414, 96);
             this.guna2Panel1.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("IBM Plex Sans", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(133)))), ((int)(((byte)(141)))));
+            this.label3.Location = new System.Drawing.Point(174, 503);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(134, 15);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "SYSTEM_VERSION : 1.0.0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(201)))), ((int)(((byte)(204)))));
+            this.label2.Location = new System.Drawing.Point(100, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(168, 19);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Management Portal Access";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("IBM Plex Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.label1.Location = new System.Drawing.Point(98, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(214, 34);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "TitanGYM System";
+            // 
+            // GControlBoxClose
+            // 
+            this.GControlBoxClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.GControlBoxClose.BackColor = System.Drawing.Color.Transparent;
+            this.GControlBoxClose.BorderRadius = 3;
+            this.GControlBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GControlBoxClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GControlBoxClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GControlBoxClose.IconColor = System.Drawing.Color.Black;
+            this.GControlBoxClose.Location = new System.Drawing.Point(1650, 27);
+            this.GControlBoxClose.Name = "GControlBoxClose";
+            this.GControlBoxClose.Size = new System.Drawing.Size(33, 30);
+            this.GControlBoxClose.TabIndex = 1;
+            this.GControlBoxClose.Click += new System.EventHandler(this.GControlBoxClose_Click);
             // 
             // GGradientButtonLogin
             // 
@@ -163,7 +214,7 @@
             this.GTextBoxPassword.PlaceholderText = "PASSWORD";
             this.GTextBoxPassword.SelectedText = "";
             this.GTextBoxPassword.Size = new System.Drawing.Size(414, 49);
-            this.GTextBoxPassword.TabIndex = 3;
+            this.GTextBoxPassword.TabIndex = 1;
             // 
             // GTextBoxUsername
             // 
@@ -191,7 +242,7 @@
             this.GTextBoxUsername.PlaceholderText = "USERNAME";
             this.GTextBoxUsername.SelectedText = "";
             this.GTextBoxUsername.Size = new System.Drawing.Size(414, 49);
-            this.GTextBoxUsername.TabIndex = 3;
+            this.GTextBoxUsername.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -202,57 +253,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("IBM Plex Sans", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(133)))), ((int)(((byte)(141)))));
-            this.label3.Location = new System.Drawing.Point(174, 503);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 15);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "SYSTEM_VERSION : 1.0.0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(201)))), ((int)(((byte)(204)))));
-            this.label2.Location = new System.Drawing.Point(100, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 19);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Management Portal Access";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("IBM Plex Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label1.Location = new System.Drawing.Point(98, 79);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 34);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TitanGYM System";
-            // 
-            // GControlBoxClose
-            // 
-            this.GControlBoxClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.GControlBoxClose.BackColor = System.Drawing.Color.Transparent;
-            this.GControlBoxClose.BorderRadius = 3;
-            this.GControlBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GControlBoxClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GControlBoxClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GControlBoxClose.IconColor = System.Drawing.Color.Black;
-            this.GControlBoxClose.Location = new System.Drawing.Point(1650, 27);
-            this.GControlBoxClose.Name = "GControlBoxClose";
-            this.GControlBoxClose.Size = new System.Drawing.Size(33, 30);
-            this.GControlBoxClose.TabIndex = 1;
-            this.GControlBoxClose.Click += new System.EventHandler(this.GControlBoxClose_Click);
             // 
             // UCLoginTitanGym
             // 
