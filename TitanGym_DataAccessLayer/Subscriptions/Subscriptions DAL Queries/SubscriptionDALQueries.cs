@@ -171,5 +171,40 @@ namespace TitanGym_DataAccessLayer.Subscriptions
             return DT_AllInformationSubscription;
         }
 
+        public static bool IsMemberHasSubscriptionActive(int MemberID)
+        {
+
+            bool IsHasActiveMember = false;
+
+            using (SqlConnection connection = new SqlConnection(HelperDAL.TitanGymConnectionString))
+            {
+
+
+                string Query = @"
+
+
+
+                                        SELECT FOUND = 1 
+                                        FROM Subscriptions SUB
+                                        WHERE SUB.MemberID = @MemberID AND SUB.SubscriptionStatusID = 1
+
+                            ";
+
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    command.AddWithParameter<int>("@MemberID", MemberID);
+                    connection.Open();
+
+                    object result = command.ExecuteScalar();
+
+                    IsHasActiveMember = result != null && Convert.ToBoolean(result);
+
+                }
+            }
+
+            return IsHasActiveMember;
+        }
     }
 }

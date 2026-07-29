@@ -173,6 +173,18 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
                 return false;
             }
 
+            if (SubscriptionBL.IsHasMemberSubscriptionActive(ctrlShowInformationMemberWithFilter1.MemberID))
+            {
+                MessageBox.Show(
+                                       "The Member already has subscription active",
+                                       "Message Error",
+                                       MessageBoxButtons.OK,
+                                       MessageBoxIcon.Error
+                                );
+
+                return false;
+            }
+
             return true;
         }
 

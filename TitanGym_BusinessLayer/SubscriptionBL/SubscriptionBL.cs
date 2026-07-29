@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Runtime.InteropServices;
 using TitanGym_BusinessLayer.MembershipsBL;
 using TitanGym_BusinessLayer.Subscription_StatusesBL;
 using TitanGym_DataAccessLayer.Subscriptions;
@@ -245,5 +246,8 @@ namespace TitanGym_BusinessLayer.SubscriptionBL
             return true;
 
         }
+
+        public static bool IsHasMemberSubscriptionActive(int MemberID)
+            => SubscriptionDALQueries.IsMemberHasSubscriptionActive(MemberID);
     }
 }
