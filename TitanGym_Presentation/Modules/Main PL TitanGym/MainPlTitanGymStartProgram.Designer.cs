@@ -32,6 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPlTitanGymStartProgram));
             this.GBorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.MainPanel = new System.Windows.Forms.Panel();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.lblNameUser = new System.Windows.Forms.Label();
+            this.GPictureBoxUser = new Guna.UI2.WinForms.Guna2PictureBox();
             this.GGButtonUsers = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGradientButtonTrainerAssigenments = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGradientButtonPayments = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -42,17 +49,10 @@
             this.GGradientButtonPeople = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGradientButtonDashboard = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.MainPanel = new System.Windows.Forms.Panel();
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.GPictureBoxUser = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GPictureBoxUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // GBorderlessForm
@@ -82,6 +82,85 @@
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(254, 956);
             this.guna2GradientPanel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("IBM Plex Sans Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(78, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 16);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "MANAGEMENT PRO";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("IBM Plex Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(71, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 37);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "TitanGym";
+            // 
+            // MainPanel
+            // 
+            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.MainPanel.Location = new System.Drawing.Point(254, 66);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(1477, 890);
+            this.MainPanel.TabIndex = 1;
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
+            this.guna2GradientPanel2.Controls.Add(this.lblRole);
+            this.guna2GradientPanel2.Controls.Add(this.lblNameUser);
+            this.guna2GradientPanel2.Controls.Add(this.GPictureBoxUser);
+            this.guna2GradientPanel2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.guna2GradientPanel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(254, 0);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(1477, 65);
+            this.guna2GradientPanel2.TabIndex = 1;
+            // 
+            // lblRole
+            // 
+            this.lblRole.AutoSize = true;
+            this.lblRole.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.lblRole.Location = new System.Drawing.Point(1232, 35);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(35, 19);
+            this.lblRole.TabIndex = 1;
+            this.lblRole.Text = "Role";
+            // 
+            // lblNameUser
+            // 
+            this.lblNameUser.AutoSize = true;
+            this.lblNameUser.Font = new System.Drawing.Font("IBM Plex Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.lblNameUser.Location = new System.Drawing.Point(1232, 10);
+            this.lblNameUser.Name = "lblNameUser";
+            this.lblNameUser.Size = new System.Drawing.Size(85, 22);
+            this.lblNameUser.TabIndex = 1;
+            this.lblNameUser.Text = "Full name";
+            // 
+            // GPictureBoxUser
+            // 
+            this.GPictureBoxUser.BorderRadius = 8;
+            this.GPictureBoxUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GPictureBoxUser.FillColor = System.Drawing.Color.Transparent;
+            this.GPictureBoxUser.ImageRotate = 0F;
+            this.GPictureBoxUser.Location = new System.Drawing.Point(1380, 12);
+            this.GPictureBoxUser.Name = "GPictureBoxUser";
+            this.GPictureBoxUser.Size = new System.Drawing.Size(44, 42);
+            this.GPictureBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.GPictureBoxUser.TabIndex = 0;
+            this.GPictureBoxUser.TabStop = false;
             // 
             // GGButtonUsers
             // 
@@ -339,6 +418,7 @@
             this.GGradientButtonDashboard.BackColor = System.Drawing.Color.Transparent;
             this.GGradientButtonDashboard.BorderRadius = 10;
             this.GGradientButtonDashboard.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.GGradientButtonDashboard.Checked = true;
             this.GGradientButtonDashboard.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(54)))), ((int)(((byte)(69)))));
             this.GGradientButtonDashboard.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(54)))), ((int)(((byte)(69)))));
             this.GGradientButtonDashboard.CheckedState.Font = new System.Drawing.Font("IBM Plex Sans Medium", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -373,82 +453,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("IBM Plex Sans Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(78, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "MANAGEMENT PRO";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("IBM Plex Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(71, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TitanGym";
-            // 
-            // MainPanel
-            // 
-            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.MainPanel.Location = new System.Drawing.Point(254, 66);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1477, 890);
-            this.MainPanel.TabIndex = 1;
-            // 
-            // guna2GradientPanel2
-            // 
-            this.guna2GradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
-            this.guna2GradientPanel2.Controls.Add(this.label4);
-            this.guna2GradientPanel2.Controls.Add(this.label3);
-            this.guna2GradientPanel2.Controls.Add(this.GPictureBoxUser);
-            this.guna2GradientPanel2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.guna2GradientPanel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(254, 0);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(1477, 65);
-            this.guna2GradientPanel2.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("IBM Plex Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label4.Location = new System.Drawing.Point(1232, 35);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 19);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Role";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("IBM Plex Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.label3.Location = new System.Drawing.Point(1232, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 22);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Full name";
-            // 
-            // GPictureBoxUser
-            // 
-            this.GPictureBoxUser.BorderRadius = 5;
-            this.GPictureBoxUser.ImageRotate = 0F;
-            this.GPictureBoxUser.Location = new System.Drawing.Point(1376, 12);
-            this.GPictureBoxUser.Name = "GPictureBoxUser";
-            this.GPictureBoxUser.Size = new System.Drawing.Size(44, 42);
-            this.GPictureBoxUser.TabIndex = 0;
-            this.GPictureBoxUser.TabStop = false;
-            // 
             // MainPlTitanGymStartProgram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -462,13 +466,14 @@
             this.Name = "MainPlTitanGymStartProgram";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Activated += new System.EventHandler(this.MainPlTitanGymStartProgram_Activated);
             this.Load += new System.EventHandler(this.MainPlTitanGymStartProgram_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GPictureBoxUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -492,8 +497,8 @@
         private Guna.UI2.WinForms.Guna2GradientButton GGButtonUsers;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2PictureBox GPictureBoxUser;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblRole;
+        private System.Windows.Forms.Label lblNameUser;
     }
 }
 

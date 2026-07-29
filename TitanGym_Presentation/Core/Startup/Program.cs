@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using TitanGym_Presentation.Modules.Login.Forms;
 
 namespace TitanGym_Presentation
 {
@@ -16,7 +14,8 @@ namespace TitanGym_Presentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainPlTitanGymStartProgram());
+            // Application.Run(new MainPlTitanGymStartProgram());
+            Application.Run(new UCLoginTitanGym());
         }
     }
 }

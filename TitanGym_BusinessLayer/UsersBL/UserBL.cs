@@ -12,7 +12,32 @@ namespace TitanGym_BusinessLayer.UsersBL
             _kADD_NEW_USER = 1,
             _kUPDATE_INFORMATION_USER = 2
         };
+        public enum EnLoginStatus
+        {
+            _LOGIN_FAILD = 1,
+            _LOGIN_SUCCESS = 2,
+            _LOGIN_USER_NOT_ACTIVE = 3,
+            _LOGIN_USER_NOT_FOUNDED = 4
 
+        };
+
+        public class LoginResult
+        {
+            public int UserID { get; set; }
+            public bool IsActiveUser { get; set; }
+            public bool IsAuthenticated { get; set; }
+            public string Message { get; set; }
+            public EnLoginStatus Status { get; set; }
+
+            public LoginResult(int userID, bool isActiveUser, bool isAuthenticated, string message, EnLoginStatus status)
+            {
+                this.UserID = userID;
+                this.IsActiveUser = isActiveUser;
+                this.IsAuthenticated = isAuthenticated;
+                this.Message = message;
+                this.Status = status;
+            }
+        }
 
         public int UserID { get; set; }
         public string Username { get; set; }
@@ -116,6 +141,20 @@ namespace TitanGym_BusinessLayer.UsersBL
             else return null;
         }
 
+        public static UserBL FindTheUserBy(string Username)
+        {
+            string password = "";
+            DateTime creationDateUser = DateTime.Now;
+            byte accountStatusID = 0, roleID = 0;
+            int personID = 0, UserID = 0;
+
+            bool IsFound = UsersDALQueries.FindTheUserBy(Username, ref UserID, ref password, ref creationDateUser, ref accountStatusID, ref personID, ref roleID);
+
+            if (IsFound)
+                return new UserBL(UserID, Username, password, creationDateUser, accountStatusID, personID, roleID);
+            else return null;
+        }
+
         public static DataTable GetAllUsers()
             => UsersDALQueries.GetAllUsers();
 
@@ -172,5 +211,64 @@ namespace TitanGym_BusinessLayer.UsersBL
 
         public static bool IsExistsUserBy(string Username)
             => UsersDALQueries.IsUserExistsBy(Username);
+
+        public static LoginResult LoginTitanGYM(string username, string password)
+        {
+            const string defaultError = "Invalid username or password";
+
+
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            {
+                return new LoginResult(
+                    userID: -1,
+                    isActiveUser: false,
+                    isAuthenticated: false,
+                    message: "Please enter a valid username and password",
+                    status: EnLoginStatus._LOGIN_FAILD);
+            }
+
+
+            if (!UsersDALQueries.IsUserExistsBy(username))
+            {
+                return new LoginResult(
+                    userID: -1,
+                    isActiveUser: false,
+                    isAuthenticated: false,
+                    message: "This user does not exist in Titan Gym. Please enter a valid username.",
+                    status: EnLoginStatus._LOGIN_USER_NOT_FOUNDED);
+            }
+
+            if (!UsersDALQueries.IsUserExistsBy(username, password))
+            {
+                return new LoginResult(
+                    userID: -1,
+                    isActiveUser: false,
+                    isAuthenticated: false,
+                    message: defaultError,
+                    status: EnLoginStatus._LOGIN_FAILD);
+            }
+
+            var user = UsersBL.UserBL.FindTheUserBy(username);
+
+            if (user.AccountStatusID != 1)
+            {
+                return new LoginResult(
+                    userID: user.UserID,
+                    isActiveUser: false,
+                    isAuthenticated: false,
+                    message: "Your account is not active. Please contact administration.",
+                    status: EnLoginStatus._LOGIN_USER_NOT_ACTIVE);
+            }
+
+            // Successful login
+            return new LoginResult(
+                userID: user.UserID,
+                isActiveUser: true,
+                isAuthenticated: true,
+                message: "Thank you for using Titan Gym — enjoy your session!",
+                status: EnLoginStatus._LOGIN_SUCCESS);
+        }
+
+
     }
 }

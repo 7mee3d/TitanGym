@@ -149,6 +149,100 @@ namespace TitanGym_DataAccessLayer.Users
             return IsFound;
         }
 
+        public static bool FindTheUserBy(
+                        string username,
+                        ref int userID,
+                        ref string password,
+                        ref DateTime creationDateUser,
+                        ref byte accountStatusID,
+                        ref int personID,
+                        ref byte roleID
+
+            )
+        {
+
+
+            bool IsFound = false;
+
+
+            using (SqlConnection connection = new SqlConnection(Helper.HelperDAL.TitanGymConnectionString))
+            {
+
+
+                string Query = @"
+
+                                SELECT *
+                                FROM Users
+                                WHERE LOWER (Users.Username ) = LOWER (@Username);
+                ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+                    command.AddWithParameter<string>("@Username", username);
+
+                    connection.Open();
+
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                        if (reader.Read())
+                        {
+                            IsFound = true;
+                            userID = reader.GetTheValueFrom<int>("UserID");
+                            password = reader.GetTheValueFrom<string>("Password");
+                            creationDateUser = reader.GetTheValueFrom<DateTime>("CreationDateUser");
+                            accountStatusID = reader.GetTheValueFrom<byte>("AccountStatusID");
+                            personID = reader.GetTheValueFrom<int>("PersonID");
+                            roleID = reader.GetTheValueFrom<byte>("RoleID");
+
+                        }
+
+                }
+            }
+
+            return IsFound;
+        }
+
+        public static bool IsUserExistsBy(string Username, string Password)
+        {
+
+            bool IsExists = false;
+
+            using (SqlConnection connection = new SqlConnection(Helper.HelperDAL.TitanGymConnectionString))
+            {
+
+
+                string Query = @"
+
+
+
+                                SELECT FOUND = 1 
+                                FROM Users
+                                WHERE LOWER (Users.Username ) = LOWER (@Username) AND Password  = @Password;
+
+
+            ";
+
+                using (SqlCommand command = new SqlCommand(Query, connection))
+                {
+
+                    command.AddWithParameter<string>("@Username", Username);
+                    command.AddWithParameter<string>("@Password", Password);
+
+                    connection.Open();
+
+
+
+                    object result = command.ExecuteScalar();
+
+                    IsExists = result != null && Convert.ToBoolean(result);
+
+                }
+
+
+            }
+
+            return IsExists;
+        }
 
     }
 }

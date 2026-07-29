@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Globals\Global.cs" />
     <Compile Include="Core\Helpers\HelpersPL.cs" />
     <Compile Include="Core\Utility\Utility.cs" />
     <Compile Include="Core\Validation\Validation.cs" />
@@ -60,6 +61,12 @@
     </Compile>
     <Compile Include="Modules\Dashboard\Forms\UCDashboard.Designer.cs">
       <DependentUpon>UCDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Login\Forms\UCLoginTitanGym.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Login\Forms\UCLoginTitanGym.Designer.cs">
+      <DependentUpon>UCLoginTitanGym.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\Main PL TitanGym\MainPlTitanGymStartProgram.cs">
       <SubType>Form</SubType>
@@ -271,6 +278,9 @@
     <EmbeddedResource Include="Modules\Dashboard\Forms\UCDashboard.resx">
       <DependentUpon>UCDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Login\Forms\UCLoginTitanGym.resx">
+      <DependentUpon>UCLoginTitanGym.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\Main PL TitanGym\MainPlTitanGymStartProgram.resx">
       <DependentUpon>MainPlTitanGymStartProgram.cs</DependentUpon>
     </EmbeddedResource>
@@ -404,7 +414,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
     <Folder Include="Modules\Dashboard\Controls\" />
     <Folder Include="Modules\Trainer Assignments\Controls\" />
   </ItemGroup>
