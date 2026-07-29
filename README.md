@@ -418,11 +418,6 @@ TitanGym/
 │       ├── Resources.resx
 │       └── Settings.settings
 │
-├── Database/                             # Database scripts (NOT included in repo)
-│   ├── Schema.sql                        # Table creation scripts
-│   ├── Procedures.sql                    # Stored procedures and views
-│   └── SeedData.sql                      # Initial data
-│
 ├── TitanGym.sln                          # Visual Studio solution file
 ├── README.md                             # This file
 └── LICENSE                               # MIT License
