@@ -8,7 +8,7 @@
 [![.NET Framework 4.8](https://img.shields.io/badge/.NET_Framework_4.8-5C2D91?style=for-the-badge&logo=.net&logoColor=white)](#)
 [![SQL Server 2022](https://img.shields.io/badge/SQL_Server_2022-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)](#)
 [![Guna UI 2.0.4.8](https://img.shields.io/badge/UI-Guna2_WinForms-0078D7?style=for-the-badge)](#)
-[![Database](https://img.shields.io/badge/Database-SQL%20Server-red?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)](#) [![Data Access](https://img.shields.io/badge/Data%20Access-ADO.NET-blue?style=for-the-badge&logo=.net&logoColor=white)](#)
+[![Data Access](https://img.shields.io/badge/Data%20Access-ADO.NET-blue?style=for-the-badge&logo=.net&logoColor=white)](#)
 [![Architecture](https://img.shields.io/badge/Architecture-3--Tier-brightgreen?style=for-the-badge)](#)
 
 <img src="https://placehold.co/1000x300/1e1e1e/4caf50?text=Titan+Gym+Management+System&font=montserrat" alt="Titan Gym Cover" width="100%">
