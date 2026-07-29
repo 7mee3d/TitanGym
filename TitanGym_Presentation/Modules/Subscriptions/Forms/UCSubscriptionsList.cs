@@ -77,7 +77,19 @@ namespace TitanGym_Presentation.Modules.Subscriptions.Forms
 
         private void GDataGridViewSubscriptions_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
+            int TotalSubscriptionActive = 0;
 
+            for (int counter = 0; counter < GDataGridViewSubscriptions.Rows.Count; counter += 1)
+            {
+                DataGridViewRow DGVR = GDataGridViewSubscriptions.Rows[counter];
+                DataGridViewCell DGVC = DGVR.Cells[9];
+
+                if (DGVC.Value.ToString() == "Active") ++TotalSubscriptionActive;
+
+
+            }
+
+            lblTotalActiveSubscriptions.Text = TotalSubscriptionActive.ToString();
         }
 
         private void GGButtonAddNewSubscription_Click(object sender, EventArgs e)

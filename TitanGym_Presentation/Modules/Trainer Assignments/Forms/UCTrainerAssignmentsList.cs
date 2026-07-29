@@ -56,13 +56,18 @@ namespace TitanGym_Presentation.Modules.Trainer_Assignments.Forms
                 GDataGridViewTrainerAssignments.Columns[7].Width = 300;
 
             }
-
+            lblTotalTrainerAssigements.Text = GDataGridViewTrainerAssignments.Rows.Count.ToString();
         }
 
+        private void _LoadInformationTrainersAnalsis()
+        {
+            lblTotalMemberAssigements.Text = TrainerAssignmentsBL.GetTotalMemberAssigementsTrainers().ToString();
+        }
 
         private void UCTrainerAssignmentsList_Load(object sender, EventArgs e)
         {
             _LoadInformationTrainerAssignments();
+            _LoadInformationTrainersAnalsis();
         }
 
         private void GGButtonAssigementMember_Click(object sender, EventArgs e)

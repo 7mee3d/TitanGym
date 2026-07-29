@@ -35,10 +35,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.lblTotalSubscriptions = new System.Windows.Forms.Label();
+            this.lblTotalTrainerAssigements = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.lblTotalActiveSubscriptions = new System.Windows.Forms.Label();
+            this.lblTotalMemberAssigements = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.GGButtonAssigementMember = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -67,7 +67,7 @@
             // 
             this.guna2GradientPanel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel4.BorderRadius = 15;
-            this.guna2GradientPanel4.Controls.Add(this.lblTotalSubscriptions);
+            this.guna2GradientPanel4.Controls.Add(this.lblTotalTrainerAssigements);
             this.guna2GradientPanel4.Controls.Add(this.label5);
             this.guna2GradientPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
             this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
@@ -76,33 +76,33 @@
             this.guna2GradientPanel4.Size = new System.Drawing.Size(237, 88);
             this.guna2GradientPanel4.TabIndex = 13;
             // 
-            // lblTotalSubscriptions
+            // lblTotalTrainerAssigements
             // 
-            this.lblTotalSubscriptions.AutoSize = true;
-            this.lblTotalSubscriptions.Font = new System.Drawing.Font("IBM Plex Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalSubscriptions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
-            this.lblTotalSubscriptions.Location = new System.Drawing.Point(18, 35);
-            this.lblTotalSubscriptions.Name = "lblTotalSubscriptions";
-            this.lblTotalSubscriptions.Size = new System.Drawing.Size(39, 45);
-            this.lblTotalSubscriptions.TabIndex = 9;
-            this.lblTotalSubscriptions.Text = "0";
+            this.lblTotalTrainerAssigements.AutoSize = true;
+            this.lblTotalTrainerAssigements.Font = new System.Drawing.Font("IBM Plex Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalTrainerAssigements.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(228)))), ((int)(((byte)(250)))));
+            this.lblTotalTrainerAssigements.Location = new System.Drawing.Point(18, 35);
+            this.lblTotalTrainerAssigements.Name = "lblTotalTrainerAssigements";
+            this.lblTotalTrainerAssigements.Size = new System.Drawing.Size(39, 45);
+            this.lblTotalTrainerAssigements.TabIndex = 9;
+            this.lblTotalTrainerAssigements.Text = "0";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(201)))), ((int)(((byte)(204)))));
-            this.label5.Location = new System.Drawing.Point(22, 14);
+            this.label5.Location = new System.Drawing.Point(15, 14);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 21);
+            this.label5.Size = new System.Drawing.Size(194, 21);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Total Subcriptions";
+            this.label5.Text = "Total Trainer Assigements";
             // 
             // guna2GradientPanel3
             // 
             this.guna2GradientPanel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel3.BorderRadius = 15;
-            this.guna2GradientPanel3.Controls.Add(this.lblTotalActiveSubscriptions);
+            this.guna2GradientPanel3.Controls.Add(this.lblTotalMemberAssigements);
             this.guna2GradientPanel3.Controls.Add(this.label3);
             this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(33)))), ((int)(((byte)(49)))));
@@ -111,27 +111,27 @@
             this.guna2GradientPanel3.Size = new System.Drawing.Size(237, 88);
             this.guna2GradientPanel3.TabIndex = 14;
             // 
-            // lblTotalActiveSubscriptions
+            // lblTotalMemberAssigements
             // 
-            this.lblTotalActiveSubscriptions.AutoSize = true;
-            this.lblTotalActiveSubscriptions.Font = new System.Drawing.Font("IBM Plex Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalActiveSubscriptions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(197)))), ((int)(((byte)(94)))));
-            this.lblTotalActiveSubscriptions.Location = new System.Drawing.Point(18, 35);
-            this.lblTotalActiveSubscriptions.Name = "lblTotalActiveSubscriptions";
-            this.lblTotalActiveSubscriptions.Size = new System.Drawing.Size(39, 45);
-            this.lblTotalActiveSubscriptions.TabIndex = 9;
-            this.lblTotalActiveSubscriptions.Text = "0";
+            this.lblTotalMemberAssigements.AutoSize = true;
+            this.lblTotalMemberAssigements.Font = new System.Drawing.Font("IBM Plex Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalMemberAssigements.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(197)))), ((int)(((byte)(94)))));
+            this.lblTotalMemberAssigements.Location = new System.Drawing.Point(18, 35);
+            this.lblTotalMemberAssigements.Name = "lblTotalMemberAssigements";
+            this.lblTotalMemberAssigements.Size = new System.Drawing.Size(39, 45);
+            this.lblTotalMemberAssigements.TabIndex = 9;
+            this.lblTotalMemberAssigements.Text = "0";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(201)))), ((int)(((byte)(204)))));
-            this.label3.Location = new System.Drawing.Point(22, 14);
+            this.label3.Location = new System.Drawing.Point(9, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(155, 21);
+            this.label3.Size = new System.Drawing.Size(217, 21);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Active Subscriptions";
+            this.label3.Text = "Total Members Assigemented";
             // 
             // GGButtonAssigementMember
             // 
@@ -372,10 +372,10 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel4;
-        private System.Windows.Forms.Label lblTotalSubscriptions;
+        private System.Windows.Forms.Label lblTotalTrainerAssigements;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
-        private System.Windows.Forms.Label lblTotalActiveSubscriptions;
+        private System.Windows.Forms.Label lblTotalMemberAssigements;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2GradientButton GGButtonAssigementMember;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
