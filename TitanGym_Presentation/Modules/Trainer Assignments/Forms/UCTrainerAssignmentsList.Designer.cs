@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCTrainerAssignmentsList));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCTrainerAssignmentsList));
             this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.lblTotalTrainerAssigements = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.lblTotalMemberAssigements = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.GGButtonAssigementMember = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GDataGridViewTrainerAssignments = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ContextMenuStripTrainerAssigements = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.showInformationSubscriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.AssigementMemberToTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.updateInformationAssigementMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.GGButtonAssigementMember = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.showInformationSubscriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AssigementMemberToTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateInformationAssigementMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel4.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
@@ -132,30 +132,6 @@
             this.label3.Size = new System.Drawing.Size(217, 21);
             this.label3.TabIndex = 10;
             this.label3.Text = "Total Members Assigemented";
-            // 
-            // GGButtonAssigementMember
-            // 
-            this.GGButtonAssigementMember.BorderRadius = 6;
-            this.GGButtonAssigementMember.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GGButtonAssigementMember.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAssigementMember.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAssigementMember.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAssigementMember.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAssigementMember.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GGButtonAssigementMember.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.GGButtonAssigementMember.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.GGButtonAssigementMember.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GGButtonAssigementMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
-            this.GGButtonAssigementMember.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAssigementMember.Image")));
-            this.GGButtonAssigementMember.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.GGButtonAssigementMember.ImageOffset = new System.Drawing.Point(15, 1);
-            this.GGButtonAssigementMember.Location = new System.Drawing.Point(1192, 70);
-            this.GGButtonAssigementMember.Name = "GGButtonAssigementMember";
-            this.GGButtonAssigementMember.Size = new System.Drawing.Size(237, 44);
-            this.GGButtonAssigementMember.TabIndex = 12;
-            this.GGButtonAssigementMember.Text = "Assigement Member";
-            this.GGButtonAssigementMember.TextOffset = new System.Drawing.Point(10, 0);
-            this.GGButtonAssigementMember.Click += new System.EventHandler(this.GGButtonAssigementMember_Click);
             // 
             // guna2GradientPanel2
             // 
@@ -250,45 +226,15 @@
             this.ContextMenuStripTrainerAssigements.Name = "ContextMenuStripPeopleSection";
             this.ContextMenuStripTrainerAssigements.Size = new System.Drawing.Size(334, 136);
             // 
-            // showInformationSubscriptionToolStripMenuItem
-            // 
-            this.showInformationSubscriptionToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.showInformationSubscriptionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationSubscriptionToolStripMenuItem.Image")));
-            this.showInformationSubscriptionToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showInformationSubscriptionToolStripMenuItem.Name = "showInformationSubscriptionToolStripMenuItem";
-            this.showInformationSubscriptionToolStripMenuItem.Size = new System.Drawing.Size(333, 38);
-            this.showInformationSubscriptionToolStripMenuItem.Text = "Show Information Subscription";
-            this.showInformationSubscriptionToolStripMenuItem.Click += new System.EventHandler(this.showInformationSubscriptionToolStripMenuItem_Click);
-            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(330, 6);
             // 
-            // AssigementMemberToTrainerToolStripMenuItem
-            // 
-            this.AssigementMemberToTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.AssigementMemberToTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("AssigementMemberToTrainerToolStripMenuItem.Image")));
-            this.AssigementMemberToTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.AssigementMemberToTrainerToolStripMenuItem.Name = "AssigementMemberToTrainerToolStripMenuItem";
-            this.AssigementMemberToTrainerToolStripMenuItem.Size = new System.Drawing.Size(333, 38);
-            this.AssigementMemberToTrainerToolStripMenuItem.Text = "Assigement Member";
-            this.AssigementMemberToTrainerToolStripMenuItem.Click += new System.EventHandler(this.AssigementMemberToTrainerToolStripMenuItem_Click);
-            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(330, 6);
-            // 
-            // updateInformationAssigementMemberToolStripMenuItem
-            // 
-            this.updateInformationAssigementMemberToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.updateInformationAssigementMemberToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationAssigementMemberToolStripMenuItem.Image")));
-            this.updateInformationAssigementMemberToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.updateInformationAssigementMemberToolStripMenuItem.Name = "updateInformationAssigementMemberToolStripMenuItem";
-            this.updateInformationAssigementMemberToolStripMenuItem.Size = new System.Drawing.Size(333, 38);
-            this.updateInformationAssigementMemberToolStripMenuItem.Text = "Update Information Assigement Member";
-            this.updateInformationAssigementMemberToolStripMenuItem.Click += new System.EventHandler(this.updateInformationAssigementMemberToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -319,16 +265,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Quick Filters:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -339,6 +275,70 @@
             this.label1.Size = new System.Drawing.Size(791, 71);
             this.label1.TabIndex = 9;
             this.label1.Text = "Trainer Assigenments Directory";
+            // 
+            // GGButtonAssigementMember
+            // 
+            this.GGButtonAssigementMember.BorderRadius = 6;
+            this.GGButtonAssigementMember.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GGButtonAssigementMember.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonAssigementMember.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonAssigementMember.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonAssigementMember.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonAssigementMember.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GGButtonAssigementMember.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.GGButtonAssigementMember.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.GGButtonAssigementMember.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonAssigementMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
+            this.GGButtonAssigementMember.Image = global::TitanGym_Presentation.Properties.Resources.Add_Icon_TitanGym_24;
+            this.GGButtonAssigementMember.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.GGButtonAssigementMember.ImageOffset = new System.Drawing.Point(15, 1);
+            this.GGButtonAssigementMember.Location = new System.Drawing.Point(1192, 70);
+            this.GGButtonAssigementMember.Name = "GGButtonAssigementMember";
+            this.GGButtonAssigementMember.Size = new System.Drawing.Size(237, 44);
+            this.GGButtonAssigementMember.TabIndex = 12;
+            this.GGButtonAssigementMember.Text = "Assigement Member";
+            this.GGButtonAssigementMember.TextOffset = new System.Drawing.Point(10, 0);
+            this.GGButtonAssigementMember.Click += new System.EventHandler(this.GGButtonAssigementMember_Click);
+            // 
+            // showInformationSubscriptionToolStripMenuItem
+            // 
+            this.showInformationSubscriptionToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showInformationSubscriptionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationSubscriptionToolStripMenuItem.Image")));
+            this.showInformationSubscriptionToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showInformationSubscriptionToolStripMenuItem.Name = "showInformationSubscriptionToolStripMenuItem";
+            this.showInformationSubscriptionToolStripMenuItem.Size = new System.Drawing.Size(333, 38);
+            this.showInformationSubscriptionToolStripMenuItem.Text = "Show Information Subscription";
+            this.showInformationSubscriptionToolStripMenuItem.Click += new System.EventHandler(this.showInformationSubscriptionToolStripMenuItem_Click);
+            // 
+            // AssigementMemberToTrainerToolStripMenuItem
+            // 
+            this.AssigementMemberToTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.AssigementMemberToTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("AssigementMemberToTrainerToolStripMenuItem.Image")));
+            this.AssigementMemberToTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.AssigementMemberToTrainerToolStripMenuItem.Name = "AssigementMemberToTrainerToolStripMenuItem";
+            this.AssigementMemberToTrainerToolStripMenuItem.Size = new System.Drawing.Size(333, 38);
+            this.AssigementMemberToTrainerToolStripMenuItem.Text = "Assigement Member";
+            this.AssigementMemberToTrainerToolStripMenuItem.Click += new System.EventHandler(this.AssigementMemberToTrainerToolStripMenuItem_Click);
+            // 
+            // updateInformationAssigementMemberToolStripMenuItem
+            // 
+            this.updateInformationAssigementMemberToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.updateInformationAssigementMemberToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationAssigementMemberToolStripMenuItem.Image")));
+            this.updateInformationAssigementMemberToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateInformationAssigementMemberToolStripMenuItem.Name = "updateInformationAssigementMemberToolStripMenuItem";
+            this.updateInformationAssigementMemberToolStripMenuItem.Size = new System.Drawing.Size(333, 38);
+            this.updateInformationAssigementMemberToolStripMenuItem.Text = "Update Information Assigement Member";
+            this.updateInformationAssigementMemberToolStripMenuItem.Click += new System.EventHandler(this.updateInformationAssigementMemberToolStripMenuItem_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TitanGym_Presentation.Properties.Resources.Filter_Icon_TitanGym_24;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // UCTrainerAssignmentsList
             // 

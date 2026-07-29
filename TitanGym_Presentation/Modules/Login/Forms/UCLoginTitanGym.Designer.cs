@@ -178,7 +178,7 @@
             this.GGradientButtonLogin.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGradientButtonLogin.Font = new System.Drawing.Font("IBM Plex Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GGradientButtonLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
-            this.GGradientButtonLogin.Image = ((System.Drawing.Image)(resources.GetObject("GGradientButtonLogin.Image")));
+            this.GGradientButtonLogin.Image = global::TitanGym_Presentation.Properties.Resources.Left_Arrow_Icon_TitanGym_24;
             this.GGradientButtonLogin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.GGradientButtonLogin.ImageOffset = new System.Drawing.Point(90, 2);
             this.GGradientButtonLogin.Location = new System.Drawing.Point(45, 26);
@@ -205,7 +205,7 @@
             this.GTextBoxPassword.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GTextBoxPassword.ForeColor = System.Drawing.Color.White;
             this.GTextBoxPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GTextBoxPassword.IconLeft = ((System.Drawing.Image)(resources.GetObject("GTextBoxPassword.IconLeft")));
+            this.GTextBoxPassword.IconLeft = global::TitanGym_Presentation.Properties.Resources.Lock_Icon_TitanGym_24;
             this.GTextBoxPassword.IconLeftOffset = new System.Drawing.Point(10, 0);
             this.GTextBoxPassword.IconLeftSize = new System.Drawing.Size(25, 25);
             this.GTextBoxPassword.Location = new System.Drawing.Point(36, 287);
@@ -233,7 +233,7 @@
             this.GTextBoxUsername.Font = new System.Drawing.Font("IBM Plex Sans Medium", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GTextBoxUsername.ForeColor = System.Drawing.Color.White;
             this.GTextBoxUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GTextBoxUsername.IconLeft = ((System.Drawing.Image)(resources.GetObject("GTextBoxUsername.IconLeft")));
+            this.GTextBoxUsername.IconLeft = global::TitanGym_Presentation.Properties.Resources.Person_Icon_TitanGym_24;
             this.GTextBoxUsername.IconLeftOffset = new System.Drawing.Point(10, 0);
             this.GTextBoxUsername.IconLeftSize = new System.Drawing.Size(25, 25);
             this.GTextBoxUsername.Location = new System.Drawing.Point(36, 197);
@@ -249,7 +249,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(36, 80);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(57, 53);
+            this.pictureBox1.Size = new System.Drawing.Size(56, 53);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;

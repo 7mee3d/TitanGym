@@ -29,26 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAddEditUser));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.GComboBoxRoles = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.GComboBoxAccountStatuses = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.ctrlShowInformationPersonByFilter1 = new TitanGym_Presentation.Modules.People.Controls.ctrlShowInformationPersonByFilter();
             this.lblCreationDate = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.GTextBoxPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.GTextBoxUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.GGButtonAddNewUser = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGButtonCancel = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTitleUser = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.errorProviderUsersSection = new System.Windows.Forms.ErrorProvider(this.components);
+            this.ctrlShowInformationPersonByFilter1 = new TitanGym_Presentation.Modules.People.Controls.ctrlShowInformationPersonByFilter();
+            this.GGButtonAddNewUser = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -136,15 +135,6 @@
             this.label1.Size = new System.Drawing.Size(117, 21);
             this.label1.TabIndex = 6;
             this.label1.Text = "Account Status";
-            // 
-            // ctrlShowInformationPersonByFilter1
-            // 
-            this.ctrlShowInformationPersonByFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
-            this.ctrlShowInformationPersonByFilter1.Location = new System.Drawing.Point(39, 110);
-            this.ctrlShowInformationPersonByFilter1.Name = "ctrlShowInformationPersonByFilter1";
-            this.ctrlShowInformationPersonByFilter1.Size = new System.Drawing.Size(915, 333);
-            this.ctrlShowInformationPersonByFilter1.TabIndex = 4;
-            this.ctrlShowInformationPersonByFilter1.EHFinishedSearchPerson += new System.EventHandler<int>(this.ctrlShowInformationPersonByFilter1_EHFinishedSearchPerson);
             // 
             // lblCreationDate
             // 
@@ -242,35 +232,6 @@
             this.guna2Panel3.Size = new System.Drawing.Size(990, 87);
             this.guna2Panel3.TabIndex = 0;
             // 
-            // GGButtonAddNewUser
-            // 
-            this.GGButtonAddNewUser.Animated = true;
-            this.GGButtonAddNewUser.AnimatedGIF = true;
-            this.GGButtonAddNewUser.BackColor = System.Drawing.Color.Transparent;
-            this.GGButtonAddNewUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewUser.BorderRadius = 5;
-            this.GGButtonAddNewUser.BorderThickness = 1;
-            this.GGButtonAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GGButtonAddNewUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAddNewUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAddNewUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAddNewUser.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAddNewUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GGButtonAddNewUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewUser.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewUser.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GGButtonAddNewUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
-            this.GGButtonAddNewUser.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewUser.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewUser.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewUser.Image")));
-            this.GGButtonAddNewUser.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.GGButtonAddNewUser.Location = new System.Drawing.Point(774, 22);
-            this.GGButtonAddNewUser.Name = "GGButtonAddNewUser";
-            this.GGButtonAddNewUser.Size = new System.Drawing.Size(198, 47);
-            this.GGButtonAddNewUser.TabIndex = 2;
-            this.GGButtonAddNewUser.Text = "Add User";
-            this.GGButtonAddNewUser.Click += new System.EventHandler(this.GGButtonAddNewUser_Click);
-            // 
             // GGButtonCancel
             // 
             this.GGButtonCancel.Animated = true;
@@ -346,6 +307,44 @@
             // errorProviderUsersSection
             // 
             this.errorProviderUsersSection.ContainerControl = this;
+            // 
+            // ctrlShowInformationPersonByFilter1
+            // 
+            this.ctrlShowInformationPersonByFilter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
+            this.ctrlShowInformationPersonByFilter1.Location = new System.Drawing.Point(39, 110);
+            this.ctrlShowInformationPersonByFilter1.Name = "ctrlShowInformationPersonByFilter1";
+            this.ctrlShowInformationPersonByFilter1.Size = new System.Drawing.Size(915, 333);
+            this.ctrlShowInformationPersonByFilter1.TabIndex = 4;
+            this.ctrlShowInformationPersonByFilter1.EHFinishedSearchPerson += new System.EventHandler<int>(this.ctrlShowInformationPersonByFilter1_EHFinishedSearchPerson);
+            // 
+            // GGButtonAddNewUser
+            // 
+            this.GGButtonAddNewUser.Animated = true;
+            this.GGButtonAddNewUser.AnimatedGIF = true;
+            this.GGButtonAddNewUser.BackColor = System.Drawing.Color.Transparent;
+            this.GGButtonAddNewUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewUser.BorderRadius = 5;
+            this.GGButtonAddNewUser.BorderThickness = 1;
+            this.GGButtonAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GGButtonAddNewUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonAddNewUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonAddNewUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonAddNewUser.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonAddNewUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GGButtonAddNewUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewUser.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewUser.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonAddNewUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
+            this.GGButtonAddNewUser.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewUser.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonAddNewUser.Image = global::TitanGym_Presentation.Properties.Resources.Add_Person_Icon_TitanGym_24;
+            this.GGButtonAddNewUser.ImageOffset = new System.Drawing.Point(-5, 0);
+            this.GGButtonAddNewUser.Location = new System.Drawing.Point(774, 22);
+            this.GGButtonAddNewUser.Name = "GGButtonAddNewUser";
+            this.GGButtonAddNewUser.Size = new System.Drawing.Size(198, 47);
+            this.GGButtonAddNewUser.TabIndex = 2;
+            this.GGButtonAddNewUser.Text = "Add User";
+            this.GGButtonAddNewUser.Click += new System.EventHandler(this.GGButtonAddNewUser_Click);
             // 
             // UCAddEditUser
             // 

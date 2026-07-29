@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCPaymentsList));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCPaymentsList));
             this.GGButtonAddNewPayment = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GDataGridViewPayments = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -62,7 +62,7 @@
             this.GGButtonAddNewPayment.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.GGButtonAddNewPayment.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GGButtonAddNewPayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
-            this.GGButtonAddNewPayment.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPayment.Image")));
+            this.GGButtonAddNewPayment.Image = global::TitanGym_Presentation.Properties.Resources.Add_Icon_TitanGym_24;
             this.GGButtonAddNewPayment.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.GGButtonAddNewPayment.ImageOffset = new System.Drawing.Point(15, 1);
             this.GGButtonAddNewPayment.Location = new System.Drawing.Point(1226, 75);

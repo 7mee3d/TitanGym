@@ -432,5 +432,80 @@
   <ItemGroup>
     <None Include="Resources\account_circle_Icon_TitanGym_50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filter_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_Person_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upload_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left_Arrow_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Selected_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People_Selected_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Member_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Member_Selected_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trainer_Card_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trainer_Card_Selected_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plans_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plans_Selected_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subscriptions_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subscriptions_Selected_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payments_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payments_Selected_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attendance_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attendance_Selected_Icon_TitanGym_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left2_Arrow_Icon_TitanGym_24.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -217,7 +217,7 @@
             this.GGButtonAddNewPlan.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.GGButtonAddNewPlan.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GGButtonAddNewPlan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
-            this.GGButtonAddNewPlan.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPlan.Image")));
+            this.GGButtonAddNewPlan.Image = global::TitanGym_Presentation.Properties.Resources.Add_Icon_TitanGym_24;
             this.GGButtonAddNewPlan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.GGButtonAddNewPlan.ImageOffset = new System.Drawing.Point(15, 1);
             this.GGButtonAddNewPlan.Location = new System.Drawing.Point(1192, 72);

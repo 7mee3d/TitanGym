@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAddEditPayments));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.GComboBoxPaymentMethods = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -246,7 +245,7 @@
             this.GGButtonAddNewPayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
             this.GGButtonAddNewPayment.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonAddNewPayment.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewPayment.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPayment.Image")));
+            this.GGButtonAddNewPayment.Image = global::TitanGym_Presentation.Properties.Resources.Add_Icon_TitanGym_24;
             this.GGButtonAddNewPayment.ImageOffset = new System.Drawing.Point(-5, 0);
             this.GGButtonAddNewPayment.Location = new System.Drawing.Point(812, 22);
             this.GGButtonAddNewPayment.Name = "GGButtonAddNewPayment";

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAssigementEditMemberTrainer));
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.GTextBoxNote = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -199,7 +198,7 @@
             this.GGButtonAssgementMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
             this.GGButtonAssgementMember.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonAssgementMember.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAssgementMember.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAssgementMember.Image")));
+            this.GGButtonAssgementMember.Image = global::TitanGym_Presentation.Properties.Resources.Add_Icon_TitanGym_24;
             this.GGButtonAssgementMember.ImageOffset = new System.Drawing.Point(-5, 0);
             this.GGButtonAssgementMember.Location = new System.Drawing.Point(840, 22);
             this.GGButtonAssgementMember.Name = "GGButtonAssgementMember";

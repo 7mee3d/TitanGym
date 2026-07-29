@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAddEditInformationMember));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.GTextBoxEmergencyContactPhoneNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.GTextBoxEmergencyContactName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -182,7 +181,7 @@
             this.GGButtonAddNewMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
             this.GGButtonAddNewMember.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonAddNewMember.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewMember.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewMember.Image")));
+            this.GGButtonAddNewMember.Image = global::TitanGym_Presentation.Properties.Resources.Add_Person_Icon_TitanGym_24;
             this.GGButtonAddNewMember.ImageOffset = new System.Drawing.Point(-5, 0);
             this.GGButtonAddNewMember.Location = new System.Drawing.Point(774, 22);
             this.GGButtonAddNewMember.Name = "GGButtonAddNewMember";

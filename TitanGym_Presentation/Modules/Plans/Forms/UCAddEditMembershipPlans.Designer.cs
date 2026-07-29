@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAddEditMembershipPlans));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.GTextBoxDescription = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -286,7 +285,7 @@
             this.GGButtonAddNewPlan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
             this.GGButtonAddNewPlan.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonAddNewPlan.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewPlan.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPlan.Image")));
+            this.GGButtonAddNewPlan.Image = global::TitanGym_Presentation.Properties.Resources.Add_Icon_TitanGym_24;
             this.GGButtonAddNewPlan.ImageOffset = new System.Drawing.Point(-5, 0);
             this.GGButtonAddNewPlan.Location = new System.Drawing.Point(774, 22);
             this.GGButtonAddNewPlan.Name = "GGButtonAddNewPlan";

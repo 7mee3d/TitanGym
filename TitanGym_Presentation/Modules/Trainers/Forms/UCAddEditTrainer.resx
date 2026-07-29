@@ -117,15 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="GGButtonAddNewTrainer.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAPhJREFUSEvt
-        kjsSgjAQhlcrSkuPk9Jj7CyOzjiQeBOPwJEoLS05giVOQhLDEgg+Cgq+mQzM5t93AFaWDckHkGo3JFvz
-        /1e6oO+T669quew7SDam6lzW3naUte0m2onVzyzAVc0Zs2um7ga4uXPG7JrPEtgRkbx7mxmR1AmaQOd3
-        ZPX9MwqKzAjMYkNntuTQzoMn94GYQd49U+sQXa5nVtAf8F0mEZgBqVu0ZSqfW30XIZ0ACxFdFJuvf+/a
-        joXgYeJQiX3nsgK87rgM8LIHUpVLbPQndeayIR9XpJPJQ3osDvscuTnJ7AThzF2yqcM1SaacY3auWVk0
-        L90l/WZy8RTMAAAAAElFTkSuQmCC
-</value>
-  </data>
 </root>

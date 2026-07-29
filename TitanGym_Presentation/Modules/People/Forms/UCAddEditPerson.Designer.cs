@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAddEditPerson));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.GDateTimePickerPerson = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.GGButtonFemale = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -510,7 +509,7 @@
             this.GGButtonUpload.ForeColor = System.Drawing.Color.White;
             this.GGButtonUpload.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
             this.GGButtonUpload.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(28)))), ((int)(((byte)(45)))));
-            this.GGButtonUpload.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonUpload.Image")));
+            this.GGButtonUpload.Image = global::TitanGym_Presentation.Properties.Resources.Upload_Icon_TitanGym_24;
             this.GGButtonUpload.Location = new System.Drawing.Point(156, 16);
             this.GGButtonUpload.Name = "GGButtonUpload";
             this.GGButtonUpload.Size = new System.Drawing.Size(69, 58);
@@ -609,7 +608,7 @@
             this.GGButtonAddNewPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
             this.GGButtonAddNewPerson.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonAddNewPerson.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewPerson.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPerson.Image")));
+            this.GGButtonAddNewPerson.Image = global::TitanGym_Presentation.Properties.Resources.Add_Person_Icon_TitanGym_24;
             this.GGButtonAddNewPerson.ImageOffset = new System.Drawing.Point(-5, 0);
             this.GGButtonAddNewPerson.Location = new System.Drawing.Point(774, 22);
             this.GGButtonAddNewPerson.Name = "GGButtonAddNewPerson";

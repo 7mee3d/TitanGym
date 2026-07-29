@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAddEditTrainer));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.GTextBoxSalary = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -204,7 +203,7 @@
             this.GGButtonAddNewTrainer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
             this.GGButtonAddNewTrainer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonAddNewTrainer.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewTrainer.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewTrainer.Image")));
+            this.GGButtonAddNewTrainer.Image = global::TitanGym_Presentation.Properties.Resources.Add_Person_Icon_TitanGym_24;
             this.GGButtonAddNewTrainer.ImageOffset = new System.Drawing.Point(-5, 0);
             this.GGButtonAddNewTrainer.Location = new System.Drawing.Point(774, 22);
             this.GGButtonAddNewTrainer.Name = "GGButtonAddNewTrainer";

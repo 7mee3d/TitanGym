@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAddEditSubscription));
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.GTextBoxSubscriptionFees = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -266,7 +265,7 @@
             this.GGButtonAddNewSubscription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
             this.GGButtonAddNewSubscription.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonAddNewSubscription.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewSubscription.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewSubscription.Image")));
+            this.GGButtonAddNewSubscription.Image = global::TitanGym_Presentation.Properties.Resources.Add_Icon_TitanGym_24;
             this.GGButtonAddNewSubscription.ImageOffset = new System.Drawing.Point(-5, 0);
             this.GGButtonAddNewSubscription.Location = new System.Drawing.Point(840, 22);
             this.GGButtonAddNewSubscription.Name = "GGButtonAddNewSubscription";

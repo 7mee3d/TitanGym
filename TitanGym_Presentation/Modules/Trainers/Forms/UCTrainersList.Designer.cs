@@ -37,20 +37,20 @@
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GDataGridViewTrainers = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ContextMenuStripTrainersSection = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.ShowInformationPersontoolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.showInformationTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.deleteTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.addNewTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.updateInformationTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.GGButtonAddNewTrainer = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.ShowInformationPersontoolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.showInformationTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateInformationTrainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewTrainers)).BeginInit();
             this.ContextMenuStripTrainersSection.SuspendLayout();
@@ -154,75 +154,25 @@
             this.ContextMenuStripTrainersSection.Name = "ContextMenuStripPeopleSection";
             this.ContextMenuStripTrainersSection.Size = new System.Drawing.Size(255, 218);
             // 
-            // ShowInformationPersontoolStripMenuItem1
-            // 
-            this.ShowInformationPersontoolStripMenuItem1.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ShowInformationPersontoolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("ShowInformationPersontoolStripMenuItem1.Image")));
-            this.ShowInformationPersontoolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.ShowInformationPersontoolStripMenuItem1.Name = "ShowInformationPersontoolStripMenuItem1";
-            this.ShowInformationPersontoolStripMenuItem1.Size = new System.Drawing.Size(254, 38);
-            this.ShowInformationPersontoolStripMenuItem1.Text = "Show Information Person";
-            this.ShowInformationPersontoolStripMenuItem1.Click += new System.EventHandler(this.ShowInformationPersontoolStripMenuItem1_Click);
-            // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(251, 6);
-            // 
-            // showInformationTrainerToolStripMenuItem
-            // 
-            this.showInformationTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.showInformationTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationTrainerToolStripMenuItem.Image")));
-            this.showInformationTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showInformationTrainerToolStripMenuItem.Name = "showInformationTrainerToolStripMenuItem";
-            this.showInformationTrainerToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
-            this.showInformationTrainerToolStripMenuItem.Text = "Show Information Trainer";
-            this.showInformationTrainerToolStripMenuItem.Click += new System.EventHandler(this.showInformationTrainerToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(251, 6);
             // 
-            // deleteTrainerToolStripMenuItem
-            // 
-            this.deleteTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteTrainerToolStripMenuItem.Image")));
-            this.deleteTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.deleteTrainerToolStripMenuItem.Name = "deleteTrainerToolStripMenuItem";
-            this.deleteTrainerToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
-            this.deleteTrainerToolStripMenuItem.Text = "Delete Trainer";
-            this.deleteTrainerToolStripMenuItem.Click += new System.EventHandler(this.deleteTrainerToolStripMenuItem_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(251, 6);
             // 
-            // addNewTrainerToolStripMenuItem
-            // 
-            this.addNewTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.addNewTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewTrainerToolStripMenuItem.Image")));
-            this.addNewTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.addNewTrainerToolStripMenuItem.Name = "addNewTrainerToolStripMenuItem";
-            this.addNewTrainerToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
-            this.addNewTrainerToolStripMenuItem.Text = "Add New Trainer";
-            this.addNewTrainerToolStripMenuItem.Click += new System.EventHandler(this.addNewTrainerToolStripMenuItem_Click);
-            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(251, 6);
-            // 
-            // updateInformationTrainerToolStripMenuItem
-            // 
-            this.updateInformationTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.updateInformationTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationTrainerToolStripMenuItem.Image")));
-            this.updateInformationTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.updateInformationTrainerToolStripMenuItem.Name = "updateInformationTrainerToolStripMenuItem";
-            this.updateInformationTrainerToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
-            this.updateInformationTrainerToolStripMenuItem.Text = "Update Information Trainer";
-            this.updateInformationTrainerToolStripMenuItem.Click += new System.EventHandler(this.updateInformationTrainerToolStripMenuItem_Click);
             // 
             // guna2GradientPanel1
             // 
@@ -248,16 +198,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Quick Filters:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -282,7 +222,7 @@
             this.GGButtonAddNewTrainer.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.GGButtonAddNewTrainer.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GGButtonAddNewTrainer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
-            this.GGButtonAddNewTrainer.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewTrainer.Image")));
+            this.GGButtonAddNewTrainer.Image = global::TitanGym_Presentation.Properties.Resources.Add_Person_Icon_TitanGym_24;
             this.GGButtonAddNewTrainer.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.GGButtonAddNewTrainer.ImageOffset = new System.Drawing.Point(15, 1);
             this.GGButtonAddNewTrainer.Location = new System.Drawing.Point(1192, 70);
@@ -292,6 +232,66 @@
             this.GGButtonAddNewTrainer.Text = "ADD NEW TRAINER";
             this.GGButtonAddNewTrainer.TextOffset = new System.Drawing.Point(10, 0);
             this.GGButtonAddNewTrainer.Click += new System.EventHandler(this.GGButtonAddNewTrainer_Click);
+            // 
+            // ShowInformationPersontoolStripMenuItem1
+            // 
+            this.ShowInformationPersontoolStripMenuItem1.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ShowInformationPersontoolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("ShowInformationPersontoolStripMenuItem1.Image")));
+            this.ShowInformationPersontoolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.ShowInformationPersontoolStripMenuItem1.Name = "ShowInformationPersontoolStripMenuItem1";
+            this.ShowInformationPersontoolStripMenuItem1.Size = new System.Drawing.Size(254, 38);
+            this.ShowInformationPersontoolStripMenuItem1.Text = "Show Information Person";
+            this.ShowInformationPersontoolStripMenuItem1.Click += new System.EventHandler(this.ShowInformationPersontoolStripMenuItem1_Click);
+            // 
+            // showInformationTrainerToolStripMenuItem
+            // 
+            this.showInformationTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showInformationTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationTrainerToolStripMenuItem.Image")));
+            this.showInformationTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showInformationTrainerToolStripMenuItem.Name = "showInformationTrainerToolStripMenuItem";
+            this.showInformationTrainerToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
+            this.showInformationTrainerToolStripMenuItem.Text = "Show Information Trainer";
+            this.showInformationTrainerToolStripMenuItem.Click += new System.EventHandler(this.showInformationTrainerToolStripMenuItem_Click);
+            // 
+            // deleteTrainerToolStripMenuItem
+            // 
+            this.deleteTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteTrainerToolStripMenuItem.Image")));
+            this.deleteTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.deleteTrainerToolStripMenuItem.Name = "deleteTrainerToolStripMenuItem";
+            this.deleteTrainerToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
+            this.deleteTrainerToolStripMenuItem.Text = "Delete Trainer";
+            this.deleteTrainerToolStripMenuItem.Click += new System.EventHandler(this.deleteTrainerToolStripMenuItem_Click);
+            // 
+            // addNewTrainerToolStripMenuItem
+            // 
+            this.addNewTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.addNewTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewTrainerToolStripMenuItem.Image")));
+            this.addNewTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addNewTrainerToolStripMenuItem.Name = "addNewTrainerToolStripMenuItem";
+            this.addNewTrainerToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
+            this.addNewTrainerToolStripMenuItem.Text = "Add New Trainer";
+            this.addNewTrainerToolStripMenuItem.Click += new System.EventHandler(this.addNewTrainerToolStripMenuItem_Click);
+            // 
+            // updateInformationTrainerToolStripMenuItem
+            // 
+            this.updateInformationTrainerToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.updateInformationTrainerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationTrainerToolStripMenuItem.Image")));
+            this.updateInformationTrainerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateInformationTrainerToolStripMenuItem.Name = "updateInformationTrainerToolStripMenuItem";
+            this.updateInformationTrainerToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
+            this.updateInformationTrainerToolStripMenuItem.Text = "Update Information Trainer";
+            this.updateInformationTrainerToolStripMenuItem.Click += new System.EventHandler(this.updateInformationTrainerToolStripMenuItem_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TitanGym_Presentation.Properties.Resources.Filter_Icon_TitanGym_24;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // UCTrainersList
             // 

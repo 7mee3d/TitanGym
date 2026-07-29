@@ -37,16 +37,11 @@
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GDataGridViewSubscriptions = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ContextMenuStripSubscriptionSection = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.showInformationSubscriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.addNewSubscriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.updateInformationSubscritpionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.expiredSubscriptiontoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.lblTotalActiveSubscriptions = new System.Windows.Forms.Label();
@@ -55,13 +50,18 @@
             this.lblTotalSubscriptions = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.GGButtonAddNewSubscription = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.showInformationSubscriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewSubscriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateInformationSubscritpionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.expiredSubscriptiontoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GDataGridViewSubscriptions)).BeginInit();
             this.ContextMenuStripSubscriptionSection.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2GradientPanel3.SuspendLayout();
             this.guna2GradientPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel2
@@ -159,60 +159,20 @@
             this.ContextMenuStripSubscriptionSection.Name = "ContextMenuStripPeopleSection";
             this.ContextMenuStripSubscriptionSection.Size = new System.Drawing.Size(289, 174);
             // 
-            // showInformationSubscriptionToolStripMenuItem
-            // 
-            this.showInformationSubscriptionToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.showInformationSubscriptionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationSubscriptionToolStripMenuItem.Image")));
-            this.showInformationSubscriptionToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showInformationSubscriptionToolStripMenuItem.Name = "showInformationSubscriptionToolStripMenuItem";
-            this.showInformationSubscriptionToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
-            this.showInformationSubscriptionToolStripMenuItem.Text = "Show Information Subscription";
-            this.showInformationSubscriptionToolStripMenuItem.Click += new System.EventHandler(this.showInformationSubscriptionToolStripMenuItem_Click);
-            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(285, 6);
-            // 
-            // addNewSubscriptionToolStripMenuItem
-            // 
-            this.addNewSubscriptionToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.addNewSubscriptionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewSubscriptionToolStripMenuItem.Image")));
-            this.addNewSubscriptionToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.addNewSubscriptionToolStripMenuItem.Name = "addNewSubscriptionToolStripMenuItem";
-            this.addNewSubscriptionToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
-            this.addNewSubscriptionToolStripMenuItem.Text = "Add New Subscription";
-            this.addNewSubscriptionToolStripMenuItem.Click += new System.EventHandler(this.addNewSubscriptionToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(285, 6);
             // 
-            // updateInformationSubscritpionToolStripMenuItem
-            // 
-            this.updateInformationSubscritpionToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.updateInformationSubscritpionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationSubscritpionToolStripMenuItem.Image")));
-            this.updateInformationSubscritpionToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.updateInformationSubscritpionToolStripMenuItem.Name = "updateInformationSubscritpionToolStripMenuItem";
-            this.updateInformationSubscritpionToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
-            this.updateInformationSubscritpionToolStripMenuItem.Text = "Update Information Subscription";
-            this.updateInformationSubscritpionToolStripMenuItem.Click += new System.EventHandler(this.updateInformationSubscritpionToolStripMenuItem_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(285, 6);
-            // 
-            // expiredSubscriptiontoolStripMenuItem
-            // 
-            this.expiredSubscriptiontoolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
-            this.expiredSubscriptiontoolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("expiredSubscriptiontoolStripMenuItem.Image")));
-            this.expiredSubscriptiontoolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.expiredSubscriptiontoolStripMenuItem.Name = "expiredSubscriptiontoolStripMenuItem";
-            this.expiredSubscriptiontoolStripMenuItem.Size = new System.Drawing.Size(288, 38);
-            this.expiredSubscriptiontoolStripMenuItem.Text = "Expired Subscription";
-            this.expiredSubscriptiontoolStripMenuItem.Click += new System.EventHandler(this.expiredSubscriptiontoolStripMenuItem_Click);
             // 
             // guna2GradientPanel1
             // 
@@ -237,16 +197,6 @@
             this.label2.Size = new System.Drawing.Size(110, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Quick Filters:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -342,7 +292,7 @@
             this.GGButtonAddNewSubscription.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.GGButtonAddNewSubscription.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GGButtonAddNewSubscription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
-            this.GGButtonAddNewSubscription.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewSubscription.Image")));
+            this.GGButtonAddNewSubscription.Image = global::TitanGym_Presentation.Properties.Resources.Add_Icon_TitanGym_24;
             this.GGButtonAddNewSubscription.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.GGButtonAddNewSubscription.ImageOffset = new System.Drawing.Point(15, 1);
             this.GGButtonAddNewSubscription.Location = new System.Drawing.Point(1161, 70);
@@ -352,6 +302,56 @@
             this.GGButtonAddNewSubscription.Text = "ADD NEW SUBSCRIPTION";
             this.GGButtonAddNewSubscription.TextOffset = new System.Drawing.Point(10, 0);
             this.GGButtonAddNewSubscription.Click += new System.EventHandler(this.GGButtonAddNewSubscription_Click);
+            // 
+            // showInformationSubscriptionToolStripMenuItem
+            // 
+            this.showInformationSubscriptionToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.showInformationSubscriptionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showInformationSubscriptionToolStripMenuItem.Image")));
+            this.showInformationSubscriptionToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showInformationSubscriptionToolStripMenuItem.Name = "showInformationSubscriptionToolStripMenuItem";
+            this.showInformationSubscriptionToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.showInformationSubscriptionToolStripMenuItem.Text = "Show Information Subscription";
+            this.showInformationSubscriptionToolStripMenuItem.Click += new System.EventHandler(this.showInformationSubscriptionToolStripMenuItem_Click);
+            // 
+            // addNewSubscriptionToolStripMenuItem
+            // 
+            this.addNewSubscriptionToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.addNewSubscriptionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewSubscriptionToolStripMenuItem.Image")));
+            this.addNewSubscriptionToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addNewSubscriptionToolStripMenuItem.Name = "addNewSubscriptionToolStripMenuItem";
+            this.addNewSubscriptionToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.addNewSubscriptionToolStripMenuItem.Text = "Add New Subscription";
+            this.addNewSubscriptionToolStripMenuItem.Click += new System.EventHandler(this.addNewSubscriptionToolStripMenuItem_Click);
+            // 
+            // updateInformationSubscritpionToolStripMenuItem
+            // 
+            this.updateInformationSubscritpionToolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.updateInformationSubscritpionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateInformationSubscritpionToolStripMenuItem.Image")));
+            this.updateInformationSubscritpionToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateInformationSubscritpionToolStripMenuItem.Name = "updateInformationSubscritpionToolStripMenuItem";
+            this.updateInformationSubscritpionToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.updateInformationSubscritpionToolStripMenuItem.Text = "Update Information Subscription";
+            this.updateInformationSubscritpionToolStripMenuItem.Click += new System.EventHandler(this.updateInformationSubscritpionToolStripMenuItem_Click);
+            // 
+            // expiredSubscriptiontoolStripMenuItem
+            // 
+            this.expiredSubscriptiontoolStripMenuItem.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold);
+            this.expiredSubscriptiontoolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("expiredSubscriptiontoolStripMenuItem.Image")));
+            this.expiredSubscriptiontoolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.expiredSubscriptiontoolStripMenuItem.Name = "expiredSubscriptiontoolStripMenuItem";
+            this.expiredSubscriptiontoolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.expiredSubscriptiontoolStripMenuItem.Text = "Expired Subscription";
+            this.expiredSubscriptiontoolStripMenuItem.Click += new System.EventHandler(this.expiredSubscriptiontoolStripMenuItem_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TitanGym_Presentation.Properties.Resources.Filter_Icon_TitanGym_24;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // UCSubscriptionsList
             // 
@@ -372,11 +372,11 @@
             this.ContextMenuStripSubscriptionSection.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2GradientPanel3.ResumeLayout(false);
             this.guna2GradientPanel3.PerformLayout();
             this.guna2GradientPanel4.ResumeLayout(false);
             this.guna2GradientPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

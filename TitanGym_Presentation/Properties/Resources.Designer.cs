@@ -73,9 +73,259 @@ namespace TitanGym_Presentation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Add_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Add_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_Person_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Add_Person_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Attendance_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Attendance_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Attendance_Selected_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Attendance_Selected_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dashboard_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Dashboard_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dashboard_Selected_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Dashboard_Selected_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Delete_Icon_TitanGym_24 {
             get {
                 object obj = ResourceManager.GetObject("Delete_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Filter_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Filter_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Left_Arrow_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Left_Arrow_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Left2_Arrow_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Left2_Arrow_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Lock_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Lock_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Member_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Member_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Member_Selected_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Member_Selected_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Payments_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Payments_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Payments_Selected_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Payments_Selected_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap People_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("People_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap People_Selected_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("People_Selected_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Person_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Person_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plans_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Plans_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plans_Selected_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Plans_Selected_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Search_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Search_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Subscriptions_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Subscriptions_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Subscriptions_Selected_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Subscriptions_Selected_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Trainer_Card_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Trainer_Card_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Trainer_Card_Selected_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Trainer_Card_Selected_Icon_TitanGym_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Upload_Icon_TitanGym_24 {
+            get {
+                object obj = ResourceManager.GetObject("Upload_Icon_TitanGym_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

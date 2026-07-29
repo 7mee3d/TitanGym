@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ctrlShowInformationPersonByFilter));
             this.GTextBoxPersonID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.GGButtonSearchPerson = new Guna.UI2.WinForms.Guna2GradientButton();
             this.ctrlShowInformationPerson1 = new TitanGym_Presentation.Modules.People.Controls.ctrlShowInformationPerson();
             this.GGButtonAddNewPerson = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.GGButtonSearchPerson = new Guna.UI2.WinForms.Guna2GradientButton();
             this.SuspendLayout();
             // 
             // GTextBoxPersonID
@@ -71,35 +70,6 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Filter by person ID :";
             // 
-            // GGButtonSearchPerson
-            // 
-            this.GGButtonSearchPerson.Animated = true;
-            this.GGButtonSearchPerson.AnimatedGIF = true;
-            this.GGButtonSearchPerson.BackColor = System.Drawing.Color.Transparent;
-            this.GGButtonSearchPerson.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonSearchPerson.BorderRadius = 5;
-            this.GGButtonSearchPerson.BorderThickness = 1;
-            this.GGButtonSearchPerson.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GGButtonSearchPerson.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
-            this.GGButtonSearchPerson.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
-            this.GGButtonSearchPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
-            this.GGButtonSearchPerson.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
-            this.GGButtonSearchPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(170)))), ((int)(((byte)(176)))));
-            this.GGButtonSearchPerson.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonSearchPerson.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonSearchPerson.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GGButtonSearchPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
-            this.GGButtonSearchPerson.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonSearchPerson.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonSearchPerson.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonSearchPerson.Image")));
-            this.GGButtonSearchPerson.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.GGButtonSearchPerson.Location = new System.Drawing.Point(525, 49);
-            this.GGButtonSearchPerson.Name = "GGButtonSearchPerson";
-            this.GGButtonSearchPerson.Size = new System.Drawing.Size(166, 38);
-            this.GGButtonSearchPerson.TabIndex = 4;
-            this.GGButtonSearchPerson.Text = "Search Person";
-            this.GGButtonSearchPerson.Click += new System.EventHandler(this.GGButtonSearchPerson_Click);
-            // 
             // ctrlShowInformationPerson1
             // 
             this.ctrlShowInformationPerson1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(30)))));
@@ -128,7 +98,7 @@
             this.GGButtonAddNewPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
             this.GGButtonAddNewPerson.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonAddNewPerson.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewPerson.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPerson.Image")));
+            this.GGButtonAddNewPerson.Image = global::TitanGym_Presentation.Properties.Resources.Add_Person_Icon_TitanGym_24;
             this.GGButtonAddNewPerson.ImageOffset = new System.Drawing.Point(-2, 0);
             this.GGButtonAddNewPerson.Location = new System.Drawing.Point(708, 49);
             this.GGButtonAddNewPerson.Name = "GGButtonAddNewPerson";
@@ -136,6 +106,35 @@
             this.GGButtonAddNewPerson.TabIndex = 4;
             this.GGButtonAddNewPerson.Text = "Add New Person";
             this.GGButtonAddNewPerson.Click += new System.EventHandler(this.GGButtonAddNewPerson_Click);
+            // 
+            // GGButtonSearchPerson
+            // 
+            this.GGButtonSearchPerson.Animated = true;
+            this.GGButtonSearchPerson.AnimatedGIF = true;
+            this.GGButtonSearchPerson.BackColor = System.Drawing.Color.Transparent;
+            this.GGButtonSearchPerson.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonSearchPerson.BorderRadius = 5;
+            this.GGButtonSearchPerson.BorderThickness = 1;
+            this.GGButtonSearchPerson.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GGButtonSearchPerson.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
+            this.GGButtonSearchPerson.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
+            this.GGButtonSearchPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
+            this.GGButtonSearchPerson.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
+            this.GGButtonSearchPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(170)))), ((int)(((byte)(176)))));
+            this.GGButtonSearchPerson.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonSearchPerson.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonSearchPerson.Font = new System.Drawing.Font("IBM Plex Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonSearchPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
+            this.GGButtonSearchPerson.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonSearchPerson.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.GGButtonSearchPerson.Image = global::TitanGym_Presentation.Properties.Resources.Search_Icon_TitanGym_24;
+            this.GGButtonSearchPerson.ImageOffset = new System.Drawing.Point(-5, 0);
+            this.GGButtonSearchPerson.Location = new System.Drawing.Point(525, 49);
+            this.GGButtonSearchPerson.Name = "GGButtonSearchPerson";
+            this.GGButtonSearchPerson.Size = new System.Drawing.Size(166, 38);
+            this.GGButtonSearchPerson.TabIndex = 4;
+            this.GGButtonSearchPerson.Text = "Search Person";
+            this.GGButtonSearchPerson.Click += new System.EventHandler(this.GGButtonSearchPerson_Click);
             // 
             // ctrlShowInformationPersonByFilter
             // 

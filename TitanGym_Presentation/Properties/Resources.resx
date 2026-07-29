@@ -118,10 +118,85 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Delete_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Delete_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="People_Selected_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\People_Selected_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Subscriptions_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Subscriptions_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trainer_Card_Selected_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trainer_Card_Selected_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Member_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Member_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Attendance_Selected_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Attendance_Selected_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Person_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Person_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Filter_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Filter_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="account_circle_Icon_TitanGym_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\account_circle_Icon_TitanGym_50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add_Person_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add_Person_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Left_Arrow_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Left_Arrow_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Attendance_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Attendance_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trainer_Card_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trainer_Card_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lock_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lock_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plans_Selected_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plans_Selected_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Payments_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Payments_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="People_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\People_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Member_Selected_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Member_Selected_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Payments_Selected_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Payments_Selected_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Subscriptions_Selected_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Subscriptions_Selected_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plans_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plans_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Upload_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Upload_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dashboard_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dashboard_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dashboard_Selected_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dashboard_Selected_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Left2_Arrow_Icon_TitanGym_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Left2_Arrow_Icon_TitanGym_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

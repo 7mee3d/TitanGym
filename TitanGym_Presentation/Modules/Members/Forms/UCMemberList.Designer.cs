@@ -342,7 +342,7 @@
             this.GGButtonAddNewPerson.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.GGButtonAddNewPerson.Font = new System.Drawing.Font("IBM Plex Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GGButtonAddNewPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
-            this.GGButtonAddNewPerson.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewPerson.Image")));
+            this.GGButtonAddNewPerson.Image = global::TitanGym_Presentation.Properties.Resources.Add_Person_Icon_TitanGym_24;
             this.GGButtonAddNewPerson.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.GGButtonAddNewPerson.ImageOffset = new System.Drawing.Point(8, 1);
             this.GGButtonAddNewPerson.Location = new System.Drawing.Point(1206, 70);

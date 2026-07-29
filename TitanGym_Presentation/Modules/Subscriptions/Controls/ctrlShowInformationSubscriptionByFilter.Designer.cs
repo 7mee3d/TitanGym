@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ctrlShowInformationSubscriptionByFilter));
             this.GGButtonAddNewSubscription = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGButtonSearchSubscription = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GTextBoxSubscriptionID = new Guna.UI2.WinForms.Guna2TextBox();
@@ -56,7 +55,7 @@
             this.GGButtonAddNewSubscription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
             this.GGButtonAddNewSubscription.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonAddNewSubscription.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonAddNewSubscription.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonAddNewSubscription.Image")));
+            this.GGButtonAddNewSubscription.Image = global::TitanGym_Presentation.Properties.Resources.Add_Icon_TitanGym_24;
             this.GGButtonAddNewSubscription.ImageOffset = new System.Drawing.Point(-2, 0);
             this.GGButtonAddNewSubscription.Location = new System.Drawing.Point(724, 38);
             this.GGButtonAddNewSubscription.Name = "GGButtonAddNewSubscription";
@@ -85,7 +84,7 @@
             this.GGButtonSearchSubscription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(110)))));
             this.GGButtonSearchSubscription.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.GGButtonSearchSubscription.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.GGButtonSearchSubscription.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonSearchSubscription.Image")));
+            this.GGButtonSearchSubscription.Image = global::TitanGym_Presentation.Properties.Resources.Search_Icon_TitanGym_24;
             this.GGButtonSearchSubscription.ImageOffset = new System.Drawing.Point(-5, 0);
             this.GGButtonSearchSubscription.Location = new System.Drawing.Point(521, 38);
             this.GGButtonSearchSubscription.Name = "GGButtonSearchSubscription";

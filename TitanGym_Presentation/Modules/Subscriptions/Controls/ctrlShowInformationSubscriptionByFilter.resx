@@ -117,22 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="GGButtonAddNewSubscription.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAABXSURBVEhLY2AYBaMABZjZ/Gcws/2PLkw9YGb7n5HWFgx9H9DcAuoEEcylUIzMRsYIcVJTFzYL
-        zDEtQGAbKgUdyS4lFdDDAuoEBS4wdJIpLkBzC0bBkAQApaNLL01gDjsAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="GGButtonSearchSubscription.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAOlJREFUSEvt
-        lL0OgyAQx3Hr6NjRR0MYTJpwsPloPoajo4/R0eYoKFysBVud/CWkw533v88ydrGXkpuSCRiYgGl5emTc
-        VNQ3HwFdGLjAXxkKQUc/SScMLnUT2aRurJh9aocIf9zfmeqJYYtWqDi/zQmgfw6FgNFl3lJbhFDGiYzU
-        tI3PLAU/mywyBZJ9PfMAU9hTQSGhdxtiqC0CZ2RnBT01bYNb4aqw27JGtEUffDaReAfaHRe9AxXewTOy
-        ZSGgWwK55+/DB/9ZBNtV0/8iNcyt+4vINzC4rexIkRorwdYdKXJau04RucjlBdkjrLko9aP8AAAAAElF
-        TkSuQmCC
-</value>
-  </data>
 </root>
