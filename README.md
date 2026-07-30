@@ -470,3 +470,33 @@ The project is structured into logical components, separating data access, busin
 
 ---
 
+# 👥 Project Team - TitanGym Management System
+
+
+
+## Team Information
+
+
+
+| University ID | Full Name |
+| :---: | :--- |
+| 120220226 | Ahmed Jehad |
+| 120230168 | Mohammed Basal |
+| 120230063 | Mohammed Saber |
+
+
+
+
+---
+
+
+
+**👨‍🏫 Supervisor Signature:** [lamis samhan]
+
+
+
+---
+
+
+
+**🏋️ TitanGym - Gym Management System*
