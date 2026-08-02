@@ -154,16 +154,16 @@ Follow these exact steps to configure and launch the system in your local develo
 > 1. Open **SQL Server Management Studio (SSMS)**.
 > 2. Right-click on `Databases` in the Object Explorer $\rightarrow$ Select **Restore Database...**
 > 3. Choose **Device** $\rightarrow$ Click `...` $\rightarrow$ Add the provided backup file.
-> 4. **Backup File Name:** `TitanGym_DB_Master.bak`
+> 4. **Backup File Name:** `TitanGym.bak`
 > 5. Click **OK** to execute the database restoration.
 
 > [!IMPORTANT]
 > **3️⃣ Install Modern UI Dependencies**
 > The Guna UI package must be restored via NuGet to render the custom controls.
-> 1. Open `TitanGym_Solution.sln` in **Visual Studio 2022**.
+> 1. Open `TitanGym_Presentation.sln` in **Visual Studio 2022**.
 > 2. Navigate to `Tools` $\rightarrow$ `NuGet Package Manager` $\rightarrow$ `Manage NuGet Packages for Solution`.
 > 3. Search for **Guna.UI2.WinForms**.
-> 4. Select the `TitanGym_PresentationLayer` project and install version `2.0.4.6`.
+> 4. Select the `TitanGym_Presentation` project and install version `2.0.4.6`.
 
 ### 4️⃣ Database Connection Configuration
 Navigate to the `App.config` file located inside the Presentation Layer project. Update the connection string to point to your local SQL Server instance:
